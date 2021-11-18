@@ -22,9 +22,7 @@
 <body>
 
 <!-- 
-Test
-1234
-5678
+
   -->
 
 
@@ -81,15 +79,15 @@ Test
 
 function clearDebug() { 
 
-//  alert("begin     clearDebug");
+   //  alert("begin     clearDebug");
 
-document.getElementById("debugOut").innerHTML = "";
+   document.getElementById("debugOut").innerHTML = "";
 
-<!-- 
+   <!-- 
 
-  -->
+    -->
 
-//  alert("end     clearDebug");
+   //  alert("end     clearDebug");
 
    // end   function clearDebug
 } 
@@ -99,29 +97,477 @@ document.getElementById("debugOut").innerHTML = "";
 
 function showDebug() { 
 
-//  alert("begin     showDebug");
+   //  alert("begin     showDebug");
+
+   //  begin building the string to display on screen
+   var displayStr = '<center><span style="font-size:14px;"><b>DEBUG</b></span></center><br>';
 
 
-var displayStr = '<center><span style="font-size:14px;"><b>DEBUG</b></span></center><br>';
 
-//  show navigator info
-var whichAgent = navigator.userAgent;
-        
-displayStr = displayStr + '<center><span style="font-size:12px;"><b>***  Your browser.  ***<br>' + whichAgent + '</b></span></center><br>';
+   //  obtain the navigator info
+   var whichAgent = navigator.userAgent;
+ 
+   // these variables are instantiated to improve readability in if clauses
+   //
+   //        
+   //        if (isChrome) { 
+   //              
+   //        }
+   //
+   //       is more readable than
+   //
+   //        if ( whichAgent.includes("Chrome") ) { 
+   //              
+   //        }
+   //
+   //
+   //
+   //
+    var isFirefox = whichAgent.includes("Firefox"); 
+
+    var isChrome = whichAgent.includes("Chrome"); 
+
+    var isSafari = whichAgent.includes("Safari"); 
+
+    var isiPad = whichAgent.includes("iPad"); 
+
+    var isEdge = whichAgent.includes("Edge"); 
+
+    var isWin10 = whichAgent.includes("Windows NT 10.0"); 
+
+    var isAndroid4 =  whichAgent.includes("Android 4"); 
+
+    var isAndroid6 = whichAgent.includes("Android 6"); 
 
 
-displayStr = displayStr + '<center><span style="font-size:12px;"><button style="background-color:maroon; color:white;margin-top:3px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width:90px;height:40px" id="buttonCancel" name="buttonCancel" title="cancel debug display button" aria-label="cancel debug display button" type="button" onClick="clearDebug()"><span style="font-size:28px;"><b>Done</b></span></button>' + '</span></center>' + '<br>';
+    //  var browsersFound = 0;
 
-document.getElementById("debugOut").innerHTML = displayStr;
 
-<!-- 
+   //  there are a couple of cases where there are duplicate matches
+   //  these two overrides correct the situation
+    if (isChrome) { 
+           isSafari = false;
+    }
 
-  -->
+    if (isEdge) { 
+           isChrome = false; 
+    } 
 
-//  alert("end     showDebug");
+
+   //  continue building the string to display
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your browser.  ***<br>' + 
+         navigator.userAgent + '</b></span></center><br><br>';
+
+   displayStr = displayStr + '<center><table border="5" rules="all">';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;"><b>Setting</b></span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + '<b>Status</b>' + '</span>' + '</center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Device</b></span></center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Number of CPUs</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.hardwareConcurrency + '</span>' + 
+          '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Platform</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.platform + '</span>' + 
+          '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Build ID</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.buildID + '</span>' + 
+          '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Device Memory (GB)&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.deviceMemory + '</span>' + 
+          '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Operating System</b></span></center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">OS and CPU</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.oscpu + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Screen</b></span></center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp; Max Touch Points&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.maxTouchPoints + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Height</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.height + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Width</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.width + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Available Height</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.availHeight + '</span>' + 
+          '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Available Width</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.availWidth + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Color Depth</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.colorDepth + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Pixel Depth</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + screen.pixelDepth + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Product</b></span></center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Vendor&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.vendor + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Product&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.product + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Version Number&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.productSub + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Language</b></span></center></td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Preferred language&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.language + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">&nbsp;Languages Available&nbsp;</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + navigator.languages + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+          '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+          '<span style="font-size:12px;"><b>Browser</b></span></center></td></tr>';
+
+
+   // Write browser name
+   if (isFirefox) { 
+
+        displayStr = displayStr + 
+               '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+               '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+               '<td style="background-color:ghostwhite;color:black" ><center>' + 
+               '<span style="font-size:12px;">' + 'Firefox' + '</span>' + '</center> </td></tr>';
+
+   } else if (isChrome) { 
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Chrome' + '</span>' + '</center> </td></tr>';
+
+   } else if (isSafari) { 
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Safari' + '</span>' + '</center> </td></tr>';
+
+   } else if (isEdge) { 
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Edge' + '</span>' + '</center> </td></tr>';
+
+   } else { 
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Unknown' + '</span>' + '</center> </td></tr>';
+
+   } 
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+        '<span style="font-size:12px;">&nbsp;Online&nbsp;</span></center> </td>' + 
+        '<td style="background-color:ghostwhite;color:black" ><center>' + 
+        '<span style="font-size:12px;">' + navigator.onLine + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+        '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+        '<span style="font-size:12px;">Cookies Enabled</span></center> </td>' + 
+        '<td style="background-color:ghostwhite;color:black" ><center>' + 
+        '<span style="font-size:12px;">' + navigator.cookieEnabled + '</span>' + '</center> </td></tr>';
+
+
+
+   if (navigator.javaEnabled) {
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Java Enabled</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'true' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Java Enabled</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'false' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+        '<span style="font-size:12px;">Do Not Track</span></center> </td>' + 
+        '<td style="background-color:ghostwhite;color:black" ><center>' + 
+        '<span style="font-size:12px;">' + navigator.doNotTrack + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>History</b></span></center></td></tr>';
+
+    displayStr = displayStr + 
+        '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+        '<span style="font-size:12px;">History Length</span></center> </td>' + 
+        '<td style="background-color:ghostwhite;color:black" ><center>' + 
+        '<span style="font-size:12px;">' + history.length + '</span>' + '</center> </td></tr>';
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Sound</b></span></center></td></tr>';
+
+
+
+   if ( ('AudioContext' in window) ||
+   ('webkitAudioContext' in window) ) {
+
+        //   Web Audio supported 
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Audio</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //   Web Audio not supported 
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Audio</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+   if ('speechSynthesis' in window) {
+
+          //  speech synthesis supported 
+
+          displayStr = displayStr + 
+               '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+               '<span style="font-size:12px;">Web Speech</span></center> </td>' + 
+               '<td style="background-color:ghostwhite;color:black" ><center>' + 
+               '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+          //   speech synthesis not supported 
+
+          displayStr = displayStr + 
+               '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+               '<span style="font-size:12px;">Web Speech</span></center> </td>' + 
+               '<td style="background-color:ghostwhite;color:black" ><center>' + 
+               '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Serial</b></span></center></td></tr>';
+
+
+   if ("serial" in navigator) {
+
+        //    Web Serial supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+    } else {
+
+        //    Web Serial not supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>USB</b></span></center></td></tr>';
+
+
+   if ("usb" in navigator) {
+
+        //    USB supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web USB</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    USB not supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web USB</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Geolocation</b></span></center></td></tr>';
+
+
+
+   if ("geolocation" in navigator) {
+
+        //    geolocation supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    geolocation not supported
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+   displayStr = displayStr + '</table></center><br><br>';
+
+
+
+
+
+   displayStr = displayStr + 
+        '<center><span style="font-size:12px;">' + 
+        '<button style="background-color:maroon; color:white;margin-top:3px;margin-bottom:1px;' + 
+        'border:2px solid lightgrey;border-radius:8px;width:90px;height:40px" ' + 
+        'id="buttonCancel" name="buttonCancel" title="cancel update" aria-label="cancel update" ' + 
+        'type="button" onClick="clearDebug()"><span style="font-size:28px;"><b>Done</b></span></button>' + 
+        '</span></center>' + '<br>';
+
+   document.getElementById("debugOut").innerHTML = displayStr;
+
+   <!-- 
+
+     -->
+
+   //  alert("end     showDebug");
 
    // end   function showDebug
 } 
+
+
+   <!-- 
+
+     -->
 
 
  </script> 
