@@ -1,22 +1,24 @@
 <!-- web page for github  -->
 
+<!DOCTYPE html>
 <html>
 
-<head> 
+   <head> 
+      <meta charset="utf-8" />
 
-<title>page for ab872</title> 
+      <title>page for ab872</title> 
 
-<style> 
+      <style> 
 
-</style> 
-
-
-<script TYPE="text/javascript"> 
-
-</script> 
+      </style> 
 
 
-</head>
+      <script TYPE="text/javascript"> 
+
+      </script> 
+
+
+   </head>
 
 
 <body>
@@ -77,20 +79,73 @@
 <script TYPE="text/javascript"> 
 
 
-function clearDebug() { 
+   function clearDebug() { 
 
-   //  alert("begin     clearDebug");
+      //  alert("begin     clearDebug");
 
-   document.getElementById("debugOut").innerHTML = "";
+      document.getElementById("debugOut").innerHTML = "";
 
-   <!-- 
+      <!-- 
 
-    -->
+       -->
 
-   //  alert("end     clearDebug");
+      //  alert("end     clearDebug");
 
-   // end   function clearDebug
-} 
+      // end   function clearDebug
+   } 
+
+
+
+
+   //  Window.localStorage
+   //  added 26nov2021
+   function localStorageAvailable() {
+
+       if ('localStorage' in window) {
+             //  local storage supported 
+              try {
+                       localStorage.setItem('test1234', 'testing...');
+                       localStorage.removeItem('test1234');
+                       return true;
+               }
+               catch(e) {
+                    return false;
+               }
+
+         } else {
+               return false;
+         }
+
+      //  end     localStorageAvailable
+   }
+
+
+
+
+
+   //  Window.sessionStorage
+   //  added 26nov2021
+   function sessionStorageAvailable() {
+
+       if ('sessionStorage' in window) {
+             //  session storage supported 
+              try {
+                        sessionStorage.setItem('test1234', 'testing...');
+                        sessionStorage.removeItem('test1234');
+                        return true;
+               }
+               catch(e) {
+                    return false;
+               }
+
+         } else {
+               return false;
+         }
+
+      //  end     sessionStorageAvailable
+   }
+
+
 
 
 
@@ -539,12 +594,62 @@ function showDebug() {
    }
 
 
+
+   //  added 26nov2021
+   displayStr = displayStr + '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' +
+        '<span style="font-size:12px;"><b>Web Storage</b></span></center></td></tr>';
+
+
+
+
+   //  added 26nov2021
+   if ( localStorageAvailable() ) {
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Local Storage</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   }
+   else {
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Local Storage</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+   //  added 26nov2021
+   if ( sessionStorageAvailable() ) {
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Session Storage</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   }
+   else {
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+        '<span style="font-size:12px;">Session Storage</span></center> </td>' + 
+        '<td style="background-color:ghostwhite;color:black" ><center>' + 
+        '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+   //  close the table
    displayStr = displayStr + '</table></center><br><br>';
 
 
 
 
-
+   //  add the button
    displayStr = displayStr + 
         '<center><span style="font-size:12px;">' + 
         '<button style="background-color:maroon; color:white;margin-top:3px;margin-bottom:1px;' + 
@@ -553,6 +658,7 @@ function showDebug() {
         'type="button" onClick="clearDebug()"><span style="font-size:28px;"><b>Done</b></span></button>' + 
         '</span></center>' + '<br>';
 
+   // finished building the string, display it on the screen
    document.getElementById("debugOut").innerHTML = displayStr;
 
    <!-- 
@@ -572,7 +678,7 @@ function showDebug() {
 
  </script> 
 
-<NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JAVASCRIPT is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
+<NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
 
 <center>
 <BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width=120px;height:40px;-webkit-appearance:none" TYPE="button" id="debugButton" name="debugButton" title="show DEBUG info button" aria-label="show DEBUG info button" ONCLICK="showDebug()" ACCESSKEY=D><span style="font-size:28px;">     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="navy" stroke="white" class="bi bi-gear-fill" viewBox="0 0 16 16"> <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/> </svg>     </span></BUTTON> 
