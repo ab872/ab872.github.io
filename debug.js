@@ -249,6 +249,14 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
+    } else if (isSafari) { 
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Screen Orientation (n&#x00B0;)</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
+
     } else {
 
    displayStr = displayStr + 
@@ -267,6 +275,13 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
+    } else if (isSafari) { 
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Orientation</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
     } else {
 
@@ -275,7 +290,6 @@ function showDebug() {
           '<span style="font-size:12px;">Orientation</span></center> </td>' + 
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + screen.orientation.type + '</span>' + '</center> </td></tr>';
-
 
     }
 
