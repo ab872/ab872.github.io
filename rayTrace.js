@@ -53,86 +53,139 @@
 
    if (isFirefox) { 
 
-//  adjust the size of the Bootstrap icon
-//  id="BootstrapIcon"
-document.getElementById("BootstrapIcon").style.width="32px"; 
-document.getElementById("BootstrapIcon").style.height="32px";
+       if (isWin10) {
+           //   begin      Firefox under Win10
+
+           //  adjust the size of the captions
+           //  under the graphics
+           //  original font size    6px
+           //  id="textCaption1"
+           //              to
+           //  id="textCaption10"
+
+           document.getElementById('textCaption1').style.fontSize="19px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption1').style.lineHeight="95%";
 
 
-//  adjust the size of the captions
-//  under the graphics
-//  original font size    6px
-//  id="textCaption1"
-//              to
-//  id="textCaption10"
-document.getElementById('textCaption1').style.fontSize="36px";
+           document.getElementById('textCaption2').style.fontSize="19px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption1').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption2').style.lineHeight="95%";
 
 
-document.getElementById('textCaption2').style.fontSize="36px";
+           document.getElementById('textCaption3').style.fontSize="19px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption2').style.lineHeight="95%";
-
-
-document.getElementById('textCaption3').style.fontSize="36px";
-
-//  original   line-height: 50%
-document.getElementById('textCaption3').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption3').style.lineHeight="95%";
 
 
-document.getElementById('textCaption4').style.fontSize="36px";
+           document.getElementById('textCaption4').style.fontSize="19px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption4').style.lineHeight="95%";
-
-
-document.getElementById('textCaption5').style.fontSize="36px";
-
-//  original   line-height: 50%
-document.getElementById('textCaption5').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption4').style.lineHeight="95%";
 
 
-document.getElementById('textCaption6').style.fontSize="36px";
+           document.getElementById('textCaption5').style.fontSize="19px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption6').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption5').style.lineHeight="95%";
 
 
+           document.getElementById('textCaption6').style.fontSize="19px";
 
+           //  original   line-height: 50%
+           document.getElementById('textCaption6').style.lineHeight="95%";
+
+
+           //   end        Firefox under Win10
+
+       } else {
+           //   begin      Firefox not under Win10
+
+           //  adjust the size of the Bootstrap icon
+           //  id="BootstrapIcon"
+           document.getElementById("BootstrapIcon").style.width="32px"; 
+           document.getElementById("BootstrapIcon").style.height="32px";
+
+
+           //  adjust the size of the captions
+           //  under the graphics
+           //  original font size    6px
+           //  id="textCaption1"
+           //              to
+           //  id="textCaption10"
+
+           document.getElementById('textCaption1').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption1').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption2').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption2').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption3').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption3').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption4').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption4').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption5').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption5').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption6').style.fontSize="36px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption6').style.lineHeight="95%";
+
+
+           //   end        Firefox not under Win10
+       }
 
 
 
 
    } else if (isChrome) { 
 
-//  adjust the size of the Bootstrap icon
-//  id="BootstrapIcon"
-document.getElementById("BootstrapIcon").style.width="16px"; 
-document.getElementById("BootstrapIcon").style.height="16px";
+           //  adjust the size of the Bootstrap icon
+           //  id="BootstrapIcon"
+           document.getElementById("BootstrapIcon").style.width="16px"; 
+           document.getElementById("BootstrapIcon").style.height="16px";
 
 
 
-//  adjust the size of the captions
-//  under the graphics
-//  original font size    6px
-//  id="textCaption1"
-//              to
-//  id="textCaption10"
-document.getElementById('textCaption1').style.fontSize="19px";
+           //  adjust the size of the captions
+           //  under the graphics
+           //  original font size    6px
+           //  id="textCaption1"
+           //              to
+           //  id="textCaption10"
 
-document.getElementById('textCaption2').style.fontSize="19px";
+           document.getElementById('textCaption1').style.fontSize="19px";
 
-document.getElementById('textCaption3').style.fontSize="19px";
+           document.getElementById('textCaption2').style.fontSize="19px";
 
-document.getElementById('textCaption4').style.fontSize="19px";
+           document.getElementById('textCaption3').style.fontSize="19px";
 
-document.getElementById('textCaption5').style.fontSize="19px";
+           document.getElementById('textCaption4').style.fontSize="19px";
 
-document.getElementById('textCaption6').style.fontSize="19px";
+           document.getElementById('textCaption5').style.fontSize="19px";
 
+           document.getElementById('textCaption6').style.fontSize="19px";
 
 
 
@@ -144,46 +197,47 @@ document.getElementById('textCaption6').style.fontSize="19px";
    } else if (isEdge) { 
 
 
-//  adjust the size of the captions
-//  under the graphics
-//  original font size    6px
-//  id="textCaption1"
-//              to
-//  id="textCaption10"
-document.getElementById('textCaption1').style.fontSize="18px";
+           //  adjust the size of the captions
+           //  under the graphics
+           //  original font size    6px
+           //  id="textCaption1"
+           //              to
+           //  id="textCaption10"
 
-//  original   line-height: 50%
-document.getElementById('textCaption1').style.lineHeight="95%";
+           document.getElementById('textCaption1').style.fontSize="18px";
 
-
-document.getElementById('textCaption2').style.fontSize="18px";
-
-//  original   line-height: 50%
-document.getElementById('textCaption2').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption1').style.lineHeight="95%";
 
 
-document.getElementById('textCaption3').style.fontSize="18px";
+           document.getElementById('textCaption2').style.fontSize="18px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption3').style.lineHeight="95%";
-
-
-document.getElementById('textCaption4').style.fontSize="18px";
-
-//  original   line-height: 50%
-document.getElementById('textCaption4').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption2').style.lineHeight="95%";
 
 
-document.getElementById('textCaption5').style.fontSize="18px";
+           document.getElementById('textCaption3').style.fontSize="18px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption5').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption3').style.lineHeight="95%";
 
 
-document.getElementById('textCaption6').style.fontSize="18px";
+           document.getElementById('textCaption4').style.fontSize="18px";
 
-//  original   line-height: 50%
-document.getElementById('textCaption6').style.lineHeight="95%";
+           //  original   line-height: 50%
+           document.getElementById('textCaption4').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption5').style.fontSize="18px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption5').style.lineHeight="95%";
+
+
+           document.getElementById('textCaption6').style.fontSize="18px";
+
+           //  original   line-height: 50%
+           document.getElementById('textCaption6').style.lineHeight="95%";
 
 
 
