@@ -28,6 +28,8 @@
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 
+    var isAndroid =  whichAgent.includes("Android"); 
+
     var isAndroid4 =  whichAgent.includes("Android 4"); 
 
     var isAndroid6 = whichAgent.includes("Android 6"); 
@@ -160,6 +162,21 @@
 
 
    } else if (isChrome) { 
+
+
+           //  References section overlaps the 
+           //  Introductory section.
+           //  Only seen on Chrome Android.
+           //  Might be some sort of typo.
+
+           //  temporary correction
+           if (isAndroid) { 
+
+                 document.getElementById('textCorrection1').innerHTML="<br><br><br><br>";
+
+           }
+
+
 
            //  adjust the size of the Bootstrap icon
            //  id="BootstrapIcon"

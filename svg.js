@@ -28,6 +28,8 @@
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 
+    var isAndroid =  whichAgent.includes("Android"); 
+
     var isAndroid4 =  whichAgent.includes("Android 4"); 
 
     var isAndroid6 = whichAgent.includes("Android 6"); 
