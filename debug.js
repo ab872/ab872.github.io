@@ -1,3 +1,7 @@
+<!--  debug_js  -->
+
+
+
 // start      debug.js
 
 
@@ -94,57 +98,8 @@ function showDebug() {
    var displayStr = '<center><span style="font-size:14px;"><b>DEBUG</b></span></center><br>';
 
 
-
-   //  obtain the navigator info
-   var whichAgent = navigator.userAgent;
- 
-   // these variables are instantiated to improve readability in if clauses
-   //
-   //        
-   //        if (isChrome) { 
-   //              
-   //        }
-   //
-   //       is more readable than
-   //
-   //        if ( whichAgent.includes("Chrome") ) { 
-   //              
-   //        }
-   //
-   //
-   //
-   //
-    var isFirefox = whichAgent.includes("Firefox"); 
-
-    var isChrome = whichAgent.includes("Chrome"); 
-
-    var isSafari = whichAgent.includes("Safari"); 
-
-    var isiPad = whichAgent.includes("iPad"); 
-
-    var isEdge = whichAgent.includes("Edge"); 
-
-    var isWin10 = whichAgent.includes("Windows NT 10.0"); 
-
-    var isAndroid =  whichAgent.includes("Android"); 
-
-    var isAndroid4 =  whichAgent.includes("Android 4"); 
-
-    var isAndroid6 = whichAgent.includes("Android 6"); 
-
-
-    //  var browsersFound = 0;
-
-
-   //  there are a couple of cases where there are duplicate matches
-   //  these two overrides correct the situation
-    if (isChrome) { 
-           isSafari = false;
-    }
-
-    if (isEdge) { 
-           isChrome = false; 
-    } 
+   //  browser id code moved to
+   //   browserId.js
 
 
    //  continue building the string to display
@@ -237,13 +192,15 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + screen.availWidth + '</span>' + '</center> </td></tr>';
 
+//  added 06dec2021
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
           '<span style="font-size:12px;">Window Orientation (n&#x00B0;)</span></center> </td>' + 
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + window.orientation + '</span>' + '</center> </td></tr>';
 
-    if (isEdge) { 
+//  added 06dec2021
+if (isEdge) { 
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -251,7 +208,7 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
-    } else if (isSafari) { 
+   } else if (isSafari) { 
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -259,7 +216,7 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
-    } else {
+   } else { 
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -267,17 +224,10 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + screen.orientation.angle + '</span>' + '</center> </td></tr>';
 
-    }
+}
 
-    if (isEdge) { 
-
-   displayStr = displayStr + 
-          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-          '<span style="font-size:12px;">Orientation</span></center> </td>' + 
-          '<td style="background-color:ghostwhite;color:black" ><center>' + 
-          '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
-
-    } else if (isSafari) { 
+//  added 06dec2021
+if (isEdge) { 
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -285,7 +235,15 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
 
-    } else {
+   } else if (isSafari) { 
+
+   displayStr = displayStr + 
+          '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+          '<span style="font-size:12px;">Orientation</span></center> </td>' + 
+          '<td style="background-color:ghostwhite;color:black" ><center>' + 
+          '<span style="font-size:12px;">' + '*****' + '</span>' + '</center> </td></tr>';
+
+   } else { 
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -293,7 +251,7 @@ function showDebug() {
           '<td style="background-color:ghostwhite;color:black" ><center>' + 
           '<span style="font-size:12px;">' + screen.orientation.type + '</span>' + '</center> </td></tr>';
 
-    }
+}
 
    displayStr = displayStr + 
           '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -491,7 +449,7 @@ function showDebug() {
 
    } else {
 
-          //   speech synthesis not supported 
+          //   speech synthesis not supported 
 
           displayStr = displayStr + 
                '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -670,7 +628,7 @@ function showDebug() {
 
 
 
-
+    
 
 
 // end     debug.js

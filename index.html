@@ -10,6 +10,44 @@
 
       <style> 
 
+.grid-container {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 03vh 30vh 03vh; 
+}
+
+
+.grid-containerIntro {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 12vh 0.3vh; 
+}
+
+
+.grid-containerReference {
+     border: 3px solid blue;     
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 105vh 03vh; 
+}
+
+
+
+.grid-item {
+}
+
+.grid-itemTopBottom {
+}
+
+.grid-itemMargin {
+}
+
+
       </style> 
 
 
@@ -35,10 +73,57 @@ data files. Rendered using SVG graphics. Early version of the software.</i></spa
 <span style="color:Green;font-size:16px;">&#x2714; </span> <span style="color:Navy;font-size:16px;"><b>Main Page</b></span> <span style="color:Green;font-size:16px;">&#x2714; </span>
 </center><br>
 
+
+<center>
+<div class="grid-containerIntro">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<span id="textIntroduction" style="color:Black;font-size:14px;">A collection of various <span id="textIntroductionEmphasized1" style="color:Navy;font-size:15px;"><b>projects</b></span> and 
+ <span id="textIntroductionEmphasized2" style="color:Navy;font-size:15px;"><b>experiments</b></span>.</span><br>
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container  -->
+</div>
+</center><br>
+
+
+
+
 <center> 
 <a href="svg.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>SVG Graphics</b></span></a><br><br>
 
 <a href="rayTrace.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Ray Tracing Graphics</b></span></a><br><br>
+
+<a href="colorPicker.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Color Picker</b></span></a><br><br>
+
+<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
 
 <a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
 
@@ -111,7 +196,13 @@ used by multiple pages.
 
   -->
 
+<script src="browserId.js">
+</script>
+
 <script src="debug.js">
+</script>
+
+<script src="index.js">
 </script>
 
 <NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
