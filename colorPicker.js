@@ -338,6 +338,16 @@ if (isAndroid) {
            document.getElementById("BootstrapIcon").style.height="16px";
 
 
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform="translate(-4,0)"   //  x, y
+           document.getElementById("svgInfoButton").style.width="26px"; 
+           document.getElementById("svgInfoButton").style.height="26px";
+           //  reposition the icon      x  y
+           document.getElementById("svgInfoButton").translate(0, 22);
+
 
 
            document.getElementById('textIntroduction').style.fontSize="24px";
@@ -1081,6 +1091,20 @@ if (isAndroid) {
            //  id="BootstrapIcon"
            document.getElementById("BootstrapIcon").style.width="16px"; 
            document.getElementById("BootstrapIcon").style.height="16px";
+
+
+
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform="translate(-4,0)"   //  x, y
+           document.getElementById("svgInfoButton").style.width="26px"; 
+           document.getElementById("svgInfoButton").style.height="26px";
+           //  reposition the icon      x  y
+           document.getElementById("svgInfoButton").translate(0, 22);
+
+
 
 
 
@@ -2371,6 +2395,20 @@ if (isAndroid) {
            //  id="BootstrapIcon"
            document.getElementById("BootstrapIcon").style.width="16px"; 
            document.getElementById("BootstrapIcon").style.height="16px";
+
+
+
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform="translate(-4,0)"   //  x, y
+           document.getElementById("svgInfoButton").style.width="26px"; 
+           document.getElementById("svgInfoButton").style.height="26px";
+           //  reposition the icon      x  y
+           document.getElementById("svgInfoButton").translate(0, 22);
+
+
 
 
 
