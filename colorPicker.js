@@ -338,15 +338,6 @@ if (isAndroid) {
            document.getElementById("BootstrapIcon").style.height="16px";
 
 
-           //  adjust the size of the icon in the info button
-           //  id="svgInfoButton" 
-           //  original width="32" 
-           //  original height="32" 
-           //  original transform="translate(-4,0)"   //  x, y
-           document.getElementById("svgInfoButton").style.width="26px"; 
-           document.getElementById("svgInfoButton").style.height="26px";
-           //  reposition the icon      x  y
-           document.getElementById("svgInfoButton").translate(0, 22);
 
 
 
@@ -614,6 +605,17 @@ if (isAndroid) {
            document.getElementById('colorValueInput').style.fontSize="12px";
 
 
+
+// temporarily commented out due to unanticipated side effect
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform "translate(-4,0)"   //  x, y
+//           document.getElementById("svgInfoButton").style.width="24px"; 
+//           document.getElementById("svgInfoButton").style.height="24px";
+           //  reposition the icon      x  y
+//           document.getElementById("svgInfoButton").translate(0px, 28px);
 
 
 
@@ -1094,15 +1096,6 @@ if (isAndroid) {
 
 
 
-           //  adjust the size of the icon in the info button
-           //  id="svgInfoButton" 
-           //  original width="32" 
-           //  original height="32" 
-           //  original transform="translate(-4,0)"   //  x, y
-           document.getElementById("svgInfoButton").style.width="26px"; 
-           document.getElementById("svgInfoButton").style.height="26px";
-           //  reposition the icon      x  y
-           document.getElementById("svgInfoButton").translate(0, 22);
 
 
 
@@ -1373,7 +1366,16 @@ if (isAndroid) {
            document.getElementById('colorValueInput').style.fontSize="12px";
 
 
-
+// temporarily commented out due to unanticipated side effect
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform="translate(-4,0)"   //  x, y
+//           document.getElementById("svgInfoButton").style.width="26px"; 
+//           document.getElementById("svgInfoButton").style.height="26px";
+           //  reposition the icon      x  y
+//           document.getElementById("svgInfoButton").translate(0, 22);
 
 
 
@@ -2398,16 +2400,6 @@ if (isAndroid) {
 
 
 
-           //  adjust the size of the icon in the info button
-           //  id="svgInfoButton" 
-           //  original width="32" 
-           //  original height="32" 
-           //  original transform="translate(-4,0)"   //  x, y
-           document.getElementById("svgInfoButton").style.width="26px"; 
-           document.getElementById("svgInfoButton").style.height="26px";
-           //  reposition the icon      x  y
-           document.getElementById("svgInfoButton").translate(0, 22);
-
 
 
 
@@ -2677,6 +2669,16 @@ if (isAndroid) {
            document.getElementById('colorValueInput').style.fontSize="12px";
 
 
+// temporarily commented out due to unanticipated side effect
+           //  adjust the size of the icon in the info button
+           //  id="svgInfoButton" 
+           //  original width="32" 
+           //  original height="32" 
+           //  original transform="translate(-4,0)"   //  x, y
+//           document.getElementById("svgInfoButton").style.width="26px"; 
+//           document.getElementById("svgInfoButton").style.height="26px";
+           //  reposition the icon      x  y
+//           document.getElementById("svgInfoButton").translate(0, 22);
 
 
 
