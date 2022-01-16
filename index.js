@@ -33,21 +33,24 @@
            document.getElementById("BootstrapIcon").style.height="32px";
 
 
-           //  id="textIntroCaption"
-           //  Original    12px
-           document.getElementById('textIntroCaption').style.fontSize="3px";
-
 
            //  id="textIntroduction" 
            //      Original     14px    
-           document.getElementById('textIntroduction').style.fontSize="38px";
+           document.getElementById('textIntroduction').style.fontSize="12px";
 
 
            //  id="textIntroductionEmphasized1"
-           document.getElementById('textIntroductionEmphasized1').style.fontSize="39px";
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="13px";
 
            //  id="textIntroductionEmphasized2"
-           document.getElementById('textIntroductionEmphasized2').style.fontSize="39px";
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="13px";
+
+
+
+
+           //  id="textIntroCaption"
+           //  Original    12px
+           document.getElementById('textIntroCaption').style.fontSize="3px";
 
 
 
