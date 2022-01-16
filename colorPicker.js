@@ -606,15 +606,15 @@ if (isAndroid) {
 
 
 
-// temporarily commented out due to unanticipated side effect
            //  adjust the size of the icon in the info button
            //  id="svgInfoButton" 
            //  original width="32" 
            //  original height="32" 
            //  original transform "translate(-4,0)"   //  x, y
-//           document.getElementById("svgInfoButton").style.width="24px"; 
-//           document.getElementById("svgInfoButton").style.height="24px";
+           document.getElementById("svgInfoButton").style.width="24px"; 
+           document.getElementById("svgInfoButton").style.height="24px";
            //  reposition the icon      x  y
+// temporarily commented out due to unanticipated side effect
 //           document.getElementById("svgInfoButton").translate(0px, 28px);
 
 
@@ -1366,15 +1366,15 @@ if (isAndroid) {
            document.getElementById('colorValueInput').style.fontSize="12px";
 
 
-// temporarily commented out due to unanticipated side effect
            //  adjust the size of the icon in the info button
            //  id="svgInfoButton" 
            //  original width="32" 
            //  original height="32" 
            //  original transform="translate(-4,0)"   //  x, y
-//           document.getElementById("svgInfoButton").style.width="26px"; 
-//           document.getElementById("svgInfoButton").style.height="26px";
+           document.getElementById("svgInfoButton").style.width="26px"; 
+           document.getElementById("svgInfoButton").style.height="26px";
            //  reposition the icon      x  y
+// temporarily commented out due to unanticipated side effect
 //           document.getElementById("svgInfoButton").translate(0, 22);
 
 
@@ -2405,19 +2405,19 @@ if (isAndroid) {
 
 
 
-           document.getElementById('textIntroduction').style.fontSize="24px";
+           document.getElementById('textIntroduction').style.fontSize="26px";
 
-           document.getElementById('textIntroductionEmphasized1').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="27px";
 
-           document.getElementById('textIntroductionEmphasized2').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="27px";
 
-           document.getElementById('textIntroductionEmphasized3').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized3').style.fontSize="27px";
 
-           document.getElementById('textIntroductionEmphasized4').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized4').style.fontSize="27px";
 
-           document.getElementById('textIntroductionEmphasized5').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized5').style.fontSize="27px";
 
-           document.getElementById('textIntroductionEmphasized6').style.fontSize="25px";
+           document.getElementById('textIntroductionEmphasized6').style.fontSize="27px";
 
 
 
@@ -2433,74 +2433,74 @@ if (isAndroid) {
 
            document.getElementById('refHeader').style.fontSize="31px";
 
-           document.getElementById('ref1').style.fontSize="24px";
-           document.getElementById('refView1').style.fontSize="25px";
-           document.getElementById('refLink1').style.fontSize="25px";
+           document.getElementById('ref1').style.fontSize="26px";
+           document.getElementById('refView1').style.fontSize="27px";
+           document.getElementById('refLink1').style.fontSize="27px";
 
 
-           document.getElementById('ref2').style.fontSize="24px";
-           document.getElementById('refView2').style.fontSize="25px";           
-           document.getElementById('refLink2').style.fontSize="25px";
+           document.getElementById('ref2').style.fontSize="26px";
+           document.getElementById('refView2').style.fontSize="27px";           
+           document.getElementById('refLink2').style.fontSize="27px";
 
 
-           document.getElementById('ref3').style.fontSize="24px";
-           document.getElementById('refView3').style.fontSize="25px";
-           document.getElementById('refLink3').style.fontSize="25px";
+           document.getElementById('ref3').style.fontSize="26px";
+           document.getElementById('refView3').style.fontSize="27px";
+           document.getElementById('refLink3').style.fontSize="27px";
 
 
-           document.getElementById('ref4').style.fontSize="24px";
-           document.getElementById('refView4').style.fontSize="25px";
-           document.getElementById('refLink4').style.fontSize="25px";
+           document.getElementById('ref4').style.fontSize="26px";
+           document.getElementById('refView4').style.fontSize="27px";
+           document.getElementById('refLink4').style.fontSize="27px";
 
 
-           document.getElementById('ref5').style.fontSize="24px";
-           document.getElementById('refView5').style.fontSize="25px";
-           document.getElementById('refLink5').style.fontSize="25px";
+           document.getElementById('ref5').style.fontSize="26px";
+           document.getElementById('refView5').style.fontSize="27px";
+           document.getElementById('refLink5').style.fontSize="27px";
 
 
-           document.getElementById('ref6').style.fontSize="24px";
-           document.getElementById('refView6').style.fontSize="25px";
-           document.getElementById('refLink6').style.fontSize="25px";
+           document.getElementById('ref6').style.fontSize="26px";
+           document.getElementById('refView6').style.fontSize="27px";
+           document.getElementById('refLink6').style.fontSize="27px";
 
 
-           document.getElementById('ref7').style.fontSize="24px";
-           document.getElementById('refView7').style.fontSize="25px";
-           document.getElementById('refLink7').style.fontSize="25px";
+           document.getElementById('ref7').style.fontSize="26px";
+           document.getElementById('refView7').style.fontSize="27px";
+           document.getElementById('refLink7').style.fontSize="27px";
 
 
-           document.getElementById('ref8').style.fontSize="24px";
-           document.getElementById('refView8').style.fontSize="25px";
-           document.getElementById('refLink8').style.fontSize="25px";
+           document.getElementById('ref8').style.fontSize="26px";
+           document.getElementById('refView8').style.fontSize="27px";
+           document.getElementById('refLink8').style.fontSize="27px";
 
 
-           document.getElementById('ref9').style.fontSize="24px";
-           document.getElementById('refView9').style.fontSize="25px";
-           document.getElementById('refLink9').style.fontSize="25px";
+           document.getElementById('ref9').style.fontSize="26px";
+           document.getElementById('refView9').style.fontSize="27px";
+           document.getElementById('refLink9').style.fontSize="27px";
 
 
-           document.getElementById('ref10').style.fontSize="24px";
-           document.getElementById('refView10').style.fontSize="25px";
-           document.getElementById('refLink10').style.fontSize="25px";
+           document.getElementById('ref10').style.fontSize="26px";
+           document.getElementById('refView10').style.fontSize="27px";
+           document.getElementById('refLink10').style.fontSize="27px";
 
 
-           document.getElementById('ref11').style.fontSize="24px";
-           document.getElementById('refView11').style.fontSize="25px";
-           document.getElementById('refLink11').style.fontSize="25px";
+           document.getElementById('ref11').style.fontSize="26px";
+           document.getElementById('refView11').style.fontSize="27px";
+           document.getElementById('refLink11').style.fontSize="27px";
 
 
-           document.getElementById('ref12').style.fontSize="24px";
-           document.getElementById('refView12').style.fontSize="25px";
-           document.getElementById('refLink12').style.fontSize="25px";
+           document.getElementById('ref12').style.fontSize="26px";
+           document.getElementById('refView12').style.fontSize="27px";
+           document.getElementById('refLink12').style.fontSize="27px";
 
 
-           document.getElementById('ref13').style.fontSize="24px";
-           document.getElementById('refView13').style.fontSize="25px";
-           document.getElementById('refLink13').style.fontSize="25px";
+           document.getElementById('ref13').style.fontSize="26px";
+           document.getElementById('refView13').style.fontSize="27px";
+           document.getElementById('refLink13').style.fontSize="27px";
 
 
-           document.getElementById('ref14').style.fontSize="24px";
-           document.getElementById('refView14').style.fontSize="25px";
-           document.getElementById('refLink14').style.fontSize="25px";
+           document.getElementById('ref14').style.fontSize="26px";
+           document.getElementById('refView14').style.fontSize="27px";
+           document.getElementById('refLink14').style.fontSize="27px";
 
 
 
@@ -2669,15 +2669,17 @@ if (isAndroid) {
            document.getElementById('colorValueInput').style.fontSize="12px";
 
 
-// temporarily commented out due to unanticipated side effect
+
+
            //  adjust the size of the icon in the info button
            //  id="svgInfoButton" 
            //  original width="32" 
            //  original height="32" 
            //  original transform="translate(-4,0)"   //  x, y
-//           document.getElementById("svgInfoButton").style.width="26px"; 
-//           document.getElementById("svgInfoButton").style.height="26px";
+           document.getElementById("svgInfoButton").style.width="26px"; 
+           document.getElementById("svgInfoButton").style.height="26px";
            //  reposition the icon      x  y
+// temporarily commented out due to unanticipated side effect
 //           document.getElementById("svgInfoButton").translate(0, 22);
 
 
