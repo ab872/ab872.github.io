@@ -36,14 +36,14 @@
 
            //  id="textIntroduction" 
            //      Original     14px    
-           document.getElementById('textIntroduction').style.fontSize="12px";
+           document.getElementById('textIntroduction').style.fontSize="48px";
 
 
            //  id="textIntroductionEmphasized1"
-           document.getElementById('textIntroductionEmphasized1').style.fontSize="13px";
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
 
            //  id="textIntroductionEmphasized2"
-           document.getElementById('textIntroductionEmphasized2').style.fontSize="13px";
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
 
 
 
