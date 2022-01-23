@@ -438,6 +438,15 @@ if (isAndroid) {
            document.getElementById('refView14').style.fontSize="25px";
            document.getElementById('refLink14').style.fontSize="25px";
 
+           document.getElementById('ref15').style.fontSize="24px";
+           document.getElementById('refView15').style.fontSize="25px";
+           document.getElementById('refLink15').style.fontSize="25px";
+
+           document.getElementById('ref16').style.fontSize="24px";
+           document.getElementById('refView16').style.fontSize="25px";
+           document.getElementById('refLink16').style.fontSize="25px";
+
+
 
 
 
@@ -1199,6 +1208,14 @@ if (isAndroid) {
            document.getElementById('refView14').style.fontSize="25px";
            document.getElementById('refLink14').style.fontSize="25px";
 
+           document.getElementById('ref15').style.fontSize="24px";
+           document.getElementById('refView15').style.fontSize="25px";
+           document.getElementById('refLink15').style.fontSize="25px";
+
+           document.getElementById('ref16').style.fontSize="24px";
+           document.getElementById('refView16').style.fontSize="25px";
+           document.getElementById('refLink16').style.fontSize="25px";
+
 
 
 
@@ -1857,6 +1874,14 @@ if (isAndroid) {
            document.getElementById('refView14').style.fontSize="25px";
            document.getElementById('refLink14').style.fontSize="25px";
 
+           document.getElementById('ref15').style.fontSize="24px";
+           document.getElementById('refView15').style.fontSize="25px";
+           document.getElementById('refLink15').style.fontSize="25px";
+
+           document.getElementById('ref16').style.fontSize="24px";
+           document.getElementById('refView16').style.fontSize="25px";
+           document.getElementById('refLink16').style.fontSize="25px";
+
 
 
 
@@ -2501,6 +2526,14 @@ if (isAndroid) {
            document.getElementById('ref14').style.fontSize="26px";
            document.getElementById('refView14').style.fontSize="27px";
            document.getElementById('refLink14').style.fontSize="27px";
+
+           document.getElementById('ref15').style.fontSize="26px";
+           document.getElementById('refView15').style.fontSize="27px";
+           document.getElementById('refLink15').style.fontSize="27px";
+
+           document.getElementById('ref16').style.fontSize="26px";
+           document.getElementById('refView16').style.fontSize="27px";
+           document.getElementById('refLink16').style.fontSize="27px";
 
 
 
@@ -3154,6 +3187,14 @@ if (isAndroid) {
            document.getElementById('ref14').style.fontSize="24px";
            document.getElementById('refView14').style.fontSize="25px";
            document.getElementById('refLink14').style.fontSize="25px";
+
+           document.getElementById('ref15').style.fontSize="24px";
+           document.getElementById('refView15').style.fontSize="25px";
+           document.getElementById('refLink15').style.fontSize="25px";
+
+           document.getElementById('ref16').style.fontSize="24px";
+           document.getElementById('refView16').style.fontSize="25px";
+           document.getElementById('refLink16').style.fontSize="25px";
 
 
 
