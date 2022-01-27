@@ -125,7 +125,7 @@ input[type='range']::-moz-range-thumb {
      <div class="grid-item"><br>
 <span id="textIntroduction"style="color:Black;font-size:10px;">Basic text and color manipulations using the <span id="textIntroductionEmphasized1" style="color:Navy;font-size:11px;"><b>DOM</b></span>. HTML and CSS have several <span id="textIntroductionEmphasized2" style="color:Navy;font-size:11px;"><b>predefined</b></span> colors. One may refer to a color using its predefined name, or in the case of custom colors with no predefined name, one may specify the <span id="textIntroductionEmphasized3" style="color:Navy;font-size:11px;"><b>Red, Green and Blue</b></span> ( RGB ) components of the color.<br><br>
 This demo can actually be useful. It allows two colors to be compared to see if they look good next to each other. It also aids in determining if there is enough <span id="textIntroductionEmphasized4" style="color:Navy;font-size:11px;"><b>contrast</b></span> between the two colors to help comply with the 
-<span id="textIntroductionEmphasized5" style="color:Navy;font-size:11px;"><b>Web Content Accessibility Guidelines</b></span> ( WCAG ). It also allows one to scale some sample text up or down in size to give a visual indication of how that  <span id="textIntroductionEmphasized6" style="color:Navy;font-size:11px;"><b>font size</b></span> would look on a particular device.<br><br>Note:  Users on desktop browsers may find it necessary to set the browser zoom setting to around 50% in order to operate the demo without having to scroll up and down.</span><br>
+<span id="textIntroductionEmphasized5" style="color:Navy;font-size:11px;"><b>Web Content Accessibility Guidelines</b></span> ( WCAG ). It also allows one to scale some sample text up or down in size to give a visual indication of how that  <span id="textIntroductionEmphasized6" style="color:Navy;font-size:11px;"><b>font size</b></span> would look on a particular device.</span><br>
 
 </div>
 
@@ -148,6 +148,23 @@ This demo can actually be useful. It allows two colors to be compared to see if 
 </center><br><br>
 
 
+<script src="browserZoom.js">
+</script>
+
+<center>
+<span id="browserZoomNote" style="color:Navy;font-size:24px;"><b>Note:</b>
+&nbsp;&nbsp;&nbsp;
+<b>Depending upon the browser in use, it may be necessary to set the Browser Zoom setting<br> at around 50% in order to operate the demo without having to scroll up and down.</b></span>
+&nbsp;&nbsp;
+<BUTTON style="background-color: lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgray;border-radius:8px;width:90px;height:40px;-webkit-appearance:none" TYPE="button" id="zoomInfoButton" name="zoomInfoButton" title="display help on the browser zoom setting" aria-label="display help on the browser zoom setting" ONCLICK="showZoomHelp()" ACCESSKEY=Z><center><span style="font-size:28px;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-info-circle" transform="translate(-4,0)" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">info icon</title>
+    <desc  id="iconDesc">this icon indicates that additional information is available</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="orange" stroke="orange" stroke-width="1.0" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path fill="blue" stroke="blue" stroke-width="1.0" d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> </svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="Navy" class="bi bi-keyboard-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">access key Z</title>
+    <desc  id="iconDesc">this icon indicates keyboard navigation using the Z access key</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 5 8.75v-.5A.25.25 0 0 0 4.75 8h-.5a.25.25 0 0 0-.25.25zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 9 8.75v-.5A.25.25 0 0 0 8.75 8h-.5a.25.25 0 0 0-.25.25zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5A.25.25 0 0 0 9.75 6h-.5a.25.25 0 0 0-.25.25zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 6 6.75v-.5A.25.25 0 0 0 5.75 6h-.5a.25.25 0 0 0-.25.25zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z"/> <g font-size="10" text-anchor="middle"> <text x="8.0" y="12.1" opacity="1.0" fill="orange" stroke="orange" stroke-width="1.0">Z</text> </g> </svg>  </span></center></BUTTON> 
+</center><br><br>
+
+
+<br><br>
 <span id="refHeader" style="color:Navy;font-size:12px;"><b>References</b></span><br><br>
 
 <span id="ref1" style="color:Black;font-size:10px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
