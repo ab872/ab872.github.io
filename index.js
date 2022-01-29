@@ -121,6 +121,41 @@
    } else if (isSafari) { 
 
 
+           if (isiPad) { 
+
+
+                   //  adjust the size of the Bootstrap icon
+                   //  id="BootstrapIcon"
+                   document.getElementById("BootstrapIcon").style.width="32px"; 
+                   document.getElementById("BootstrapIcon").style.height="32px";
+
+                   //  id="textIntroCaption"
+                   //  Original    12px
+                   document.getElementById('textIntroCaption').style.fontSize="8px";
+
+
+                   //  id="textIntroduction" 
+                   //      Original     14px    
+                   document.getElementById('textIntroduction').style.fontSize="24px";
+
+
+                   //  id="textIntroductionEmphasized1"
+                   document.getElementById('textIntroductionEmphasized1').style.fontSize="25px";
+
+                   //  id="textIntroductionEmphasized2"
+                   document.getElementById('textIntroductionEmphasized2').style.fontSize="25px";
+
+
+              //   end     is iPad
+           } else if (isiPhone) { 
+
+              //   end     is iPhone
+           } else if (isMac) { 
+
+              //   end     is Mac
+           }
+
+
            //   end        Safari
    } else if (isEdge) { 
 

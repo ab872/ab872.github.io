@@ -33,6 +33,10 @@
 
     var isiPad = whichAgent.includes("iPad"); 
 
+    var isiPhone = whichAgent.includes("iPhone"); 
+
+    var isMac = whichAgent.includes("Macintosh"); 
+
     var isEdge = whichAgent.includes("Edge"); 
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
