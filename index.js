@@ -126,8 +126,8 @@
 
                    //  adjust the size of the Bootstrap icon
                    //  id="BootstrapIcon"
-                   document.getElementById("BootstrapIcon").style.width="32px"; 
-                   document.getElementById("BootstrapIcon").style.height="32px";
+                   document.getElementById("BootstrapIcon").style.width="16px"; 
+                   document.getElementById("BootstrapIcon").style.height="16px";
 
                    //  id="textIntroCaption"
                    //  Original    12px
