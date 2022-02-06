@@ -1,4 +1,4 @@
-<!-- viewGerberFile  -->
+﻿<!-- viewGerberFile  -->
 
 <!DOCTYPE html>
 <html>
@@ -153,13 +153,24 @@ is used to go to the next page</desc> <rect opacity="1" fill="none" stroke="none
 
 
 <script>
-var tmpcanvas = document.getElementById('the-canvas'); var tmpctx = tmpcanvas.getContext('2d'); 
+var tmpcanvas = document.getElementById('the-canvas'); 
+var tmpctx = tmpcanvas.getContext('2d'); 
+
 tmpctx.font = "48px Arial";
 tmpctx.textAlign = 'center'; 
 tmpctx. textBaseline = 'middle'; 
 tmpctx.fillStyle = 'Navy'; 
 tmpctx.fillText('Loading ...', 160, 70);
+
+tmpctx.font = "14px Arial";
+tmpctx.fillStyle = 'Maroon'; 
+
+tmpctx.fillText('If the file does not load,', 155, 115);
+
+tmpctx.fillText('your browser is not supported at this time.', 150, 130);
+
 </script>
+
 
 
 
