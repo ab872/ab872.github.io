@@ -41,7 +41,7 @@
                       // introduction.
                       // id="verticalSpacer1"
                       // font-size 19px; 
-                      document.getElementById('verticalSpacer1').innerHTML="<br><br>";
+                      document.getElementById('verticalSpacer1').innerHTML="<br><br><br><br>";
 
                       //  adjust the size of the
                       //  Bootstrap icon
