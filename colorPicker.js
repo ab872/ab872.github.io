@@ -23,7 +23,7 @@
 if (isAndroid) {
            //   begin      Firefox under Android
 
-           alert("Firefox under Android");
+           //  alert("Firefox under Android");
 
 
            //  adjust the size of the
@@ -998,7 +998,7 @@ if (isAndroid) {
         if (isAndroid) {
            //   begin    Chrome under Android
 
-           alert("Chrome under Android");
+           //  alert("Chrome under Android");
 
 
 

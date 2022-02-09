@@ -20,37 +20,82 @@
    if (isFirefox) { 
            //   begin      Firefox 
 
+
+
        if (isAndroid) {
            //   begin      Firefox under Android
 
            //  alert("Firefox under Android");
 
 
-           //  adjust the size of the
-           //  Bootstrap icon
-           //  id="BootstrapIcon"           
-           document.getElementById("BootstrapIcon").style.width="32px"; 
-           document.getElementById("BootstrapIcon").style.height="32px";
+                   if (isAndroid5) { 
+
+                      // begin     Firefox under Android5
+
+                      // id="textIntroduction" 
+                      // Original 14px document.getElementById('textIntroduction').style.fontSize="18px"; 
+                      // id="textIntroductionEmphasized1" document.getElementById('textIntroductionEmphasized1').style.fontSize="19px"; 
+                      // id="textIntroductionEmphasized2" document.getElementById('textIntroductionEmphasized2').style.fontSize="19px";
+
+                      // the references section overlaps the 
+                      // introduction.
+                      // id="verticalSpacer1"
+                      // font-size 19px; 
+                      document.getElementById('verticalSpacer1').innerHTML="<br><br>";
+
+                      //  adjust the size of the
+                      //  Bootstrap icon
+                      //  id="BootstrapIcon"           
+                      document.getElementById("BootstrapIcon").style.width="32px"; 
+                      document.getElementById("BootstrapIcon").style.height="32px";
+
+                      //  id="textIntroduction" 
+                      //      Original     14px    
+                      document.getElementById('textIntroduction').style.fontSize="48px";
+
+                      //  id="textIntroductionEmphasized1"
+                      document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
+
+                      //  id="textIntroductionEmphasized2"
+                      document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
+
+                      //  id="textIntroCaption"
+                      //  Original    12px
+                      document.getElementById('textIntroCaption').style.fontSize="3px";
+
+
+                   // end Firefox under Android5 
+                   } else {
+                        //  others
+
+
+                        //  adjust the size of the
+                        //  Bootstrap icon
+                        //  id="BootstrapIcon"           
+                        document.getElementById("BootstrapIcon").style.width="32px"; 
+                        document.getElementById("BootstrapIcon").style.height="32px";
+
+                        //  id="textIntroduction" 
+                        //      Original     14px    
+                        document.getElementById('textIntroduction').style.fontSize="48px";
+
+                        //  id="textIntroductionEmphasized1"
+                        document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
+
+                        //  id="textIntroductionEmphasized2"
+                        document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
+
+                        //  id="textIntroCaption"
+                        //  Original    12px
+                        document.getElementById('textIntroCaption').style.fontSize="3px";
+
+
+                        //  end     others
+                   }
 
 
 
-           //  id="textIntroduction" 
-           //      Original     14px    
-           document.getElementById('textIntroduction').style.fontSize="48px";
 
-
-           //  id="textIntroductionEmphasized1"
-           document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
-
-           //  id="textIntroductionEmphasized2"
-           document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
-
-
-
-
-           //  id="textIntroCaption"
-           //  Original    12px
-           document.getElementById('textIntroCaption').style.fontSize="3px";
 
 
 

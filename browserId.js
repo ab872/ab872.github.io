@@ -46,7 +46,13 @@
 
     var isAndroid4 =  whichAgent.includes("Android 4"); 
 
+    var isAndroid5 =  whichAgent.includes("Android 5"); 
+
     var isAndroid6 = whichAgent.includes("Android 6"); 
+
+    var isAndroid8 = whichAgent.includes("Android 8"); 
+
+
 
 
     //  var browsersFound = 0;
