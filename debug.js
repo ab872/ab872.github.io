@@ -107,6 +107,18 @@ function showDebug() {
          '<center><span style="font-size:12px;"><b>***  Your browser.  ***<br>' + 
          navigator.userAgent + '</b></span></center><br><br>';
 
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your IP address.  ***<br>' + location.hostname + '</b></span></center><br>';
+
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
+ location.port + '</b></span></center><br>';
+
+
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + Intl.DateTimeFormat().resolvedOptions().timeZone + '</b></span></center><br><br>';
+
+
    displayStr = displayStr + '<center><table border="5" rules="all">';
 
    displayStr = displayStr + 

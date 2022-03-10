@@ -107,6 +107,16 @@
            //   begin      Firefox under Win10
 
 
+           //  id="textIntroduction" 
+           //      Original     14px    
+           document.getElementById('textIntroduction').style.fontSize="24px";
+
+           //  id="textIntroductionEmphasized1"
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="25px";
+
+           //  id="textIntroductionEmphasized2"
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="25px";
+
 
 
            //   end        Firefox under Win10
@@ -157,6 +167,17 @@
            document.getElementById("BootstrapIcon").style.height="16px";
 
 
+           //  id="textIntroduction" 
+           //      Original     14px    
+           document.getElementById('textIntroduction').style.fontSize="24px";
+
+           //  id="textIntroductionEmphasized1"
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="25px";
+
+           //  id="textIntroductionEmphasized2"
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="25px";
+
+
              //   end     Chrome others
           }
 
@@ -204,6 +225,16 @@
            //   end        Safari
    } else if (isEdge) { 
 
+
+           //  id="textIntroduction" 
+           //      Original     14px    
+           document.getElementById('textIntroduction').style.fontSize="28px";
+
+           //  id="textIntroductionEmphasized1"
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="29px";
+
+           //  id="textIntroductionEmphasized2"
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="29px";
 
 
            //   end        Edge
