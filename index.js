@@ -46,22 +46,22 @@
                       //  adjust the size of the
                       //  Bootstrap icon
                       //  id="BootstrapIcon"           
-                      document.getElementById("BootstrapIcon").style.width="32px"; 
-                      document.getElementById("BootstrapIcon").style.height="32px";
+             //         document.getElementById("BootstrapIcon").style.width="32px"; 
+             //         document.getElementById("BootstrapIcon").style.height="32px";
 
                       //  id="textIntroduction" 
                       //      Original     14px    
-                      document.getElementById('textIntroduction').style.fontSize="48px";
+              //       document.getElementById('textIntroduction').style.fontSize="48px";
 
                       //  id="textIntroductionEmphasized1"
-                      document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
+               //       document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
 
                       //  id="textIntroductionEmphasized2"
-                      document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
+              //        document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
 
                       //  id="textIntroCaption"
                       //  Original    12px
-                      document.getElementById('textIntroCaption').style.fontSize="3px";
+               //       document.getElementById('textIntroCaption').style.fontSize="3px";
 
 
                    // end Firefox under Android5 
@@ -72,22 +72,48 @@
                         //  adjust the size of the
                         //  Bootstrap icon
                         //  id="BootstrapIcon"           
-                        document.getElementById("BootstrapIcon").style.width="32px"; 
-                        document.getElementById("BootstrapIcon").style.height="32px";
+                  //      document.getElementById("BootstrapIcon").style.width="32px"; 
+                  //      document.getElementById("BootstrapIcon").style.height="32px";
 
                         //  id="textIntroduction" 
                         //      Original     14px    
-                        document.getElementById('textIntroduction').style.fontSize="48px";
+                  //      document.getElementById('textIntroduction').style.fontSize="48px";
 
                         //  id="textIntroductionEmphasized1"
-                        document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
+                  //      document.getElementById('textIntroductionEmphasized1').style.fontSize="49px";
 
                         //  id="textIntroductionEmphasized2"
-                        document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
+                   //     document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
 
                         //  id="textIntroCaption"
                         //  Original    12px
-                        document.getElementById('textIntroCaption').style.fontSize="3px";
+                   //     document.getElementById('textIntroCaption').style.fontSize="3px";
+
+
+
+
+			//  adjust the size of the
+			//  Bootstrap icon
+			//  id="BootstrapIcon"           document.getElementById("BootstrapIcon").style.width="64px"; 
+           //		document.getElementById("BootstrapIcon").style.height="64px";
+
+
+
+			document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
+			board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+
+
+			//  id="textIntroCaption"
+			//  Original    12px
+		//	document.getElementById('textIntroCaption').style.fontSize="78px";
+
+
+			//  id="pdfIcon" 
+			//  width="16" height="16" 
+		//	document.getElementById("pdfIcon").style.width="128px"; 
+           	//	document.getElementById("pdfIcon").style.height="128px";
+
 
 
                         //  end     others
@@ -134,14 +160,39 @@
 
            //  alert("Chrome under Android");
 
+
+	  //  id="textIntroCaption"
+	  //  Original    12px
+	  document.getElementById('textIntroCaption').style.fontSize="8px";
+
+
+	  document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
+ 	  board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+
+
+	  // Necessary for Chrome Android
+	  //   id="verticalSpacer0" 
+	  //   19px
+
+	  document.getElementById('verticalSpacer0').innerHTML="<br><br>";
+
+
+
            //  adjust the size of the Bootstrap icon
            //  id="BootstrapIcon"
-           document.getElementById("BootstrapIcon").style.width="32px"; 
-           document.getElementById("BootstrapIcon").style.height="32px";
+      //     document.getElementById("BootstrapIcon").style.width="32px"; 
+      //     document.getElementById("BootstrapIcon").style.height="32px";
 
-           //  id="textIntroCaption"
-           //  Original    12px
-           document.getElementById('textIntroCaption').style.fontSize="8px";
+
+
+	    //  id="pdfIcon" 
+	    //  width="16" height="16" 
+	//    document.getElementById("pdfIcon").style.width="256px"; 
+        //    document.getElementById("pdfIcon").style.height="256px";
+
+
+
 
 
            //  id="textIntroduction" 

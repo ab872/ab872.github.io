@@ -107,8 +107,11 @@ function showDebug() {
          '<center><span style="font-size:12px;"><b>***  Your browser.  ***<br>' + 
          navigator.userAgent + '</b></span></center><br><br>';
 
+
+
+    //  depending on the situation, the host might return either a host name or an actual IP address
    displayStr = displayStr + 
-         '<center><span style="font-size:12px;"><b>***  Your IP address.  ***<br>' + location.hostname + '</b></span></center><br>';
+         '<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + location.hostname + '</b></span></center><br>';
 
    displayStr = displayStr + 
          '<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
