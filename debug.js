@@ -124,6 +124,12 @@ function showDebug() {
          	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
          	"********" + '</b></span></center><br>';
 
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
+		"********" + '</b></span></center><br><br>';
+
+
         //   end     is iPad
    } else if (isiPhone) { 
 	//   begin   is iPhone
@@ -136,6 +142,10 @@ function showDebug() {
    		displayStr = displayStr + 
          	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
          	"********" + '</b></span></center><br>';
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
+		"********" + '</b></span></center><br><br>';
 
 
 	//   end     is iPhone
@@ -151,13 +161,14 @@ function showDebug() {
          	location.port + '</b></span></center><br>';
 
 
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
+		Intl.DateTimeFormat().resolvedOptions().timeZone + '</b></span></center><br><br>';
+
+
         //   end     others
    }
 
-
-
-   displayStr = displayStr + 
-         '<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + Intl.DateTimeFormat().resolvedOptions().timeZone + '</b></span></center><br><br>';
 
 
    displayStr = displayStr + '<center><table border="5" rules="all">';
