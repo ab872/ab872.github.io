@@ -109,13 +109,51 @@ function showDebug() {
 
 
 
+   
+    //  iOS devices seem to be having a problem with this
     //  depending on the situation, the host might return either a host name or an actual IP address
-   displayStr = displayStr + 
-         '<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + location.hostname + '</b></span></center><br>';
 
-   displayStr = displayStr + 
-         '<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
- location.port + '</b></span></center><br>';
+   if (isiPad) { 
+	//   begin   is iPad
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
+         	"********" + '</b></span></center><br>';
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
+         	"********" + '</b></span></center><br>';
+
+        //   end     is iPad
+   } else if (isiPhone) { 
+	//   begin   is iPhone
+
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
+         	"********" + '</b></span></center><br>';
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
+         	"********" + '</b></span></center><br>';
+
+
+	//   end     is iPhone
+   } else { 
+	//   begin others
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
+         	location.hostname + '</b></span></center><br>';
+
+   		displayStr = displayStr + 
+         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
+         	location.port + '</b></span></center><br>';
+
+
+        //   end     others
+   }
+
 
 
    displayStr = displayStr + 
