@@ -34,14 +34,25 @@
 
                       // id="textIntroduction" 
                       // Original 14px document.getElementById('textIntroduction').style.fontSize="18px"; 
-                      // id="textIntroductionEmphasized1" document.getElementById('textIntroductionEmphasized1').style.fontSize="19px"; 
-                      // id="textIntroductionEmphasized2" document.getElementById('textIntroductionEmphasized2').style.fontSize="19px";
+                      // id="textIntroductionEmphasized1" 
+		      //  document.getElementById('textIntroductionEmphasized1').style.fontSize="19px"; 
+                      // id="textIntroductionEmphasized2" 
+		      //  document.getElementById('textIntroductionEmphasized2').style.fontSize="19px";
+
 
                       // the references section overlaps the 
                       // introduction.
                       // id="verticalSpacer1"
                       // font-size 19px; 
                       document.getElementById('verticalSpacer1').innerHTML="<br><br><br><br>";
+
+
+
+
+		// begin code that was commented out      Firefox under Android5
+		//  in preparation for its removal
+
+
 
                       //  adjust the size of the
                       //  Bootstrap icon
@@ -64,9 +75,27 @@
                //       document.getElementById('textIntroCaption').style.fontSize="3px";
 
 
+
+		// end code that was commented out        Firefox under Android5
+		//  in preparation for its removal
+
+
+
                    // end Firefox under Android5 
                    } else {
                         //  others
+
+
+			document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
+			board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+
+
+
+
+
+		// begin code that was commented out      Firefox others
+		//  in preparation for its removal
 
 
                         //  adjust the size of the
@@ -74,6 +103,18 @@
                         //  id="BootstrapIcon"           
                   //      document.getElementById("BootstrapIcon").style.width="32px"; 
                   //      document.getElementById("BootstrapIcon").style.height="32px";
+
+
+
+			//  adjust the size of the
+			//  Bootstrap icon
+			//  id="BootstrapIcon"           
+	   //		document.getElementById("BootstrapIcon").style.width="64px"; 
+           //		document.getElementById("BootstrapIcon").style.height="64px";
+
+
+
+
 
                         //  id="textIntroduction" 
                         //      Original     14px    
@@ -85,28 +126,20 @@
                         //  id="textIntroductionEmphasized2"
                    //     document.getElementById('textIntroductionEmphasized2').style.fontSize="49px";
 
+
+
                         //  id="textIntroCaption"
                         //  Original    12px
                    //     document.getElementById('textIntroCaption').style.fontSize="3px";
 
-
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           document.getElementById("BootstrapIcon").style.width="64px"; 
-           //		document.getElementById("BootstrapIcon").style.height="64px";
-
-
-
-			document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
-			board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
-
-
-
 			//  id="textIntroCaption"
 			//  Original    12px
 		//	document.getElementById('textIntroCaption').style.fontSize="78px";
+
+
+
+
+
 
 
 			//  id="pdfIcon" 
@@ -114,6 +147,11 @@
 		//	document.getElementById("pdfIcon").style.width="128px"; 
            	//	document.getElementById("pdfIcon").style.height="128px";
 
+
+
+
+		// end code that was commented out        Firefox others
+		//  in preparation for its removal
 
 
                         //  end     others
@@ -170,13 +208,28 @@
  	  board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
 
 
-
 	  // Necessary for Chrome Android
 	  //   id="verticalSpacer0" 
 	  //   19px
-
 	  document.getElementById('verticalSpacer0').innerHTML="<br><br>";
 
+
+           //  id="textIntroduction" 
+           //      Original     14px    
+           document.getElementById('textIntroduction').style.fontSize="28px";
+
+
+           //  id="textIntroductionEmphasized1"
+           document.getElementById('textIntroductionEmphasized1').style.fontSize="29px";
+
+           //  id="textIntroductionEmphasized2"
+           document.getElementById('textIntroductionEmphasized2').style.fontSize="29px";
+
+
+
+
+		// begin code that was commented out      Chrome under Android
+		//  in preparation for its removal
 
 
            //  adjust the size of the Bootstrap icon
@@ -195,16 +248,9 @@
 
 
 
-           //  id="textIntroduction" 
-           //      Original     14px    
-           document.getElementById('textIntroduction').style.fontSize="28px";
 
-
-           //  id="textIntroductionEmphasized1"
-           document.getElementById('textIntroductionEmphasized1').style.fontSize="29px";
-
-           //  id="textIntroductionEmphasized2"
-           document.getElementById('textIntroductionEmphasized2').style.fontSize="29px";
+		// end code that was commented out      Chrome under Android
+		//  in preparation for its removal
 
 
            //   end       Chrome under Android
@@ -286,6 +332,15 @@
 
            //  id="textIntroductionEmphasized2"
            document.getElementById('textIntroductionEmphasized2').style.fontSize="29px";
+
+
+	    //  id= pdfIcon 
+	    //  width=16 height=16 
+	    //  svg id=   pdfIcon width=16 height=16
+//	    document.getElementById("pdfIcon").style.width="256px"; 
+//            document.getElementById("pdfIcon").style.height="256px";
+
+
 
 
            //   end        Edge
