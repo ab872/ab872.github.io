@@ -86,8 +86,11 @@
                         //  others
 
 
+
 			document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
 			board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+
 
 
 
@@ -204,8 +207,12 @@
 	  document.getElementById('textIntroCaption').style.fontSize="8px";
 
 
-	  document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
- 	  board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+	   document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
+ 	   board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+
+
+
 
 
 	  // Necessary for Chrome Android
