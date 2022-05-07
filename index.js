@@ -44,7 +44,7 @@
                       // introduction.
                       // id="verticalSpacer1"
                       // font-size 19px; 
-                      document.getElementById('verticalSpacer1').innerHTML="<br><br><br><br>";
+                      document.getElementById('verticalSpacer1').innerHTML="<br><br><br><br><br>";
 
 
 
@@ -87,8 +87,10 @@
 
 
 
-			document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
-			board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+			document.getElementById('textIntroCaption').innerHTML = 
+                        "<i>Preview rendering of printed circuit board<br>" + 
+			"produced by parsing the data files. Rendered using<br> + 
+                        "SVG graphics. Early version of the software.</i>";
 
 
 
@@ -208,8 +210,10 @@
 
 
 
-	   document.getElementById('textIntroCaption').innerHTML="<i>Preview rendering of printed circuit<br>
- 	   board produced by parsing the data files. Rendered using SVG graphics. Early version of the software.</i>";
+	   document.getElementById('textIntroCaption').innerHTML = 
+           "<i>Preview rendering of printed circuit board<br>" + 
+ 	   "produced by parsing the data files. Rendered using<br>" + 
+           "SVG graphics. Early version of the software.</i>";
 
 
 
