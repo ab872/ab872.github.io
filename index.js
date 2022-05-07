@@ -44,7 +44,8 @@
                       // introduction.
                       // id="verticalSpacer1"
                       // font-size 19px; 
-                      document.getElementById('verticalSpacer1').innerHTML="<br><br><br><br><br>";
+                      document.getElementById('verticalSpacer1').innerHTML =
+                           "<br><br><br><br><br><br><br><br><br>";
 
 
 
