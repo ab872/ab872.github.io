@@ -1,0 +1,490 @@
+<!--  earlySVGvideo  -->
+
+
+<html>
+
+
+ <head> 
+
+<title>ab872 - early SVG</title> 
+
+
+<style> 
+
+
+.grid-container {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 45vh 0.3vh; 
+}
+
+
+.grid-containerReference {
+     border: 3px solid blue;     
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 105vh 03vh; 
+}
+
+
+.grid-item {
+<!--     border: 3px solid red;     -->
+}
+
+.grid-itemTopBottom {
+<!--          border: 3px solid purple;      -->
+}
+
+.grid-itemMargin {
+<!--         border: 3px solid green;     -->
+}
+
+
+.grid-itemSample {
+<!--     border: 3px solid orange;    -->
+}
+
+
+input[type='range'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid #808080;
+}
+
+
+
+
+
+<!-- 
+   //   div {
+    //     border: 1px solid;
+    //    }
+
+ -->
+
+
+
+
+</style> 
+
+
+<script TYPE="text/javascript"> 
+
+ </script> 
+
+
+
+
+</head>
+
+
+<body>
+
+<br>
+<center> 
+<span id="textTitle" style="color:Navy;font-size:24px;"><b>Early SVG Animation</b></span>
+</center> 
+<br>
+
+<center>
+<div class="grid-container">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<span id="textIntroduction" style="color:Black;font-size:10px;">The SVG graphic format first began to be developed in 1999. [9]&nbsp;&nbsp;It has been adopted as a standard by the <span id="textIntroductionEmphasized1" style="color:Navy;font-size:11px;"><b>World Wide Web Consortium</b></span> ( <span id="textIntroductionEmphasized2" style="color:Navy;font-size:11px;"><b>W3C</b></span> ).  SVG images can be resized without losing any of the image quality.  The technology is mature and allows the Web developer to create <span id="textIntroductionEmphasized3" style="color:Navy;font-size:11px;"><b>custom 2D images</b></span> for their website. It's possible to animate an SVG. One way to do so is by using <span id="textIntroductionEmphasized4" style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to manipulate the <span id="textIntroductionEmphasized5" style="color:Navy;font-size:11px;"><b>DOM</b></span>. These are early attempts at  <span id="textIntroductionEmphasized6" style="color:Navy;font-size:11px;"><b>animation using SVG</b></span>. They run inside a <span id="textIntroductionEmphasized7" style="color:Navy;font-size:11px;"><b>web browser</b></span>, and were written in <span id="textIntroductionEmphasized8" style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>.
+</span><br><br>
+
+<span id="introCopyright1" style="color:Black;font-size:10px;"><b>Demo Copyright &#169; 2013, 2021. All rights reserved.</b></span><br>
+<span id="introCopyright2" style="color:Black;font-size:10px;"><b>Video Copyright &#169; 2021. All rights reserved.</b></span><br><br>
+
+<span id="introNotifyUser" style="color:Maroon;font-size:10px;"><b>If the video below appears as a black rectangle, please tap it once. The controls will appear, and you can then press the play button.</b></span><br><br>
+
+
+</div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container  -->
+</div>
+</center>
+<span id="verticalSpacer0"><br></span>
+
+<center> 
+<video id="video" name="video" title="the video displays here" aria-label="the video displays here" width="600" height="400" poster controls nodownload autoplay> <source src="video/earlySVG/
+earlySVG872_14may2022_360.mp4" type="video/mp4"> <track default src="earlySVGvideo.vtt"> Your browser does not support the video HTML element.</video><br><br>
+<BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width:79px;height:72px;-webkit-appearance:none" TYPE="button" id="decreaseVolumeButton" name="decreaseVolumeButton" title="decrease volume" aria-label="decrease volume" ONCLICK="decreaseVolume()" ACCESSKEY=D><span style="font-size:28px;">     <svg id="svgDecreaseVolume" xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="navy" stroke="white" class="bi bi-volume-down-fill" viewBox="0 0 16 16"> <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4z"/> <path fill="none" stroke="green" stroke-width="0.9" d="M10.707 11.182A4.486 4.486 0 0 0 12.025 8a4.486 4.486 0 0 0-1.318-3.182"/> </svg>     </span></BUTTON> <input id="volumeSlider" type="range" min="0" max="1.00" step="0.1" style="width:340px;height:60px;-webkit-appearance:slider-horizontal" orient="horizontal"></input> <BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width:79px;height:72px;-webkit-appearance:none" TYPE="button" id="increaseVolumeButton" name="increaseVolumeButton" title="increase volume" aria-label="increase volume" ONCLICK="increaseVolume()" ACCESSKEY=U><span style="font-size:28px;">     <svg id="svgIncreaseVolume" xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="navy" stroke="white" class="bi bi-volume-up-fill" viewBox="0 0 16 16"> 
+<path fill="none" stroke="green" stroke-width="0.5" d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/> <path fill="none" stroke="green" stroke-width="0.5" d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/> <path fill="none" stroke="green" stroke-width="0.5" d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/> <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/> </svg>     </span></BUTTON> <BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width:79px;height:72px;-webkit-appearance:none" TYPE="button" id="muteButton" name="muteButton" title="mute audio" aria-label="mute audio" ONCLICK="muteVolume()" ACCESSKEY=M><span style="font-size:28px;">     <svg id="svgMute" xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="navy" stroke="white" class="bi bi-volume-mute-fill" viewBox="0 0 16 16"> <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/> <polyline fill="none" stroke="red" stroke-width="1.3" points="15,11 9,5"/><polyline fill="none" stroke="red" stroke-width="1.3" points="15,5 9,11"/> </svg>     </span></BUTTON> 
+</center> 
+
+<span id="verticalSpacer1"><br><br></span>
+<span id="textReferenceHeading" style="color:Navy;font-size:12px;"><b>References</b></span>
+<span id="verticalSpacer2"><br><br></span>
+
+<span id="reference1" style="color:Black;font-size:10px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference1" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/html52/" target="_blank"><span id="referenceLink1" style="font-size:11px;"><b><i>HTML 5.2.</i></b></span></a><br><br>
+
+<span id="reference2" style="color:Black;font-size:10px;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference2" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span id="referenceLink2" style="font-size:11px;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
+
+<span id="reference3" style="color:Black;font-size:10px;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon3" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference3" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span id="referenceLink3" style="font-size:11px;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
+
+<span id="reference4" style="color:Black;font-size:10px;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon4" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference4" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS/" target="_blank"><span id="referenceLink4" style="font-size:11px;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
+
+<span id="reference5" style="color:Black;font-size:10px;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
+
+<span id="annotation5" style="color:Navy;font-size:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11th edition, June 2020<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="annotation5emphasized1" style="color:Navy;font-size:12px;"><b>This is the specification for JavaScript.</b></span><br>
+<svg id="windowPlusIcon5" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference5" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><span id="referenceLink5" style="font-size:11px;"><b><i>ECMA-262,</i></b></span></a><br><br>
+
+
+
+<span id="reference6" style="color:Black;font-size:10px;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon6" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference6" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://402.ecma-international.org/1.0/" target="_blank"><span id="referenceLink6" style="font-size:11px;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
+
+<span id="reference7" style="color:Black;font-size:10px;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon7" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference7" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG2/" target="_blank"><span id="referenceLink7" style="font-size:11px;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
+
+<span id="reference8" style="color:Black;font-size:10px;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon8" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference8" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG11/" target="_blank"><span id="referenceLink8" style="font-size:11px;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
+
+<span id="reference9" style="color:Black;font-size:10px;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "SVG: Scalable Vector Graphics | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
+<svg id="windowPlusIcon9" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference9" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><span id="referenceLink9" style="font-size:11px;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
+
+
+
+
+
+<span id="reference10" style="color:Black;font-size:10px;">[10]&nbsp;&nbsp;&nbsp;&nbsp;"HTML video Tag."  <i>W3Schools</i>, 2022. [Online]. Available: https://www.w3schools.com/tags/tag_video.asp. [Accessed: 01-May-2022].</span><br>
+<svg id="windowPlusIcon10" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference10" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank"><span id="referenceLink10" style="font-size:11px;"><b><i>HTML video Tag.</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+
+<span id="reference11" style="color:Black;font-size:10px;">[11]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "&lt;video>: The Video Embed element - HTML: HyperText Markup Language | MDN."  <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video. [Accessed: 01-May-2022].</span><br>
+<svg id="windowPlusIcon11" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference11" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank"><span id="referenceLink11" style="font-size:11px;"><b><i>&lt;video>: The Video Embed element - HTML: HyperText Markup Language | MDN.</i></b></span></a><br><br>
+
+
+<span id="reference12" style="color:Black;font-size:10px;">[12]&nbsp;&nbsp;&nbsp;&nbsp;C. Kolade, "HTML Video &#8211; How to Embed a Video Player with the HTML 5 Video Tag," <i>freeCodeCamp.org</i>, 08-Feb-2022.  [Online]. Available: https://www.freecodecamp.org/news/html-video-how-to-embed-a-video-player-with-the-html-5-video-tag/. [Accessed: 01-May-2022].</span><br>
+<svg id="windowPlusIcon12" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference12" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.freecodecamp.org/news/html-video-how-to-embed-a-video-player-with-the-html-5-video-tag/" target="_blank"><span id="referenceLink12" style="font-size:11px;"><b><i>HTML Video &#8211; How to Embed a Video Player with the HTML 5 Video Tag,</i></b></span></a><br><br>
+
+
+
+<span id="reference13" style="color:Black;font-size:10px;">[13]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "Adding captions and subtitles to HTML5 video - Developer guides | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video. [Accessed: 01-May-2022].</span><br>
+<svg id="windowPlusIcon13" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference13" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video" target="_blank"><span id="referenceLink13" style="font-size:11px;"><b><i>Adding captions and subtitles to HTML5 video - Developer guides | MDN.</i></b></span></a><br><br>
+
+
+<span id="reference14" style="color:Black;font-size:10px;">[14]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "Web Video Text Tracks Format (WebVTT) - Web APIs | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API. [Accessed: 01-May-2022].</span><br>
+<svg id="windowPlusIcon14" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span id="viewReference14" style="color:Black;font-size:11px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API" target="_blank"><span id="referenceLink14" style="font-size:11px;"><b><i>Web Video Text Tracks Format (WebVTT) - Web APIs | MDN.</i></b></span></a><br><br>
+
+
+
+ <span id="verticalSpacer3"><br><br><br><br></span>
+  
+
+
+
+
+<script TYPE="text/javascript"> 
+
+
+
+var video = document.getElementById('video'); 
+
+var sliderVolume = document.getElementById('volumeSlider'); 
+
+var volume = document.getElementById('volumeSlider').value; 
+
+video.volume = volume; 
+
+
+
+
+
+
+
+
+
+
+sliderVolume.oninput = function () {
+
+volume = document.getElementById('volumeSlider').value; 
+
+video.volume = volume; 
+
+//  end     function oninput
+}
+
+
+
+function increaseVolume() { 
+
+volume += 0.1; 
+
+if ( volume > 1.00 ) {
+    volume = 1.00;
+}
+
+document.getElementById('volumeSlider').value = volume; 
+
+video.volume = volume; 
+
+//  end     function increase volume
+} 
+
+
+
+function decreaseVolume() { 
+
+volume -= 0.1; 
+
+if ( volume < 0 ) {
+     volume = 0;
+}
+
+document.getElementById('volumeSlider').value = volume; 
+
+video.volume = volume; 
+
+//  end       function decrease volume
+} 
+
+
+function muteVolume() { 
+
+volume = 0; 
+
+document.getElementById('volumeSlider').value = volume; 
+
+video.volume = 0; 
+
+//  end     function mute volume
+} 
+
+
+
+
+
+ </script> 
+
+
+
+<br><br><br>
+
+
+<center> 
+
+<span id="textCopyright" style="color:Navy;font-size:13px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b></span>
+<br><br>
+
+<span id="textBootstrap" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span> <svg id="BootstrapIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">Bootstrap icon</title>
+    <desc  id="iconDesc">this icon represents Bootstrap</desc> <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/> <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/> </svg><br>
+
+<span id="textBootstrapLicense" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+
+<span id="textIconsModified" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br>
+
+<!-- 
+  -->
+
+</center> 
+
+
+<!-- 
+
+A copy of the Bootstrap license is included here -
+
+
+The MIT License (MIT) 
+Copyright (c) 2019-2021 The Bootstrap Authors 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
+files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
+modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the 
+Software is furnished to do so, subject to the following conditions: 
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+  -->
+
+
+
+<script TYPE="text/javascript"> 
+
+ </script> 
+
+
+<script src="browserId.js">
+</script>
+
+<script src="debug.js">
+</script>
+
+<script src="earlySVGvideo.js">
+</script>
+
+<NOSCRIPT><center><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></center></NOSCRIPT><br>
+
+
+<center> 
+
+<BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width=120px;height:40px;-webkit-appearance:none" TYPE="button" id="debugButton" name="debugButton" title="show DEBUG info" aria-label="show DEBUG info" ONCLICK="showDebug()" ACCESSKEY=S><span style="font-size:28px;">   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="navy" stroke="white" class="bi bi-gear-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="debugIconTitle" aria-describedby="debugIconDesc">
+    <title> id="debugIconTitle">show debug info</title>
+    <desc  id="debugIconDesc">this icon indicates that you can open a debugging panel</desc> <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/> </svg> </svg> <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="Navy" class="bi bi-keyboard-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="accessKeySiconTitle" aria-describedby="accessKeySiconDesc">
+    <title> id="accessKeySiconTitle">access key S</title>
+    <desc  id="accessKeySiconDesc">this icon indicates keyboard navigation using the S access key</desc> <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 5 8.75v-.5A.25.25 0 0 0 4.75 8h-.5a.25.25 0 0 0-.25.25zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 9 8.75v-.5A.25.25 0 0 0 8.75 8h-.5a.25.25 0 0 0-.25.25zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5A.25.25 0 0 0 9.75 6h-.5a.25.25 0 0 0-.25.25zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 6 6.75v-.5A.25.25 0 0 0 5.75 6h-.5a.25.25 0 0 0-.25.25zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z"/> <g font-size="10" text-anchor="middle"> <text x="8.0" y="12.1" opacity="1.0" fill="orange" stroke="orange" stroke-width="1.0">S</text> </g> </svg>     </span></BUTTON> 
+<br> 
+<div style="color:black; background-color:ivory;border:2px solid lightgrey;border-radius:8px;margin-top:3px;margin-bottom:3px" id="debugOut" name="debugOut" title="debug output  appears here" aria-label="debug output appears here">
+</div> <br><br>
+
+</center> 
+
+
+
+
+</body>
+
+</html>
+
+
+
+  
+
+    
+            
+      
+  
+
+  
