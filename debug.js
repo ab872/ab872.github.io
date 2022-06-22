@@ -103,71 +103,24 @@ function showDebug() {
 
 
    //  continue building the string to display
+
    displayStr = displayStr + 
          '<center><span style="font-size:12px;"><b>***  Your browser.  ***<br>' + 
          navigator.userAgent + '</b></span></center><br><br>';
 
 
 
-   
-    //  iOS devices seem to be having a problem with this
-    //  depending on the situation, the host might return either a host name or an actual IP address
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + location.hostname + '</b></span></center><br>';
 
-   if (isiPad) { 
-	//   begin   is iPad
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
-         	"********" + '</b></span></center><br>';
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
-         	"********" + '</b></span></center><br>';
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
+ location.port + '</b></span></center><br>';
 
 
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
-		"********" + '</b></span></center><br><br>';
+   displayStr = displayStr + 
+         '<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + Intl.DateTimeFormat().resolvedOptions().timeZone + '</b></span></center><br><br>';
 
-
-        //   end     is iPad
-   } else if (isiPhone) { 
-	//   begin   is iPhone
-
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
-         	"********" + '</b></span></center><br>';
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
-         	"********" + '</b></span></center><br>';
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
-		"********" + '</b></span></center><br><br>';
-
-
-	//   end     is iPhone
-   } else { 
-	//   begin others
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your hostname or IP address.  ***<br>' + 
-         	location.hostname + '</b></span></center><br>';
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your port.  ***<br>' + 
-         	location.port + '</b></span></center><br>';
-
-
-   		displayStr = displayStr + 
-         	'<center><span style="font-size:12px;"><b>***  Your timezone.  ***<br>' + 
-		Intl.DateTimeFormat().resolvedOptions().timeZone + '</b></span></center><br><br>';
-
-
-        //   end     others
-   }
 
 
 
@@ -459,6 +412,44 @@ if (isEdge) {
         '<td style="background-color:ghostwhite;color:black" ><center>' + 
         '<span style="font-size:12px;">' + navigator.doNotTrack + '</span>' + '</center> </td></tr>';
 
+
+
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Geolocation</b></span></center></td></tr>';
+
+
+
+   if ("geolocation" in navigator) {
+
+        //    geolocation supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    geolocation not supported
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+
+
    displayStr = displayStr + 
         '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
         '<span style="font-size:12px;"><b>History</b></span></center></td></tr>';
@@ -468,6 +459,88 @@ if (isEdge) {
         '<span style="font-size:12px;">History Length</span></center> </td>' + 
         '<td style="background-color:ghostwhite;color:black" ><center>' + 
         '<span style="font-size:12px;">' + history.length + '</span>' + '</center> </td></tr>';
+
+
+
+
+
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>MIDI</b></span></center></td></tr>';
+
+
+
+   if ("requestMIDIAccess" in navigator) {
+
+        //    MIDI supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    MIDI not supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Serial</b></span></center></td></tr>';
+
+
+   if ("serial" in navigator) {
+
+        //    Web Serial supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+    } else {
+
+        //    Web Serial not supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
 
    displayStr = displayStr + 
         '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
@@ -526,32 +599,10 @@ if (isEdge) {
 
 
 
-   displayStr = displayStr + 
-        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
-        '<span style="font-size:12px;"><b>Serial</b></span></center></td></tr>';
 
 
-   if ("serial" in navigator) {
 
-        //    Web Serial supported
 
-        displayStr = displayStr + 
-             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
-
-    } else {
-
-        //    Web Serial not supported
-
-        displayStr = displayStr + 
-             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Web Serial</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
-
-   }
 
 
    displayStr = displayStr + 
@@ -584,32 +635,20 @@ if (isEdge) {
 
 
 
-   displayStr = displayStr + 
-        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
-        '<span style="font-size:12px;"><b>Geolocation</b></span></center></td></tr>';
 
 
 
-   if ("geolocation" in navigator) {
 
-        //    geolocation supported
 
-        displayStr = displayStr + 
-             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
 
-   } else {
 
-        //    geolocation not supported
 
-        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
 
-   }
+
+
+
+
+
 
 
 
@@ -690,8 +729,8 @@ if (isEdge) {
 
 
 
-
-
+  
+    
     
 
 
