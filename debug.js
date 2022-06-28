@@ -474,6 +474,21 @@ if (isEdge) {
 
 
 
+if (isSafari) { 
+
+//  there seems to be a problem with this under Safari
+//  temporarily return *** until this can be corrected
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + '***' + '</span>' + '</center> </td></tr>';
+
+//  end     if  Safari
+   } else { 
+
+
    if ("requestMIDIAccess" in navigator) {
 
         //    MIDI supported
@@ -495,6 +510,17 @@ if (isEdge) {
              '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
 
    }
+
+
+//  end     not Safari
+}
+
+
+
+
+
+
+
 
 
 
