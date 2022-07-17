@@ -459,6 +459,10 @@ if (isEdge) {
         '<td style="background-color:ghostwhite;color:black" ><center>' + 
         '<span style="font-size:12px;">' + navigator.doNotTrack + '</span>' + '</center> </td></tr>';
 
+
+
+
+
    displayStr = displayStr + 
         '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
         '<span style="font-size:12px;"><b>History</b></span></center></td></tr>';
@@ -468,6 +472,66 @@ if (isEdge) {
         '<span style="font-size:12px;">History Length</span></center> </td>' + 
         '<td style="background-color:ghostwhite;color:black" ><center>' + 
         '<span style="font-size:12px;">' + history.length + '</span>' + '</center> </td></tr>';
+
+
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>MIDI</b></span></center></td></tr>';
+
+
+if (isSafari) { 
+
+//  there seems to be a problem with this under Safari
+//  temporarily return *** until this can be corrected
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + '***' + '</span>' + '</center> </td></tr>';
+
+//  end     if  Safari
+   } else { 
+
+
+   if ("requestMIDIAccess" in navigator) {
+
+        //    MIDI supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    MIDI not supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+//  end     not Safari
+}
+
+
+
+
+
+
+
+
+
 
    displayStr = displayStr + 
         '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
