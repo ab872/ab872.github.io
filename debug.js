@@ -483,19 +483,26 @@ if (isEdge) {
         '<span style="font-size:12px;"><b>MIDI</b></span></center></td></tr>';
 
 
-if (isSafari) { 
 
-//  there seems to be a problem with this under Safari
-//  temporarily return *** until this can be corrected
 
-        displayStr = displayStr + 
-             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + '***' + '</span>' + '</center> </td></tr>';
 
-//  end     if  Safari
-   } else { 
+//  17 july 2022   seems to be working now
+//                 comment out the clause for Safari to make sure
+
+//  if (isSafari) { 
+
+//  //  17 july 2022   add back the code for Web MIDI
+//  //  there seems to be a problem with this under Safari
+//  //  temporarily return *** until this can be corrected
+
+//          displayStr = displayStr + 
+//               '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+//               '<span style="font-size:12px;">Web MIDI</span></center> </td>' + 
+//               '<td style="background-color:ghostwhite;color:black" ><center>' + 
+//               '<span style="font-size:12px;">' + '***' + '</span>' + '</center> </td></tr>';
+
+//  //  end     if  Safari
+//     } else { 
 
 
    if ("requestMIDIAccess" in navigator) {
@@ -508,6 +515,7 @@ if (isSafari) {
              '<td style="background-color:ghostwhite;color:black" ><center>' + 
              '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
 
+         //  end     MIDI supported
    } else {
 
         //    MIDI not supported
@@ -518,11 +526,12 @@ if (isSafari) {
              '<td style="background-color:ghostwhite;color:black" ><center>' + 
              '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
 
+         //  end     MIDI not supported
    }
 
 
-//  end     not Safari
-}
+//  //  end     not Safari
+//  }
 
 
 
