@@ -1,14 +1,10 @@
-<!--  debug_js  -->
+//  <!--  debug_js  -->
 
 
 
 // start      debug.js
 
-//  test   adding repository access from a different computer
-//  test   adding a second line
-//  test     adding a 3rd line to verify it works
-
-
+//  alert("debug.js has loaded");
 
 
    function clearDebug() { 
@@ -17,9 +13,7 @@
 
       document.getElementById("debugOut").innerHTML = "";
 
-      <!-- 
-
-       -->
+      //  <!--        -->
 
       //  alert("end     clearDebug");
 
@@ -758,9 +752,9 @@ if (isEdge) {
    // finished building the string, display it on the screen
    document.getElementById("debugOut").innerHTML = displayStr;
 
-   <!-- 
+   //  <!-- 
 
-     -->
+     //  -->
 
    //  alert("end     showDebug");
 

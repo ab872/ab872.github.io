@@ -24,7 +24,7 @@
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
-     grid-template-rows: 0.3vh 12vh 0.3vh; 
+     grid-template-rows: 0.3vh 22vh 0.3vh; 
 }
 
 
@@ -62,7 +62,7 @@
 <body>
 
 <center> 
-<span style="color:Navy;font-size:28px;"><b>ab872</b></span>
+<span id="mainPageSiteTitle" style="color:Navy;font-size:28px;"><b>ab872</b></span>
 </center><br>
 <center> 
 <img alt="printed circuit board" src="image/pcb/sampleBoard1b.jpg" height="130" width="300" border="3" /><br>
@@ -70,7 +70,7 @@
 data files. Rendered using SVG graphics. Early version of the software.</i></span><br><br>
 
 
-<span style="color:Green;font-size:16px;">&#x2714; </span> <span style="color:Navy;font-size:16px;"><b>Main Page</b></span> <span style="color:Green;font-size:16px;">&#x2714; </span>
+<span id="mainPageTitleCheckMark1" style="color:Green;font-size:16px;">&#x2714; </span> <span id="mainPageTitleCaption" style="color:Navy;font-size:16px;"><b>Main Page</b></span> <span id="mainPageTitleCheckMark2" style="color:Green;font-size:16px;">&#x2714; </span>
 </center><br>
 
 
@@ -91,9 +91,11 @@ data files. Rendered using SVG graphics. Early version of the software.</i></spa
      </div>
 
      <div class="grid-item"><br>
-<span id="textIntroduction" style="color:Black;font-size:44px;">A collection of various <span id="textIntroductionEmphasized1" style="color:Navy;font-size:45px;"><b>projects</b></span> and 
- <span id="textIntroductionEmphasized2" style="color:Navy;font-size:45px;"><b>experiments</b></span>.</span><br>
-<span id="verticalSpacer0" style="font-size:19px;"></span>
+<span id="textIntroduction" style="color:Black;font-size:44px;">A collection of various <span 
+id="textIntroductionEmphasized1" style="color:Navy;font-size:45px;"><b>projects</b></span> and <span 
+id="textIntroductionEmphasized2" style="color:Navy;font-size:45px;"><b>experiments</b></span>.</span>
+
+<span id="verticalSpacer0" style="font-size:19px;"><br><br></span>
    </div>
 
      <div class="grid-itemMargin">
@@ -113,16 +115,6 @@ data files. Rendered using SVG graphics. Early version of the software.</i></spa
      <!--  end of grid container  -->
 </div>
 </center><br>
-
-<!--
-Firefox on Android 5:
-the references section overlaps the introduction. 
- --> 
-
-<!-- start of correction--> 
-<span id="verticalSpacer1" style="font-size:19px;"></span> 
-<!-- end of correction--> 
-
 
 
 
@@ -197,12 +189,12 @@ Includes references.</i></span><br><br>
 <br><br>
 
 <center> 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b></span>
+<span id="copyrightMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b></span>
 </center> 
 <br>
 
 <center> 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
+<span id="bestResultsMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
 
 <svg id="BootstrapIcon" 
 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
@@ -213,12 +205,12 @@ role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"
     <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/> 
 </svg><br>
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the 
+<span id="iconsProvidedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the 
 <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br> 
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+<span id="iconsCopyrightMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+<span id="iconsModifiedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
 </center> 
 
 <!-- 

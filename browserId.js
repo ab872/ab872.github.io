@@ -4,7 +4,7 @@
 
 // start      browserId.js
 
-
+//  alert("browserId.js has loaded");
 
    //  obtain the navigator info
    var whichAgent = navigator.userAgent;
@@ -38,6 +38,8 @@
     var isMac = whichAgent.includes("Macintosh"); 
 
     var isEdge = whichAgent.includes("Edge"); 
+
+    var isNewEdge = whichAgent.includes("Edg/"); 
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 
