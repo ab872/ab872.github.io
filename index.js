@@ -83,8 +83,8 @@ if (isFirefox) {
 				//  adjust the size of the
 				//  Bootstrap icon
 				//  id="BootstrapIcon"           
-				//  document.getElementById("BootstrapIcon").style.width="64px"; 
-				//           document.getElementById("BootstrapIcon").style.height="64px";
+				document.getElementById("BootstrapIcon").style.width="64px"; 
+				document.getElementById("BootstrapIcon").style.height="64px";
 
 
 				document.getElementById('textIntroCaption').innerHTML=
@@ -95,12 +95,40 @@ if (isFirefox) {
 
 				//  id="textIntroCaption"
 				//  Original    12px
-				document.getElementById('textIntroCaption').style.fontSize="78px";
+				document.getElementById('textIntroCaption').style.fontSize="18px";
+
+
 
 				//  id="pdfIcon" 
 				//  width="16" height="16" 
-				document.getElementById("pdfIcon").style.width="128px"; 
-           			document.getElementById("pdfIcon").style.height="128px";
+				document.getElementById("pdfIcon").style.width="64px"; 
+           			document.getElementById("pdfIcon").style.height="64px";
+
+
+
+				//    id="mp4Icon"
+				//    width="16" height="16" 
+				document.getElementById("mp4Icon").style.width="64px"; 
+           			document.getElementById("mp4Icon").style.height="64px";
+
+
+
+				//    id="cameraIcon"
+				//    width="36" height="36" 
+				document.getElementById("cameraIcon").style.width="64px"; 
+           			document.getElementById("cameraIcon").style.height="64px";
+
+
+
+
+				//  id="textPhotoGalleryCaption" style="color:Grey;font-
+				//  size   12px
+
+				//    ><i>A collection of photos arranged in a<br>
+				//   grid pattern using CSS GRID.<br>
+				//  Includes references.
+				//  </i>
+
 
 
 				document.getElementById('textSVGanimationCaption').innerHTML=
@@ -154,8 +182,6 @@ if (isFirefox) {
 					//    color Navy     font-size 11px
 
 
-					//    svg id="mp4Icon"
-					//    width="16" height="16" 
 
 					//  document.getElementById
 					//  ("mp4Icon").style.width="128px"; 
@@ -295,66 +321,96 @@ if (isChrome) {
 	if (isAndroid) {
 		//   begin    Chrome under Android
 
-				   //  alert("using the Chrome browser under Android");
-				   //  theBrowserIsUnknown = false;
+			//  alert("using the Chrome browser under Android");
+			//  theBrowserIsUnknown = false;
 				   
-					//  id="textIntroCaption"
-					//  Original    12px
-					document.getElementById('textIntroCaption').style.fontSize="8px";
+			//  id="textIntroCaption"
+			//  Original    12px
+			document.getElementById('textIntroCaption').style.fontSize="8px";
 
 
-					document.getElementById('textIntroCaption').innerHTML=
-						'<i>Preview rendering of printed circuit<br>' + 
-						 'board produced by parsing the data files. Rendered using SVG ' +  
-						 'graphics. Early version of the software.</i>';
+			document.getElementById('textIntroCaption').innerHTML=
+				'<i>Preview rendering of printed circuit<br>' + 
+				'board produced by parsing the data files. Rendered using SVG ' +  
+				'graphics. Early version of the software.</i>';
 
-					// Necessary for Chrome Android
-					//   id="verticalSpacer0" 
-					//   19px
-					document.getElementById('verticalSpacer0').innerHTML="<br><br>";
-
-
-					//  adjust the size of the
-					//  Bootstrap icon
-					//  id="BootstrapIcon"           
-					document.getElementById("BootstrapIcon").style.width="64px"; 
-           			document.getElementById("BootstrapIcon").style.height="64px";
+			// Necessary for Chrome Android
+			//   id="verticalSpacer0" 
+			//   19px
+			document.getElementById('verticalSpacer0').innerHTML="<br><br>";
 
 
-					//  id="pdfIcon" 
-					//  width="16" height="16" 
-					document.getElementById("pdfIcon").style.width="256px"; 
-           			document.getElementById("pdfIcon").style.height="256px";
+			//  adjust the size of the
+			//  Bootstrap icon
+			//  id="BootstrapIcon"           
+			document.getElementById("BootstrapIcon").style.width="64px"; 
+           		document.getElementById("BootstrapIcon").style.height="64px";
 
 
- 					document.getElementById('textIntroduction').style.fontSize = "12px"; 
-
-					 document.getElementById('textIntroductionEmphasized1').style.fontSize = 
-					 "13px"; 
-
-					 document.getElementById('textIntroductionEmphasized2').style.fontSize = 
-					 "13px";
 
 
-					 document.getElementById('textSVGanimationCaption').innerHTML=
-					 '<i>It is possible to animate an SVG. One way<br>' + 
-					 'to do so is by using <span id="textAnimationEmphasized1" ' + 
-					 'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-					 'manipulate the <span id="textAnimationEmphasized2" ' + 
-					 'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-					 'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-					 'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-					 'using SVG</i></b></span>. They run inside a ' + 
-					 '<span id="textAnimationEmphasized4" ' + 
-					 'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-					 'browser</i></b></span>, and were written in ' + 
-					 '<span id="textAnimationEmphasized5" ' + 
-					 'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-					 'short discussion of SVG animation<br>' + 
-					 'with references and examples.<br>' + 
-					 'Includes a walkthrough of the<br>' + 
-					 'code for a simple animation.' + 
-					 '</i>';
+			//  id="pdfIcon" 
+			//  width="16" height="16" 
+			document.getElementById("pdfIcon").style.width="64px"; 
+           		document.getElementById("pdfIcon").style.height="64px";
+
+
+
+			//    id="mp4Icon"
+			//    width="16" height="16" 
+			document.getElementById("mp4Icon").style.width="64px"; 
+           		document.getElementById("mp4Icon").style.height="64px";
+
+
+
+			//    id="cameraIcon"
+			//    width="36" height="36" 
+			document.getElementById("cameraIcon").style.width="64px"; 
+           		document.getElementById("cameraIcon").style.height="64px";
+
+
+
+
+			//  id="textPhotoGalleryCaption" style="color:Grey;font-
+			//  size   12px
+
+			//    ><i>A collection of photos arranged in a<br>
+			//   grid pattern using CSS GRID.<br>
+			//  Includes references.
+			//  </i>
+
+
+
+
+
+ 			document.getElementById('textIntroduction').style.fontSize = "12px"; 
+
+			document.getElementById('textIntroductionEmphasized1').style.fontSize = 
+				"13px"; 
+
+			document.getElementById('textIntroductionEmphasized2').style.fontSize = 
+				"13px";
+
+
+			document.getElementById('textSVGanimationCaption').innerHTML=
+			'<i>It is possible to animate an SVG. One way<br>' + 
+			'to do so is by using <span id="textAnimationEmphasized1" ' + 
+			'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
+			'manipulate the <span id="textAnimationEmphasized2" ' + 
+			'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
+			'These are early attempts at <span id="textAnimationEmphasized3" ' + 
+			'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
+			'using SVG</i></b></span>. They run inside a ' + 
+			'<span id="textAnimationEmphasized4" ' + 
+			'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
+			'browser</i></b></span>, and were written in ' + 
+			'<span id="textAnimationEmphasized5" ' + 
+			'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
+			'short discussion of SVG animation<br>' + 
+			'with references and examples.<br>' + 
+			'Includes a walkthrough of the<br>' + 
+			'code for a simple animation.' + 
+			'</i>';
  
 
            	//   end       Chrome under Android
