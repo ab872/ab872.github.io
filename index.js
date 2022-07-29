@@ -323,16 +323,20 @@ if (isChrome) {
 
 			//  alert("using the Chrome browser under Android");
 			//  theBrowserIsUnknown = false;
-				   
-			//  id="textIntroCaption"
-			//  Original    12px
-			document.getElementById('textIntroCaption').style.fontSize="8px";
 
 
 			document.getElementById('textIntroCaption').innerHTML=
-				'<i>Preview rendering of printed circuit<br>' + 
-				'board produced by parsing the data files. Rendered using SVG ' +  
-				'graphics. Early version of the software.</i>';
+				"<i>Preview rendering of printed circuit<br>" + 
+				"board produced by parsing the data files. Rendered<br>" + 
+				"using SVG graphics. Early version of the software.</i>";
+
+
+			//  id="textIntroCaption"
+			//  Original    12px
+			document.getElementById('textIntroCaption').style.fontSize="18px";
+
+
+
 
 			// Necessary for Chrome Android
 			//   id="verticalSpacer0" 
