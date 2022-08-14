@@ -305,6 +305,14 @@ if (isFirefox) {
 			//	'</i>';
 
 
+				//    id="cameraIcon"
+				//    width="36" height="36" 
+				document.getElementById("cameraIcon").style.width="64px"; 
+           			document.getElementById("cameraIcon").style.height="64px";
+
+
+
+
            //   end        Firefox under Win10
         }
 
@@ -611,6 +619,13 @@ if (isChrome) {
 				//  ("mp4Icon").style.height="128px";
 
 
+				//    id="cameraIcon"
+				//    width="36" height="36" 
+				document.getElementById("cameraIcon").style.width="64px"; 
+           			document.getElementById("cameraIcon").style.height="64px";
+
+
+
     		//   end     Chrome others
 		}
 
@@ -851,6 +866,13 @@ if (isNewEdge) {
 
 				//  document.getElementById
 				//  ("mp4Icon").style.height="128px";
+
+
+				//    id="cameraIcon"
+				//    width="36" height="36" 
+				document.getElementById("cameraIcon").style.width="64px"; 
+           			document.getElementById("cameraIcon").style.height="64px";
+
 
 
 
