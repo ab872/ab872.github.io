@@ -1,4 +1,4 @@
-﻿<!-- viewGerberFile  -->
+<!-- viewCrudP1  -->
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
 
 
 
-      <title>ab872 - Gerber File Viewer</title> 
+      <title>ab872 - CRUD Databases Part 1 - Arrays</title> 
 
 
 
@@ -153,8 +153,9 @@ is used to go to the next page</desc> <rect opacity="1" fill="none" stroke="none
 
 
 <script>
-var tmpcanvas = document.getElementById('the-canvas'); 
-var tmpctx = tmpcanvas.getContext('2d'); 
+const tmpcanvas = document.getElementById('the-canvas'); 
+
+const tmpctx = tmpcanvas.getContext('2d'); 
 
 tmpctx.font = "48px Arial";
 tmpctx.textAlign = 'center'; 
@@ -165,12 +166,20 @@ tmpctx.fillText('Loading ...', 160, 70);
 tmpctx.font = "14px Arial";
 tmpctx.fillStyle = 'Maroon'; 
 
-tmpctx.fillText('If the file does not load,', 155, 115);
+tmpctx.fillText('If the file does not load,', 145, 115);
 
 tmpctx.fillText('your browser is not supported at this time.', 150, 130);
 
-</script>
 
+
+//  tmpcanvas.width = "500px";
+//  tmpcanvas.height = "300px";
+//  tmpcanvas.style.width = "500px";
+//  tmpcanvas.style.height = "300px";
+
+
+
+</script>
 
 
 
@@ -188,7 +197,7 @@ tmpctx.fillText('your browser is not supported at this time.', 150, 130);
   // header on that server.
   //
 
-  const url = './pdf/Gerber/parseGerber872.pdf';
+  const url = './pdf/CrudP1/CrudP1PdfGrid.pdf';
 
 
 
@@ -482,9 +491,9 @@ pdfDoc.numPages +
 
 <center> 
 <span id="iconProvidedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br><br> 
+<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br><br>
 
-<svg id="BootstrapIcon" 
+ <svg id="BootstrapIcon" 
 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
 role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
     <title> id="iconTitle">Bootstrap icon</title>
@@ -509,9 +518,9 @@ https://github.com/mozilla/pdf.js
 
 PDF.js
 
-A general-purpose, web standards-based platform for parsing and rendering PDFs. 
+A general-purpose, web standards-based platform for parsing and renderingĀ PDFs. 
 
-©Mozilla and individual contributors
+Ā©Mozilla and individual contributors
 
 PDF.js is licensed under Apache, documentation is licensed under CC BY-SA 2.5
 
@@ -790,7 +799,7 @@ used by multiple pages.
 <script src="debug.js">
 </script>
 
-<script src="viewGerberFile.js">
+<script src="viewCrudP1.js">
 </script>
 
 <NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
@@ -805,7 +814,7 @@ used by multiple pages.
 <div style="color:black; background-color:ivory;border:2px solid lightgrey;border-radius:8px;margin-top:3px;margin-bottom:3px" id="debugOut" name="debugOut" title="debug output appears here" aria-label="debug output appears here">
 </div> <br><br>
 
-                
+                    
     
 </body>
 
