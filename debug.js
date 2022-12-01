@@ -463,6 +463,96 @@ if (isEdge) {
 
 
 
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Database</b></span></center></td></tr>';
+
+
+   if ('indexedDB' in window) {
+
+        //    IndexedDB supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">IndexedDB</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    IndexedDB not supported
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">IndexedDB</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+   if ('openDatabase' in window) {
+
+        //   Web SQL supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web SQL</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //   Web SQL not supported
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Web SQL</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+
+
+   displayStr = displayStr + 
+        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
+        '<span style="font-size:12px;"><b>Geolocation</b></span></center></td></tr>';
+
+
+
+   if ("geolocation" in navigator) {
+
+        //    geolocation supported
+
+        displayStr = displayStr + 
+             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
+
+   } else {
+
+        //    geolocation not supported
+
+        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
+             '<td style="background-color:ghostwhite;color:black" ><center>' + 
+             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
+
+   }
+
+
+
+
+
+
    displayStr = displayStr + 
         '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
         '<span style="font-size:12px;"><b>History</b></span></center></td></tr>';
@@ -657,32 +747,6 @@ if (isEdge) {
 
 
 
-   displayStr = displayStr + 
-        '<tr><td colspan="2" style="background-color:honeydew;color:black"><center>' + 
-        '<span style="font-size:12px;"><b>Geolocation</b></span></center></td></tr>';
-
-
-
-   if ("geolocation" in navigator) {
-
-        //    geolocation supported
-
-        displayStr = displayStr + 
-             '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'YES' + '</span>' + '</center> </td></tr>';
-
-   } else {
-
-        //    geolocation not supported
-
-        displayStr = displayStr + '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
-             '<span style="font-size:12px;">Geolocation</span></center> </td>' + 
-             '<td style="background-color:ghostwhite;color:black" ><center>' + 
-             '<span style="font-size:12px;">' + 'NO' + '</span>' + '</center> </td></tr>';
-
-   }
 
 
 
