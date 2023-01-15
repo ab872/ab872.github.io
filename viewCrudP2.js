@@ -118,6 +118,12 @@ document.getElementById('textPageTitle').style.fontSize="42px";
            //   begin      Firefox under Win10
 
 
+           //  adjust the size of the 
+           //  Bootstrap icon
+           //  id="BootstrapIcon"
+           document.getElementById("BootstrapIcon").style.width="64px"; 
+           document.getElementById("BootstrapIcon").style.height="64px";
+
 
 
            //   end        Firefox under Win10
@@ -156,8 +162,8 @@ document.getElementById('textPageTitle').style.fontSize="42px";
            //  adjust the size of the 
            //  Bootstrap icon
            //  id="BootstrapIcon"
-           document.getElementById("BootstrapIcon").style.width="16px"; 
-           document.getElementById("BootstrapIcon").style.height="16px";
+           document.getElementById("BootstrapIcon").style.width="64px"; 
+           document.getElementById("BootstrapIcon").style.height="64px";
 
 
 

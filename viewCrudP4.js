@@ -1,8 +1,8 @@
-<!--  viewCrudP3_js  -->
+<!--  viewCrudP4_js  -->
 
 
 
-// start      viewCrudP3.js
+// start      viewCrudP4.js
 
 
 
@@ -125,6 +125,7 @@ document.getElementById('textPageTitle').style.fontSize="42px";
            document.getElementById("BootstrapIcon").style.height="64px";
 
 
+
            //   end        Firefox under Win10
         }
 
@@ -211,7 +212,7 @@ if (isiPad) {
   
 
 
-// end     viewCrudP3.js
+// end     viewCrudP4.js
 
 
 
