@@ -58,8 +58,17 @@ if (isFirefox) {
 
 			// all other Firefox under Android
 
-			//  alert("using the Firefox browser under Android - all others");
-			//  theBrowserIsUnknown = false;
+				//  alert("using the Firefox browser under Android - all others");
+				//  theBrowserIsUnknown = false;
+
+
+				//   id="imageIntro" 
+				//  height="162" 
+				//  width="375" 
+				document.getElementById("imageIntro").style.height="202px";
+				document.getElementById("imageIntro").style.width="468px"; 
+
+
 			
 				//  id="textIntroduction" 
 				//      Original     14px    
@@ -226,22 +235,6 @@ if (isFirefox) {
 
 
 
-			//  id="mainPageTitleCheckMark1"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark1').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCaption"
-			//  16px
-			//  ><b>Main Page</b><
-			document.getElementById('mainPageTitleCaption').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCheckMark2"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark2').style.fontSize="36px";
 
 
 
@@ -450,7 +443,7 @@ if (isChrome) {
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="48px";
+			document.getElementById('mainPageSiteTitle').style.fontSize="60px";
 
 
 
@@ -464,22 +457,206 @@ if (isChrome) {
 
 
 
-			//  id="mainPageTitleCheckMark1"
+
+			//  id="linkGerberViewer" 
+			//  size:16px
+			document.getElementById('linkGerberViewer').style.fontSize="28px";
+
+			//  id="pdfIcon" 
+			//  width="80" height="80" 
+			document.getElementById("pdfIcon").style.width="96px"; 
+			document.getElementById("pdfIcon").style.height="96px";
+
+			//  id="textGerberViewerCaption" 
+			//  14px
+			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
+
+
+
+
+
+
+			//  id="linkCrudP1video"
 			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark1').style.fontSize="36px";
+			document.getElementById('linkCrudP1video').style.fontSize="28px";
+
+			//  id="textCrudP1Caption"
+			//  14px
+			document.getElementById('textCrudP1Caption').style.fontSize="24px";
 
 
-			//  id="mainPageTitleCaption"
+
+			//  id="linkCrudP1"
 			//  16px
-			//  ><b>Main Page</b><
-			document.getElementById('mainPageTitleCaption').style.fontSize="36px";
+			document.getElementById('linkCrudP1').style.fontSize="28px";
 
 
-			//  id="mainPageTitleCheckMark2"
+			//  id="textCrudP1bCaption"
+			//  14px
+			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP2"
 			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark2').style.fontSize="36px";
+			document.getElementById('linkCrudP2').style.fontSize="28px";
+
+			//  id="textCrudP2Caption"
+			//  14px
+			document.getElementById('textCrudP2Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP3"
+			//  16px
+			document.getElementById('linkCrudP3').style.fontSize="28px";
+
+			//  id="textCrudP3Caption"
+			//  14px
+			document.getElementById('textCrudP3Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP4"
+			//  16px
+			document.getElementById('linkCrudP4').style.fontSize="28px";
+
+
+			//  id="textCrudP4Caption"
+			//  14px
+			document.getElementById('textCrudP4Caption').style.fontSize="24px";
+
+
+
+
+
+			//  id="textSqliteLogoPublicDomain"
+			//  14px
+			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
+
+
+			//  id="textSqliteLogoDownloadHere"
+			//  14px
+			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
+
+
+			//  id="textSqliteDownloadHere"
+			//  14px
+			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
+
+
+
+
+			//  id="linkSVGgraphics"
+			//  16px
+			document.getElementById('linkSVGgraphics').style.fontSize="28px";
+
+
+			//  id="textSVGgraphicsCaption"
+			//  14px
+			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
+
+
+
+			//  id="linkSVGanimation"
+			//  16px
+			document.getElementById('linkSVGanimation').style.fontSize="28px";
+
+			//  id="textSVGanimationCaption"
+			//  14px
+			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
+
+			//  id="textAnimationEmphasized1"
+			//  15px
+			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized2"
+			//  15px
+			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized3"
+			//  15px
+			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized4"
+			//  15px
+			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized5"
+			//  15px
+			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
+
+
+
+
+			//  id="linkRayTraceGraphics"
+			//  16px
+			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
+
+			//  id="textRayTraceGraphicsCaption"
+			//  14px
+			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
+
+
+
+
+			//  id="linkPhotoGallery"
+			//  16px
+			document.getElementById('linkPhotoGallery').style.fontSize="28px";
+
+
+			//  id="textPhotoGalleryCaption"
+			//  14px
+			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
+
+
+
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="96px"; 
+			document.getElementById("cameraIcon").style.height="96px";
+
+
+
+
+
+			//  id="linkColorPicker"
+			//  16px
+			document.getElementById('linkColorPicker').style.fontSize="28px";
+
+			//  id="textColorPickerCaption"
+			//  14px;
+			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+
+
+			//  id="linkOnTheWay1"
+			//  16px
+			document.getElementById('linkOnTheWay1').style.fontSize="28px";
+
+			//  id="linkOnTheWay2"
+			//  16px
+			document.getElementById('linkOnTheWay2').style.fontSize="28px";
+
+			//  id="linkOnTheWay3"
+			//  16px
+			document.getElementById('linkOnTheWay3').style.fontSize="28px";
+
+			//  id="linkOnTheWay4"
+			//  16px
+			document.getElementById('linkOnTheWay4').style.fontSize="28px";
+
+			//  id="linkOnTheWay5"
+			//  16px
+			document.getElementById('linkOnTheWay5').style.fontSize="28px";
+
+
+
+
+
+
+
 
 
 
@@ -495,20 +672,20 @@ if (isChrome) {
 			//  id="copyrightMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="24px";
+			document.getElementById('copyrightMsg').style.fontSize="38px";
 
  
 			//  id="bestResultsMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="24px";
+			document.getElementById('bestResultsMsg').style.fontSize="38px";
 
 
 			//  id="iconsProvidedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
 			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="24px";
+			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
 
  
 
@@ -516,14 +693,14 @@ if (isChrome) {
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
 			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="24px";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
 
 
 
 			//  id="iconsModifiedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="24px";
+			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
 
 
 
@@ -674,22 +851,6 @@ if (isSafari) {
 
 
 
-			//  id="mainPageTitleCheckMark1"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark1').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCaption"
-			//  16px
-			//  ><b>Main Page</b><
-			document.getElementById('mainPageTitleCaption').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCheckMark2"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark2').style.fontSize="36px";
 
 
 
@@ -894,23 +1055,6 @@ if (isEdge) {
 
 
 
-			//  id="mainPageTitleCheckMark1"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark1').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCaption"
-			//  16px
-			//  ><b>Main Page</b><
-			document.getElementById('mainPageTitleCaption').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCheckMark2"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark2').style.fontSize="36px";
-
 
 
 
@@ -1100,23 +1244,6 @@ if (isNewEdge) {
 
 
 
-
-			//  id="mainPageTitleCheckMark1"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark1').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCaption"
-			//  16px
-			//  ><b>Main Page</b><
-			document.getElementById('mainPageTitleCaption').style.fontSize="36px";
-
-
-			//  id="mainPageTitleCheckMark2"
-			//  16px
-			//  >&#x2714; <
-			document.getElementById('mainPageTitleCheckMark2').style.fontSize="36px";
 
 
 
