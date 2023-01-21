@@ -223,7 +223,24 @@ if (isFirefox) {
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="48px";
+			document.getElementById('mainPageSiteTitle').style.fontSize="68px";
+
+
+
+			//	document.getElementById('textIntroduction').innerHTML=
+			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
+			//		'and <span id="textIntroductionEmphasized2" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+
+
+			document.getElementById('textIntroduction').style.fontSize="68px";
+
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
+
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
+
+
 
 
 
@@ -237,33 +254,234 @@ if (isFirefox) {
 
 
 
+			//  id="linkGerberViewer" 
+			//  size:16px
+			document.getElementById('linkGerberViewer').style.fontSize="28px";
+
+			//  id="pdfIcon" 
+			//  width="80" height="80" 
+			document.getElementById("pdfIcon").style.width="96px"; 
+			document.getElementById("pdfIcon").style.height="96px";
+
+			//  id="textGerberViewerCaption" 
+			//  14px
+			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
 
 
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+
+
+
+
+			//  id="linkCrudP1video"
+			//  16px
+			document.getElementById('linkCrudP1video').style.fontSize="28px";
+
+			//  id="textCrudP1Caption"
+			//  14px
+			document.getElementById('textCrudP1Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP1"
+			//  16px
+			document.getElementById('linkCrudP1').style.fontSize="28px";
+
+
+			//  id="textCrudP1bCaption"
+			//  14px
+			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP2"
+			//  16px
+			document.getElementById('linkCrudP2').style.fontSize="28px";
+
+			//  id="textCrudP2Caption"
+			//  14px
+			document.getElementById('textCrudP2Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP3"
+			//  16px
+			document.getElementById('linkCrudP3').style.fontSize="28px";
+
+			//  id="textCrudP3Caption"
+			//  14px
+			document.getElementById('textCrudP3Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP4"
+			//  16px
+			document.getElementById('linkCrudP4').style.fontSize="28px";
+
+
+			//  id="textCrudP4Caption"
+			//  14px
+			document.getElementById('textCrudP4Caption').style.fontSize="24px";
+
+
+
+
+
+			//  id="textSqliteLogoPublicDomain"
+			//  14px
+			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
+
+
+			//  id="textSqliteLogoDownloadHere"
+			//  14px
+			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
+
+
+			//  id="textSqliteDownloadHere"
+			//  14px
+			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
+
+
+
+
+			//  id="linkSVGgraphics"
+			//  16px
+			document.getElementById('linkSVGgraphics').style.fontSize="28px";
+
+
+			//  id="textSVGgraphicsCaption"
+			//  14px
+			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
+
+
+
+			//  id="linkSVGanimation"
+			//  16px
+			document.getElementById('linkSVGanimation').style.fontSize="28px";
+
+			//  id="textSVGanimationCaption"
+			//  14px
+			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
+
+			//  id="textAnimationEmphasized1"
+			//  15px
+			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized2"
+			//  15px
+			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized3"
+			//  15px
+			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized4"
+			//  15px
+			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized5"
+			//  15px
+			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
+
+
+
+
+			//  id="linkRayTraceGraphics"
+			//  16px
+			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
+
+			//  id="textRayTraceGraphicsCaption"
+			//  14px
+			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
+
+
+
+
+			//  id="linkPhotoGallery"
+			//  16px
+			document.getElementById('linkPhotoGallery').style.fontSize="28px";
+
+
+			//  id="textPhotoGalleryCaption"
+			//  14px
+			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
+
+
+
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="96px"; 
+			document.getElementById("cameraIcon").style.height="96px";
+
+
+
+
+
+			//  id="linkColorPicker"
+			//  16px
+			document.getElementById('linkColorPicker').style.fontSize="28px";
+
+			//  id="textColorPickerCaption"
+			//  14px;
+			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+
+
+			//  id="linkOnTheWay1"
+			//  16px
+			document.getElementById('linkOnTheWay1').style.fontSize="28px";
+
+			//  id="linkOnTheWay2"
+			//  16px
+			document.getElementById('linkOnTheWay2').style.fontSize="28px";
+
+			//  id="linkOnTheWay3"
+			//  16px
+			document.getElementById('linkOnTheWay3').style.fontSize="28px";
+
+			//  id="linkOnTheWay4"
+			//  16px
+			document.getElementById('linkOnTheWay4').style.fontSize="28px";
+
+			//  id="linkOnTheWay5"
+			//  16px
+			document.getElementById('linkOnTheWay5').style.fontSize="28px";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 			//  id="copyrightMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="24px";
+			document.getElementById('copyrightMsg').style.fontSize="38px";
 
  
 			//  id="bestResultsMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="24px";
+			document.getElementById('bestResultsMsg').style.fontSize="38px";
 
 
 			//  id="iconsProvidedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
 			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="24px";
+			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
 
  
 
@@ -271,14 +489,19 @@ if (isFirefox) {
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
 			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="24px";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
 
 
 
 			//  id="iconsModifiedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="24px";
+			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
+
+
+
+
+
 
 
 
@@ -443,7 +666,25 @@ if (isChrome) {
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="60px";
+			document.getElementById('mainPageSiteTitle').style.fontSize="72px";
+
+
+
+			//	document.getElementById('textIntroduction').innerHTML=
+			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
+			//		'and <span id="textIntroductionEmphasized2" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+
+			document.getElementById('textIntroduction').style.fontSize="68px";
+
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
+
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
+
+
+
+
 
 
 
@@ -661,11 +902,6 @@ if (isChrome) {
 
 
 
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
 
 
 
@@ -1227,11 +1463,27 @@ if (isNewEdge) {
 	//  theBrowserIsUnknown = false;
 
 
-
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="48px";
+			document.getElementById('mainPageSiteTitle').style.fontSize="72px";
+
+
+
+			//	document.getElementById('textIntroduction').innerHTML=
+			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
+			//		'and <span id="textIntroductionEmphasized2" ' + 
+			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+
+			document.getElementById('textIntroduction').style.fontSize="68px";
+
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
+
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
+
+
+
 
 
 
@@ -1243,36 +1495,220 @@ if (isNewEdge) {
 
 
 
+			//  id="linkGerberViewer" 
+			//  size:16px
+			document.getElementById('linkGerberViewer').style.fontSize="28px";
+
+			//  id="pdfIcon" 
+			//  width="80" height="80" 
+			document.getElementById("pdfIcon").style.width="96px"; 
+			document.getElementById("pdfIcon").style.height="96px";
+
+			//  id="textGerberViewerCaption" 
+			//  14px
+			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
 
 
 
 
 
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+
+			//  id="linkCrudP1video"
+			//  16px
+			document.getElementById('linkCrudP1video').style.fontSize="28px";
+
+			//  id="textCrudP1Caption"
+			//  14px
+			document.getElementById('textCrudP1Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP1"
+			//  16px
+			document.getElementById('linkCrudP1').style.fontSize="28px";
+
+
+			//  id="textCrudP1bCaption"
+			//  14px
+			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP2"
+			//  16px
+			document.getElementById('linkCrudP2').style.fontSize="28px";
+
+			//  id="textCrudP2Caption"
+			//  14px
+			document.getElementById('textCrudP2Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP3"
+			//  16px
+			document.getElementById('linkCrudP3').style.fontSize="28px";
+
+			//  id="textCrudP3Caption"
+			//  14px
+			document.getElementById('textCrudP3Caption').style.fontSize="24px";
+
+
+
+			//  id="linkCrudP4"
+			//  16px
+			document.getElementById('linkCrudP4').style.fontSize="28px";
+
+
+			//  id="textCrudP4Caption"
+			//  14px
+			document.getElementById('textCrudP4Caption').style.fontSize="24px";
+
+
+
+
+
+			//  id="textSqliteLogoPublicDomain"
+			//  14px
+			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
+
+
+			//  id="textSqliteLogoDownloadHere"
+			//  14px
+			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
+
+
+			//  id="textSqliteDownloadHere"
+			//  14px
+			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
+
+
+
+
+			//  id="linkSVGgraphics"
+			//  16px
+			document.getElementById('linkSVGgraphics').style.fontSize="28px";
+
+
+			//  id="textSVGgraphicsCaption"
+			//  14px
+			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
+
+
+
+			//  id="linkSVGanimation"
+			//  16px
+			document.getElementById('linkSVGanimation').style.fontSize="28px";
+
+			//  id="textSVGanimationCaption"
+			//  14px
+			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
+
+			//  id="textAnimationEmphasized1"
+			//  15px
+			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized2"
+			//  15px
+			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized3"
+			//  15px
+			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized4"
+			//  15px
+			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
+
+			//  id="textAnimationEmphasized5"
+			//  15px
+			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
+
+
+
+
+			//  id="linkRayTraceGraphics"
+			//  16px
+			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
+
+			//  id="textRayTraceGraphicsCaption"
+			//  14px
+			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
+
+
+
+
+			//  id="linkPhotoGallery"
+			//  16px
+			document.getElementById('linkPhotoGallery').style.fontSize="28px";
+
+
+			//  id="textPhotoGalleryCaption"
+			//  14px
+			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
+
+
+
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="96px"; 
+			document.getElementById("cameraIcon").style.height="96px";
+
+
+
+
+
+			//  id="linkColorPicker"
+			//  16px
+			document.getElementById('linkColorPicker').style.fontSize="28px";
+
+			//  id="textColorPickerCaption"
+			//  14px;
+			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+
+
+			//  id="linkOnTheWay1"
+			//  16px
+			document.getElementById('linkOnTheWay1').style.fontSize="28px";
+
+			//  id="linkOnTheWay2"
+			//  16px
+			document.getElementById('linkOnTheWay2').style.fontSize="28px";
+
+			//  id="linkOnTheWay3"
+			//  16px
+			document.getElementById('linkOnTheWay3').style.fontSize="28px";
+
+			//  id="linkOnTheWay4"
+			//  16px
+			document.getElementById('linkOnTheWay4').style.fontSize="28px";
+
+			//  id="linkOnTheWay5"
+			//  16px
+			document.getElementById('linkOnTheWay5').style.fontSize="28px";
+
+
 
 
 
 			//  id="copyrightMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="24px";
+			document.getElementById('copyrightMsg').style.fontSize="38px";
 
  
 			//  id="bestResultsMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="24px";
+			document.getElementById('bestResultsMsg').style.fontSize="38px";
 
 
 			//  id="iconsProvidedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
 			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="24px";
+			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
 
  
 
@@ -1280,14 +1716,19 @@ if (isNewEdge) {
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
 			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="24px";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
 
 
 
 			//  id="iconsModifiedMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="24px";
+			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
+
+
+
+
+
 
 
 
