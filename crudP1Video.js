@@ -770,26 +770,26 @@ document.getElementById('textIconsModified').style.fontSize="11px";
 
 
 //  id="textIntroduction" 
-document.getElementById('textIntroduction').style.fontSize="22px";
+document.getElementById('textIntroduction').style.fontSize="28px";
 
 
 //  id="textIntroductionEmphasized1"
-document.getElementById('textIntroductionEmphasized1').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized1').style.fontSize="29px";
 
 //  id="textIntroductionEmphasized2"
-document.getElementById('textIntroductionEmphasized2').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized2').style.fontSize="29px";
 
 //  id="textIntroductionEmphasized3"
-document.getElementById('textIntroductionEmphasized3').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized3').style.fontSize="29px";
 
 //  id="textIntroductionEmphasized4"
-document.getElementById('textIntroductionEmphasized4').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized4').style.fontSize="29px";
 
 //  id="textIntroductionEmphasized5"
-document.getElementById('textIntroductionEmphasized5').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized5').style.fontSize="29px";
 
 //  id="textIntroductionEmphasized6"
-document.getElementById('textIntroductionEmphasized6').style.fontSize="23px";
+document.getElementById('textIntroductionEmphasized6').style.fontSize="29px";
 
 
 
@@ -807,13 +807,13 @@ document.getElementById('textTitle2').style.fontSize="36px";
 
 
 id="textTitle3"
-document.getElementById('textTitle3').style.fontSize="36px";
+document.getElementById('textTitle3').style.fontSize="44px";
 
 
 
 
 //  id="noVideoExplanation"
-document.getElementById('noVideoExplanation').style.fontSize="22px";
+document.getElementById('noVideoExplanation').style.fontSize="28px";
 
 
 
@@ -823,26 +823,31 @@ document.getElementById('noVideoExplanation').style.fontSize="22px";
 document.getElementById('textReferenceHeading').style.fontSize="32px";
 
 
+
+
+
+
 //  id="textCopyright"
-document.getElementById('textCopyright').style.fontSize="22px";
+document.getElementById('textCopyright').style.fontSize="38px";
 
 
 //  id="textBootstrap"
-document.getElementById('textBootstrap').style.fontSize="22px";
+document.getElementById('textBootstrap').style.fontSize="38px";
 
 
 //  id="textBootstrapLicense"
-document.getElementById('textBootstrapLicense').style.fontSize="22px";
+document.getElementById('textBootstrapLicense').style.fontSize="38px";
 
 
 //  id="textIconsModified"
-document.getElementById('textIconsModified').style.fontSize="22px";
+document.getElementById('textIconsModified').style.fontSize="38px";
+
 
 
 
 
 //  id="selectExplanation"
-document.getElementById('selectExplanation').style.fontSize="22px";
+document.getElementById('selectExplanation').style.fontSize="32px";
 
 
 
