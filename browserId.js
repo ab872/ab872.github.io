@@ -37,9 +37,14 @@
 
     var isMac = whichAgent.includes("Macintosh"); 
 
+    //  old Edge on Win10
     var isEdge = whichAgent.includes("Edge"); 
 
+    //  new Edge on Win10
     var isNewEdge = whichAgent.includes("Edg/"); 
+
+    //  Edge on Android
+    var isAndroidEdge = whichAgent.includes("EdgA/"); 
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 

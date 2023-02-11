@@ -372,8 +372,20 @@ if (isEdge) {
           '<span style="font-size:12px;"><b>Browser</b></span></center></td></tr>';
 
 
+
+
    // Write browser name
-   if (isFirefox) { 
+   if (isAndroidEdge) { 
+
+
+        displayStr = displayStr + 
+               '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+               '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+               '<td style="background-color:ghostwhite;color:black" ><center>' + 
+               '<span style="font-size:12px;">' + 'Edge - Android' + '</span>' + '</center> </td></tr>';
+
+
+   } else if (isFirefox) { 
 
         displayStr = displayStr + 
                '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
@@ -403,9 +415,19 @@ if (isEdge) {
                     '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
                     '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
                     '<td style="background-color:ghostwhite;color:black" ><center>' + 
-                    '<span style="font-size:12px;">' + 'Edge' + '</span>' + '</center> </td></tr>';
+                    '<span style="font-size:12px;">' + 'Edge - Old' + '</span>' + '</center> </td></tr>';
 
-   } else { 
+   } else if (isNewEdge) { 
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Edge - New' + '</span>' + '</center> </td></tr>';
+
+
+     	//   end        new Edge
+  } else { 
 
                displayStr = displayStr + 
                     '<tr><td style="background-color: aliceblue;color:black" > <center>' + 

@@ -15,6 +15,17 @@
 //  the goal is to provide a more consistent cross-browser experience
 
 
+
+if (isAndroidEdge) { 
+
+//  	   alert("Edge under Android");
+
+  // end Edge under Android
+} 
+
+
+
+
 if (isFirefox) { 
         //   begin      Firefox 
 
@@ -226,6 +237,21 @@ if (isFirefox) {
 			document.getElementById('mainPageSiteTitle').style.fontSize="68px";
 
 
+			//   id="imagePcbIntro" 
+			//  height="162"   //  202
+			//  width="375"    //  468
+			document.getElementById("imagePcbIntro").style.height="303px";
+			document.getElementById("imagePcbIntro").style.width="702px"; 
+
+
+			//  id="textIntroCaption"
+			//  Original    12px
+			document.getElementById('textIntroCaption').style.fontSize="18px";
+
+
+
+
+
 
 			//	document.getElementById('textIntroduction').innerHTML=
 			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
@@ -249,6 +275,51 @@ if (isFirefox) {
 			//  id="BootstrapIcon"           
 			document.getElementById("BootstrapIcon").style.width="64px"; 
 			document.getElementById("BootstrapIcon").style.height="64px";
+
+
+
+
+			//  id="textRobotCaption1" 
+			//  12px
+			document.getElementById('textRobotCaption1').style.fontSize="18px";
+
+			//  id="textRobotEmphasized1" 
+			//  12px
+			document.getElementById('textRobotEmphasized1').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption2" 
+			//  12px
+			document.getElementById('textRobotCaption2').style.fontSize="18px";
+
+			//  id="textRobotEmphasized2" 
+			//  12px
+			document.getElementById('textRobotEmphasized2').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption3" 
+			//  12px
+			document.getElementById('textRobotCaption3').style.fontSize="18px";
+
+			//  id="textRobotEmphasized3" 
+			//  12px
+			document.getElementById('textRobotEmphasized3').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption4" 
+			//  12px
+			document.getElementById('textRobotCaption4').style.fontSize="18px";
+
+			//  id="textRobotEmphasized4" 
+			//  12px
+			document.getElementById('textRobotEmphasized4').style.fontSize="18px";
+
+
+
+
 
 
 
@@ -396,6 +467,13 @@ if (isFirefox) {
 
 
 
+
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="128px"; 
+			document.getElementById("cameraIcon").style.height="128px";
+
 			//  id="linkPhotoGallery"
 			//  16px
 			document.getElementById('linkPhotoGallery').style.fontSize="28px";
@@ -405,13 +483,13 @@ if (isFirefox) {
 			//  14px
 			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
 
+			document.getElementById('textPhotoGalleryCaption').innerHTML=
+				'<i>A collection of photos arranged in a grid pattern using CSS GRID.' + 
+				'<br>' + 
+				'Includes references.</i>';
 
 
 
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="96px"; 
-			document.getElementById("cameraIcon").style.height="96px";
 
 
 
@@ -424,6 +502,45 @@ if (isFirefox) {
 			//  id="textColorPickerCaption"
 			//  14px;
 			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+
+			document.getElementById('textColorPickerCaption').innerHTML=
+				'<i>Color picker which allows visual comparison of two colors. ' + 
+				'<br>' + 
+				'Gives a visual check of the contrast between the two. ' +  
+				'Zoom sample text ' + 
+				'<br>' + 
+				'up or down in size to check its appearance. ' + 
+				'Includes references.</i>';
+
+
+
+
+
+			//  id="svgCloudSun1" 
+     			//  width   80      height   80
+			document.getElementById("svgCloudSun1").style.width="96px"; 
+			document.getElementById("svgCloudSun1").style.height="96px";
+
+
+			//  id="linkNwsWeather"
+			//  16px
+			document.getElementById('linkNwsWeather').style.fontSize="28px";
+
+			//  id="textNwsWeatherCaption"
+			//  14px;
+			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
+
+			document.getElementById('textNwsWeatherCaption').innerHTML=
+				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
+				'<br>' + 
+				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
+				'using their public REST API.' + 
+				'<br>' + 
+				'Includes references.</i>';
+
+
+
 
 
 
@@ -527,10 +644,6 @@ if (isFirefox) {
 			//	'</i>';
 
 
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
 
 
 
@@ -685,6 +798,20 @@ if (isChrome) {
 
 
 
+			//   id="imagePcbIntro" 
+			//  height="162"   //  202
+			//  width="375"    //  468
+			document.getElementById("imagePcbIntro").style.height="303px";
+			document.getElementById("imagePcbIntro").style.width="702px"; 
+
+
+			//  id="textIntroCaption"
+			//  Original    12px
+			document.getElementById('textIntroCaption').style.fontSize="18px";
+
+
+
+
 
 
 
@@ -693,6 +820,48 @@ if (isChrome) {
 			//  id="BootstrapIcon"           
 			document.getElementById("BootstrapIcon").style.width="64px"; 
 			document.getElementById("BootstrapIcon").style.height="64px";
+
+
+
+
+			//  id="textRobotCaption1" 
+			//  12px
+			document.getElementById('textRobotCaption1').style.fontSize="18px";
+
+			//  id="textRobotEmphasized1" 
+			//  12px
+			document.getElementById('textRobotEmphasized1').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption2" 
+			//  12px
+			document.getElementById('textRobotCaption2').style.fontSize="18px";
+
+			//  id="textRobotEmphasized2" 
+			//  12px
+			document.getElementById('textRobotEmphasized2').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption3" 
+			//  12px
+			document.getElementById('textRobotCaption3').style.fontSize="18px";
+
+			//  id="textRobotEmphasized3" 
+			//  12px
+			document.getElementById('textRobotEmphasized3').style.fontSize="18px";
+
+
+
+			//  id="textRobotCaption4" 
+			//  12px
+			document.getElementById('textRobotCaption4').style.fontSize="18px";
+
+			//  id="textRobotEmphasized4" 
+			//  12px
+			document.getElementById('textRobotEmphasized4').style.fontSize="18px";
+
 
 
 
@@ -807,6 +976,9 @@ if (isChrome) {
 			//  14px
 			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
 
+
+
+
 			//  id="textAnimationEmphasized1"
 			//  15px
 			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
@@ -841,22 +1013,32 @@ if (isChrome) {
 
 
 
-			//  id="linkPhotoGallery"
-			//  16px
-			document.getElementById('linkPhotoGallery').style.fontSize="28px";
-
-
-			//  id="textPhotoGalleryCaption"
-			//  14px
-			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
-
-
 
 
 			//  id="cameraIcon"
 			//  width   80    height   80 
 			document.getElementById("cameraIcon").style.width="96px"; 
 			document.getElementById("cameraIcon").style.height="96px";
+
+			//  id="linkPhotoGallery"
+			//  16px
+			document.getElementById('linkPhotoGallery').style.fontSize="28px";
+
+			//  id="textPhotoGalleryCaption"
+			//  14px
+			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
+
+			document.getElementById('textPhotoGalleryCaption').innerHTML=
+				'<i>A collection of photos arranged in a grid pattern using CSS GRID.' + 
+				'<br>' + 
+				'Includes references.</i>';
+
+
+
+
+
+
+
 
 
 
@@ -869,6 +1051,41 @@ if (isChrome) {
 			//  id="textColorPickerCaption"
 			//  14px;
 			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+			document.getElementById('textColorPickerCaption').innerHTML=
+				'<i>Color picker which allows visual comparison of two colors. ' + 
+				'<br>' + 
+				'Gives a visual check of the contrast between the two. ' +  
+				'Zoom sample text ' + 
+				'<br>' + 
+				'up or down in size to check its appearance. ' + 
+				'Includes references.</i>';
+
+ 
+
+
+			//  id="svgCloudSun1" 
+     			//  width   80      height   80
+			document.getElementById("svgCloudSun1").style.width="96px"; 
+			document.getElementById("svgCloudSun1").style.height="96px";
+
+			//  id="linkNwsWeather"
+			//  16px
+			document.getElementById('linkNwsWeather').style.fontSize="28px";
+
+			//  id="textNwsWeatherCaption"
+			//  14px;
+			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
+
+			document.getElementById('textNwsWeatherCaption').innerHTML=
+				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
+				'<br>' + 
+				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
+				'using their public REST API.' + 
+				'<br>' + 
+				'Includes references.</i>';
+
+
 
 
 
@@ -991,9 +1208,7 @@ if (isChrome) {
 
 
 
-				//  id="textIntroCaption"
-				//  Original    12px
-				//  document.getElementById('textIntroCaption').style.fontSize="78px";
+
 
 
 				//  id="pdfIcon" 
@@ -1045,10 +1260,6 @@ if (isChrome) {
 				//  ("mp4Icon").style.height="128px";
 
 
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
 
 
 
@@ -1269,7 +1480,7 @@ if (isSafari) {
 
 if (isEdge) { 
 
-	//  alert("using the Edge browser");
+	//  alert("using the old Edge browser");
 	//  theBrowserIsUnknown = false;
 
 
@@ -1442,10 +1653,14 @@ if (isEdge) {
 				//  ("mp4Icon").style.height="128px";
 
 
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="128px"; 
+			document.getElementById("cameraIcon").style.height="128px";
+
+
+
 
 
 
@@ -1637,10 +1852,17 @@ if (isNewEdge) {
 
 
 
+
+
+
+			//  id="cameraIcon"
+			//  width   80    height   80 
+			document.getElementById("cameraIcon").style.width="128px"; 
+			document.getElementById("cameraIcon").style.height="128px";
+
 			//  id="linkPhotoGallery"
 			//  16px
 			document.getElementById('linkPhotoGallery').style.fontSize="28px";
-
 
 			//  id="textPhotoGalleryCaption"
 			//  14px
@@ -1649,10 +1871,6 @@ if (isNewEdge) {
 
 
 
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="96px"; 
-			document.getElementById("cameraIcon").style.height="96px";
 
 
 
@@ -1665,6 +1883,35 @@ if (isNewEdge) {
 			//  id="textColorPickerCaption"
 			//  14px;
 			document.getElementById('textColorPickerCaption').style.fontSize="24px";
+
+
+
+
+
+
+			//  id="svgCloudSun1" 
+     			//  width   80      height   80
+			document.getElementById("svgCloudSun1").style.width="96px"; 
+			document.getElementById("svgCloudSun1").style.height="96px";
+
+			//  id="linkNwsWeather"
+			//  16px
+			document.getElementById('linkNwsWeather').style.fontSize="28px";
+
+			//  id="textNwsWeatherCaption"
+			//  14px;
+			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
+
+			document.getElementById('textNwsWeatherCaption').innerHTML=
+				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
+				'<br>' + 
+				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
+				'using their public REST API.' + 
+				'<br>' + 
+				'Includes references.</i>';
+
+
+
 
 
 
@@ -1837,16 +2084,17 @@ if (isNewEdge) {
 				//  ("mp4Icon").style.height="128px";
 
 
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
 
 
 
 
 	//   end        new Edge
 }
+
+
+
+
+
 
 //  if (theBrowserIsUnknown) { 
 //	//  unknown browser
