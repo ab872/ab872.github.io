@@ -1327,7 +1327,6 @@ function selectIcon ( isDaytime, detailedForecast ) {
 
 
 
-
 //  fog        Mostly cloudy, with a low
 //        svgDefaultIcon
 //        svgDefaultIcon
@@ -1634,6 +1633,65 @@ if(isDaytime) {
 
 
 
+if( (detailedForecast.search("Haze") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgFog;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgFogNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
+if( (detailedForecast.search("haze") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgFog;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgFogNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
+if( (detailedForecast.search("Fog") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgFog;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgFogNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
 
 if( (detailedForecast.search("fog") >= 0) ) {
 
@@ -1657,9 +1715,68 @@ if(isDaytime) {
 
 
 
+if( (detailedForecast.search("Thunder") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudLightningRain;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudLightningRainNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
+if( (detailedForecast.search("thunder") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudLightningRain;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudLightningRainNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
 
 
 //  rain
+
+if( (detailedForecast.search("Rain") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudRainLight;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudRainLightNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
 
 if( (detailedForecast.search("rain") >= 0) ) {
 
@@ -1682,7 +1799,23 @@ if(isDaytime) {
 
 
 
+if( (detailedForecast.search("Snow") >= 0) ) {
 
+if(isDaytime) {
+
+   iconName = svgCloudSnow;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudSnowNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
 
 
 if( (detailedForecast.search("snow") >= 0) ) {
@@ -1704,6 +1837,24 @@ if(isDaytime) {
 }
 
 
+
+if( (detailedForecast.search("Sleet") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudSleet;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudSleetNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
 
 
 
