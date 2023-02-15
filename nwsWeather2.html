@@ -1756,6 +1756,44 @@ if(isDaytime) {
 
 
 
+if( (detailedForecast.search("Showers and thunder") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudLightningRain;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudLightningRainNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
+if( (detailedForecast.search("showers and thunder") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudLightningRain;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudLightningRainNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
 
 //  rain
 
