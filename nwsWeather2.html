@@ -1943,6 +1943,24 @@ if(isDaytime) {
 
 
 
+if( (detailedForecast.search("rain and snow") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudSleet;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudSleetNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
 
 
 
