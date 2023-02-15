@@ -105,6 +105,29 @@
      grid-template-rows: 0.5vh 19vh 0.5vh; 
 }
 
+.grid-containerWeather1b {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
+     grid-template-rows: 0.5vh 19vh 0.5vh; 
+}
+
+.grid-containerWeather1c {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
+     grid-template-rows: 0.5vh 19vh 0.5vh; 
+}
+
+.grid-containerWeather1d {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
+     grid-template-rows: 0.5vh 19vh 0.5vh; 
+}
 
 
 .grid-containerWeather2 {
@@ -1715,6 +1738,48 @@ if(isDaytime) {
 
 
 
+
+//  rain
+
+if( (detailedForecast.search("Rain") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudRainLight;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudRainLightNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+if( (detailedForecast.search("rain") >= 0) ) {
+
+if(isDaytime) {
+
+   iconName = svgCloudRainLight;
+
+   //  end     if  ...
+} else {
+
+   iconName = svgCloudRainLightNight;
+
+   //  end     else
+}
+
+
+   //  end     query matches term >= 0
+}
+
+
+
 if( (detailedForecast.search("Thunder") >= 0) ) {
 
 if(isDaytime) {
@@ -1795,44 +1860,6 @@ if(isDaytime) {
 }
 
 
-//  rain
-
-if( (detailedForecast.search("Rain") >= 0) ) {
-
-if(isDaytime) {
-
-   iconName = svgCloudRainLight;
-
-   //  end     if  ...
-} else {
-
-   iconName = svgCloudRainLightNight;
-
-   //  end     else
-}
-
-
-   //  end     query matches term >= 0
-}
-
-
-if( (detailedForecast.search("rain") >= 0) ) {
-
-if(isDaytime) {
-
-   iconName = svgCloudRainLight;
-
-   //  end     if  ...
-} else {
-
-   iconName = svgCloudRainLightNight;
-
-   //  end     else
-}
-
-
-   //  end     query matches term >= 0
-}
 
 
 
@@ -2004,7 +2031,7 @@ This application provides a demo of using REST to retrieve an extended weather f
 
 
 <span id="selectExplanation" style="color:Navy;font-size:50px;">
-<b>Enter coordinates or select a location.</b></span><br>
+<b>Enter coordinates, or select a location.</b></span><br>
 <span id="selectExplanation2" style="color:Navy;font-size:50px;">
 <b>Example:   39.67,-97.08</b></span>
 </center><br>
@@ -2107,7 +2134,7 @@ This application provides a demo of using REST to retrieve an extended weather f
 
 
 <center>
-<button style="background-color:indigo; color:white;margin-top:3px;margin-bottom:1px;border:2px solid thistle;border-radius:8px;width:172px;height:197px" id="button1" name="button1" title="Button 1" aria-label="Button 1" type="button" onClick="getWeather()"><span style="font-size:55px;">NWS</span></button> 
+<button style="background-color:indigo; color:white;margin-top:3px;margin-bottom:1px;border:5px solid thistle;border-radius:8px;width:172px;height:197px" id="button1" name="button1" title="Button 1" aria-label="Button 1" type="button" onClick="getWeather()"><span style="font-size:55px;">NWS</span></button> 
 </center>
 <br> <br>
 
@@ -2154,7 +2181,7 @@ the references section overlaps the introduction.
 
 
 <center>
-<div class="grid-containerForecastTitle">
+<div class="grid-containerForecastTitle" id="grid-containerForecastTitle">
 
      <div class="grid-itemMargin">
      </div>
@@ -2212,7 +2239,7 @@ XX:XX:XX</b></span>
 
 
 
-<div class="grid-containerWeather1">
+<div class="grid-containerWeather1" id="grid-containerWeather1">
 
      <div class="grid-itemMarginPhoto">
      </div>
@@ -2421,7 +2448,7 @@ Xxxx
 
 
 
-<div class="grid-containerWeather1">
+<div class="grid-containerWeather1b" id="grid-containerWeather1b">
 
      <div class="grid-itemMarginPhoto">
      </div>
@@ -2627,7 +2654,7 @@ Xxxx
 
 
 
-<div class="grid-containerWeather1">
+<div class="grid-containerWeather1c" id="grid-containerWeather1c">
 
      <div class="grid-itemMarginPhoto">
      </div>
@@ -2837,7 +2864,7 @@ Xxxx
 
 
 
-<div class="grid-containerWeather1">
+<div class="grid-containerWeather1d" id="grid-containerWeather1d">
 
      <div class="grid-itemMarginPhoto">
      </div>

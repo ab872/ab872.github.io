@@ -54,7 +54,14 @@ if (isAndroid5) {
 
 
 
- 	// end Firefox under Android5 
+ 	// end 	     Firefox under Android5 
+} else if (isAndroid12) { 
+
+	// begin     Firefox under Android12
+
+
+
+ 	// end 	     Firefox under Android12
 } else {
 
 	// all other Firefox under Android
@@ -296,6 +303,34 @@ if (isAndroid5) {
 
 
 
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+
+	//  id="textIntroductionEmphasized19" 
+	//  25px
+	//  <b>39.67,-97.08</b>
+	document.getElementById('textIntroductionEmphasized19').style.fontSize="65px"; 
+
+
+
 
            //   end        Firefox under Win10
         }
@@ -312,21 +347,44 @@ if (isAndroid5) {
         if (isAndroid) {
            //   begin    Chrome under Android
 
-       		//      alert("Chrome under Android");
-
-		//  svg id="BootstrapIcon" 
-		//  width "16" height "16" 
-		//  adjust the size of the
-		//  Bootstrap icon
-		document.getElementById("BootstrapIcon").style.width="64px"; 
-		document.getElementById("BootstrapIcon").style.height="64px";
+       	   //      alert("Chrome under Android");
 
 
-		document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
+		if (isAndroid12) { 
+			// begin     Chrome under Android12
 
-		document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2300vh 03vh`;
+			//  svg id="BootstrapIcon" 
+			//  width "16" height "16" 
+			//  adjust the size of the
+			//  Bootstrap icon
+			document.getElementById("BootstrapIcon").style.width="64px"; 
+			document.getElementById("BootstrapIcon").style.height="64px";
 
 
+			document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
+
+			document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2300vh 03vh`;
+
+
+ 			// end 	     Chrome under Android12
+		} else {
+ 			// begin 	all other Chrome under Android
+
+			//  svg id="BootstrapIcon" 
+			//  width "16" height "16" 
+			//  adjust the size of the
+			//  Bootstrap icon
+			document.getElementById("BootstrapIcon").style.width="64px"; 
+			document.getElementById("BootstrapIcon").style.height="64px";
+
+
+			document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
+
+			document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2300vh 03vh`;
+
+
+ 			// end 	     	all other Chrome under Android
+		}
 
 
            //   end       Chrome under Android
@@ -433,6 +491,35 @@ if (isAndroid5) {
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 160vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1760vh 03vh`;
+
+
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+
+	//  id="textIntroductionEmphasized19" 
+	//  25px
+	//  <b>39.67,-97.08</b>
+	document.getElementById('textIntroductionEmphasized19').style.fontSize="65px"; 
+
 
 
 
@@ -553,6 +640,110 @@ if (isAndroid5) {
            //   end        Safari iPad
 	} else if (isiPhone) { 
 
+		//  id="textForecastHeader" 
+		//  15px
+		//  <b>Extended Forecast for<br><br>
+		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+
+
+		//  id="textForecastLocation" 
+		//  17px
+		//  <b>XXXX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX</b>
+		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+
+
+		//  id="textForecastCoordinates" 
+		//  17px
+		//  <b>XX.XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX.XX</b>
+		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+
+
+		//  id="textForecastUpdateTime" 
+		//  15px
+		//  <b>XXXX-XX-XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+
+
+
+
+	// text for periods 1 to 14
+	//  id="textPeriod1" 
+	//  6px
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx
+
+	document.getElementById('textPeriod1').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod2').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod3').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod4').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod5').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod6').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod7').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod8').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod9').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod10').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod11').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod12').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod13').style.fontSize="14px"; 
+
+	document.getElementById('textPeriod14').style.fontSize="14px"; 
+
+
+	document.getElementById('textPeriodUnused1').style.fontSize="14px"; 
+
+	document.getElementById('textPeriodUnused2').style.fontSize="14px"; 
+
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 205vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2000vh 03vh`;
+
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 20vh 01vh`;
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 09vh 0.5vh`;
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 09vh 0.5vh`;
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 09vh 0.5vh`;
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 09vh 0.5vh`;
+
+
+	//  id="textIntroductionEmphasized19" 
+	//  25px
+	//  <b>39.67,-97.08</b>
+	document.getElementById('textIntroductionEmphasized19').style.fontSize="65px"; 
 
 
            //   end        Safari iPhone
@@ -780,6 +971,38 @@ if (isAndroid5) {
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1820vh 03vh`;
+
+
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+
+	//  id="textIntroductionEmphasized19" 
+	//  25px
+	//  <b>39.67,-97.08</b>
+	document.getElementById('textIntroductionEmphasized19').style.fontSize="65px"; 
+
+
+
+
 
 
 	//   end        new Edge

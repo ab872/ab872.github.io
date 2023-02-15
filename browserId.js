@@ -59,6 +59,13 @@
 
     var isAndroid8 = whichAgent.includes("Android 8"); 
 
+    var isAndroid9 = whichAgent.includes("Android 9");
+
+    var isAndroid10 = whichAgent.includes("Android 10");
+
+    var isAndroid11 = whichAgent.includes("Android 11");
+
+    var isAndroid12 = whichAgent.includes("Android 12");
 
 
 
