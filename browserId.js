@@ -75,8 +75,13 @@
            isChrome = false; 
     } 
 
+    if (isNewEdge) { 
+           isChrome = false; 
+    } 
 
-
+    if (isAndroidEdge) { 
+           isChrome = false; 
+    } 
 
 
 

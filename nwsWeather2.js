@@ -171,6 +171,12 @@ if (isAndroid5) {
 
 
 
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 180vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1640vh 03vh`;
+
+
+
 // end     all other Firefox under Android
 }
 
@@ -283,6 +289,14 @@ if (isAndroid5) {
 	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
 
 
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1770vh 03vh`;
+
+
+
+
            //   end        Firefox under Win10
         }
 
@@ -306,6 +320,14 @@ if (isAndroid5) {
 		//  Bootstrap icon
 		document.getElementById("BootstrapIcon").style.width="64px"; 
 		document.getElementById("BootstrapIcon").style.height="64px";
+
+
+		document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
+
+		document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2300vh 03vh`;
+
+
+
 
            //   end       Chrome under Android
          } else {
@@ -408,6 +430,12 @@ if (isAndroid5) {
 
 
 
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 160vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1760vh 03vh`;
+
+
+
              	//   end     Chrome others
           }
 
@@ -416,6 +444,110 @@ if (isAndroid5) {
    } else if (isSafari) { 
 
 	if (isiPad) { 
+
+
+		//  "copyRightMsg" 
+		//  12px
+		document.getElementById('copyRightMsg').style.fontSize="50px";
+
+		//  "chromeBestMsg" 
+		//  12px
+		document.getElementById('chromeBestMsg').style.fontSize="50px";
+
+		//  "iconsProvidedMsg" 
+		//  12px
+		document.getElementById('iconsProvidedMsg').style.fontSize="50px";
+
+		//  "mitLicenseMsg" 
+		//  12px
+		document.getElementById('mitLicenseMsg').style.fontSize="50px"; 
+
+		//  "iconsModifiedMsg" 
+		//  12px 
+		document.getElementById('iconsModifiedMsg').style.fontSize="50px"; 
+
+
+
+
+		//  id="textForecastHeader" 
+		//  15px
+		//  <b>Extended Forecast for<br><br>
+		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+
+
+		//  id="textForecastLocation" 
+		//  17px
+		//  <b>XXXX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX</b>
+		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+
+
+		//  id="textForecastCoordinates" 
+		//  17px
+		//  <b>XX.XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX.XX</b>
+		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+
+
+		//  id="textForecastUpdateTime" 
+		//  15px
+		//  <b>XXXX-XX-XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+
+
+
+
+	// text for periods 1 to 14
+	//  id="textPeriod1" 
+	//  6px
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx
+
+	document.getElementById('textPeriod1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod2').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod3').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod4').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod5').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod6').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod7').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod8').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod9').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod10').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod11').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod12').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod13').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod14').style.fontSize="22px"; 
+
+
+	document.getElementById('textPeriodUnused1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
+
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 160vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1760vh 03vh`;
+
+
 
 
            //   end        Safari iPad
@@ -436,10 +568,219 @@ if (isAndroid5) {
 
 	//  alert("using the old Edge browser");
 
+
+		//  "copyRightMsg" 
+		//  12px
+		document.getElementById('copyRightMsg').style.fontSize="50px";
+
+		//  "chromeBestMsg" 
+		//  12px
+		document.getElementById('chromeBestMsg').style.fontSize="50px";
+
+		//  "iconsProvidedMsg" 
+		//  12px
+		document.getElementById('iconsProvidedMsg').style.fontSize="50px";
+
+		//  "mitLicenseMsg" 
+		//  12px
+		document.getElementById('mitLicenseMsg').style.fontSize="50px"; 
+
+		//  "iconsModifiedMsg" 
+		//  12px 
+		document.getElementById('iconsModifiedMsg').style.fontSize="50px"; 
+
+
+
+
+		//  id="textForecastHeader" 
+		//  15px
+		//  <b>Extended Forecast for<br><br>
+		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+
+
+		//  id="textForecastLocation" 
+		//  17px
+		//  <b>XXXX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX</b>
+		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+
+
+		//  id="textForecastCoordinates" 
+		//  17px
+		//  <b>XX.XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX.XX</b>
+		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+
+
+		//  id="textForecastUpdateTime" 
+		//  15px
+		//  <b>XXXX-XX-XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+
+
+
+
+	// text for periods 1 to 14
+	//  id="textPeriod1" 
+	//  6px
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx
+
+	document.getElementById('textPeriod1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod2').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod3').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod4').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod5').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod6').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod7').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod8').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod9').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod10').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod11').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod12').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod13').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod14').style.fontSize="22px"; 
+
+
+	document.getElementById('textPeriodUnused1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
+
+
+
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1820vh 03vh`;
+
+
            //   end        Edge
    } else if (isNewEdge) { 
 
 	//  alert("using the new Edge browser");
+
+
+		//  "copyRightMsg" 
+		//  12px
+		document.getElementById('copyRightMsg').style.fontSize="50px";
+
+		//  "chromeBestMsg" 
+		//  12px
+		document.getElementById('chromeBestMsg').style.fontSize="50px";
+
+		//  "iconsProvidedMsg" 
+		//  12px
+		document.getElementById('iconsProvidedMsg').style.fontSize="50px";
+
+		//  "mitLicenseMsg" 
+		//  12px
+		document.getElementById('mitLicenseMsg').style.fontSize="50px"; 
+
+		//  "iconsModifiedMsg" 
+		//  12px 
+		document.getElementById('iconsModifiedMsg').style.fontSize="50px"; 
+
+
+
+
+		//  id="textForecastHeader" 
+		//  15px
+		//  <b>Extended Forecast for<br><br>
+		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+
+
+		//  id="textForecastLocation" 
+		//  17px
+		//  <b>XXXX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX</b>
+		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+
+
+		//  id="textForecastCoordinates" 
+		//  17px
+		//  <b>XX.XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		//  XX.XX</b>
+		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+
+
+		//  id="textForecastUpdateTime" 
+		//  15px
+		//  <b>XXXX-XX-XX
+		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+
+
+
+
+	// text for periods 1 to 14
+	//  id="textPeriod1" 
+	//  6px
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx<br>
+	//  Xxxx
+
+	document.getElementById('textPeriod1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod2').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod3').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod4').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod5').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod6').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod7').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod8').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod9').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod10').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod11').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod12').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod13').style.fontSize="22px"; 
+
+	document.getElementById('textPeriod14').style.fontSize="22px"; 
+
+
+	document.getElementById('textPeriodUnused1').style.fontSize="22px"; 
+
+	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
+
+
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1820vh 03vh`;
+
 
 	//   end        new Edge
 } else { 
