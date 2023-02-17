@@ -29,13 +29,20 @@
 
     var isChrome = whichAgent.includes("Chrome"); 
 
+
     var isSafari = whichAgent.includes("Safari"); 
+
+    //  Safari with LINE extensions???
+    var isSafariLine = whichAgent.includes("Safari Line");
+
 
     var isiPad = whichAgent.includes("iPad"); 
 
     var isiPhone = whichAgent.includes("iPhone"); 
 
     var isMac = whichAgent.includes("Macintosh"); 
+
+
 
     //  old Edge on Win10
     var isEdge = whichAgent.includes("Edge"); 
@@ -46,10 +53,11 @@
     //  Edge on Android
     var isAndroidEdge = whichAgent.includes("EdgA/"); 
 
+
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 
-    var isAndroid =  whichAgent.includes("Android"); 
 
+    var isAndroid =  whichAgent.includes("Android"); 
 
     var isAndroid4 =  whichAgent.includes("Android 4"); 
 
@@ -72,11 +80,14 @@
     //  var browsersFound = 0;
 
 
-   //  there are a couple of cases where there are duplicate matches
-   //  these two overrides correct the situation
+
+   //  there are some cases where there are duplicate matches
+   //  these overrides correct the situation
+
     if (isChrome) { 
            isSafari = false;
     }
+
 
     if (isEdge) { 
            isChrome = false; 
@@ -90,9 +101,9 @@
            isChrome = false; 
     } 
 
-
-
-
+    if (isSafariLine) { 
+           isSafari = false; 
+    } 
     
 
 

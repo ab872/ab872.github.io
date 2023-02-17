@@ -401,6 +401,14 @@ if (isEdge) {
                     '<td style="background-color:ghostwhite;color:black" ><center>' + 
                     '<span style="font-size:12px;">' + 'Chrome' + '</span>' + '</center> </td></tr>';
 
+   } else if (isSafariLine) {
+
+               displayStr = displayStr + 
+                    '<tr><td style="background-color: aliceblue;color:black" > <center>' + 
+                    '<span style="font-size:12px;">&nbsp;Browser&nbsp;</span></center> </td>' + 
+                    '<td style="background-color:ghostwhite;color:black" ><center>' + 
+                    '<span style="font-size:12px;">' + 'Safari - LINE' + '</span>' + '</center> </td></tr>';
+
    } else if (isSafari) { 
 
                displayStr = displayStr + 
