@@ -598,38 +598,38 @@ if (isAndroid5) {
 	//  Xxxx<br>
 	//  Xxxx
 
-	document.getElementById('textPeriod1').style.fontSize="19px"; 
+	document.getElementById('textPeriod1').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod2').style.fontSize="19px"; 
+	document.getElementById('textPeriod2').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod3').style.fontSize="19px"; 
+	document.getElementById('textPeriod3').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod4').style.fontSize="19px"; 
+	document.getElementById('textPeriod4').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod5').style.fontSize="19px"; 
+	document.getElementById('textPeriod5').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod6').style.fontSize="19px"; 
+	document.getElementById('textPeriod6').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod7').style.fontSize="19px"; 
+	document.getElementById('textPeriod7').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod8').style.fontSize="19px"; 
+	document.getElementById('textPeriod8').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod9').style.fontSize="19px"; 
+	document.getElementById('textPeriod9').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod10').style.fontSize="19px"; 
+	document.getElementById('textPeriod10').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod11').style.fontSize="19px"; 
+	document.getElementById('textPeriod11').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod12').style.fontSize="19px"; 
+	document.getElementById('textPeriod12').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod13').style.fontSize="19px"; 
+	document.getElementById('textPeriod13').style.fontSize="14px"; 
 
-	document.getElementById('textPeriod14').style.fontSize="19px"; 
+	document.getElementById('textPeriod14').style.fontSize="14px"; 
 
 
-	document.getElementById('textPeriodUnused1').style.fontSize="19px"; 
+	document.getElementById('textPeriodUnused1').style.fontSize="14px"; 
 
-	document.getElementById('textPeriodUnused2').style.fontSize="19px"; 
+	document.getElementById('textPeriodUnused2').style.fontSize="14px"; 
 
 	//  id="textIntroductionEmphasized19" 
 	//  25px
