@@ -641,7 +641,7 @@ if (isAndroid5) {
 
 
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 144.7vh 03vh`;
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 143.7vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1459vh 03vh`;
 
