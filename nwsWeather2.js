@@ -641,14 +641,14 @@ if (isAndroid5) {
 
 
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 150vh 03vh`;
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 144.7vh 03vh`;
 
-	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1470vh 03vh`;
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1459vh 03vh`;
 
 
 	//  id="grid-containerForecastTitle"
 	//  grid-template-rows: 01vh 25vh 01vh
-	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 18vh 01vh`;
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 14vh 01vh`;
 
 	//  id="grid-containerWeather1"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
