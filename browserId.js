@@ -107,4 +107,73 @@
     
 
 
+
+    //  get the device screen dimensions and orientation
+
+    var deviceScreenHeight = screen.height;
+    var deviceScreenWidth = screen.width;
+
+
+    var deviceAvailScreenHeight = screen.availHeight;
+    var deviceAvailScreenWidth = screen.availWidth;
+
+
+
+    var deviceScreenOrientation = "";
+
+
+    if (isEdge) { 
+
+	deviceScreenOrientation = '*****';
+
+    } else if (isSafari) { 
+
+	deviceScreenOrientation = '*****';
+
+   } else { 
+
+	deviceScreenOrientation = screen.orientation.angle;
+}
+
+
+
+    var deviceWindowOrientation = "";
+
+
+    if (isEdge) { 
+
+		deviceWindowOrientation = '*****';
+
+    } else if (isChrome) { 
+
+		deviceWindowOrientation = '*****';
+
+    } else { 
+
+	    deviceWindowOrientation = window.orientation;
+
+    }
+
+
+
+
+
+    var deviceOrientationType = "";
+
+    if (isEdge) { 
+
+	deviceOrientationType = '*****';
+
+    } else if (isSafari) { 
+
+	deviceOrientationType = '*****';
+
+    } else { 
+
+	deviceOrientationType = screen.orientation.type;
+
+    }
+
+
+
 // end     browserId.js
