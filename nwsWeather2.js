@@ -188,6 +188,8 @@ if (isAndroid5) {
 
 
 
+
+
 // end     all other Firefox under Android
 }
 
@@ -348,6 +350,7 @@ if (isAndroid5) {
 
            //   end        Firefox 
    } else if (isChrome) { 
+
 
 
         if (isAndroid) {
@@ -534,6 +537,7 @@ if (isAndroid5) {
           }
 
 
+ 
            //   end        Chrome
    } else if (isSafariLine) {
 
@@ -1240,25 +1244,151 @@ if (deviceScreenWidth == 375) {
 	//  alert("using the old Edge browser");
 
 
+	//  id="textIntroduction" 
+	//  24px
+	document.getElementById('textIntroduction').style.fontSize="46px";
+
+
+	//  id="textIntroductionEmphasized1"
+	//  25px
+	document.getElementById('textIntroductionEmphasized1').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized2"
+	//  25px
+	document.getElementById('textIntroductionEmphasized2').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized3"
+	//  25px
+	document.getElementById('textIntroductionEmphasized3').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized4"
+	//  25px
+	document.getElementById('textIntroductionEmphasized4').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized5"
+	//  25px
+	document.getElementById('textIntroductionEmphasized5').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized6"
+	//  25px
+	document.getElementById('textIntroductionEmphasized6').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized7"
+	//  25px
+	document.getElementById('textIntroductionEmphasized7').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized8"
+	//  25px
+	document.getElementById('textIntroductionEmphasized8').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized9"
+	//  25px
+	document.getElementById('textIntroductionEmphasized9').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized10"
+	//  25px
+	document.getElementById('textIntroductionEmphasized10').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized11"
+	//  25px
+	document.getElementById('textIntroductionEmphasized11').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized12"
+	//  25px
+	document.getElementById('textIntroductionEmphasized12').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized13"
+	//  25px
+	document.getElementById('textIntroductionEmphasized13').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized14"
+	//  25px
+	document.getElementById('textIntroductionEmphasized14').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized15"
+	//  25px
+	document.getElementById('textIntroductionEmphasized15').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized16"
+	//  25px
+	document.getElementById('textIntroductionEmphasized16').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized17"
+	//  25px
+	document.getElementById('textIntroductionEmphasized17').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized18"
+	//  25px
+	document.getElementById('textIntroductionEmphasized18').style.fontSize="47px";
+
+
+
+
+	//  id="textIntroductionEmphasized20"
+	//  25px
+	document.getElementById('textIntroductionEmphasized20').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized21"
+	//  25px
+	document.getElementById('textIntroductionEmphasized21').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized22"
+	//  25px
+	document.getElementById('textIntroductionEmphasized22').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized23"
+	//  25px 
+	document.getElementById('textIntroductionEmphasized23').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized24"
+	//  25px
+	document.getElementById('textIntroductionEmphasized24').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized25"
+	//  25px
+	document.getElementById('textIntroductionEmphasized25').style.fontSize="47px";
+
+
+
+
+
 		//  "copyRightMsg" 
 		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="50px";
+		document.getElementById('copyRightMsg').style.fontSize="70px";
 
 		//  "chromeBestMsg" 
 		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="50px";
+		document.getElementById('chromeBestMsg').style.fontSize="70px";
 
 		//  "iconsProvidedMsg" 
 		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="50px";
+		document.getElementById('iconsProvidedMsg').style.fontSize="70px";
 
 		//  "mitLicenseMsg" 
 		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="50px"; 
+		document.getElementById('mitLicenseMsg').style.fontSize="70px"; 
 
 		//  "iconsModifiedMsg" 
 		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="50px"; 
+		document.getElementById('iconsModifiedMsg').style.fontSize="70px"; 
 
 
 
@@ -1266,7 +1396,7 @@ if (deviceScreenWidth == 375) {
 		//  id="textForecastHeader" 
 		//  15px
 		//  <b>Extended Forecast for<br><br>
-		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+		document.getElementById('textForecastHeader').style.fontSize="50px"; 
 
 
 		//  id="textForecastLocation" 
@@ -1274,7 +1404,7 @@ if (deviceScreenWidth == 375) {
 		//  <b>XXXX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		//  XX</b>
-		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+		document.getElementById('textForecastLocation').style.fontSize="50px"; 
 
 
 		//  id="textForecastCoordinates" 
@@ -1282,14 +1412,14 @@ if (deviceScreenWidth == 375) {
 		//  <b>XX.XX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		//  XX.XX</b>
-		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+		document.getElementById('textForecastCoordinates').style.fontSize="50px"; 
 
 
 		//  id="textForecastUpdateTime" 
 		//  15px
 		//  <b>XXXX-XX-XX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+		document.getElementById('textForecastUpdateTime').style.fontSize="50px"; 
 
 
 
@@ -1302,38 +1432,38 @@ if (deviceScreenWidth == 375) {
 	//  Xxxx<br>
 	//  Xxxx
 
-	document.getElementById('textPeriod1').style.fontSize="22px"; 
+	document.getElementById('textPeriod1').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod2').style.fontSize="22px"; 
+	document.getElementById('textPeriod2').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod3').style.fontSize="22px"; 
+	document.getElementById('textPeriod3').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod4').style.fontSize="22px"; 
+	document.getElementById('textPeriod4').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod5').style.fontSize="22px"; 
+	document.getElementById('textPeriod5').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod6').style.fontSize="22px"; 
+	document.getElementById('textPeriod6').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod7').style.fontSize="22px"; 
+	document.getElementById('textPeriod7').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod8').style.fontSize="22px"; 
+	document.getElementById('textPeriod8').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod9').style.fontSize="22px"; 
+	document.getElementById('textPeriod9').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod10').style.fontSize="22px"; 
+	document.getElementById('textPeriod10').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod11').style.fontSize="22px"; 
+	document.getElementById('textPeriod11').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod12').style.fontSize="22px"; 
+	document.getElementById('textPeriod12').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod13').style.fontSize="22px"; 
+	document.getElementById('textPeriod13').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod14').style.fontSize="22px"; 
+	document.getElementById('textPeriod14').style.fontSize="25px"; 
 
 
-	document.getElementById('textPeriodUnused1').style.fontSize="22px"; 
+	document.getElementById('textPeriodUnused1').style.fontSize="25px"; 
 
-	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
+	document.getElementById('textPeriodUnused2').style.fontSize="25px"; 
 
 
 	//  id="textIntroductionEmphasized19" 
@@ -1346,15 +1476,18 @@ if (deviceScreenWidth == 375) {
 
 if (deviceScreenWidth == 1707) {
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 122vh 03vh`;
+	//  alert("old Edge browser  -  screen width = 1707");
 
-	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1340vh 03vh`;
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 250vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1360vh 03vh`;
 
 
 
 	//  id="grid-containerForecastTitle"
 	//  grid-template-rows: 01vh 25vh 01vh
-	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 24vh 01vh`;
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 30vh 01vh`;
 
 	//  id="grid-containerWeather1"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
@@ -1376,8 +1509,10 @@ if (deviceScreenWidth == 1707) {
    //   end     screen width EQUAL to 1707
 }  else if (deviceScreenWidth == 1536) {
 
+	//  alert("old Edge browser  -  screen width = 1536");
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 190vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1820vh 03vh`;
 
@@ -1390,7 +1525,10 @@ if (deviceScreenWidth == 1707) {
    //   end     screen width EQUAL to 100
 } else {
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 122vh 03vh`;
+	//  alert("old Edge browser  -  screen width = all others");
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 142vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1340vh 03vh`;
 
@@ -1427,25 +1565,151 @@ if (deviceScreenWidth == 1707) {
 	//  alert("using the new Edge browser");
 
 
+
+	//  id="textIntroduction" 
+	//  24px
+	document.getElementById('textIntroduction').style.fontSize="46px";
+
+
+	//  id="textIntroductionEmphasized1"
+	//  25px
+	document.getElementById('textIntroductionEmphasized1').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized2"
+	//  25px
+	document.getElementById('textIntroductionEmphasized2').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized3"
+	//  25px
+	document.getElementById('textIntroductionEmphasized3').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized4"
+	//  25px
+	document.getElementById('textIntroductionEmphasized4').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized5"
+	//  25px
+	document.getElementById('textIntroductionEmphasized5').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized6"
+	//  25px
+	document.getElementById('textIntroductionEmphasized6').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized7"
+	//  25px
+	document.getElementById('textIntroductionEmphasized7').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized8"
+	//  25px
+	document.getElementById('textIntroductionEmphasized8').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized9"
+	//  25px
+	document.getElementById('textIntroductionEmphasized9').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized10"
+	//  25px
+	document.getElementById('textIntroductionEmphasized10').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized11"
+	//  25px
+	document.getElementById('textIntroductionEmphasized11').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized12"
+	//  25px
+	document.getElementById('textIntroductionEmphasized12').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized13"
+	//  25px
+	document.getElementById('textIntroductionEmphasized13').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized14"
+	//  25px
+	document.getElementById('textIntroductionEmphasized14').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized15"
+	//  25px
+	document.getElementById('textIntroductionEmphasized15').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized16"
+	//  25px
+	document.getElementById('textIntroductionEmphasized16').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized17"
+	//  25px
+	document.getElementById('textIntroductionEmphasized17').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized18"
+	//  25px
+	document.getElementById('textIntroductionEmphasized18').style.fontSize="47px";
+
+
+
+
+	//  id="textIntroductionEmphasized20"
+	//  25px
+	document.getElementById('textIntroductionEmphasized20').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized21"
+	//  25px
+	document.getElementById('textIntroductionEmphasized21').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized22"
+	//  25px
+	document.getElementById('textIntroductionEmphasized22').style.fontSize="47px";
+
+
+	//  id="textIntroductionEmphasized23"
+	//  25px 
+	document.getElementById('textIntroductionEmphasized23').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized24"
+	//  25px
+	document.getElementById('textIntroductionEmphasized24').style.fontSize="47px";
+
+	//  id="textIntroductionEmphasized25"
+	//  25px
+	document.getElementById('textIntroductionEmphasized25').style.fontSize="47px";
+
+
+
+
 		//  "copyRightMsg" 
 		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="50px";
+		document.getElementById('copyRightMsg').style.fontSize="60px";
 
 		//  "chromeBestMsg" 
 		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="50px";
+		document.getElementById('chromeBestMsg').style.fontSize="60px";
 
 		//  "iconsProvidedMsg" 
 		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="50px";
+		document.getElementById('iconsProvidedMsg').style.fontSize="60px";
 
 		//  "mitLicenseMsg" 
 		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="50px"; 
+		document.getElementById('mitLicenseMsg').style.fontSize="60px"; 
 
 		//  "iconsModifiedMsg" 
 		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="50px"; 
+		document.getElementById('iconsModifiedMsg').style.fontSize="60px"; 
 
 
 
@@ -1453,7 +1717,7 @@ if (deviceScreenWidth == 1707) {
 		//  id="textForecastHeader" 
 		//  15px
 		//  <b>Extended Forecast for<br><br>
-		document.getElementById('textForecastHeader').style.fontSize="30px"; 
+		document.getElementById('textForecastHeader').style.fontSize="50px"; 
 
 
 		//  id="textForecastLocation" 
@@ -1461,7 +1725,7 @@ if (deviceScreenWidth == 1707) {
 		//  <b>XXXX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		//  XX</b>
-		document.getElementById('textForecastLocation').style.fontSize="30px"; 
+		document.getElementById('textForecastLocation').style.fontSize="50px"; 
 
 
 		//  id="textForecastCoordinates" 
@@ -1469,14 +1733,14 @@ if (deviceScreenWidth == 1707) {
 		//  <b>XX.XX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		//  XX.XX</b>
-		document.getElementById('textForecastCoordinates').style.fontSize="30px"; 
+		document.getElementById('textForecastCoordinates').style.fontSize="50px"; 
 
 
 		//  id="textForecastUpdateTime" 
 		//  15px
 		//  <b>XXXX-XX-XX
 		//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		document.getElementById('textForecastUpdateTime').style.fontSize="30px"; 
+		document.getElementById('textForecastUpdateTime').style.fontSize="50px"; 
 
 
 
@@ -1489,38 +1753,38 @@ if (deviceScreenWidth == 1707) {
 	//  Xxxx<br>
 	//  Xxxx
 
-	document.getElementById('textPeriod1').style.fontSize="22px"; 
+	document.getElementById('textPeriod1').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod2').style.fontSize="22px"; 
+	document.getElementById('textPeriod2').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod3').style.fontSize="22px"; 
+	document.getElementById('textPeriod3').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod4').style.fontSize="22px"; 
+	document.getElementById('textPeriod4').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod5').style.fontSize="22px"; 
+	document.getElementById('textPeriod5').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod6').style.fontSize="22px"; 
+	document.getElementById('textPeriod6').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod7').style.fontSize="22px"; 
+	document.getElementById('textPeriod7').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod8').style.fontSize="22px"; 
+	document.getElementById('textPeriod8').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod9').style.fontSize="22px"; 
+	document.getElementById('textPeriod9').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod10').style.fontSize="22px"; 
+	document.getElementById('textPeriod10').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod11').style.fontSize="22px"; 
+	document.getElementById('textPeriod11').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod12').style.fontSize="22px"; 
+	document.getElementById('textPeriod12').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod13').style.fontSize="22px"; 
+	document.getElementById('textPeriod13').style.fontSize="25px"; 
 
-	document.getElementById('textPeriod14').style.fontSize="22px"; 
+	document.getElementById('textPeriod14').style.fontSize="25px"; 
 
 
-	document.getElementById('textPeriodUnused1').style.fontSize="22px"; 
+	document.getElementById('textPeriodUnused1').style.fontSize="25px"; 
 
-	document.getElementById('textPeriodUnused2').style.fontSize="22px"; 
+	document.getElementById('textPeriodUnused2').style.fontSize="25px"; 
 
 
 	//  id="textIntroductionEmphasized19" 
@@ -1532,46 +1796,50 @@ if (deviceScreenWidth == 1707) {
 
 if (deviceScreenWidth == 1707) {
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 140vh 03vh`;
+	//  alert("new Edge browser  -  screen width = 1707");
 
-	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1570vh 03vh`;
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1500vh 03vh`;
 
 
 
 	//  id="grid-containerForecastTitle"
 	//  grid-template-rows: 01vh 25vh 01vh
-	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 27vh 01vh`;
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 30vh 01vh`;
 
 	//  id="grid-containerWeather1"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 15vh 0.5vh`;
 
 	//  id="grid-containerWeather1b"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 15vh 0.5vh`;
 
 	//  id="grid-containerWeather1c"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 15vh 0.5vh`;
 
 	//  id="grid-containerWeather1d"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 15vh 0.5vh`;
 
 
    //   end     screen width EQUAL to 1707
 }  else if (deviceScreenWidth == 1536) {
 
+	//  alert("new Edge browser  -  screen width = 1536");
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 340vh 03vh`;
 
-	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1820vh 03vh`;
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1840vh 03vh`;
 
 
 
 	//  id="grid-containerForecastTitle"
 	//  grid-template-rows: 01vh 25vh 01vh
-	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 40vh 01vh`;
 
 	//  id="grid-containerWeather1"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
@@ -1599,7 +1867,10 @@ if (deviceScreenWidth == 1707) {
    //   end     screen width EQUAL to 100
 } else {
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 140vh 03vh`;
+	//  alert("new Edge browser  -  screen width = all others");
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 240vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1570vh 03vh`;
 
