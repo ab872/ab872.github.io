@@ -619,6 +619,41 @@ if (isFirefox) {
 
 
 
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+
 
 
 
@@ -1157,6 +1192,49 @@ if (isChrome) {
 
 
 
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 170vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+
+
+
+
+
+
 		   
 			//	document.getElementById('textSVGanimationCaption').innerHTML=
 			//	'<i>It is possible to animate an SVG. One way<br>' + 
@@ -1214,7 +1292,7 @@ if (isChrome) {
 				//  id="pdfIcon" 
 				//  width="16" height="16" 
 				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//           document.getElementById("pdfIcon").style.height="128px";
+				//  document.getElementById("pdfIcon").style.height="128px";
 
 
 						   
@@ -1226,7 +1304,7 @@ if (isChrome) {
 
 				//  document.getElementById
 				//  ('textSVGanimationCaption').
-				//  style.fontSize="78px";
+				//  style.fontSize="78px"
 
 
 
@@ -1258,6 +1336,7 @@ if (isChrome) {
 
 				//  document.getElementById
 				//  ("mp4Icon").style.height="128px";
+
 
 
 
@@ -1548,6 +1627,43 @@ if (isEdge) {
 
 
 
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+
+
 		   
 			//	document.getElementById('textSVGanimationCaption').innerHTML=
 			//	'<i>It is possible to animate an SVG. One way<br>' + 
@@ -1664,7 +1780,7 @@ if (isEdge) {
 
 
 
-	//   end        Edge
+	//   end        old Edge
 } 
 
 
@@ -1973,6 +2089,39 @@ if (isNewEdge) {
 			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
 
 
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
 
 
 
