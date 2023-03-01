@@ -214,6 +214,53 @@ if (isFirefox) {
 
 					//  document.getElementById
 					//  ("mp4Icon").style.height="128px";
+
+
+
+	//  id="textRobotEmphasized2" 
+	//  12px
+	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
+	document.getElementById('textRobotEmphasized2').innerHTML=
+	'<i>http://developer.android.com/distribute/<br>' + 
+	'googleplay/promote/brand.html</i>';
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+
 					
 			// end     all other Firefox under Android
 		}
@@ -801,6 +848,44 @@ if (isChrome) {
 			'code for a simple animation.' + 
 			'</i>';
  
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+
 
            	//   end       Chrome under Android
          } else {
@@ -1483,7 +1568,7 @@ if (isSafari) {
 				//  id="pdfIcon" 
 				//  width="16" height="16" 
 				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//           document.getElementById("pdfIcon").style.height="128px";
+				//  document.getElementById("pdfIcon").style.height="128px";
 
 
 						   
@@ -1535,11 +1620,370 @@ if (isSafari) {
            			document.getElementById("cameraIcon").style.height="64px";
 
 
+
+if (deviceScreenWidth == 375) {
+
+	//  alert("Safari iPad     screen width EQUAL to 375 "); 
+
+
+
+   //   end     screen width EQUAL to 375
+} else if (deviceScreenWidth == 414) {
+
+	alert("Safari iPhone     screen width EQUAL to 414 "); 
+
+
+   //   end     screen width EQUAL to 414
+} else if (deviceScreenWidth == 390) {
+
+	//  alert("Safari iPad     screen width EQUAL to 390 "); 
+
+
+   //   end     screen width EQUAL to 390
+} else if (deviceScreenWidth == 414) {
+
+	//  alert("Safari iPad     screen width EQUAL to 414 "); 
+
+
+   //   end     screen width EQUAL to 414
+} else if (deviceScreenWidth == 768) {
+
+	 // alert("Safari iPad     screen width EQUAL to 768 "); 
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+   //   end     screen width EQUAL to 768
+} else if (deviceScreenWidth == 820) {
+
+	  //  alert("Safari iPad     screen width EQUAL to 820 "); 
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+
+   //   end     screen width EQUAL to 820
+} else if (deviceScreenWidth == 100) {
+
+	//  alert("Safari iPad     screen width EQUAL to 100 "); 
+
+
+   //   end     screen width EQUAL to 100
+} else {
+
+	 // alert("Safari iPad     screen width EQUAL to all others "); 
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+   //   end     screen width - others
+}
+
+
+
+
+
 	  //   end        isiPad
 	} else if (isiPhone) { 
 
 		//  alert("using the Safari browser on an iPhone");
 		//  theBrowserIsUnknown = false;
+
+
+
+if (deviceScreenWidth == 375) {
+  
+	//  alert("Safari iPhone     screen width EQUAL to 375 "); 
+
+
+
+	//  id="textRobotEmphasized2" 
+	//  12px
+	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
+	document.getElementById('textRobotEmphasized2').innerHTML=
+	'<i>http://developer.android.com/distribute/<br>' + 
+	'googleplay/promote/brand.html</i>';
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows='0.3vh 65vh 0.3vh';
+
+
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 15vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+   //   end     screen width EQUAL to 375
+} else if (deviceScreenWidth == 390) {
+
+	//  alert("Safari iPhone     screen width EQUAL to 390 "); 
+
+	//  id="textRobotEmphasized2" 
+	//  12px
+	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
+	document.getElementById('textRobotEmphasized2').innerHTML=
+	'<i>http://developer.android.com/distribute/<br>' + 
+	'googleplay/promote/brand.html</i>';
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+   //   end     screen width EQUAL to 390
+} else if (deviceScreenWidth == 414) {
+
+	//  alert("Safari iPhone     screen width EQUAL to 414 "); 
+
+	//  id="textRobotEmphasized2" 
+	//  12px
+	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
+	document.getElementById('textRobotEmphasized2').innerHTML=
+	'<i>http://developer.android.com/distribute/<br>' + 
+	'googleplay/promote/brand.html</i>';
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+
+   //   end     screen width EQUAL to 414
+} else if (deviceScreenWidth == 100) {
+
+	//  alert("Safari iPhone     screen width EQUAL to 100 "); 
+
+
+   //   end     screen width EQUAL to 100
+} else {
+
+	//  alert("Safari iPhone     screen width EQUAL to all others "); 
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+
+
+   //   end     screen width - others
+}
+
+
+
+
 
 	  //   end        isiPhone
 	} else if (isMac) { 
