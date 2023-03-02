@@ -144,13 +144,14 @@ if (isFirefox) {
 				document.getElementById("cameraIcon").style.width="64px"; 
            			document.getElementById("cameraIcon").style.height="64px";
 
+		alert("Firefox Android - all others. xxxxx1.");
 
 
 
 				//  id="textPhotoGalleryCaption" style="color:Grey;font-
 				//  size   12px
 
-				//    ><i>A collection of photos arranged in a<br>
+				//    <i>A collection of photos arranged in a<br>
 				//   grid pattern using CSS GRID.<br>
 				//  Includes references.
 				//  </i>
