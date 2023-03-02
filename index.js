@@ -32,7 +32,7 @@ if (isFirefox) {
 	if (isAndroid) {
            //   begin      Firefox under Android
 
-		alert("using the Firefox browser under Android");
+		//  alert("using the Firefox browser under Android");
 		//  theBrowserIsUnknown = false;
 
 		if (isAndroid5) { 
@@ -69,17 +69,19 @@ if (isFirefox) {
 
 			// all other Firefox under Android
 
-				  alert("using the Firefox browser under Android - all others");
+				//  alert("using the Firefox browser under Android - all others");
 				//  theBrowserIsUnknown = false;
+
 
 
 				//   id="imageIntro" 
 				//  height="162" 
 				//  width="375" 
-				document.getElementById("imageIntro").style.height="202px";
-				document.getElementById("imageIntro").style.width="468px"; 
+			//	document.getElementById("imageIntro").style.height="202px";
+			//	document.getElementById("imageIntro").style.width="468px"; 
 
-alert("Firefox Android - all others. xxxxx1.");
+
+
 			
 				//  id="textIntroduction" 
 				//      Original     14px    
@@ -87,21 +89,21 @@ alert("Firefox Android - all others. xxxxx1.");
 				//  'textIntroduction').style.
 				//  fontSize="96px";
 
-alert("Firefox Android - all others. xxxxx2.");
+
 
 				//  id="textIntroductionEmphasized1"
 				//  document.getElementById(
 				//  'textIntroductionEmphasized1').style.
 				//  fontSize="97px";
 
-alert("Firefox Android - all others. xxxxx3.");
+
 
 				//  id="textIntroductionEmphasized2"
 				//  document.getElementById(
 				//  'textIntroductionEmphasized2').style.
 				//  fontSize="97px";
 
-alert("Firefox Android - all others. xxxxx4.");
+
 
 				//  adjust the size of the
 				//  Bootstrap icon
@@ -109,34 +111,34 @@ alert("Firefox Android - all others. xxxxx4.");
 				document.getElementById("BootstrapIcon").style.width="64px"; 
 				document.getElementById("BootstrapIcon").style.height="64px";
 
-alert("Firefox Android - all others. xxxxx5.");
+
 
 				document.getElementById('textIntroCaption').innerHTML=
 					"<i>Preview rendering of printed circuit<br>" + 
 					"board produced by parsing the data files. Rendered " + 
 					"using SVG graphics. Early version of the software.</i>";
 
-alert("Firefox Android - all others. xxxxx6.");
+
 
 				//  id="textIntroCaption"
 				//  Original    12px
 				document.getElementById('textIntroCaption').style.fontSize="18px";
 
 
-alert("Firefox Android - all others. xxxxx7.");
+
 				//  id="pdfIcon" 
 				//  width="16" height="16" 
 				document.getElementById("pdfIcon").style.width="64px"; 
            			document.getElementById("pdfIcon").style.height="64px";
 
 
-alert("Firefox Android - all others. xxxxx8.");
+
 				//    id="mp4Icon"
 				//    width="16" height="16" 
 				document.getElementById("mp4Icon").style.width="64px"; 
            			document.getElementById("mp4Icon").style.height="64px";
 
-alert("Firefox Android - all others. xxxxx9.");
+
 				//    id="mp4Icon2"
 				//    width="16" height="16" 
 				document.getElementById("mp4Icon2").style.width="64px"; 
@@ -144,7 +146,7 @@ alert("Firefox Android - all others. xxxxx9.");
 
 
 
-alert("Firefox Android - all others. xxxxx10.");
+
 				//    id="cameraIcon"
 				//    width="36" height="36" 
 				document.getElementById("cameraIcon").style.width="64px"; 
@@ -152,7 +154,7 @@ alert("Firefox Android - all others. xxxxx10.");
 
 
 
-alert("Firefox Android - all others. xxxxx11.");
+
 				//  id="textPhotoGalleryCaption" style="color:Grey;font-
 				//  size   12px
 
@@ -162,7 +164,7 @@ alert("Firefox Android - all others. xxxxx11.");
 				//  </i>
 
 
-alert("Firefox Android - all others. xxxxx12.");
+
 				document.getElementById('textSVGanimationCaption').innerHTML=
 					'<i>It is possible to animate an SVG. One way<br>' + 
 					'to do so is by using <span id="textAnimationEmphasized1" ' + 
@@ -184,7 +186,7 @@ alert("Firefox Android - all others. xxxxx12.");
 					'</i>';
 
 
-alert("Firefox Android - all others. xxxxx13.");
+
 					//    id= textSVGanimationCaption
 					//    color Grey     font-size 12px
 
@@ -222,7 +224,7 @@ alert("Firefox Android - all others. xxxxx13.");
 					//  ("mp4Icon").style.height="128px";
 
 
-		alert("Firefox Android - all others. Adjust category borders.");
+	
 
 
 	//  id="textRobotEmphasized2" 
@@ -236,35 +238,37 @@ alert("Firefox Android - all others. xxxxx13.");
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 45vh 0.3vh";
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+
 
 	//  id="grid-containerCAD"
      	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 35vh 0.3vh";
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
 
 
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
 
 
 
 	//  id="grid-containerGraphics"
      	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 70vh 0.3vh";
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
 
 
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
 
 
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 15vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
 
 
 
