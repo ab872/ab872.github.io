@@ -851,6 +851,16 @@ if (isChrome) {
 
 
 
+	//  id="textRobotEmphasized2" 
+	//  12px
+	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
+	document.getElementById('textRobotEmphasized2').innerHTML=
+	'<i>http://developer.android.com/distribute/<br>' + 
+	'googleplay/promote/brand.html</i>';
+
+
+
+
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
@@ -1630,7 +1640,7 @@ if (deviceScreenWidth == 375) {
    //   end     screen width EQUAL to 375
 } else if (deviceScreenWidth == 414) {
 
-	alert("Safari iPhone     screen width EQUAL to 414 "); 
+	//  alert("Safari iPhone     screen width EQUAL to 414 "); 
 
 
    //   end     screen width EQUAL to 414
