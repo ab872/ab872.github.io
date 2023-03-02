@@ -69,7 +69,7 @@ if (isFirefox) {
 
 			// all other Firefox under Android
 
-				//  alert("using the Firefox browser under Android - all others");
+				  alert("using the Firefox browser under Android - all others");
 				//  theBrowserIsUnknown = false;
 
 
