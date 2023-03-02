@@ -32,7 +32,7 @@ if (isFirefox) {
 	if (isAndroid) {
            //   begin      Firefox under Android
 
-		//  alert("using the Firefox browser under Android");
+		alert("using the Firefox browser under Android");
 		//  theBrowserIsUnknown = false;
 
 		if (isAndroid5) { 
@@ -215,6 +215,8 @@ if (isFirefox) {
 					//  document.getElementById
 					//  ("mp4Icon").style.height="128px";
 
+
+		alert("Firefox Android - all others. Adjust category borders.");
 
 
 	//  id="textRobotEmphasized2" 
