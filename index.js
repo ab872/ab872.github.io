@@ -243,7 +243,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
 
 
