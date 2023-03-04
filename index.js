@@ -236,6 +236,59 @@ if (isFirefox) {
 
 
 
+
+if (deviceScreenWidth == 1143) {
+
+	//  alert("Firefox Android     screen width EQUAL to 1143 "); 
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 45vh 0.3vh";
+
+
+
+   //   end     screen width EQUAL to 1143
+} else if (deviceScreenWidth == 100) {
+
+	//  alert("Firefox Android     screen width EQUAL to 100 "); 
+
+
+   //   end     screen width EQUAL to 100
+} else {
+
+	  alert("Firefox Android     screen width EQUAL to all others "); 
+
+
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
@@ -272,6 +325,8 @@ if (isFirefox) {
 
 
 
+   //   end     screen width - others
+}
 
 					
 			// end     all other Firefox under Android
