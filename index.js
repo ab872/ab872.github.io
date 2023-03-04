@@ -239,7 +239,7 @@ if (isFirefox) {
 
 if (deviceScreenWidth == 1133) {
 
-	//  alert("Firefox Android     screen width EQUAL to 1133 "); 
+	  alert("Firefox Android     screen width EQUAL to 1133 "); 
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
