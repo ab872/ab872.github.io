@@ -763,7 +763,215 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+
+
+
+			//  id="textGraphApp1"
+			//  16px;">
+			//  <b>Using the Canvas in C#</b>
+			document.getElementById('textGraphApp1').style.fontSize="28px";
+
+
+
+			//  id="textGraphAppCaption"
+			//  14px
+			document.getElementById('textGraphAppCaption').style.fontSize="28px";
+
+
+			//  id="textIntroductionPre"
+			//  10px
+			document.getElementById('textIntroductionPre').style.fontSize="24px";
+
+
+			//  id="textGraphAppCaption2"
+			//  10px
+			//  <b>Operating System:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption3"
+			//  10px
+			//  <b>Windows 7 - 10</b>
+			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption4"
+			//  10px
+			//  <b>Development IDE:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption4').innerHTML=
+				'<b>Development IDE:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption5"
+			//  10px
+			//  <b>Visual Studio</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption5').innerHTML=
+				'<b>Visual Studio</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption6"
+			//  10px
+			//  <b>Language:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption6').innerHTML=
+				'<b>Language:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption7"
+			//  10px
+			//  <b>C#</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption7').innerHTML=
+				'<b>C#</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption8"
+			//  10px
+			//  <b>Demo features:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption8').innerHTML=
+				'<b>Demo features:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;';
+
+
+
+
+
+
+
+
+
+			//  id="textGraphAppCaption9"
+			//  10px
+			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
+			//  &nbsp;&nbsp;&nbsp;<br>
+			//  &#x2022; 2. Data inspection via zoom in or zoom out.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 3. Dynamic repositioning of the viewing
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  window.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 4. Selectable data cursors.
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 5. Step through the data using the cursor.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  </b>
+
+
+
+			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
+
+
+			document.getElementById('textGraphAppCaption9').innerHTML= 
+				'<b>' + 
+				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
+				'&nbsp;&nbsp;<br>' + 
+				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 3. Dynamic repositioning of the viewing' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'window.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 4. Selectable data cursors.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 5. Step through the data using the cursor.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;' + 
+				'</b>';
+
+
 
 
 
@@ -1440,7 +1648,225 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
+
+
+
+
+
+
+
+
+
+			//  id="textGraphApp1"
+			//  16px;">
+			//  <b>Using the Canvas in C#</b>
+			document.getElementById('textGraphApp1').style.fontSize="28px";
+
+
+
+			//  id="textGraphAppCaption"
+			//  14px
+			document.getElementById('textGraphAppCaption').style.fontSize="28px";
+
+
+			//  id="textIntroductionPre"
+			//  10px
+			document.getElementById('textIntroductionPre').style.fontSize="24px";
+
+
+			//  id="textGraphAppCaption2"
+			//  10px
+			//  <b>Operating System:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption3"
+			//  10px
+			//  <b>Windows 7 - 10</b>
+			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption4"
+			//  10px
+			//  <b>Development IDE:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption4').innerHTML=
+				'<b>Development IDE:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption5"
+			//  10px
+			//  <b>Visual Studio</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption5').innerHTML=
+				'<b>Visual Studio</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption6"
+			//  10px
+			//  <b>Language:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption6').innerHTML=
+				'<b>Language:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption7"
+			//  10px
+			//  <b>C#</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption7').innerHTML=
+				'<b>C#</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption8"
+			//  10px
+			//  <b>Demo features:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption8').innerHTML=
+				'<b>Demo features:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;';
+
+
+
+
+
+
+
+
+
+			//  id="textGraphAppCaption9"
+			//  10px
+			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
+			//  &nbsp;&nbsp;&nbsp;<br>
+			//  &#x2022; 2. Data inspection via zoom in or zoom out.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 3. Dynamic repositioning of the viewing
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  window.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 4. Selectable data cursors.
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 5. Step through the data using the cursor.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  </b>
+
+
+
+			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
+
+
+			document.getElementById('textGraphAppCaption9').innerHTML= 
+				'<b>' + 
+				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
+				'&nbsp;&nbsp;<br>' + 
+				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 3. Dynamic repositioning of the viewing' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'window.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 4. Selectable data cursors.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 5. Step through the data using the cursor.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;' + 
+				'</b>';
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2232,7 +2658,217 @@ if (isEdge) {
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+
+
+
+
+
+			//  id="textGraphApp1"
+			//  16px;">
+			//  <b>Using the Canvas in C#</b>
+			document.getElementById('textGraphApp1').style.fontSize="28px";
+
+
+
+			//  id="textGraphAppCaption"
+			//  14px
+			document.getElementById('textGraphAppCaption').style.fontSize="28px";
+
+
+			//  id="textIntroductionPre"
+			//  10px
+			document.getElementById('textIntroductionPre').style.fontSize="24px";
+
+
+			//  id="textGraphAppCaption2"
+			//  10px
+			//  <b>Operating System:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption3"
+			//  10px
+			//  <b>Windows 7 - 10</b>
+			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption4"
+			//  10px
+			//  <b>Development IDE:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption4').innerHTML=
+				'<b>Development IDE:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption5"
+			//  10px
+			//  <b>Visual Studio</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption5').innerHTML=
+				'<b>Visual Studio</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption6"
+			//  10px
+			//  <b>Language:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption6').innerHTML=
+				'<b>Language:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption7"
+			//  10px
+			//  <b>C#</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption7').innerHTML=
+				'<b>C#</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption8"
+			//  10px
+			//  <b>Demo features:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption8').innerHTML=
+				'<b>Demo features:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;';
+
+
+
+
+
+
+
+
+
+			//  id="textGraphAppCaption9"
+			//  10px
+			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
+			//  &nbsp;&nbsp;&nbsp;<br>
+			//  &#x2022; 2. Data inspection via zoom in or zoom out.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 3. Dynamic repositioning of the viewing
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  window.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 4. Selectable data cursors.
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 5. Step through the data using the cursor.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  </b>
+
+
+
+			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
+
+
+			document.getElementById('textGraphAppCaption9').innerHTML= 
+				'<b>' + 
+				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
+				'&nbsp;&nbsp;<br>' + 
+				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 3. Dynamic repositioning of the viewing' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'window.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 4. Selectable data cursors.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 5. Step through the data using the cursor.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;' + 
+				'</b>';
+
+
 
 
 
@@ -2695,7 +3331,216 @@ if (isNewEdge) {
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+
+
+
+
+
+
+
+			//  id="textGraphApp1"
+			//  16px;">
+			//  <b>Using the Canvas in C#</b>
+			document.getElementById('textGraphApp1').style.fontSize="28px";
+
+
+
+			//  id="textGraphAppCaption"
+			//  14px
+			document.getElementById('textGraphAppCaption').style.fontSize="28px";
+
+
+			//  id="textIntroductionPre"
+			//  10px
+			document.getElementById('textIntroductionPre').style.fontSize="24px";
+
+
+			//  id="textGraphAppCaption2"
+			//  10px
+			//  <b>Operating System:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption3"
+			//  10px
+			//  <b>Windows 7 - 10</b>
+			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
+
+
+
+			//  id="textGraphAppCaption4"
+			//  10px
+			//  <b>Development IDE:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption4').innerHTML=
+				'<b>Development IDE:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption5"
+			//  10px
+			//  <b>Visual Studio</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption5').innerHTML=
+				'<b>Visual Studio</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption6"
+			//  10px
+			//  <b>Language:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption6').innerHTML=
+				'<b>Language:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+
+			//  id="textGraphAppCaption7"
+			//  10px
+			//  <b>C#</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption7').innerHTML=
+				'<b>C#</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+
+
+
+			//  id="textGraphAppCaption8"
+			//  10px
+			//  <b>Demo features:</b>
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
+
+			document.getElementById('textGraphAppCaption8').innerHTML=
+				'<b>Demo features:</b>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;';
+
+
+
+
+
+
+
+
+
+			//  id="textGraphAppCaption9"
+			//  10px
+			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
+			//  &nbsp;&nbsp;&nbsp;<br>
+			//  &#x2022; 2. Data inspection via zoom in or zoom out.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 3. Dynamic repositioning of the viewing
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  window.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 4. Selectable data cursors.
+			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  &nbsp;&nbsp;
+			//  <br>
+			//  &#x2022; 5. Step through the data using the cursor.
+			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			//  </b>
+
+
+
+			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
+
+
+			document.getElementById('textGraphAppCaption9').innerHTML= 
+				'<b>' + 
+				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
+				'&nbsp;&nbsp;<br>' + 
+				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 3. Dynamic repositioning of the viewing' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'window.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 4. Selectable data cursors.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;&nbsp;' + 
+				'<br>' + 
+				'&#x2022; 5. Step through the data using the cursor.' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
+				'&nbsp;' + 
+				'</b>';
+
 
 
 
