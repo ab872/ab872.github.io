@@ -115,14 +115,6 @@ document.getElementById('textIconsModified').style.fontSize="17px";
       //     alert("Firefox under Win10");
 
 
-        //  ***   not working   ***
-	//  id="grid-container"
-     	//  grid-template-rows: 0.3vh 80vh 0.3vh;
-	//  document.getElementById('grid-container').style.gridTemplateRows = "0.3vh 90vh 0.3vh;";
-
-
-
-
 //  id="textReferenceHeading" 
 //  Original      12px
 document.getElementById('textReferenceHeading').style.fontSize="36px";
@@ -939,6 +931,14 @@ document.getElementById('textReferenceLink26').style.fontSize="24px";
 
 
 
+        //  ***   not working   ***
+        //   alert("Firefox Win10  -  set template rows");
+
+	//  id="grid-containerIntroduction"
+     	//  grid-template-rows: 0.3vh 80vh 0.3vh
+	//  document.getElementById('grid-containerIntroduction').style.gridTemplateRows = "0.3vh 80vh 0.3vh;";
+
+        //   alert("Firefox Win10  -  set template rows successful");
 
 
 
@@ -1004,13 +1004,6 @@ document.getElementById('textIconsModified').style.fontSize="11px";
 
 
         //  alert("Chrome others");
-
-
-        //  ***   not working   ***
-	//  id="grid-container"
-     	//  grid-template-rows: 0.3vh 80vh 0.3vh;
-	//  document.getElementById('grid-container').style.gridTemplateRows = "0.3vh 90vh 0.3vh;";
-
 
 
 
@@ -1822,6 +1815,17 @@ document.getElementById('textBootstrapLicense').style.fontSize="24px";
 
 //  id="textIconsModified"
 document.getElementById('textIconsModified').style.fontSize="24px";
+
+
+
+        //  ***   not working   ***
+        //   alert("Chrome  others  -  set template rows");
+
+	//  id="grid-containerIntroduction"
+     	//  grid-template-rows: 0.3vh 80vh 0.3vh
+	//  document.getElementById('grid-containerIntroduction').style.gridTemplateRows = "0.3vh 80vh 0.3vh;";
+
+        //   alert("Chrome  others  -  set template rows successful");
 
 
 
@@ -3476,6 +3480,18 @@ document.getElementById('textBootstrapLicense').style.fontSize="24px";
 
 //  id="textIconsModified"
 document.getElementById('textIconsModified').style.fontSize="24px";
+
+
+
+
+        //  ***   not working   ***
+        //   alert("Edge  new  -  set template rows");
+
+	//  id="grid-containerIntroduction"
+     	//  grid-template-rows: 0.3vh 80vh 0.3vh
+	//  document.getElementById('grid-containerIntroduction').style.gridTemplateRows = "0.3vh 80vh 0.3vh;";
+
+        //   alert("Edge  new  -  set template rows successful");
 
 
 
