@@ -1,8 +1,8 @@
-<!--  viewCrudP3_js  -->
+<!--  viewCrudP5_js  -->
 
 
 
-// start      viewCrudP3.js
+// start      viewCrudP5.js
 
 
 
@@ -12,8 +12,7 @@
 //  the goal is to provide a more consistent cross-browser experience
 
 
-   // alert("loading viewCrudP3.js ...");
-
+  //  alert("loading viewCrudP5.js ...");
 
 
 
@@ -119,87 +118,6 @@ document.getElementById('textPageTitle').style.fontSize="42px";
            //   begin      Firefox under Win10
 
 
-		//   id="textPageTitle" 
-		//  font-size:28px;"
-		document.getElementById('textPageTitle').style.fontSize="64px";
-
-
-
-
-           	//  adjust the size of the 
-          	//  Bootstrap icon
-           	//  id="BootstrapIcon"
-           	document.getElementById("BootstrapIcon").style.width="64px"; 
-           	document.getElementById("BootstrapIcon").style.height="64px";
-
-
-		//  id="copyrightMsg" 
-		//  font-size:12px;
-		document.getElementById('copyrightMsg').style.fontSize="38px";
-
-		//  id="bestResultsChromeMsg" 
-		//  font-size:12px;
-		document.getElementById('bestResultsChromeMsg').style.fontSize="38px";
-
-		//   id="pdfProvidedMsg" 
-		//  font-size:12px;
-		document.getElementById('pdfProvidedMsg').style.fontSize="38px";
-
-		//  id="pdfDownloadMsg" 
-		//  font-size:12px;
-		document.getElementById('pdfDownloadMsg').style.fontSize="38px";
-
-		//  id="pdfLicenseMsg" 
-		//  font-size:12px;
-		document.getElementById('pdfLicenseMsg').style.fontSize="38px";
-
-		//  id="iconProvidedMsg" 
-		//  font-size:12px;
-		document.getElementById('iconProvidedMsg').style.fontSize="38px";
-
-		//  id="iconLicenseMsg" 
-		//  font-size:12px;
-		document.getElementById('iconLicenseMsg').style.fontSize="38px";
-
-		//   id="iconModifiedMsg" 
-		//  font-size:12px;
-		document.getElementById('iconModifiedMsg').style.fontSize="38px";
-
-
-
-
-           //   end        Firefox under Win10
-        }
-
-
-
-
-           //   end        Firefox 
-   } else if (isChrome) { 
-
-
-        if (isAndroid) {
-           //   begin    Chrome under Android
-
-      //     alert("Chrome under Android");
-
-
-           //  adjust the size of the
-           //   Bootstrap icon
-           //  id="BootstrapIcon"
-           document.getElementById("BootstrapIcon").style.width="96px"; 
-           document.getElementById("BootstrapIcon").style.height="96px";
-
-
-
-
-
-
-
-           //   end       Chrome under Android
-         } else {
-           //   begin    Chrome others
-
 
 		//   id="textPageTitle" 
 		//  font-size:28px;"
@@ -247,6 +165,95 @@ document.getElementById('textPageTitle').style.fontSize="42px";
 		//   id="iconModifiedMsg" 
 		//  font-size:12px;
 		document.getElementById('iconModifiedMsg').style.fontSize="38px";
+
+
+
+
+
+           //   end        Firefox under Win10
+        }
+
+
+
+
+           //   end        Firefox 
+   } else if (isChrome) { 
+
+
+        if (isAndroid) {
+           //   begin    Chrome under Android
+
+      //     alert("Chrome under Android");
+
+
+           //  adjust the size of the
+           //   Bootstrap icon
+           //  id="BootstrapIcon"
+           document.getElementById("BootstrapIcon").style.width="96px"; 
+           document.getElementById("BootstrapIcon").style.height="96px";
+
+
+
+
+
+
+
+           //   end       Chrome under Android
+         } else {
+           //   begin    Chrome others
+
+
+
+		//   id="textPageTitle" 
+		//  font-size:28px;"
+		document.getElementById('textPageTitle').style.fontSize="64px";
+
+
+
+
+           	//  adjust the size of the 
+           	//  Bootstrap icon
+           	//  id="BootstrapIcon"
+           	document.getElementById("BootstrapIcon").style.width="64px"; 
+           	document.getElementById("BootstrapIcon").style.height="64px";
+
+
+
+
+		//  id="copyrightMsg" 
+		//  font-size:12px;
+		document.getElementById('copyrightMsg').style.fontSize="38px";
+
+		//  id="bestResultsChromeMsg" 
+		//  font-size:12px;
+		document.getElementById('bestResultsChromeMsg').style.fontSize="38px";
+
+		//   id="pdfProvidedMsg" 
+		//  font-size:12px;
+		document.getElementById('pdfProvidedMsg').style.fontSize="38px";
+
+		//  id="pdfDownloadMsg" 
+		//  font-size:12px;
+		document.getElementById('pdfDownloadMsg').style.fontSize="38px";
+
+		//  id="pdfLicenseMsg" 
+		//  font-size:12px;
+		document.getElementById('pdfLicenseMsg').style.fontSize="38px";
+
+		//  id="iconProvidedMsg" 
+		//  font-size:12px;
+		document.getElementById('iconProvidedMsg').style.fontSize="38px";
+
+		//  id="iconLicenseMsg" 
+		//  font-size:12px;
+		document.getElementById('iconLicenseMsg').style.fontSize="38px";
+
+		//   id="iconModifiedMsg" 
+		//  font-size:12px;
+		document.getElementById('iconModifiedMsg').style.fontSize="38px";
+
+
+
 
 
 
@@ -356,9 +363,9 @@ if (isiPad) {
    } 
 
   
-  //  alert("viewCrudP3.js successfully loaded");
+  //  alert("viewCrudP5.js successfully loaded");
 
-// end     viewCrudP3.js
+// end     viewCrudP5.js
 
 
 
