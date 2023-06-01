@@ -1,0 +1,2374 @@
+<!--  angularjs  -->
+
+<!doctype html>
+
+<html>
+
+<head>
+
+      <meta charset="utf-8" />
+
+      <title>ab872 - AngularJS shopping cart demo</title> 
+
+
+
+<style>
+
+.grid-container {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 03vh 40vh 03vh; 
+}
+
+
+.grid-item {
+<!--     border: 3px solid red;    -->
+
+}
+
+.grid-itemTopBottom {
+<!--     border: 3px solid purple;    -->
+
+}
+
+.grid-itemMargin {
+<!--     border: 3px solid green;    -->
+
+}
+
+
+
+.grid-containerIntro {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 300vh 03vh; 
+}
+
+
+
+.grid-containerForecastTitle {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 01vh 25vh 01vh; 
+}
+
+
+
+.grid-containerReference {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 2760vh 03vh; 
+}
+
+
+.grid-itemReference {
+
+}
+
+.grid-itemTopBottomReference {
+      
+}
+
+.grid-itemMarginReference {
+
+}
+
+
+
+
+
+
+.grid-containerPhoto {
+     border: 3px solid rgb(211, 211, 211, 0.9);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.1fr;
+     grid-template-rows: 0.5vh 5vh 0.5vh; 
+}
+
+
+
+
+
+
+
+
+
+
+.grid-itemPhoto {
+
+}
+
+.grid-itemTopBottomPhoto {
+<!--    border: 3px solid orange;     -->
+}
+
+.grid-itemMarginPhoto {
+<!--    border: 3px solid green;   -->
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-itemSample {
+<!--     border: 3px solid orange;    -->
+}
+
+
+
+
+<!-- 
+   //   div {
+    //     border: 1px solid;
+    //    }
+
+ -->
+
+
+</style>
+
+
+
+
+
+<!--
+//  "https://ajax.googleapis.com/
+//  ajax/libs/angularjs/1.7.9/
+//  angular.min.js"
+-->
+
+
+
+<script src="angular.min.js">
+</script>
+
+
+
+<script> 
+
+<!--
+ --> 
+
+<!-- memberNumber, name, start, expiration, address, city, state, zipCode, 
+phoneNumber, comments --> 
+
+</script> 
+
+
+
+
+
+
+
+</head>
+
+
+<!--  
+body ng-app="xxxxx"
+-->
+
+<body ng-app="myApp">
+
+
+
+
+<div ng-controller="myAppController">
+
+
+
+<center> 
+<span id="pageTitle" style="color:Navy;font-size:58px;"><b>AngularJS shopping cart demo</b></span>
+</center><br>
+
+
+
+
+
+<center>
+<div class="grid-containerIntro" id="grid-containerIntro">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<span id="textIntroduction1" style="color:Black;font-size:23px;">
+<span id="textIntroductionEmphasized1" style="color:Navy;font-size:25px;"><b>AngularJS</b></span> is a free open source <span id="textIntroductionEmphasized2" style="color:Navy;font-size:25px;"><b>front-end framework</b></span>. It was <span id="textIntroductionEmphasized3" style="color:Navy;font-size:25px;"><b>originally developed</b></span> around <span id="textIntroductionEmphasized4" style="color:Navy;font-size:25px;"><b>2008</b></span> or <span id="textIntroductionEmphasized5" style="color:Navy;font-size:25px;"><b>2009</b></span>, and is now <span id="textIntroductionEmphasized6" style="color:Navy;font-size:25px;"><b>maintained by Google</b></span>. [40] [70] 
+<br><br>
+It was an <span id="textIntroductionEmphasized7" style="color:Navy;font-size:25px;"><b>evolutionary improvement</b></span> over the old way of coding web applications. It added <span id="textIntroductionEmphasized8" style="color:Navy;font-size:25px;"><b>extensions</b></span> to the existing APIs used for Web development. AngularJs is mostly used for <span id="textIntroductionEmphasized9" style="color:Navy;font-size:25px;"><b>single-page web applications</b></span> (<span id="textIntroductionEmphasized10" style="color:Navy;font-size:25px;"><b>SPA</b></span>s), and uses <span id="textIntroductionEmphasized11" style="color:Navy;font-size:25px;"><b>dynamic HTML</b></span> instead of <span id="textIntroductionEmphasized12" style="color:Navy;font-size:25px;"><b>static HTML</b></span>. This allows the application to be <span id="textIntroductionEmphasized13" style="color:Navy;font-size:25px;"><b>more responsive to user actions</b></span>. The design follows <span id="textIntroductionEmphasized14" style="color:Navy;font-size:25px;"><b>MVC</b></span> (<span id="textIntroductionEmphasized15" style="color:Navy;font-size:25px;"><b>Model, View, Control</b></span>). [40] [70] 
+<br><br>
+AngularJS is licensed under the <span id="textIntroductionEmphasized16" style="color:Navy;font-size:25px;"><b>Apache license version 2.0</b></span>
+<br>
+&nbsp;&nbsp;&nbsp;
+ <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><span id="textApacheLicense" style="font-size:13px;"><b><i>https://www.apache.org/licenses/LICENSE-2.0</i></b></span></a>
+<br><br>
+It is used by thousands of developers world-wide. [40] [70] <span id="textIntroductionEmphasized17" style="color:Navy;font-size:25px;"><b>Support</b></span> for AngularJS <span id="textIntroductionEmphasized18" style="color:Navy;font-size:25px;"><b>officially ended</b></span> in <span id="textIntroductionEmphasized19" style="color:Navy;font-size:25px;"><b>January 2022</b></span> [29], but it is still possible to get <span id="textIntroductionEmphasized20" style="color:Navy;font-size:25px;"><b>extended support</b></span> for the framework until <span id="textIntroductionEmphasized21" style="color:Navy;font-size:25px;"><b>2030</b></span>. [36]
+</span>
+<br><br>
+<center> 
+<span id="aboutTitle" style="color:Navy;font-size:38px;"><b>About this demo</b></span>
+</center><br>
+<span id="textIntroduction2" style="color:Black;font-size:23px;">
+This is a <span id="textIntroductionEmphasized22" style="color:Navy;font-size:25px;"><b>simplified</b></span> version of a <span id="textIntroductionEmphasized23" style="color:Navy;font-size:25px;"><b>shopping cart</b></span>. It illustrates <span id="textIntroductionEmphasized24" style="color:Navy;font-size:25px;"><b>basic data manipulation</b></span> in AngularJS. 
+<br><br>
+The application generates an <span id="textIntroductionEmphasized25" style="color:Navy;font-size:25px;"><b>invoice</b></span> containing the customer information, and the order items. It calculates and displays the <span id="textIntroductionEmphasized26" style="color:Navy;font-size:25px;"><b>sub-total</b></span>, the <span id="textIntroductionEmphasized27" style="color:Navy;font-size:25px;"><b>tax</b></span> and the <span id="textIntroductionEmphasized28" style="color:Navy;font-size:25px;"><b>total price</b></span> for the order.
+<br><br>
+The customer database is built in <span id="textIntroductionEmphasized29" style="color:Navy;font-size:25px;"><b>JSON</b></span> and contains three entries. If you click the <span id="aboutTitle" style="color:Navy;font-size:25px;"><b>?</b></span> button you can see the customer <span id="textIntroductionEmphasized30" style="color:Navy;font-size:25px;"><b>membership</b></span> numbers.
+<br><br>
+If you enter one of the <span id="textIntroductionEmphasized31" style="color:Navy;font-size:25px;"><b>existing</b></span> membership numbers, the app will <span id="textIntroductionEmphasized32" style="color:Navy;font-size:25px;"><b>automatically populate</b></span> the invoice with the customer information.
+<br><br>
+You can order <span id="textIntroductionEmphasized33" style="color:Navy;font-size:25px;"><b>pants</b></span> and <span id="textIntroductionEmphasized34" style="color:Navy;font-size:25px;"><b>shirts</b></span> of various <span id="textIntroductionEmphasized35" style="color:Navy;font-size:25px;"><b>sizes</b></span> and <span id="textIntroductionEmphasized36" style="color:Navy;font-size:25px;"><b>colors</b></span>. After you select the quantity, type of clothing, the color and the size you can click the <span id="textIntroductionEmphasized37" style="color:Navy;font-size:25px;"><b>Add to Order</b></span> button to add the item to the order. When you do so, the <span id="textIntroductionEmphasized38" style="color:Navy;font-size:25px;"><b>sub-total</b></span>, the <span id="textIntroductionEmphasized39" style="color:Navy;font-size:25px;"><b>tax</b></span> and the <span id="textIntroductionEmphasized40" style="color:Navy;font-size:25px;"><b>total price</b></span> for the order will be updated and displayed.
+</span>
+<br><br>
+
+
+
+
+
+
+<br><br>
+     </div>
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Intro  -->
+</div>
+</center><br><br>
+
+
+
+
+
+
+
+
+
+<div style="color:black; background-color:aliceblue;border:2px solid plum;border-radius:8px;margin-top:3px;margin-bottom:3px" id="Display1" name="Display1" title="output  appears here" aria-label="output appears here">
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Date:</b></span>
+</label>
+<br>
+<input type="date" ng-model="dateValue" style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" required />
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Order number:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourOrder" ng-value="12345678" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Order # here">
+
+
+
+<label>
+<span id="memberNumberLabel" style="color:Black;font-size:56px;"><b>Member number:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourMemberNumber" ng-change="matchNumber()"
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Member # here">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button style="color:black;background-color:lightSalmon;height:79px;width:79px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-click="findNumber()">
+<span style="color:Black;font-size:68px;"><b>?</b></span>
+</button><br><br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Expiration Date:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="theExpirationDate" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Expiration here">
+<br>
+
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Name:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourName" 
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter name here">
+
+
+
+
+
+
+<label>
+<span id="addressLabel"style="color:Black;font-size:56px;"><b>Address:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourAddress" 
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter address here">
+<br>
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>City:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourCity" 
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter city here">
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>State:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourState" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter state here">
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>ZIP code:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="yourZipCode" 
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter ZIP code here">
+<br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>State tax:</b></span>
+</label>
+<br>  
+    <select id="stateTaxSelect1" 
+style="color:black;background-color:lightSalmon;height:72px;width:690px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"
+ng-model="stateTax" ng-change="setStateTax()">
+ <option value=""><b>Not Selected</b></option>
+<option value="4.50"><b>Alabama (AL) 
+4.50%</b></option>
+<option value="4.50"><b>Alaska (AK) 
+4.50%</b></option>
+<option value="4.50"><b>Arizona (AZ)   4.50%</b></option>
+<option value="4.50"><b>Arkansas (AR) 4.50%</b></option>
+<option value="6.00"><b>California (CA)   
+6.00%</b></option>
+<option value="4.50"><b>Colorado (CO) 4.50%</b></option>
+<option value="4.50"><b>Connecticut (CT) 4.50%</b></option>
+<option value="4.50"><b>Delaware (DE) 
+4.50%</b></option>
+<option value="5.50"><b>Florida (FL)   
+5.50%</b></option>
+<option value="4.50"><b>Georgia (GA) 
+4.50%</b></option>
+<option value="4.50"><b>Hawaii (HI) 
+4.50%</b></option>
+<option value="4.50"><b>Idaho (ID) 
+4.50%</b></option>
+<option value="4.50"><b>Illinois (IL) 
+4.50%</b></option>
+<option value="4.50"><b>Indiana (IN) 
+4.50%</b></option>
+<option value="4.50"><b>Iowa (IA) 
+4.50%</b></option>
+<option value="4.50"><b>Kansas (KS) 
+4.50%</b></option>
+<option value="4.50"><b>Kentucky (KY) 
+4.50%</b></option>
+<option value="4.50"><b>Louisiana (LA) 
+4.50%</b></option>
+<option value="4.50"><b>Maine (ME) 
+4.50%</b></option>
+<option value="4.50"><b>Maryland (MD) 
+4.50%</b></option>
+<option value="4.50"><b>Massachusetts (MA) 4.50%</b></option>
+<option value="6.20"><b>Michigan (MI)   
+6.20%</b></option>
+<option value="4.50"><b>Minnesota (MN) 4.50%</b></option>
+<option value="4.50"><b>Mississippi (MS) 4.50%</b></option>
+<option value="4.50"><b>Missouri (MO) 
+4.50%</b></option>
+<option value="4.50"><b>Montana (MT) 
+4.50%</b></option>
+<option value="4.50"><b>Nebraska (NE) 
+4.50%</b></option>
+<option value="4.50"><b>Nevada (NV) 
+4.50%</b></option>
+<option value="4.50"><b>New Jersey (NJ) 4.50%</b></option>
+<option value="4.50"><b>New Hampshire (NH) 4.50%</b></option>
+<option value="4.50"><b>New Mexico (NM) 4.50%</b></option>
+<option value="7.00"><b>New York (NY)   
+7.00%</b></option>
+<option value="4.50"><b>North Carolina (NC) 4.50%</b></option>
+<option value="4.50"><b>North Dakota (ND) 4.50%</b></option>
+<option value="4.50"><b>Ohio (OH) 
+4.50%</b></option>
+<option value="4.50"><b>Oklahoma (OK) 
+4.50%</b></option>
+<option value="4.50"><b>Oregon (OR) 
+4.50%</b></option>
+<option value="4.50"><b>Pennsylvania (PA) 4.50%</b></option>
+<option value="4.50"><b>Rhode Island (RI) 4.50%</b></option>
+<option value="4.50"><b>South Carolina (SC) 4.50%</b></option>
+<option value="4.50"><b>South Dakota (SD) 4.50%</b></option>
+<option value="4.50"><b>Tennessee (TN) 4.50%</b></option>
+<option value="5.00"><b>Texas (TX)   
+5.00%</b></option>
+<option value="4.50"><b>Utah (UT) 4.50%</b></option>
+<option value="4.50"><b>Vermont (VT) 
+4.50%</b></option>
+<option value="4.50"><b>Virginia (VA) 
+4.50%</b></option>
+<option value="4.50"><b>Washington (WA) 4.50%</b></option>
+<option value="4.50"><b>West Virginia (WV) 4.50%</b></option>
+<option value="4.50"><b>Wisconsin (WI) 
+4.50%</b></option>
+<option value="4.50"><b>Wyoming (WY) 
+4.50%</b></option>
+    </select><br><br>
+
+
+
+<br><br>
+<hr>
+<br><br>
+
+
+<span style="color:Black;font-size:64px;"><b>Quantity:     {{ productCount }}</b></span>
+<br><br>      
+
+
+<button style="color:black;background-color:lightSalmon;height:80px;width:150px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-click="decrementQuantity()">
+<span style="color:Black;font-size:46px;"><b>-</b></span>     
+</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="color:black;background-color:lightSalmon;height:80px;width:150px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-click="incrementQuantity()">
+<span style="color:Black;font-size:46px;"><b>+</b></span>     
+</button>
+<br><br>
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Clothing type:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"
+ng-model="clothingType" ng-change="setClothingType()">
+<option><b>Not Selected</b></option>
+<option><b>Pant</b></option>
+<option><b>Shirt</b></option>
+    </select>
+<br><br>
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Color:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"
+ng-model="clothingColor" ng-change="setClothingColor()">
+        <option><b>Not Selected</b></option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Light Blue</option>
+        <option>Light Green</option>
+        <option>Maroon</option>    
+        <option>Navy</option>
+        <option>White</option>
+    </select>
+<br><br>
+
+
+<label>
+<span id="textPantWaist" style="color:Black;font-size:56px;"><b>Pant waist:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-disabled="pantWaistIsDisabled" ng-model="pantWaist" ng-change="setPantWaist()">
+<option><b>Not Selected</b></option>
+<option><b>20</b></option>
+<option><b>21</b></option>
+<option><b>22</b></option>
+<option><b>23</b></option>
+<option><b>24</b></option>
+<option><b>25</b></option>
+<option><b>26</b></option>
+<option><b>27</b></option>
+<option><b>28</b></option>
+<option><b>29</b></option>
+<option><b>30</b></option>
+<option><b>31</b></option>
+<option><b>32</b></option>
+<option><b>33</b></option>
+<option><b>34</b></option>
+<option><b>35</b></option>
+<option><b>36</b></option>
+<option><b>37</b></option>
+<option><b>38</b></option>
+<option><b>39</b></option>
+<option><b>40</b></option>
+<option><b>41</b></option>
+<option><b>42</b></option>
+<option><b>43</b></option>
+<option><b>44</b></option>
+    </select>
+<br><br>
+
+
+
+<label>
+<span id="textPantLength" style="color:Black;font-size:56px;"><b>Pant length:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-disabled="pantLengthtIsDisabled" ng-model="pantLength" ng-change="setPantLength()">
+<option><b>Not Selected</b></option>
+<option><b>24</b></option>
+<option><b>25</b></option>
+<option><b>26</b></option>
+<option><b>27</b></option>
+<option><b>28</b></option>
+<option><b>29</b></option>
+<option><b>30</b></option>
+<option><b>31</b></option>
+<option><b>32</b></option>
+<option><b>33</b></option>
+<option><b>34</b></option>
+<option><b>35</b></option>
+<option><b>36</b></option>
+    </select>
+<br><br>
+
+
+
+<label>
+<span id="textShirtSize" style="color:Black;font-size:56px;"><b>Shirt size:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-disabled="shirtSizeIsDisabled" ng-model="shirtSize" ng-change="setShirtSize()">
+<option><b>Not Selected</b></option>
+<option><b>Small</b></option>
+<option><b>Medium</b></option>
+<option><b>Large</b></option>
+<option><b>XL</b></option>
+<option><b>2XL</b></option>
+<option><b>3XL</b></option>
+    </select>
+<br><br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Price each ($):</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" ng-model="priceEach" 
+style="color:black;background-color:lightSalmon;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Price each here">
+<br><br>
+
+
+
+
+
+
+
+<div style="color:black; background-color:beige;border:2px solid plum;border-radius:8px;margin-top:3px;margin-bottom:3px" id="orderItem" name="orderItem" title="order item appears here" aria-label="order item appears here">
+<center>
+<span style="color:Black;font-size:52px;"><b>Order Item</b></span>
+</center>
+<br><br>
+
+
+<span id="txtOrderItem1" style="color:Black;font-size:48px;">
+<b>Quantity: {{ productCount }}     {{ clothingType }}   {{ pantWaist }} X {{ pantLength }}   Shirt size: {{ shirtSize }}  Color: {{ clothingColor }}   Price each:   {{ priceEach }}
+</b></span>
+<br><br>
+
+
+<center>
+<button id="addToOrderButton" style="height:80px;width:300px;border-radius:8px;margin-top:3px;margin-bottom:3px" ng-click="addToOrder()">
+<span style="color:Black;font-size:48px;"><b>Add to Order</b></span>     
+</button>
+</center>
+<br><br>
+
+
+
+
+</div>
+<br><br>
+
+
+
+
+
+  <!--
+  //   end of div
+  //   ng-controller="myAppController"
+  -->
+    </div>
+
+
+    <script>
+        var app = angular.module('myApp', []);
+       
+app.controller('myAppController',
+            ['$scope', '$window',
+                function ($scope, $window) {
+//  
+//  
+//  
+//  
+      $scope.theMembersJSON = [ 
+{"memberNumber" : "124643", "name" : "Albert Smith", "start" : "01 August 2019", 
+"expiration" : "01 August 2029", 
+"address" : "123 Good Road", "city" : "Phoenix", "state" : "AZ", "zipCode" : "12345", "phoneNumber" : "602-123-4567", "comments" : "1st member comments"}, 
+{"memberNumber" : "127643", "name" : "John Smith", "start" : "01 October 2019", 
+"expiration" : "01 October 2029", 
+"address" : "123 Bad Road", "city" : "Santa Fe", "state" : "NM", "zipCode" : "41234", "phoneNumber" : "772-123-4567", "comments" : "2nd member comments"}, 
+{"memberNumber" : "127843", "name" : "Sam Smith", "start" : "01 October 2020", 
+"expiration" : "01 October 2030", 
+"address" : "123 New Road", "city" : "Chicago", "state" : "IL", "zipCode" : "61234", "phoneNumber" : "592-123-4567", "comments" : "3rd member comments"}
+]; 
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+    $scope.message = "This is message 1";
+    $scope.message2 = "This is message 2";
+//  
+//  
+     $scope.counter = 0;
+     $scope.productCount = 0;
+//  
+//  
+     $scope.subTotalForOrder = 0.00;
+     $scope.totalTaxForOrder = 0.00;
+     $scope.totalForOrder = 0.00;
+//  
+//  
+     $scope.pantWaistIsDisabled = false;
+     $scope.pantLengthtIsDisabled = 
+false;
+     $scope.shirtSizeIsDisabled = false;
+//  
+//  
+//  
+//  
+//  
+        $scope.incrementQuantity = function () {
+            $scope.productCount += 1;
+        };
+//  
+//  
+//  
+        $scope.decrementQuantity = function () {
+            if( $scope.productCount > 0 ) {
+                   $scope.productCount -= 1;
+            }
+        };
+//  
+//  
+//  
+//  
+     $scope.findNumber = function () {
+         $scope.message2 = "The database contains three members:" + 
+"\n\n" + 
+"124643     Albert Smith" + 
+"\n" + 
+"127643     John Smith" + 
+"\n" + 
+"127843     Sam Smith" + 
+"\n\n" + 
+"Enter an existing member number and the customer info will automatically be populated.";
+         $window.alert($scope.message2);
+     };
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+     $scope.matchNumber = function () {
+//  
+//  clear the data
+            $scope.yourName = "";
+            $scope.theExpirationDate = "";
+            $scope.yourAddress = "";
+            $scope.yourCity = "";
+            $scope.yourState = "";
+            $scope.yourZipCode = "";
+//
+//  
+for ( i=0;i<$scope.theMembersJSON.length;i++) { 
+//  start     for loop
+//  
+//
+if ($scope.yourMemberNumber == $scope.theMembersJSON[i].memberNumber) { 
+//  
+            $scope.yourName = $scope.theMembersJSON[i].name;
+            $scope.theExpirationDate = 
+$scope.theMembersJSON[i].expiration;
+            $scope.yourAddress = 
+$scope.theMembersJSON[i].address;
+            $scope.yourCity = 
+$scope.theMembersJSON[i].city;
+            $scope.yourState = 
+$scope.theMembersJSON[i].state;
+            $scope.yourZipCode = 
+$scope.theMembersJSON[i].zipCode;
+//
+//  end     if
+}
+//  
+//  end       for loop
+}
+//  
+        //   end     function matchNumber
+     };
+//  
+//  
+//  
+//  
+     $scope.tmpDateStr = "xxx";
+     $scope.tmpTimeStr = "yyy";
+//  
+//  
+     $scope.result = "initial value";
+//  
+//  
+//  
+//  
+     $scope.$watch('result', function() {
+         $scope.message2 = "AngularJS is running." + 
+"\n\n" + 
+"The demo is ready.";
+         $window.alert($scope.message2);
+//  
+          $scope.yourOrder = "12345678";
+//  
+          $scope.myCount = 0; 
+          $scope.clothingType  = "xxx"; 
+          $scope.pantWaist = "xxx"; 
+          $scope.pantLength  = "xxx"; 
+          $scope.clothingColor  = "xxx"; 
+          $scope.priceEach  = "0.00"; 
+          $scope.shirtSize = "xxx"; 
+//  
+//  
+       //   end     watch result
+    });
+//  
+//  
+//  
+//  
+//  
+//  
+        $scope.updateItem = function () {  
+//  
+          $scope.priceEach = "0.00";
+//  
+if ($scope.clothingType == "Shirt") { 
+//  
+          $scope.priceEach  = "10.99"; 
+//  
+     $scope.pantWaistIsDisabled = true;
+document.getElementById("textPantWaist").style.color="lightGray";
+//  
+     $scope.pantLengthtIsDisabled = 
+true;
+document.getElementById("textPantLength").style.color="lightGray";
+//
+     $scope.shirtSizeIsDisabled = false;
+document.getElementById("textShirtSize").style.color="Black";
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+$scope.productCount + 
+"        " + 
+$scope.clothingType + 
+"        " + 
+$scope.shirtSize + 
+"<br>" + 
+"Color: " + 
+$scope.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+$scope.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if
+}
+else if ($scope.clothingType == "Pant") {
+//  
+          $scope.priceEach  = "11.99"; 
+//
+     $scope.pantWaistIsDisabled = false;
+document.getElementById("textPantWaist").style.color="Black";
+//  
+     $scope.pantLengthtIsDisabled = 
+false;
+document.getElementById("textPantLength").style.color="Black";
+//  
+     $scope.shirtSizeIsDisabled = true;
+document.getElementById("textShirtSize").style.color="lightGray";
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+$scope.productCount + 
+"        " + 
+$scope.clothingType + 
+"   (" + 
+$scope.pantWaist + 
+" X " + 
+$scope.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+$scope.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+$scope.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     else
+}
+//  
+//  
+//  
+           //  end     function update Item
+        };
+//  
+//  
+//  
+//  
+     $scope.setClothingColor = function() {
+//  
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setPantWaist = function() {
+//  
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setPantLength = function() {
+//   
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setShirtSize = function() {
+//   
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setClothingType = function() {
+//   
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setState = function() {
+//   
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.setStateTax = function() {
+//   
+           $scope.updateItem();
+     };
+//  
+//  
+//  
+//  
+     $scope.$watch('myCount', function() {
+//  
+           $scope.updateItem();
+    });
+//  
+//  
+//  
+//  
+     $scope.$watch('priceEach', function() {
+//  
+           $scope.updateItem();
+    });
+//  
+//  
+//  
+//  
+     $scope.$watch('yourMemberNumber', function() {
+//  
+                 $scope.matchNumber();
+    });
+//  
+//  
+//  
+//  
+     $scope.digitsOut = "";
+//  
+//  
+//  
+//  
+     $scope.orderNumber = function() {
+//
+           $scope.digitsOut = (parseInt(Math.random() * 9)).toString();
+//  
+for (i=0;i<7;i++)
+{
+$scope.digitsOut += 
+(parseInt(Math.random() * 9)).toString();
+}
+//  
+           $scope.message2 = "return value orderNumber = " + $scope.digitsOut.toString();
+           $window.alert($scope.message2);
+//  
+            $scope.yourOrder = $scope.digitsOut.toString();
+//  
+     };
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+        $scope.addToOrder = function () {
+//  
+//             $scope.message2 =
+//   "function add to order.";
+//             $window.alert(
+//  $scope.message2);
+//
+//  txtOrderItem1
+//
+//  txtOrderItemsList1
+//  
+if ($scope.clothingType == "Shirt") { 
+//  
+document.getElementById('txtOrderItemsList1').innerHTML += "<b>" + "Qty: " + 
+$scope.productCount + "        " + $scope.clothingType + "        (" + $scope.shirtSize + ")        " + "<br>" +     "Color:   " + $scope.clothingColor + "<br>"+ "Price each:    " + $scope.priceEach + "</b>" + "<br><br>";
+//
+//  end     if
+}
+else if ($scope.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItemsList1').innerHTML += "<b>" + "Qty: " + 
+$scope.productCount + "        " + $scope.clothingType + "   (" + $scope.pantWaist + " X " + $scope.pantLength + ")" + "<br>" +  "Color:   " + 
+$scope.clothingColor + "<br>" + "Price each:    " + $scope.priceEach + "</b>" + "<br><br>";
+//  
+//  end     else
+}
+//  
+//  
+//  
+//  
+//  
+//       $scope.subTotalForOrder = 0.00;
+//       $scope.totalTaxForOrder = 0.00;
+//       $scope.totalForOrder = 0.00;
+//  
+//  
+$scope.subTotalForOrder += 
+parseFloat($scope.productCount) * parseFloat($scope.priceEach);
+//  
+$scope.subTotalForOrder = 
+parseFloat(($scope.subTotalForOrder).toFixed(2));
+// 
+//   
+//  
+$scope.taxForThisItem = 
+parseFloat($scope.productCount) *
+(parseFloat($scope.stateTax / 100) * parseFloat($scope.priceEach));
+//  
+$scope.taxForThisItem =   parseFloat(($scope.taxForThisItem).toFixed(2));
+//  
+//  
+//
+$scope.totalTaxForOrder += 
+parseFloat($scope.taxForThisItem);
+//  
+$scope.totalTaxForOrder = 
+parseFloat(($scope.totalTaxForOrder).toFixed(2));
+//  
+//  
+//  
+$scope.totalForOrder = 
+$scope.subTotalForOrder + 
+parseFloat($scope.totalTaxForOrder);
+//  
+$scope.totalForOrder = 
+parseFloat(($scope.totalForOrder).toFixed(2));
+//  
+//  
+//  
+//  
+//  
+          $scope.productCount = 0; 
+          $scope.clothingType  = "xxx"; 
+          $scope.pantWaist = "xxx"; 
+          $scope.pantLength  = "xxx"; 
+          $scope.clothingColor  = "xxx"; 
+          $scope.priceEach  = "0.00"; 
+          $scope.shirtSize = "xxx"; 
+//  
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+$scope.productCount + 
+"        " + 
+$scope.clothingType + 
+"   (" + 
+$scope.pantWaist + 
+" X " + 
+$scope.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+$scope.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+$scope.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  
+     $scope.pantWaistIsDisabled = false;
+document.getElementById("textPantWaist").style.color="Black";
+//  
+     $scope.pantLengthtIsDisabled = 
+false;
+document.getElementById("textPantLength").style.color="Black";
+//  
+     $scope.shirtSizeIsDisabled = false;
+document.getElementById("textShirtSize").style.color="Black";
+//  
+//  
+//         end     function   addToOrder
+        };
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+}]);
+
+    </script>
+
+
+
+
+<br><br>
+<br><br>
+
+
+
+
+
+<div style="color:black; background-color:aliceblue;border:2px solid plum;border-radius:8px;margin-top:3px;margin-bottom:3px" id="Display2" name="Display2" title="output  appears here" aria-label="output appears here">
+
+
+<center>
+<span style="color:Black;font-size:52px;"><b>Your Order</b></span>
+</center>
+<br><br>
+
+
+<span style="color:Black;font-size:32px;"><b>Date:   {{ dateValue | date:'yyyy-MM-dd' }}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Order number: {{yourOrder}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Name: {{yourName}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Address: {{yourAddress}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>City: {{yourCity}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>State: {{yourState}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>ZIP code: {{yourZipCode}}</b></span><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Member Number:   {{ yourMemberNumber }}</b></span><br>
+
+
+<span style="color:Black;font-size:32px;"><b>Expiration Date:   {{ theExpirationDate | date:'yyyy-MM-dd' }}</b></span><br><br>
+
+<br><br>
+
+<center>
+<span style="color:Black;font-size:52px;"><b>Order Items</b></span>
+</center>
+<br>
+
+
+<span id="txtOrderItemsList1" style="color:Black;font-size:48px;">
+</span>
+<br><br>
+
+<br><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Subtotal:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+$ {{ subTotalForOrder }}</b></span>
+<br><br>
+
+<span style="color:Black;font-size:32px;"><b>The tax rate for {{yourState}} is {{ stateTax }}  %.</b></span>
+<br><br>
+
+<span style="color:Black;font-size:32px;"><b>Tax:&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+$ {{ totalTaxForOrder }}</b></span>
+<br><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Total:&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+$ {{ totalForOrder }}</b></span>
+<br><br>
+
+
+
+ <br><br>
+
+<!--     //   end    div    orderDisplay1  -->
+</div> 
+<br><br>
+
+
+<br><br>
+
+
+
+
+
+<br><br>
+</div>
+<br><br>
+
+
+
+
+
+
+<!-- start of correction--> 
+<span id="verticalSpacer2" style="font-size:19px;"></span> 
+<!-- end of correction--> 
+
+
+
+
+
+
+<div class="grid-containerReference" id="grid-containerReference">
+
+     <div class="grid-itemMarginReference">
+     </div>
+     <div class="grid-itemTopBottomReference">
+     </div>
+     <div class="grid-itemMarginReference">
+     </div>
+
+
+
+
+     <div class="grid-itemMarginReference">
+     </div>
+
+     <div class="grid-itemReference"><br>
+
+
+<span style="color:Navy;font-size:56px;"><b>References</b></span><br><br>
+
+<span style="color:Black;font-size:18px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/html52/" target="_blank"><span style="font-size:18px;"><b><i>HTML 5.2.</i></b></span></a><br><br>
+
+<span style="color:Black;font-size:18px;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
+
+<span style="color:Black;font-size:18px;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS/" target="_blank"><span style="font-size:18px;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
+
+<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11th edition, June 2020<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Navy;font-size:12px;"><b>This is the specification for JavaScript.</b></span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-262,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://402.ecma-international.org/1.0/" target="_blank"><span style="font-size:18px;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG2/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG11/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "SVG: Scalable Vector Graphics | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><span style="font-size:18px;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[10]&nbsp;&nbsp;&nbsp;&nbsp;"Web Content Accessibility Guidelines (WCAG) 2.1." <i>W3C</i>, 05-Jun-2018. [Online]. Available: 
+https://www.w3.org/TR/WCAG21/.
+[Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/WCAG21/" target="_blank"><span style="font-size:18px;"><b><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[11]&nbsp;&nbsp;&nbsp;&nbsp;"Techniques for WCAG 2.2." <i>W3C</i>, 09-Mar-2021. [Online]. Available: https://www.w3.org/WAI/WCAG21/<br>
+Techniques/. [Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/" target="_blank"><span style="font-size:18px;"><b><i>Techniques for WCAG 2.2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[12]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "CSS Grid Layout - CSS: Cascading Style Sheets | MDN." <i>MDN Web Docs</i>. [Online]. Available:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS&#x5f;Grid\&#x5f;Layout. [Accessed: 03-Jun-2022]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout - CSS: Cascading Style Sheets | MDN.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[13]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid Layout." <i>W3Schools</i>. [Online]. Available: 
+https://www.w3schools.com/css/<br>
+css&#x5f;grid.asp. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[14]&nbsp;&nbsp;&nbsp;&nbsp;C. House, "A Complete Guide to Grid," <i>CSS-Tricks</i>, 12-May-2021. [Online]. Available: https://css-tricks.com/<br>
+snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><span style="font-size:18px;"><b><i>A Complete Guide to Grid,</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[15]&nbsp;&nbsp;&nbsp;&nbsp;J. Suh, "Learn CSS Grid - A Guide to Learning CSS Grid." <i>learncssgrid.com</i>. [Online]. Available: http://learncssgrid.com/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="http://learncssgrid.com/" target="_blank"><span style="font-size:18px;"><b><i>Learn CSS Grid - A Guide to Learning CSS Grid.</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[16]&nbsp;&nbsp;&nbsp;&nbsp;M. O. contributors, J. Thornton and Bootstrap, "CSS Grid." <i>getbootstrap.com</i>. [Online]. Available: https://getbootstrap.com/docs/<br>
+5.1/layout/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[17]&nbsp;&nbsp;&nbsp;&nbsp;"Grid by Example - Usage examples of CSS Grid Layout." <i>gridbyexample.com</i>. [Online]. Available: https://gridbyexample.com/<br>
+examples/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://gridbyexample.com/examples/" target="_blank"><span style="font-size:18px;"><b><i>Grid by Example - Usage examples of CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[18]&nbsp;&nbsp;&nbsp;&nbsp;"Grid," <i>web.dev</i>. [Online]. Available: https://web.dev/learn/css/grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://web.dev/learn/css/grid/" target="_blank"><span style="font-size:18px;"><b><i>Grid,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[19]&nbsp;&nbsp;&nbsp;&nbsp;O. Nzube, "How to Use CSS Grid Layout 
+&#8211; Grid Properties Explained with Examples," 
+<i>freeCodeCamp.org</i>, 25-May-2022. [Online]. Available: https://www.freecodecamp.org/<br>
+news/how-to-use-css-grid-layout/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.freecodecamp.org/news/how-to-use-css-grid-layout/" target="_blank"><span style="font-size:18px;"><b><i>How to Use CSS Grid Layout &#8211; Grid Properties Explained with Examples,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[20]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid &#8211; Table layout is back. Be there and be square," <i>Chrome Developers</i>, 27-Jan-2017. [Online]. Available: https://developer.chrome.com/<br>
+blog/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.chrome.com/blog/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid 
+&#8211; Table layout is back. Be there and be square,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[21]&nbsp;&nbsp;&nbsp;&nbsp;"Introducing JSON." <i>json.org</i>. [Online]. Available: https://www.json.org/json-en.html. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.json.org/json-en.html" target="_blank"><span style="font-size:18px;"><b><i>Introducing JSON.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[22]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "Working with JSON - Learn web development | MDN." <i>MDN Web Docs</i>, 08-Oct-2021. [Online]. Available: https://developer.mozilla.org/en-US/<br>
+docs/Learn/JavaScript/Objects/JSON. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank"><span style="font-size:18px;"><b><i>Working with JSON - Learn web development | MDN.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[23]&nbsp;&nbsp;&nbsp;&nbsp;J. Freeman, "What is JSON? A better format for data exchange," <i>InfoWorld</i>, 25-Oct-2019. [Online]. Available: https://www.infoworld.com/article/<br>
+3222851/what-is-json-a-better-<br>
+format-for-data-exchange.html. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html" target="_blank"><span style="font-size:18px;"><b><i>What is JSON? A better format for data exchange,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[24]&nbsp;&nbsp;&nbsp;&nbsp;"JSON:API &#8211; A specification for building APIs in JSON." <i>JSON:API</i>, 29-May-2015. [Online]. Available: https://jsonapi.org/. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://jsonapi.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON:API &#8211; A specification for building APIs in JSON.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[25]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-404" <i>Ecma International</i>, Dec-2017. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-404/. [Accessed: 29-Oct-2021].</span><br>
+
+<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The JSON data interchange syntax<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2nd edition, December 2017<br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-404</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[26]&nbsp;&nbsp;&nbsp;&nbsp;L. Tagliaferri, "An Introduction to JSON," <i>DigitalOcean</i>, 08-Dec-2016. [Online]. Available: https://www.digitalocean.com/<br>
+community/tutorials/an-<br>
+introduction-to-json. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-json" target="_blank"><span style="font-size:18px;"><b><i>An Introduction to JSON,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[27]&nbsp;&nbsp;&nbsp;&nbsp;"JSON-LD - JSON for Linking Data." <i>JSON-LD</i>. [Online]. Available: https://json-ld.org/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://json-ld.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON-LD - JSON for Linking Data.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[28]&nbsp;&nbsp;&nbsp;&nbsp;"HTTP Messages." <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+tags/ref_httpmessages.asp. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/tags/ref_httpmessages.asp" target="_blank"><span style="font-size:18px;"><b><i>HTTP Messages.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[29]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS &#8211; Superheroic JavaScript MVW Framework.” <i>angularjs.org</i>. [Online]. Available: https://angularjs.org/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://angularjs.org/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS &#8211; Superheroic JavaScript MVW Framework.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[30]&nbsp;&nbsp;&nbsp;&nbsp;R. Ray, “Why AngularJS is my preferred framework for software development,” <i>freeCodeCamp.org</i>, 16-Jul-2018. Available: https://www.freecodecamp.org/news/<br>
+why-is-angularjs-the-most-preferred-framework-for-software-development-5253c2c569c9/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.freecodecamp.org/news/why-is-angularjs-the-most-preferred-framework-for-software-development-5253c2c569c9/" target="_blank"><span style="font-size:18px;"><b><i>Why AngularJS is my preferred framework for software development,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[31]&nbsp;&nbsp;&nbsp;&nbsp;“Introduction to AngularJS.” 
+<i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/angular/<br>
+angular_intro.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/angular/" target="_blank"><span style="font-size:18px;"><b><i>Introduction to AngularJS.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[32]&nbsp;&nbsp;&nbsp;&nbsp;A. Camus, “AngularJS: The Complete Guide for Beginners.” <i>www.microverse.org</i>, 2023. [Online]. Available: https://www.microverse.org/blog/<br>
+angularjs-the-complete-guide-for-beginners. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.microverse.org/blog/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS: The Complete Guide for Beginners.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[33]&nbsp;&nbsp;&nbsp;&nbsp;A. Diashkin, “AngularJS (v1) Beginners Guide,” <i>LITSLINK</i>, 13-Mar-2021. 
+[Online]. Available: https://medium.com/litslink/angularjs-v1-beginners-guide-1bc9ee1e33c6. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://medium.com/litslink/angularjs-v1-beginners-guide-1bc9ee1e33c6" target="_blank"><span style="font-size:18px;"><b><i>AngularJS (v1) Beginners Guide,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[34]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS Tutorial for Absolute Beginners (with Installation Guide)” <i>SoftwareTestingHelp</i>, 28-Apr-2023. 
+[Online]. Available: 
+https://www.softwaretestinghelp.com/<br>
+angularjs-tutorial/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.softwaretestinghelp.com/angularjs-tutorial/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS Tutorial for Absolute Beginners (with Installation Guide)</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[35]&nbsp;&nbsp;&nbsp;&nbsp;M. Mikolajczyk, “Top 18 Most Common Mistakes that AngularJS Developers Make | Toptal&#174;,” <i>Toptal Engineering Blog</i>. [Online]. Available: https://www.toptal.com/angular-js/top-18-most-common-angularjs-developer-mistakes. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.toptal.com/angular-js/top-18-most-common-angularjs-developer-mistakes" target="_blank"><span style="font-size:18px;"><b><i>Top 18 Most Common Mistakes that AngularJS Developers Make | Toptal&#174;,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[36]&nbsp;&nbsp;&nbsp;&nbsp;M. Prentice, “Extended Long-term Support for AngularJS,” <i>Extended Long-term Support for AngularJS</i>. [Online]. Available:  https://xlts.dev/angularjs. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://xlts.dev/angularjs" target="_blank"><span style="font-size:18px;"><b><i>Extended Long-term Support for AngularJS,</i></b></span></a><br><br>
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[37]&nbsp;&nbsp;&nbsp;&nbsp;P. Mishra, “What Is AngularJS? Getting Started With Angular[Updated2023],” <i>Mindmajix</i>, 22-May-2023. [Online]. Available: https://mindmajix.com/what-is-angular-js. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://mindmajix.com/what-is-angular-js" target="_blank"><span style="font-size:18px;"><b><i>What Is AngularJS? Getting Started With Angular[Updated2023],</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[38]&nbsp;&nbsp;&nbsp;&nbsp;“What is AngularJS.” <i>TutorialsTeacher</i>. [Online]. Available: https://www.tutorialsteacher.com/<br>
+angularjs/what-is-angularjs. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.tutorialsteacher.com/angularjs/what-is-angularjs" target="_blank"><span style="font-size:18px;"><b><i>What is AngularJS.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[39]&nbsp;&nbsp;&nbsp;&nbsp;D. com Staff, “Programming with AngularJS - A Glance,” <i>Developer.com</i>, 28-Aug-2013. [Online]. Available: https://www.developer.com/microsoft/<br>
+programming-with-angularjs-a-glance/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.developer.com/microsoft/programming-with-angularjs-a-glance/" target="_blank"><span style="font-size:18px;"><b><i>Programming with AngularJS - A Glance,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[40]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS,” <i>GeeksforGeeks</i>. [Online]. Available: https://www.geeksforgeeks.org/<br>
+angularjs/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/angularjs/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[41]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS.” <i>docs.angularjs.org</i>. [Online]. Available:  https://docs.angularjs.org/api/<br>
+ng/directive/ngApp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://docs.angularjs.org/api/ng/directive/ngApp" target="_blank"><span style="font-size:18px;"><b><i>AngularJS.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[42]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS.” <i>docs.angularjs.org</i>. [Online]. Available: https://docs.angularjs.org/<br>
+api/ng/directive/<br>
+ngController. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://docs.angularjs.org/api/ng/directive/ngController" target="_blank"><span style="font-size:18px;"><b><i>AngularJS.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[43]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS ng-controller Directive,” <i>GeeksforGeeks</i>, 26-Mar-2019. Available: https://www.geeksforgeeks.org/<br>
+angularjs-ng-controller-directive/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/angularjs-ng-controller-directive/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS ng-controller Directive,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[44]&nbsp;&nbsp;&nbsp;&nbsp;“Angular ng-repeat Directive.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+angular/ng_ng-repeat.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/angular/ng_ng-repeat.asp" target="_blank"><span style="font-size:18px;"><b><i>Angular ng-repeat Directive.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[45]&nbsp;&nbsp;&nbsp;&nbsp;
+“ng-style in AngularJS - Tech Funda.” 
+<i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/605/ng-style. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/605/ng-style" target="_blank"><span style="font-size:18px;"><b><i>ng-style in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[46]&nbsp;&nbsp;&nbsp;&nbsp;“ng-click events in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/Howto/<br>
+508/click-event. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/Howto/508/click-event" target="_blank"><span style="font-size:18px;"><b><i>ng-click events in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[47]&nbsp;&nbsp;&nbsp;&nbsp;“ng-mouse events in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/509/ng-mouse-events. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/509/ng-mouse-events" target="_blank"><span style="font-size:18px;"><b><i>ng-mouse events in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[48]&nbsp;&nbsp;&nbsp;&nbsp;“$http.get server request in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/<br>
+562/http-get-server-request. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/562/http-get-server-request" target="_blank"><span style="font-size:18px;"><b><i>$http.get server request in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[49]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “Math.random() - JavaScript | MDN,” <i>MDN Web Docs</i>, 28-Mar-2023. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/<br>
+Global_Objects/Math/random. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" target="_blank"><span style="font-size:18px;"><b><i>Math.random() - JavaScript | MDN,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[50]&nbsp;&nbsp;&nbsp;&nbsp;admin, “AngularJs Generate Random Number Function- JavaScript Example,” <i>Tutorialsplane</i>, 21-Jan-2018. 
+[Online]. Available: https://www.tutorialsplane.com/<br>
+angularjs-generate-random-number/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.tutorialsplane.com/angularjs-generate-random-number/" target="_blank"><span style="font-size:18px;"><b><i>AngularJs Generate Random Number Function- JavaScript Example,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[51]&nbsp;&nbsp;&nbsp;&nbsp;“JavaScript Math random() Method.” 
+<i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+jsref/jsref_random.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/jsref/jsref_random.asp" target="_blank"><span style="font-size:18px;"><b><i>JavaScript Math random() Method.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[52]&nbsp;&nbsp;&nbsp;&nbsp;S. Varikuntla, “How to generate Random Number in angularjs?” <i>blogs.9gridtech.com</i>, 14-Aug-2019. [Online]. Available: 
+https://blogs.9gridtech.com/<br>
+how-to-generate-random-number-in-angularjs/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://blogs.9gridtech.com/how-to-generate-random-number-in-angularjs/" target="_blank"><span style="font-size:18px;"><b><i>How to generate Random Number in angularjs?</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[53]&nbsp;&nbsp;&nbsp;&nbsp;“Angular Forms.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/angular/<br>
+angular_forms.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/angular/angular_forms.asp" target="_blank"><span style="font-size:18px;"><b><i>Angular Forms.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[54]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS.” <i>docs.angularjs.org</i>. [Online]. Available: https://docs.angularjs.org/api/<br>
+ng/directive/input. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://docs.angularjs.org/api/ng/directive/input" target="_blank"><span style="font-size:18px;"><b><i>AngularJS.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[55]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS ng-value Directive - javatpoint,” <i>Javatpoint</i>. 
+[Online]. Available: https://www.javatpoint.com/<br>
+angularjs-ng-value-directive. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.javatpoint.com/angularjs-ng-value-directive" target="_blank"><span style="font-size:18px;"><b><i>AngularJS ng-value Directive - javatpoint,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[56]&nbsp;&nbsp;&nbsp;&nbsp;“How to set the input field value dynamically in AngularJS ?,” <i>GeeksforGeeks</i>, 28-Sep-2020. 
+[Online]. Available: https://www.geeksforgeeks.org/how-to-set-the-input-field-value-dynamically-in-angularjs/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/how-to-set-the-input-field-value-dynamically-in-angularjs/" target="_blank"><span style="font-size:18px;"><b><i>How to set the input field value dynamically in AngularJS ?,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[57]&nbsp;&nbsp;&nbsp;&nbsp;
+“Input Validation basic in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/<br>
+525/validate-values. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/525/validate-values" target="_blank"><span style="font-size:18px;"><b><i>Input Validation basic in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[58]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS.” <i>docs.angularjs.org</i>. [Online]. Available: https://docs.angularjs.org/api/<br>
+ng/filter/date. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://docs.angularjs.org/api/ng/filter/date" target="_blank"><span style="font-size:18px;"><b><i>AngularJS.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[59]&nbsp;&nbsp;&nbsp;&nbsp;G. K. Arora, “How do I show Alert in AngularJS?” <i>C# Corner</i>. [Online]. Available: https://www.c-sharpcorner.com/blogs/how-do-i-show-alert-in-angularjs1. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.c-sharpcorner.com/blogs/how-do-i-show-alert-in-angularjs1" target="_blank"><span style="font-size:18px;"><b><i>How do I show Alert in AngularJS?</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[60]&nbsp;&nbsp;&nbsp;&nbsp;jimishravat2802, “AngularJS $window Service,” <i>GeeksforGeeks</i>, 09-Jun-2021. Available: https://www.geeksforgeeks.org/<br>
+angularjs-window-service/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/angularjs-window-service/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS $window Service,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[61]&nbsp;&nbsp;&nbsp;&nbsp;“Bootstrap Buttons.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+bootstrap/bootstrap_buttons.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/bootstrap/bootstrap_buttons.asp" target="_blank"><span style="font-size:18px;"><b><i>Bootstrap Buttons.</i></b></span></a><br><br>
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[62]&nbsp;&nbsp;&nbsp;&nbsp;“Radio buttons in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/<br>
+528/radio-buttons. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/528/radio-buttons" target="_blank"><span style="font-size:18px;"><b><i>Radio buttons in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[63]&nbsp;&nbsp;&nbsp;&nbsp;
+“Check box in AngularJS - Tech Funda.” 
+<i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/<br>
+526/check-box. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/526/check-box" target="_blank"><span style="font-size:18px;"><b><i>Check box in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[64]&nbsp;&nbsp;&nbsp;&nbsp;
+“Select - Drop downs in AngularJS - Tech Funda.” <i>Tech Funda</i>. [Online]. Available: https://techfunda.com/howto/<br>
+529/select-drop-downs. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://techfunda.com/howto/529/select-drop-downs" target="_blank"><span style="font-size:18px;"><b><i>Select - Drop downs in AngularJS - Tech Funda.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[65]&nbsp;&nbsp;&nbsp;&nbsp;J. Houser, “Jeffry Houser’s Blog: Why didn’t my Angular View update after changing the $Scope variable?” <i>Jeffry Houser’s Blog</i>, 02-Jun-2014. [Online]. Available: https://www.jeffryhouser.com/<br>
+index.cfm/2014/6/2/<br>
+How-do-I-run-code-when-a-variable-changes-with-AngularJS. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.jeffryhouser.com/index.cfm/2014/6/2/How-do-I-run-code-when-a-variable-changes-with-AngularJS" target="_blank"><span style="font-size:18px;"><b><i>Jeffry Houser’s Blog: Why didn’t my Angular View update after changing the $Scope variable?</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[66]&nbsp;&nbsp;&nbsp;&nbsp;“[javascript] AngularJS directive does not update on scope variable changes - SyntaxFix,” <i>https://syntaxfix.com</i>. Available: https://syntaxfix.com/question/12113/<br>
+angularjs-directive-does-not-update-on-scope-variable-changes. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://syntaxfix.com/question/12113/angularjs-directive-does-not-update-on-scope-variable-changes" target="_blank"><span style="font-size:18px;"><b><i>[javascript] AngularJS directive does not update on scope variable changes - SyntaxFix,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[67]&nbsp;&nbsp;&nbsp;&nbsp;“Bootstrap All CSS Classes.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/bootstrap/<br>
+bootstrap_ref_all_classes.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp" target="_blank"><span style="font-size:18px;"><b><i>Bootstrap All CSS Classes.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[68]&nbsp;&nbsp;&nbsp;&nbsp;“Angular Reference.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/angular/<br>
+angular_ref_directives.asp. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/angular/angular_ref_directives.asp" target="_blank"><span style="font-size:18px;"><b><i>Angular Reference.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[69]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS Tutorial.” <i>W3Schools</i>. [Online]. Available:
+https://www.w3schools.com/angular/. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/angular/" target="_blank"><span style="font-size:18px;"><b><i>AngularJS Tutorial.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[70]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS Tutorial.” <i>Tutorials Point</i>. [Online]. Available: https://www.tutorialspoint.com/<br>
+angularjs/index.htm. [Accessed: 24-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.tutorialspoint.com/angularjs/index.htm" target="_blank"><span style="font-size:18px;"><b><i>AngularJS Tutorial.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[71]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS.” <i>docs.angularjs.org</i>. [Online]. Available: https://docs.angularjs.org/api/<br>
+ng/directive/ngDisabled. [Accessed: May 31-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://docs.angularjs.org/api/ng/directive/ngDisabled" target="_blank"><span style="font-size:18px;"><b><i>AngularJS.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[72]&nbsp;&nbsp;&nbsp;&nbsp;A. Banik, “Disable button after single click with AngularJS ng-disabled Directive.” <i>www.encodedna.com</i>. [Online]. Available: https://www.encodedna.com/angularjs/<br>
+tutorial/disable-button-after-a-single-click-using-ngdisabled-directive.htm. [Accessed: 31-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.encodedna.com/angularjs/tutorial/disable-button-after-a-single-click-using-ngdisabled-directive.htm" target="_blank"><span style="font-size:18px;"><b><i>Disable button after single click with AngularJS ng-disabled Directive.</i></b></span></a><br><br>
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[73]&nbsp;&nbsp;&nbsp;&nbsp;“AngularJS Tutorial: Directives II - ng-show, ng-hide, and ng-disabled - 2020.” <i>www.bogotobogo.com</i>. [Online]. Available: https://www.bogotobogo.com/<br>
+AngularJS/AngularJS_More_<br>
+Directives_HTML_DOM.php. [Accessed: 31-May-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.bogotobogo.com/AngularJS/AngularJS_More_Directives_HTML_DOM.php" target="_blank"><span style="font-size:18px;"><b><i>AngularJS Tutorial: Directives II - ng-show, ng-hide, and ng-disabled - 2020.</i></b></span></a><br><br>
+
+
+
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+   </div>
+
+     <div class="grid-itemMarginReference">
+     </div>
+
+
+
+     <div class="grid-itemMarginReference">
+     </div>
+     <div class="grid-itemTopBottomReference">
+     </div>
+     <div class="grid-itemMarginReference">
+     </div>
+
+     <!--  end of grid container Reference -->
+</div>
+
+<br><br>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="font-size:18px;">
+<center> 
+<span id="copyRightMsg" style="color:Navy;font-size:16px;">
+<b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2020, 2023.<br>
+All rights reserved.
+</b></span>
+<br><br>
+
+
+
+<br><br>
+
+<center> 
+<span id="chromeBestMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
+
+<svg id="BootstrapIcon" 
+xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
+role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">Bootstrap icon</title>
+    <desc  id="iconDesc">this icon represents Bootstrap</desc> 
+    <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/> 
+    <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/> 
+</svg><br>
+
+
+<span id="iconsProvidedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Some icons provided via the 
+<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br>
+
+
+<span id="mitLicenseMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+
+<span id="iconsModifiedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+</center> 
+<br><br>
+
+
+
+<br><br>
+
+
+<!-- angularjs original logo --> 
+<!-- original AngularJS logo / icon located at -->
+
+ <!-- https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg
+ --> 
+
+<!-- 
+modified by A. Bright to allow for resizing the image and to support accessibility
+--> 
+
+<center>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" 
+width="240px" height="264px" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg2" version="1.1" inkscape:version="0.48.4 r9939" viewBox="0 0 335.88126 355.80875" role="graphics-document" aria-labelledby="iconAngularJsTitle" aria-describedby="iconAngularJsDesc"> <title id="iconAngularJsTitle">AngularJS icon</title> <desc  id="iconAngularJsDesc">this icon represents AngularJS</desc> xml:space="preserve" sodipodi:docname="AngularJS-Shield.svg" inkscape:export-filename="/usr/local/google/home/stephenfluin/AngularJS-Shield.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs id="defs6" /><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1393" inkscape:window-height="697" id="namedview4" showgrid="false" inkscape:zoom="0.25757162" inkscape:cx="171.15375" inkscape:cy="177.21499" inkscape:window-x="2290" inkscape:window-y="312" inkscape:window-maximized="0" inkscape:current-layer="g10" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" /><g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.25,0,0,-1.25,-188.84625,636.71875)"><g id="g12" transform="scale(0.1,0.1)"><path d="M 2850,5093.75 1510.77,4622.45 1722.39,2867.82 2851.42,2247.28 3986.27,2876.23 4197.82,4630.79 2850,5093.75 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path14" inkscape:connector-curvature="0" /><path d="m 4064.25,4529.39 -1217.38,415.13 0,-2548.98 1020.22,564.62 197.16,1569.23 z" style="fill:#af2b2d;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path16" inkscape:connector-curvature="0" /><path d="m 1661.05,4521.89 181.34,-1569.22 1004.47,-557.13 0,2549.03 -1185.81,-422.68 z" style="fill:#df2e31;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path18" inkscape:connector-curvature="0" /><path d="m 3129.05,3676.7 -279.96,584.64 -246.46,-584.64 526.42,0 z m 106.74,-245.83 -742.11,0 -166.02,-415.26 -308.82,-5.71 828.04,1842.06 856.9,-1842.06 -286.23,0 -181.76,420.97 z" style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20" inkscape:connector-curvature="0" /><path d="m 2846.87,4851.96 2.21,-590.62 279.67,-585.09 -281.25,0 -0.63,-245 388.9,-0.38 181.77,-421.04 295.49,-5.48 -866.16,1847.61 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path22" inkscape:connector-curvature="0" /></g></g></svg>
+
+</center>
+
+
+<br><br>
+
+
+
+<center>
+<span id="angularJSheadingMsg" style="color:Black;font-size:24px;">
+<b>AngularJS</b>
+</span>
+</center>
+<br><br>
+
+
+<span id="angularJSmitLicenseMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+AngularJS is licensed under the <a href="https://material.angularjs.org/latest/license" target="_blank">MIT</a> license.</b></span>
+<br>
+
+
+<span id="angularJSlogoMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+The AngularJS logo is located at <a href="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" target="_blank">https://angular.io/assets/images/logos/<br>
+angularjs/AngularJS-Shield.svg</a>.</b></span>
+<br>
+<span id="angularjsModifiedMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;The AngularJS logo has been modified.</b></span>
+</center><br>
+<center>
+<span id="angularjsDisplayTermsMsg" style="color:Black;font-size:12px;">
+The AngularJS logo is reproduced or modified from work created and shared by Google and used according to terms described in the<br>
+ <b><i>"Creative Commons Attribution-ShareAlike 3.0 Unported License"</b></i>.</center>
+</span><br>
+<span id="angularjsCreativeCommonsMsg" style="color:Black;font-size:12px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="angularjsLocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+<center> <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;"><b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span></a>
+</center>
+</span>
+
+
+<br><br>
+<hr>
+<br><br>
+
+<span style="color:Black;font-size:18px;">
+The MIT License 
+<br>
+<br>
+Copyright (c) 2010-2020 Google, Inc. http://angularjs.org 
+<br>
+<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. <br>
+<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</span>
+<br><br><br><br>
+
+</span>
+
+
+
+
+</div>
+
+
+<br>
+
+
+
+<script src="browserId.js">
+</script>
+
+<script src="debug.js">
+</script>
+
+<script src="angularjs.js">
+</script>
+
+<NOSCRIPT><span style="color:Navy;font-size:16px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br><br>
+
+
+
+
+<center>
+<BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width=120px;height:40px;-webkit-appearance:none" TYPE="button" id="debugButton" name="debugButton" title="show DEBUG info button" aria-label="show DEBUG info button" ONCLICK="showDebug()" ACCESSKEY=S><span style="font-size:28px;">     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="navy" stroke="white" class="bi bi-gear-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">show debug info</title>
+    <desc  id="iconDesc">this icon indicates that you can open a debugging panel</desc> <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/> </svg> </svg> <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="Navy" class="bi bi-keyboard-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">access key S</title>
+    <desc  id="iconDesc">this icon indicates keyboard navigation using the S access key</desc> <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 5 8.75v-.5A.25.25 0 0 0 4.75 8h-.5a.25.25 0 0 0-.25.25zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 9 8.75v-.5A.25.25 0 0 0 8.75 8h-.5a.25.25 0 0 0-.25.25zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5A.25.25 0 0 0 9.75 6h-.5a.25.25 0 0 0-.25.25zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 6 6.75v-.5A.25.25 0 0 0 5.75 6h-.5a.25.25 0 0 0-.25.25zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z"/> <g font-size="10" text-anchor="middle"> <text x="8.0" y="12.1" opacity="1.0" fill="orange" stroke="orange" stroke-width="1.0">S</text> </g> </svg>    </span></BUTTON> 
+</center><br> 
+<div style="color:black; background-color:ivory;border:2px solid lightgrey;border-radius:8px;margin-top:3px;margin-bottom:3px" id="debugOut" name="debugOut" title="debug output appears here" aria-label="debug output appears here">
+</div> <br><br>
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+</body>
+
+  
+    
+
+
+</html>
+
+    
+  

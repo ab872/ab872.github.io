@@ -388,8 +388,11 @@ if (deviceScreenWidth == 1133) {
 			//  adjust the size of the
 			//  Bootstrap icon
 			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-			document.getElementById("BootstrapIcon").style.height="64px";
+			document.getElementById("BootstrapIcon").style.width="128px"; 
+			document.getElementById("BootstrapIcon").style.height="128px";
+
+
+
 
 
 
@@ -670,6 +673,15 @@ if (deviceScreenWidth == 1133) {
 				'Includes references.</i>';
 
 
+		//  "linkAngularJS1"
+		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
+
+		//  "textAngularJS1Caption"
+		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
+
+
+
+
 
 
 
@@ -744,6 +756,41 @@ if (deviceScreenWidth == 1133) {
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
 			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
+
+
+
+
+
+
+
+		//  "angularJStermsMsg"
+		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsMsg"
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsLinkMsg"
+		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
+		//  "angularJSlocatedAtMsg"
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
+
+
+
+		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
+		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
+		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
+
+
 
 
 
@@ -1024,6 +1071,12 @@ if (deviceScreenWidth == 1133) {
 
 
 
+
+
+
+
+
+
            //   end        Firefox under Win10
         }
 
@@ -1295,8 +1348,8 @@ if (deviceScreenWidth == 1143) {
 			//  adjust the size of the
 			//  Bootstrap icon
 			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-			document.getElementById("BootstrapIcon").style.height="64px";
+			document.getElementById("BootstrapIcon").style.width="128px"; 
+			document.getElementById("BootstrapIcon").style.height="128px";
 
 
 
@@ -1577,6 +1630,11 @@ if (deviceScreenWidth == 1143) {
 				'<br>' + 
 				'Includes references.</i>';
 
+		//  "linkAngularJS1"
+		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
+
+		//  "textAngularJS1Caption"
+		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
 
@@ -2011,6 +2069,47 @@ if (deviceScreenWidth == 1143) {
 
 				//  document.getElementById
 				//  ("mp4Icon").style.height="128px";
+
+
+
+
+
+
+
+		//  "angularJSmitLicenseMsg" 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="42px"; 
+
+
+		//  "angularJSlogoMsg"
+		document.getElementById('angularJSlogoMsg').style.fontSize="42px"; 
+
+		//   "angularJSmodifiedMsg"
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="42px"; 
+
+		//  "angularJStermsMsg"
+		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsMsg"
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsLinkMsg"
+		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
+		//  "angularJSlocatedAtMsg"
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
+
+
+
+		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
+		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
+		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 
@@ -3020,6 +3119,32 @@ if (isEdge) {
 			document.getElementById("cameraIcon").style.height="128px";
 
 
+		//  "angularJStermsMsg"
+		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsMsg"
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsLinkMsg"
+		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
+		//  "angularJSlocatedAtMsg"
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
+
+
+
+		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
+		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
+		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
 
 
 
@@ -3065,8 +3190,8 @@ if (isNewEdge) {
 			//  adjust the size of the
 			//  Bootstrap icon
 			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-			document.getElementById("BootstrapIcon").style.height="64px";
+			document.getElementById("BootstrapIcon").style.width="128px"; 
+			document.getElementById("BootstrapIcon").style.height="128px";
 
 
 
@@ -3284,6 +3409,15 @@ if (isNewEdge) {
 				'using their public REST API.' + 
 				'<br>' + 
 				'Includes references.</i>';
+
+
+
+		//  "linkAngularJS1"
+		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
+
+		//  "textAngularJS1Caption"
+		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
+
 
 
 
@@ -3704,6 +3838,32 @@ if (isNewEdge) {
 				//  document.getElementById
 				//  ("mp4Icon").style.height="128px";
 
+
+
+		//  "angularJStermsMsg"
+		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsMsg"
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+
+		//  "angularJScreativeCommonsLinkMsg"
+		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
+
+
+		//  "angularJSlocatedAtMsg"
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
+
+
+
+		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
+		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
+		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 
