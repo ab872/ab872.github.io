@@ -762,15 +762,30 @@ if (deviceScreenWidth == 1133) {
 
 
 
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="112px"; 
+				document.getElementById("svgAngularJS1").style.height="123px";
+
+
+		//  "angularJSmitLicenseMsg" 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+
+
+		//  "angularJSlogoMsg"
+		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+
+		//   "angularJSmodifiedMsg"
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+
+
+
 
 		//  "angularJStermsMsg"
 		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
 
 		//  "angularJScreativeCommonsMsg"
 		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
-
-		//  "angularJScreativeCommonsLinkMsg"
-		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 		//  "angularJSlocatedAtMsg"
@@ -786,7 +801,7 @@ if (deviceScreenWidth == 1133) {
 
 		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
 		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 
@@ -839,7 +854,7 @@ if (deviceScreenWidth == 1133) {
 			//  id="textGraphApp1"
 			//  16px;">
 			//  <b>Using the Canvas in C#</b>
-			document.getElementById('textGraphApp1').style.fontSize="28px";
+			document.getElementById('textGraphApp1').style.fontSize="24px";
 
 
 
@@ -2076,24 +2091,30 @@ if (deviceScreenWidth == 1143) {
 
 
 
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="112px"; 
+				document.getElementById("svgAngularJS1").style.height="123px";
+
+
+
 		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="42px"; 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
 
 
 		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="42px"; 
+		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
 
 		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="42px"; 
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+
+
 
 		//  "angularJStermsMsg"
 		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
 
 		//  "angularJScreativeCommonsMsg"
 		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
-
-		//  "angularJScreativeCommonsLinkMsg"
-		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 		//  "angularJSlocatedAtMsg"
@@ -2109,7 +2130,7 @@ if (deviceScreenWidth == 1143) {
 
 		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
 		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="48px"; 
 
 
 
@@ -3119,14 +3140,33 @@ if (isEdge) {
 			document.getElementById("cameraIcon").style.height="128px";
 
 
+
+
+
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="112px"; 
+				document.getElementById("svgAngularJS1").style.height="123px";
+
+
+		//  "angularJSmitLicenseMsg" 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+
+
+		//  "angularJSlogoMsg"
+		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+
+		//   "angularJSmodifiedMsg"
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+
+
+
+
 		//  "angularJStermsMsg"
 		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
 
 		//  "angularJScreativeCommonsMsg"
 		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
-
-		//  "angularJScreativeCommonsLinkMsg"
-		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 		//  "angularJSlocatedAtMsg"
@@ -3142,7 +3182,7 @@ if (isEdge) {
 
 		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
 		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="24px"; 
 
 
 
@@ -3840,18 +3880,41 @@ if (isNewEdge) {
 
 
 
+
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="112px"; 
+				document.getElementById("svgAngularJS1").style.height="123px";
+
+
+		//  "angularJSmitLicenseMsg" 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+
+
+		//  "angularJSlogoMsg"
+		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+
+		//   "angularJSmodifiedMsg"
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+
+
+
+
+
+
+
+
+
+
 		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
 
 		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
-
-		//  "angularJScreativeCommonsLinkMsg"
-		document.getElementById('angularJScreativeCommonsLinkMsg').style.fontSize="24px"; 
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px";
 
 
 		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
 
 	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
 	document.getElementById('angularJSlocatedAtMsg').innerHTML=
@@ -3862,8 +3925,8 @@ if (isNewEdge) {
 
 
 		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
-		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="24px"; 
+	//	document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="38px"; 
+	//	document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="48px"; 
 
 
 
