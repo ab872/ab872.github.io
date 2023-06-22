@@ -6,6 +6,79 @@
    <head> 
       <meta charset="utf-8" />
 
+
+	<!--  
+	Set up Content-Security-Policy.
+
+	unsafe-inline doesn't seem right.
+
+	If we allow the settings button to do inline execution
+	without a hash, it seems it will not achieve the desired 
+	goal of blocking a clickjack.
+
+        Let's do it this way temporarily while we research if we 
+        need to rewrite some of this code.
+
+	script-src 'self' 'unsafe-inline' 'unsafe-hashes' 'sha256-...' 
+
+ 	 -->
+
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+
+script-src 'self' 'unsafe-inline' 
+https://counter2.stat.ovh/private/counter.js 
+https://counter2.stat.ovh/private/freecounterstat.php 
+https://www.freecounterstat.com; 
+
+connect-src 'self' 
+https://counter2.stat.ovh/private/ 
+https://www.freecounterstat.com; 
+
+object-src 'self'; 
+
+img-src 'self' 
+https://counter2.stat.ovh/private/ 
+https://www.freecounterstat.com 
+https://counter2.stat.ovh:4433/private/pointeur/pointeur.gif 
+https://counter2.freecounterstat.com/private/; 
+
+style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSySzDc=' 
+'sha256-GOzrxlQAZaXK2bTpPi60sishRsCtMuOOK67frKt2URk=' 'sha256-iB/gMrGPfDqulAYv5Pd404loykgSA45iNWePGseRxik=' 
+'sha256-7LQxRnzxUUGMb92ohDYE10OicHl4u5+xPZIPk1FDaRA=' 'sha256-dgGu9RsYQs5fsG/dUKEbTIaM0U+fNh/6lwVQQy9grtw=' 
+'sha256-UaPIEs0sV2+F3RlOHRbHIwRsIbMrMmT/6Uw+3/Vt4lQ=' 'sha256-3IKUWXyes8BJoRUrJ9cnlW1/ksn+cteDVYfNPCMNdQQ=' 
+'sha256-g6wg5pp4x3Ns1EA1XHJ1VWn0nhDQLwAow3wj2SnZZ/k=' 'sha256-co+eBuKjTxIyQWqGiKsj2pCUvSLC6D/MYJIFYzkERn4=' 
+'sha256-xC8juOyOcGVG0BdxV2vy4LlzWOZfFlsV82FV45f1hTY=' 'sha256-aOF3kq5KlQ6WUhG8odoJQtdKISBrvbaePodbzaGQFpg=' 
+'sha256-wzpJuonkTVq1vdYX+huGKPIllB3VX1hPniwRMnqRHmc=' 'sha256-YpWDaHQDfhe9U4I87C3oc6BxeRIbMSE6lgt4rav/4ms=' 
+'sha256-qkdB6KklfJ3Hol/YLQV8RyYbTZtKS/6f5sXj7QYUIuM=' 'sha256-PeiPfWJTpd9AaQEsv/kTLKmsA5swMRp4y9dS/J3fqGE=' 
+'sha256-Rveo1T9qxhvZO1Scgt8W/CfG1MwuCtqPwRr7OzN8lzY=' 'sha256-+NX3goEAiRk9Y1upd0FK/NRvr/KLqJ+pM+LRGALSQ0A=' 
+'sha256-Omdz+SpUzU7vQn1SF5RbhvuASF9IOpkRz3/oS7IOBOk=' 'sha256-yU6ptYSwwit0go9OL9NqG+ON7Dx3j/J+yu7Ezv3fCtg=' 
+'sha256-XxxDJ24Gg0g5EkLvPXCYrRKEv7iC9VDWaOCZ/I53zFk=' 'sha256-kFIottUtGPAq2cagsv7YwqslSibYYh70fS9rLc0Tn0E=' 
+'sha256-fUeGDVN1wg0twaE+tZkmZYUfEoLWYs61bJlg9KFy4OU=' 'sha256-+lKvBxC5uKGGa2W3W4V0zUihkDDcHmYXGLX5iOdmjEk=' 
+'sha256-uVXNnUQaNgoRzUd14L72QLi1t0BUOrjj+DmfGdbhZ10=' 'sha256-iXhbIx61JlWDLInCP+N4r8A3Zr6r9Bf1n04QsT20/Y8=' 
+'sha256-Gh4A7p6uhLDZJNKoWjWudJOOipeQ+r6JFbUkQgtz6aU=' 'sha256-o6Q12b4QRK/vIjZKsgMMHuHJijjvIjhGlR8BRbwx5Nc='
+'sha256-zqSYQm5oJOID9rHLuUwOBiOzv9Mo8QKlLJCZSFGb9vE=' 'sha256-21ST7zzhlwPgWl5TkaJXRKNUHO1gfuoiY2oIo+znEDY='
+'sha256-XLgvRKe29W4o4hh5HlfRnl+JbC1oSf8zwHo61f9UljY=' 'sha256-g/y70lyJAjYuJrPXiR9TU2DqZSMVRUYfZsnZ58/SW98='
+'sha256-oxFza2fyphkam8sBZJi1BZ/iu5xzkvVh73lJ2U0Kg5o=' 'sha256-W2PSgD98xymJzsEv2JedLeMn1QVET2mS2V2QhDxx3pM='
+'sha256-g/y70lyJAjYuJrPXiR9TU2DqZSMVRUYfZsnZ58/SW98=' 'sha256-OKz3O/SrsMzt3yb6wrI9vSgGSFcn3cvzAzLW+ijpBso='
+'sha256-6UMrYhr9DNxVv3aY2KwItPx8JtccIso0yp1IEZ2v0Qc=' 'sha256-M+rst/fAhgd77uf5yPme72uZUynrwhU3WoitmasZc/k='
+'sha256-5S8dF8oDdV8/vWocIbmzXSL4TNfRf6zWsic14hTwetI=' 'sha256-lnIC/gqXudDWWpwY7UwkJGqdM/k2NKa53xHIm+5h9vs='
+'sha256-dpZpYRK/ENO4pw/ClxukWFL6CIVBqGYdxAdSgVlrL+w=' 'sha256-uf4/YlX01bvwUt5U3yfy7qDPgoT7vtSbNwcajqPWgy4='
+'sha256-mImZjrRv9EFM7SaYQtEFjE6pll2JbStbcgrsTndVHCQ=' 'sha256-U88PB0QmA5Q4oXbmx2bxrA6zNtzGiVUDivFQ0CHPW4k='
+'sha256-dDIJm4Lui8cTeZExjhS1axQqefxMmSEjCx1DIxpeugw=' 'sha256-bn9K3blgN88xWBttiRDzPYFyOwLnOmlvgd7FpR3nTDE='
+'sha256-wx95vjL8yle2OHyjO6DJRAaodBvLAGli0h9fr++y89c=' 'sha256-yyq8GMthH0GUC+O0lsfCWtfJhs1ih734P00Ob0++w3k='
+'sha256-f5zh+RKrha6T7AtoYzdH3tgUU6BI+OopOXOnV3Phat0=';
+
+script-src-elem 'self' 
+'sha256-tmusP4mX2ktNSQGWi10Fmf3OZ/zG7mONXEVJTqZHTVk=' 
+https://counter2.stat.ovh/private/counter.js; base-uri 
+'self'; 
+
+form-action 'self' ">
+  
+
+
       <title>ab872 - main page</title> 
 
       <style> 
@@ -24,8 +97,79 @@
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
-     grid-template-rows: 0.3vh 12vh 0.3vh; 
+     grid-template-rows: 0.3vh 22vh 0.3vh; 
 }
+
+
+
+.grid-containerAndroid {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 95vh 0.3vh; 
+}
+
+
+
+.grid-containerCAD {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 135vh 0.3vh; 
+}
+
+
+.grid-containerDatabase {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 215vh 0.3vh; 
+}
+
+
+
+.grid-containerGraphics {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 225vh 0.3vh; 
+}
+
+
+.grid-containerMisc {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 190vh 0.3vh; 
+}
+
+
+
+.grid-containerWindows {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 95vh 0.3vh; 
+}
+
 
 
 .grid-containerReference {
@@ -61,21 +205,38 @@
 
 <body>
 
+<!-- 
+it appears that some genius is clickjacking 
+the settings button at the bottom of the page.
+
+the first time you click it, it gets clickjacked.
+if you reload the page and click it again, it doesn't 
+happen.
+
+since there's nothing really earth shattering on this 
+website, I can only imagine it is the work of some 10  
+year old child.
+
+as a temporary measure, let's change this text before 
+every push to make sure it overwrites the clickjack.
+
+*** Change this line of text before every push.  16 november 2022. *** 
+
+-->
+
+
 <center> 
-<span style="color:Navy;font-size:28px;"><b>ab872</b></span>
+<span id="mainPageSiteTitle" style="color:Navy;font-size:28px;"><b>ab872</b></span>
 </center><br>
 <center> 
-<img alt="printed circuit board" src="image/pcb/sampleBoard1b.jpg" height="130" width="300" border="3" /><br>
+<img id="imagePcbIntro" alt="printed circuit board" src="image/pcb/sampleBoard1b.jpg" height="162" width="375" border="3" /><br>
 <span id="textIntroCaption" style="color:Grey;font-size:12px;"><i>Preview rendering of printed circuit board produced by parsing the<br>
-data files. Rendered using SVG graphics. Early version of the software.</i></span><br><br>
-
-
-<span style="color:Green;font-size:16px;">&#x2714; </span> <span style="color:Navy;font-size:16px;"><b>Main Page</b></span> <span style="color:Green;font-size:16px;">&#x2714; </span>
-</center><br>
+data files. Rendered using SVG graphics. Early version of the software.</i></span>
+</center><br><br>
 
 
 <center>
-<div class="grid-containerIntro">
+<div class="grid-containerIntro" id="grid-containerIntro">
 
      <div class="grid-itemMargin">
      </div>
@@ -91,9 +252,11 @@ data files. Rendered using SVG graphics. Early version of the software.</i></spa
      </div>
 
      <div class="grid-item"><br>
-<span id="textIntroduction" style="color:Black;font-size:44px;">A collection of various <span id="textIntroductionEmphasized1" style="color:Navy;font-size:45px;"><b>projects</b></span> and 
- <span id="textIntroductionEmphasized2" style="color:Navy;font-size:45px;"><b>experiments</b></span>.</span><br>
-<span id="verticalSpacer0" style="font-size:19px;"></span>
+<span id="textIntroduction" style="color:Black;font-size:44px;">A collection of various <span 
+id="textIntroductionEmphasized1" style="color:Navy;font-size:45px;"><b>projects</b></span> and <span 
+id="textIntroductionEmphasized2" style="color:Navy;font-size:45px;"><b>experiments</b></span>.</span>
+
+<span id="verticalSpacer0" style="font-size:19px;"><br><br></span>
    </div>
 
      <div class="grid-itemMargin">
@@ -110,50 +273,555 @@ data files. Rendered using SVG graphics. Early version of the software.</i></spa
      <div class="grid-itemMargin">
      </div>
 
-     <!--  end of grid container  -->
+     <!--  end of grid container Intro -->
 </div>
 </center><br>
 
-<!--
-Firefox on Android 5:
-the references section overlaps the introduction. 
- --> 
 
-<!-- start of correction--> 
-<span id="verticalSpacer1" style="font-size:19px;"></span> 
-<!-- end of correction--> 
+
+
+
+
+
+
+<center>
+<div class="grid-containerAndroid" id="grid-containerAndroid">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Android&#x2122;</span>&nbsp;<IMG SRC='./image/misc/Android_Robot_100.png' ALT='Android Robot' WIDTH=189 HEIGHT=249 BORDER=0>
+</center><br>
+
+<span id="textRobotCaption1" style="color:gray;font-size:12px;"><i>Android is a trademark of Google Inc.</i></span> <span id="textRobotEmphasized1" style="color:gray;font-size:12px;"><i>The Android robot is reproduced or modified from work created and shared by Google<br>
+and used according to terms described in the Creative Commons 3.0 Attribution License</i>.</span><br>
+
+<span id="textRobotCaption2" style="color:Grey;font-size:12px;"><i>Download available at:<br>
+</i></span> <a href="http://developer.android.com/distribute/googleplay/promote/brand.html" target="_blank"><span id="textRobotEmphasized2" style="color:Cornflowerblue;font-size:12px;"><i>http://developer.android.com/distribute/googleplay/promote/brand.html</i></span></a><br>
+
+
+<span id="textRobotCaption3" style="color:Grey;font-size:12px;"><i>The Attribution 3.0 Unported (CC BY 3.0) summary is at:<br>
+</i></span> <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><span id="textRobotEmphasized3" style="color:Cornflowerblue;font-size:12px;"><i>https://creativecommons.org/licenses/by/3.0/</i></span></a><br>
+
+ <span id="textRobotCaption4" style="color:Grey;font-size:12px;"><i>The Attribution 3.0 Unported Legal Code is at:<br>
+</i></span> <a href="https://creativecommons.org/licenses/by/3.0/legalcode" target="_blank"><span id="textRobotEmphasized4" style="color:Cornflowerblue;font-size:12px;"><i>https://creativecommons.org/licenses/by/3.0/<br>
+legalcode</i></span></a> <br><br>
+
+
+
+
+
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Android  -->
+</div>
+</center><br>
+
+
+
+
+
+
+<center>
+<div class="grid-containerCAD" id="grid-containerCAD">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">CAD/CAM</span>&nbsp;<svg id="pcbIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-layers" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">PCB icon</title>
+    <desc  id="iconDesc">this icon represents the layers of a printed circuit board</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="green" stroke="black" stroke-width="0.5" d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4z"/> <path fill="green" stroke="green" stroke-width="0.5" d="m3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874z"/> <path fill="goldenrod" stroke="goldenrod" stroke-width="0.5" d="M8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+</svg>
+</center> <br><br>
+
+<center>
+<a href="viewGerberFile.html" target="_blank"><span id="linkGerberViewer" style="color:Navy;font-size:16px;"><b>Gerber file viewer</b></span></a> <svg id="pdfIcon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTitle" aria-describedby="pdfIconDesc"> <title> id="pdfIconTitle">PDF icon</title> <desc  id="pdfIconDesc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+<img id="imagePcbIntro" alt="printed circuit board" src="image/pcb/sampleBoard1b.jpg" height="162" width="375" border="3" /><br>
+<span id="textGerberViewerCaption" style="color:Grey;font-size:14px;"><i>File viewer which parses<br>
+Gerber files in order to display<br>
+a preview image of how a<br>
+printed circuit board would look<br>
+when manufactured. The image<br>
+is rendered using SVG graphics.<br>
+Includes references.</i></span>
+</center><br><br>
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container CAD  -->
+</div>
+</center><br>
+
+
+
+
+
+
+
+<center>
+<div class="grid-containerDatabase" id="grid-containerDatabase">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Database</span>&nbsp;<svg id="databaseIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">Database icon</title>
+    <desc  id="iconDesc">this icon represents a collection such as a database</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="cornflowerblue" stroke="black" stroke-width="0.5" d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7z"/> <path fill="aliceblue" stroke="black" stroke-width="0.8" d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7z"/> <path fill="none" stroke="none" stroke-width="0.5" d="m1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+</svg>
+</center> <br><br>
+
+
+<center>
+<a href="crudP1Video.html" target="_blank"><span id="linkCrudP1video" style="color:Navy;font-size:16px;"><b>CRUD databases - part 1, arrays</b></span></a> <svg id="mp4Icon2" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="mp4IconTitle" aria-describedby="mp4IconDesc"> <title> id="mp4IconTitle">mp4 icon</title> <desc  id="mp4IconDesc">this icon represents an mp4 file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/> <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/> <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> <g font-size="6.6" text-anchor="middle"> <text x="8.0" y="13.3" opacity="1.0" fill="blue" stroke="blue" stroke-width="0.3">mp4</text> </g> </svg><br>
+<span id="textCrudP1Caption" style="color:Grey;font-size:14px;"><i>A demonstration of CRUD database programming based on arrays. CRUD stands for Create, Read, Update and Delete. These are the four basic operations every database must perform. Includes references.</i></span>
+</center><br><br>
+
+
+<center>
+<a href="viewCrudP1.html" target="_blank"><span id="linkCrudP1" style="color:Navy;font-size:16px;"><b>CRUD databases - part 1, arrays</b></span></a> <svg id="pdfIcon2" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIcon2Title" aria-describedby="pdfIcon2Desc"> <title> id="pdfIcon2Title">PDF icon</title> <desc  id="pdfIcon2Desc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+<span id="textCrudP1bCaption" style="color:Grey;font-size:14px;"><i>Documentation for <span id="textCrudP1bPdfCaptionEmphasized1" style="color:Navy;"><b>CRUD databases - part 1, arrays</b></span>. Includes references.
+</i></span>
+</center><br><br>
+
+
+
+<center>
+<a href="viewCrudP2.html" target="_blank"><span id="linkCrudP2" style="color:Navy;font-size:16px;"><b>CRUD databases - part 2, JSON</b></span></a> <svg id="pdfIcon3" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIcon3Title" aria-describedby="pdfIcon3Desc"> <title> id="pdfIcon3Title">PDF icon</title> <desc  id="pdfIcon3Desc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+<span id="textCrudP2Caption" style="color:Grey;font-size:14px;"><i>Documentation for <span id="textCrudP2PdfCaptionEmphasized1" style="color:Navy;"><b>CRUD databases - part 2, JSON</b></span>. Includes references.
+</i></span>
+</center><br><br>
+
+
+
+<center>
+<a href="viewCrudP3.html" target="_blank"><span id="linkCrudP3" style="color:Navy;font-size:16px;"><b>CRUD databases - part 3, JSON</b></span></a> <svg id="pdfIcon4" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIcon4Title" aria-describedby="pdfIcon4Desc"> <title> id="pdfIcon4Title">PDF icon</title> <desc  id="pdfIcon4Desc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+<span id="textCrudP3Caption" style="color:Grey;font-size:14px;"><i>Documentation for <span id="textCrudP3PdfCaptionEmphasized1" style="color:Navy;"><b>CRUD databases - part 3, Traveler's Database using JSON</b></span>. Includes references.
+</i></span>
+</center><br><br>
+
+
+
+
+
+<center>
+<a href="viewCrudP4.html" target="_blank"><span id="linkCrudP4" style="color:Navy;font-size:16px;"><b>CRUD databases - part 4</b></span></a> <svg id="pdfIcon5" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIcon5Title" aria-describedby="pdfIcon5Desc"> <title> id="pdfIcon5Title">PDF icon</title> <desc  id="pdfIcon5Desc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg id="sqliteIcon1" 
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="190"
+   height="90"
+   viewBox="0 0 381.8515 180.60349"
+   id="svg2985"
+   xml:space="preserve"><title
+     id="title2998">SQLite</title><metadata
+     id="metadata2991"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>SQLite</dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs2989"><linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       id="linearGradient3027"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-4.02e-6,-91.8907,-91.8907,4.02e-6,85.8809,161.434)"
+       spreadMethod="pad"><stop
+         id="stop3029"
+         style="stop-color:#97d9f6;stop-opacity:1"
+         offset="0" /><stop
+         id="stop3031"
+         style="stop-color:#0f80cc;stop-opacity:1"
+         offset="0.92024499" /><stop
+         id="stop3033"
+         style="stop-color:#0f80cc;stop-opacity:1"
+         offset="1" /></linearGradient><linearGradient
+       x1="-15.614694"
+       y1="-9.1082983"
+       x2="-6.7410073"
+       y2="-9.1082983"
+       id="linearGradient5421"
+       xlink:href="#linearGradient3027"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-4.02e-7,-9.18907,-9.18907,4.02e-7,8.58809,16.1434)"
+       spreadMethod="pad" /><linearGradient
+       x1="-15.614694"
+       y1="-9.1082983"
+       x2="-6.7410073"
+       y2="-9.1082983"
+       id="linearGradient2995"
+       xlink:href="#linearGradient3027"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-5.025e-7,11.486337,-11.486337,-5.025e-7,-30.839638,202.18698)"
+       spreadMethod="pad" /></defs> role="graphics-document" aria-labelledby="sqliteIcon1Title" aria-describedby="sqliteIcon1Desc"> <title> id="sqliteIcon1Title">SQLite icon</title> <desc  id="sqliteIcon1Desc">this is the icon for SQLite</desc> <rect opacity="0.9" fill="none" stroke="gray" stroke-width="1"  width="380.8515" height="179.60349" /> <path
+     d="m 147.53125,89.218755 c -4.8225,0 -8.74375,1.4275 -11.75,4.28125 -3.00625,2.85625 -4.53125,6.600135 -4.53125,11.187505 0,2.37738 0.37875,4.545 1.125,6.53125 0.74625,1.99025 1.9075,3.834 3.46875,5.5 1.56125,1.6675 4.68625,3.93263 9.34375,6.8125 5.715,3.48887 9.455,6.32037 11.25,8.53124 1.79625,2.209 2.6875,4.524 2.6875,6.9375 0,3.2315 -1.06375,5.811 -3.25,7.75 -2.19,1.93988 -5.11875,2.90625 -8.75,2.90625 -3.83,0 -7.16625,-1.35012 -10.03125,-4.03125 -2.865,-2.685 -4.31125,-6.23637 -4.34375,-10.6875 l -1.78125,0 0,16.15625 1.78125,0 c 0.54375,-1.52988 1.29625,-2.3125 2.28125,-2.3125 0.47375,0 1.58375,0.32675 3.3125,0.9375 4.20625,1.49662 7.66,2.21875 10.375,2.21875 4.67875,0 8.6725,-1.63862 12,-4.96875 3.3225,-3.32862 5,-7.34375 5,-12.03125 0,-3.63475 -1.1075,-6.86863 -3.28125,-9.68749 -2.17375,-2.82225 -6.40125,-6.10501 -12.71875,-9.875 -5.43625,-3.26614 -8.965,-5.92625 -10.59375,-8 -1.63125,-2.07076 -2.46875,-4.36137 -2.46875,-6.875 0,-2.718755 0.99875,-4.902505 2.96875,-6.531255 1.97,-1.63 4.55125,-2.4375 7.78125,-2.4375 3.635,0 6.665,1.07875 9.0625,3.25 2.395,2.175 3.78,5.189 4.1875,9.062505 l 1.78125,0 0,-14.000005 -1.65625,0 c -0.2025,0.71375 -0.39,1.17 -0.5625,1.375 -0.1675,0.20375 -0.49,0.3125 -0.96875,0.3125 -0.57625,0 -1.60375,-0.2425 -3.0625,-0.71875 -3.125,-1.0525 -6.00625,-1.59375 -8.65625,-1.59375 z m 58.21875,0 c -5.87625,0 -11.21125,1.385 -16.03125,4.15625 -4.8275,2.76625 -8.64875,6.6075 -11.46875,11.500005 -2.81875,4.89212 -4.21875,10.08786 -4.21875,15.625 0,7.43899 2.435,14.06636 7.34375,19.87499 4.91125,5.80513 10.79625,9.42238 17.625,10.8125 1.56125,0.8135 3.795,2.9135 6.71875,6.3125 3.295,3.83587 6.0825,6.6025 8.375,8.25 2.29,1.64837 4.7625,2.8565 7.375,3.65625 2.615,0.79638 5.4425,1.1875 8.5,1.1875 3.7025,0 7.0175,-0.6435 9.9375,-1.96875 L 239.25,167 c -1.695,0.61138 -3.5025,0.90625 -5.40625,0.90625 -2.58375,0 -5.195,-0.852 -7.8125,-2.5625 -2.61375,-1.71475 -5.8825,-4.98637 -9.78125,-9.8125 -1.8325,-2.3125 -3.0975,-3.7715 -3.8125,-4.34375 7.47125,-1.459 13.615,-5.08 18.40625,-10.875 4.79,-5.7925 7.1875,-12.40336 7.1875,-19.81249 0,-8.79739 -3.13,-16.19088 -9.34375,-22.218755 -6.21875,-6.0285 -13.86625,-9.0625 -22.9375,-9.0625 z m 36.34375,0 0.0937,1.90625 c 3.9125,0 6.10375,1.1525 6.59375,3.46875 0.1825,0.82875 0.26625,2.359 0.28125,4.5625 l -0.0312,42.156245 c -0.0325,3.1485 -0.48125,5.15875 -1.34375,6.03125 -0.86375,0.86625 -2.32375,1.40875 -4.4375,1.625 l -0.0937,1.90625 39,0 1,-9.5625 -1.78125,0 c -0.50875,2.605 -1.675,4.47113 -3.53125,5.53125 -1.86125,1.06787 -5.1525,1.59375 -9.90625,1.59375 l -3.6875,0 c -4.2775,0 -6.7525,-1.54638 -7.40625,-4.65625 -0.135,-0.61525 -0.18125,-1.27488 -0.1875,-2 l 0.15625,-42.624995 c -10e-4,-3.1435 0.39625,-5.25 1.21875,-6.28125 0.83125,-1.0275 2.33,-1.6025 4.5,-1.75 l -0.0937,-1.90625 -20.34375,0 z m -35.71875,2.3125 c 6.6275,0 12.03875,2.61025 16.21875,7.875 4.17875,5.266635 6.25,12.484875 6.25,21.625005 0,8.66111 -2.10125,15.59612 -6.3125,20.81249 -4.21125,5.21475 -9.81625,7.8125 -16.78125,7.8125 -6.69125,0 -12.1175,-2.67875 -16.28125,-8.0625 -4.16,-5.38375 -6.21875,-12.3735 -6.21875,-20.96874 0,-8.8325 2.08375,-15.90288 6.28125,-21.187505 4.195,-5.279 9.8125,-7.90625 16.84375,-7.90625 z m 89.6875,9.062505 c -0.95125,0 -1.67625,0.32125 -2.21875,0.96875 -0.555,0.64499 -0.725,1.42624 -0.53125,2.375 0.1875,0.92037 0.70625,1.727 1.53125,2.40625 0.82,0.67861 1.705,1.03125 2.65625,1.03125 0.92,0 1.62125,-0.35262 2.125,-1.03125 0.50375,-0.67925 0.6575,-1.48588 0.46875,-2.40625 -0.19375,-0.94876 -0.695,-1.73001 -1.46875,-2.375 -0.7825,-0.6475 -1.6425,-0.96875 -2.5625,-0.96875 z m 25.71875,6.46875 c -1.61625,6.21774 -5.12,9.58249 -10.5,10.125 l 0.0625,1.78125 6.28125,0 -0.125,21.06249 c 0.01,3.601 0.12,5.9985 0.375,7.21875 0.61875,2.92138 2.52625,4.40625 5.71875,4.40625 4.61875,0 9.46375,-2.8135 14.53125,-8.4375 l -1.53125,-1.3125 c -3.65875,3.70363 -6.89375,5.5625 -9.71875,5.5625 -1.73625,0 -2.8125,-0.9985 -3.21875,-2.96875 C 323.545,144.0215 323.5,143.46238 323.5,142.8125 l 0.0625,-23.84374 9.59375,0 -0.0937,-2.84375 -9.46875,0 0,-9.0625 -1.8125,0 z m 37.09375,7.9375 c -5.36625,0 -9.73125,2.605 -13.125,7.78125 -3.37625,5.185 -4.42125,10.92961 -3.09375,17.24999 0.78125,3.70212 2.3375,6.57138 4.71875,8.59375 2.3775,2.0215 5.39375,3.03125 9,3.03125 3.3575,0 8.0325,-0.85012 10,-2.5625 1.9725,-1.71138 3.79,-4.48388 5.46875,-8.28125 L 370.5,139.40625 c -2.6775,4.92625 -8.08125,7.40625 -12.15625,7.40625 -5.6025,0 -9.03375,-3.07375 -10.3125,-9.1875 -0.16625,-0.78038 -0.29,-1.61875 -0.375,-2.5 6.665,-1.05525 11.71625,-2.92388 15.125,-5.625 3.40625,-2.70261 6.82625,-5.56737 6.1875,-8.59374 -0.38,-1.79838 -1.31375,-3.21238 -2.75,-4.28125 -1.455,-1.06837 -5.2325,-1.625 -7.34375,-1.625 z m -58.65625,0.21875 -11.5625,2.65625 0,2.0625 4,-0.5 c 1.9375,0 3.0775,0.87738 3.4375,2.625 0.12125,0.58488 0.1975,1.40625 0.21875,2.4375 l -0.125,18.90624 c -0.0325,2.61625 -0.3225,4.13712 -0.90625,4.59375 -0.58875,0.4575 -2.14125,0.6875 -4.65625,0.6875 l -0.0625,1.78125 18.34375,0 -0.0312,-1.78125 c -2.54875,0 -4.20125,-0.20112 -4.9375,-0.59375 -0.72375,-0.39012 -1.2225,-1.10012 -1.4375,-2.1875 -0.16625,-0.78363 -0.23875,-2.13387 -0.25,-4 l 0.0625,-26.68749 -2.09375,0 z m 55.71875,3.5 c 1.11625,0 2.195,0.43112 3.28125,1.28125 1.07125,0.84713 1.72375,1.78912 1.9375,2.8125 1.04625,5.02638 -3.41,8.50136 -13.4375,10.43749 -0.28625,-3.66512 0.34875,-6.99224 1.96875,-9.99999 1.6075,-3.00488 3.70125,-4.53125 6.25,-4.53125 z"
+     id="SQLite"
+     style="fill:#003b57;fill-opacity:1;fill-rule:nonzero;stroke:none" /><path
+     d="m 121.6315,17.03623 -99.506,0 C 15.4565,17.03623 10,22.49373 10,29.16248 l 0,109.7365 c 0,6.66837 5.4565,12.125 12.1255,12.125 l 65.53725,0 C 86.918884,118.41477 98.054499,55.130402 121.6315,17.03623 z"
+     id="solid-background"
+     style="fill:#0f80cc;fill-opacity:1;fill-rule:nonzero;stroke:none" /><path
+     d="m 118.0165,20.57373 -95.891,0 c -4.735375,0 -8.588875,3.8525 -8.588875,8.58875 l 0,101.73013 c 21.71725,-8.335 54.31221,-15.5269 76.849585,-15.20027 4.52893,-23.680901 17.83941,-70.090424 27.63029,-95.11861 z"
+     id="gradient-background"
+     style="fill:url(#linearGradient2995);fill-opacity:1;fill-rule:nonzero;stroke:none" /><path
+     d="m 144.8415,13.44498 c -6.815,-6.0775 -15.06625,-3.63625 -23.21,3.59125 -1.20875,1.07375 -2.415,2.265 -3.615,3.5375 -13.93125,14.77875 -26.8625,42.15375 -30.88,63.06 1.565,3.17375 2.7875,7.22375 3.5925,10.3175 0.20625,0.79375 0.3925,1.53875 0.54125,2.1725 0.35375,1.499875 0.54375,2.4725 0.54375,2.4725 0,0 -0.125,-0.472625 -0.6375,-1.95875 -0.0975,-0.285 -0.20625,-0.59625 -0.335,-0.9625 -0.055,-0.15125 -0.13125,-0.335 -0.215,-0.53125 -0.90875,-2.1125 -3.4225,-6.57125 -4.52875,-8.5125 -0.94625,2.79125 -1.7825,5.4025 -2.4825,7.765 3.19375,5.8435 5.14,15.85775 5.14,15.85775 0,0 -0.16875,-0.649 -0.97125,-2.91412 -0.7125,-2.00338 -4.26125,-8.22113 -5.101875,-9.674755 -1.438,5.308505 -2.009375,8.892505 -1.494125,9.765125 1.000375,1.69088 1.953125,4.60838 2.78975,7.83488 1.89,7.26862 3.20375,16.11725 3.20375,16.11725 0,0 0.0425,0.58637 0.11375,1.48875 -0.2625,6.104 -0.105,12.43262 0.3675,18.15287 0.62625,7.57225 1.805,14.07713 3.3075,17.5585 l 1.02,-0.55612 c -2.20625,-6.85888 -3.1025,-15.84763 -2.71,-26.21388 0.59375,-15.84512 4.24,-34.95362 10.9775,-54.87 11.3825,-30.065 27.175,-54.1875 41.62875,-65.7075 -13.17375,11.8975 -31.00375,50.40875 -36.34125,64.67 -5.97625,15.97 -10.21125,30.95638 -12.76375,45.31475 4.40375,-13.46087 18.6425,-19.247 18.6425,-19.247 0,0 6.98375,-8.61287 15.145,-20.91775 -4.88875,1.115 -12.91625,3.02375 -15.605,4.15375 -3.96625,1.66375 -5.035,2.23125 -5.035,2.23125 0,0 12.8475,-7.82375 23.87,-11.36625 15.15875,-23.875 31.67375,-57.7925 15.0425,-72.62875"
+     id="feather"
+     style="fill:#003b57;fill-opacity:1;fill-rule:nonzero;stroke:none" /></svg><br>
+<span id="textCrudP4Caption" style="color:Grey;font-size:14px;"><i>Documentation for <span id="textCrudP4PdfCaptionEmphasized1" style="color:Navy;"><b>CRUD databases - part 4, Traveler's Database using Web SQL and SQLite</b></span>. Includes references.</i></span><br>
+<center><a href="https://www.sqlite.org/copyright.html" target="_blank"><span id="textSqliteLogoPublicDomain" style="color:gray;font-size:14px;"><b>The SQLite logo is public domain.</b></span></a></center>
+<center><a href="https://commons.m.wikimedia.org/wiki/File:SQLite370.svg" target="_blank"><span id="textSqliteLogoDownloadHere" style="color:gray;font-size:14px;"><b>Logo available for download here.</b></span></a></center>
+<center><a href="https://www.sqlite.org/download.html" target="_blank"><span id="textSqliteDownloadHere" style="color:Cornflowerblue;font-size:14px;"><b>SQLite is available for download here.</b></span></a></center><br><br>
+
+
+
+
+<center>
+<a href="viewCrudP5.html" target="_blank"><span id="linkCrudP5" style="color:Navy;font-size:16px;"><b>CRUD databases - part 5</b></span></a> <svg id="pdfIcon6" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIcon6Title" aria-describedby="pdfIcon6Desc"> <title> id="pdfIcon6Title">PDF icon</title> <desc  id="pdfIcon6Desc">this icon represents a PDF file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.3">PDF</text> </g> </svg><br>
+
+<span id="textCrudP5Caption" style="color:Grey;font-size:14px;"><i>Documentation for <span id="textCrudP5PdfCaptionEmphasized1" style="color:Navy;"><b>CRUD databases - part 5, Traveler's Database using MySQL</b></span>. Includes references.</i></span><br>
+</center>
+
+
+
+
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Database  -->
+</div>
+</center><br>
+
+
+
+
+
+
+
+
+<center>
+<div class="grid-containerGraphics" id="grid-containerGraphics">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Graphics</span><svg id="GraphicsIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-file-richtext" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">Graphics icon</title>
+    <desc  id="iconDesc">this icon represents a page with graphics</desc> // This SVG was modified.// Modification Copyright © 2021,2022.// All rights reserved. <path fill="orange" stroke="orange" stroke-width="0.5" d="M7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z"/> <polyline fill="green" stroke="green" stroke-width="0.5" points="4.62,7.8 6.1,6 8.6,7 10.1,5 11.3,5.6 11.3,7.8"/> <path fill="green" stroke="green" stroke-width="0.5" d="M5 8H11"/> <path fill="black" stroke="black" stroke-width="0.1" d="M5 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path fill="blue" stroke="blue" stroke-width="0.05" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/> <circle cx="4.85" cy="7.8" r="0.2" stroke="green" stroke-width="0.5" fill="green"/> <circle cx="11.1" cy="7.8" r="0.2" stroke="green" stroke-width="0.5" fill="green"/> </svg>
+</center> <br><br>
+
+<center>
+<a href="svg.html" target="_blank"><span id="linkSVGgraphics" style="color:Navy;font-size:16px;"><b>SVG Graphics</b></span></a><br>
+<span id="textSVGgraphicsCaption" style="color:Grey;font-size:14px;"><i>A short discussion<br>
+of SVG graphics with<br>
+references and examples.</i></span>
+</center><br><br>
+
+<center>
+<a href="earlySVGvideo.html" target="_blank"><span id="linkSVGanimation" style="color:Navy;font-size:16px;"><b>Early SVG Animation</b></span></a> <svg id="mp4Icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="mp4IconTitle" aria-describedby="mp4IconDesc"> <title> id="mp4IconTitle">mp4 icon</title> <desc  id="mp4IconDesc">this icon represents an mp4 file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/> <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/> <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> <g font-size="6.6" text-anchor="middle"> <text x="8.0" y="13.3" opacity="1.0" fill="blue" stroke="blue" stroke-width="0.3">mp4</text> </g> </svg><br>
+<span id="textSVGanimationCaption" style="color:Grey;font-size:14px;"><i>It's possible to animate an SVG.<br>
+One way to do so is by using<br>
+<span id="textAnimationEmphasized1" style="color:Navy;font-size:15px;"><b>JavaScript</b></span> to manipulate the <span id="textAnimationEmphasized2" style="color:Navy;font-size:15px;"><b>DOM</b></span>.<br>
+These are early attempts at <span id="textAnimationEmphasized3" style="color:Navy;font-size:15px;"><b><i>animation using SVG</i></b></span>.<br>
+They run inside a <span id="textAnimationEmphasized4" style="color:Navy;font-size:15px;"><b><i>web<br>
+browser</i></b></span>, and were written in <span id="textAnimationEmphasized5" style="color:Navy;font-size:15px;"><b><i>2013</i></b></span>.<br> A short discussion of SVG animation with references and examples.<br>
+Includes a walkthrough of the<br>
+code for a simple animation.
+</i></span>
+</center><br><br>
+
+<center>
+<a href="rayTrace.html" target="_blank"><span id="linkRayTraceGraphics" style="color:Navy;font-size:16px;"><b>Ray Tracing Graphics</b></span></a><br>
+<span id="textRayTraceGraphicsCaption" style="color:Grey;font-size:14px;"><i>A short discussion<br>
+of ray tracing graphics<br>
+with references and examples.</i></span>
+</center><br><br>
+
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Graphics  -->
+</div>
+</center><br>
+
+
+
+
+
+
+<center>
+<div class="grid-containerWindows" id="grid-containerWindows">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Windows</span>&nbsp;<svg id="WindowsIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="WindowsIconTitle" aria-describedby="WindowsIconDesc">
+    <title> id="WindowsIconTitle">Windows icon</title>
+    <desc  id="WindowsIconDesc">this icon represents Windows</desc> <path fill-rule="evenodd" fill="black" stroke="black" stroke-width="0.05" d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1H3V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2Z"/> <path fill="green" stroke="green" stroke-width="0.2" d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/> <path fill="green" stroke="green" stroke-width="0.2" d="M6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/> <path fill="green" stroke="green" stroke-width="0.2" d="M7.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/> <path fill="green" stroke="green" stroke-width="0.2" d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/> <path fill="none" stroke="none" stroke-width="0.2" d="m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+</svg>
+</center> <br><br>
+
+
+
+
+<center>
+<a href="graphApp.html" target="_blank"><span id="textGraphApp1" style="color:Navy;font-size:16px;"><b>Using the Canvas in C#</b></span></a> <svg id="mp4Icon4" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="mp4Icon4Title" aria-describedby="mp4Icon4Desc"> <title> id="mp4Icon4Title">mp4 icon</title> <desc  id="mp4Icon4Desc">this icon represents an mp4 file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/> <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/> <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> <g font-size="6.6" text-anchor="middle"> <text x="8.0" y="13.3" opacity="1.0" fill="blue" stroke="blue" stroke-width="0.3">mp4</text> </g> </svg><br>
+<span id="textGraphAppCaption" style="color:Grey;font-size:14px;"><i>
+<span id="textIntroductionPre" style="color:Black;font-size:10px;">
+<span id="textGraphAppCaption2" style="color:Black;font-size:10px;"><b>Operating System:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+</span><span id="textGraphAppCaption3" style="color:Maroon;font-size:10px;"><b>Windows 7 - 10</b></span>
+&nbsp;&nbsp;
+<br>
+<span id="textGraphAppCaption4" style="color:Black;font-size:10px;"><b>Development IDE:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+</span><span id="textGraphAppCaption5" style="color:Maroon;font-size:10px;"><b>Visual Studio</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><br>
+<span id="textGraphAppCaption6" style="color:Black;font-size:10px;"><b>Language:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span id="textGraphAppCaption7" style="color:Maroon;font-size:10px;"><b>C#</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><br>
+<span id="textGraphAppCaption8" style="color:Black;font-size:10px;"><b>Demo features:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><br>
+<span id="textGraphAppCaption9" style="color:Maroon;font-size:10px;"><b>&#x2022; 1. Drawing on the Windows graphic Canvas.
+&nbsp;&nbsp;&nbsp;<br>
+&#x2022; 2. Data inspection via zoom in or zoom out.
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&#x2022; 3. Dynamic repositioning of the viewing
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<br>
+window.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&#x2022; 4. Selectable data cursors.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+<br>
+&#x2022; 5. Step through the data using the cursor.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b>
+</span>
+</i></span>
+</center><br><br>
+
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Windows  -->
+</div>
+</center><br>
+
+
+
+
+
+
+
+
+
+<center>
+<div class="grid-containerMisc" id="grid-containerMisc">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Miscellaneous</span>&nbsp;<svg id="miscIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconMiscTitle" aria-describedby="iconMiscDesc"> <title> id="iconMiscTitle">Miscellaneous icon</title> <desc  id="iconMiscDesc">this icon represents a collection of miscellaneous items</desc> <rect opacity="0.0" fill="none" stroke="red" stroke-width="0.1"  width="16" height="16" /> <path fill-rule="evenodd" fill="cornflowerblue" stroke="black" stroke-width="0.3" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue" stroke="black" stroke-width="0.2" d="M3 3H2v1h1V3z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m5.7 11a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill-rule="evenodd" fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 7h1v1H2V7z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m2 10.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 11h1v1H2V11z"/> </svg>
+</center> <br><br>
 
 
 
 
 <center> 
-<a href="svg.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>SVG Graphics</b></span></a><br>
-<span id="textSVGgraphicsCaption" style="color:Grey;font-size:12px;"><i>A short discussion<br>
-of SVG graphics with<br>
-references and examples.</i></span><br><br>
-
-<a href="earlySVGvideo.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Early SVG Animation</b></span></a> <svg id="mp4Icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="mp4IconTitle" aria-describedby="mp4IconDesc"> <title> id="mp4IconTitle">mp4 icon</title> <desc  id="mp4IconDesc">this icon represents an mp4 file</desc> <rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/> <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/> <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> <g font-size="6.6" text-anchor="middle"> <text x="8.0" y="13.3" opacity="1.0" fill="blue" stroke="maroon" stroke-width="0.4">mp4</text> </g> </svg><br>
-<span id="textSVGanimationCaption" style="color:Grey;font-size:12px;"><i>It's possible to animate an SVG.<br>
-One way to do so is by using<br>
-<span id="textAnimationEmphasized1" style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to manipulate the <span id="textAnimationEmphasized2" style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>
-These are early attempts at <span id="textAnimationEmphasized3" style="color:Navy;font-size:11px;"><b><i>animation<br>
-using SVG</i></b></span>. They run inside a <span id="textAnimationEmphasized4" style="color:Navy;font-size:11px;"><b><i>web<br>
-browser</i></b></span>, and were written in <span id="textAnimationEmphasized5" style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>
-short discussion of SVG animation<br>
-with references and examples.<br>
-Includes a walkthrough of the<br>
-code for a simple animation.
-</i></span><br><br>
-
-<a href="rayTrace.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Ray Tracing Graphics</b></span></a><br>
-<span id="textRayTraceGraphicsCaption" style="color:Grey;font-size:12px;"><i>A short discussion<br>
-of ray tracing graphics<br>
-with references and examples.</i></span><br><br>
-
-
-
-<a href="photoGallery.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Photo Gallery</b></span></a> <svg id="cameraIcon" transform="translate(0,5)" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cameraIconTitle" aria-describedby="cameraIconDesc"> <title> id="cameraIconTitle">Camera icon</title> <desc  id="cameraIconDesc">this icon represents a camera</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="steelblue" stroke="lightgray" opacity="1.0" stroke-width="0.6" d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1z"/> <path fill="red" stroke="black" opacity="1.0" stroke-width="0.2" d="M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/> <path fill="rgb(187, 152, 255)" stroke="black" opacity="0.7" stroke-width="0.6" d="M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/> <path fill="lightgray" stroke="lightgray" opacity="0.4" stroke-width="1.0" d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/> </svg><br>
-<span id="textPhotoGalleryCaption" style="color:Grey;font-size:12px;"><i>A collection of photos arranged in a<br>
+<a href="photoGallery.html" target="_blank"><span id="linkPhotoGallery" style="color:Navy;font-size:16px;"><b>Photo Gallery</b></span></a> <svg id="cameraIcon" transform="translate(0,4)" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cameraIconTitle" aria-describedby="cameraIconDesc"> <title> id="cameraIconTitle">Camera icon</title> <desc  id="cameraIconDesc">this icon represents a camera</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="steelblue" stroke="lightgray" opacity="1.0" stroke-width="0.6" d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1z"/> <path fill="red" stroke="black" opacity="1.0" stroke-width="0.2" d="M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/> <path fill="rgb(187, 152, 255)" stroke="black" opacity="0.7" stroke-width="0.6" d="M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/> <path fill="lightgray" stroke="lightgray" opacity="0.4" stroke-width="1.0" d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/> </svg><br>
+<span id="textPhotoGalleryCaption" style="color:Grey;font-size:14px;"><i>A collection of photos arranged in a<br>
  grid pattern using CSS GRID.<br>
 Includes references.
 </i></span><br><br>
@@ -161,17 +829,8 @@ Includes references.
 
 
 
-<a href="viewGerberFile.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Gerber file viewer</b></span></a> <svg id="pdfIcon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTitle" aria-describedby="pdfIconDesc"> <title> id="pdfIconTitle">PDF icon</title> <desc  id="pdfIconDesc">this icon represents a PDF file</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>  <g font-size="5" text-anchor="middle"> <text x="8.0" y="14" opacity="1.0" fill="maroon" stroke="maroon" stroke-width="0.4">PDF</text> </g> </svg><br>
-<span id="textGerberViewerCaption" style="color:Grey;font-size:12px;"><i>File viewer which parses<br>
-Gerber files in order to display<br>
-a preview image of how a<br>
-printed circuit board would look<br>
-when manufactured. The image<br>
-is rendered using SVG graphics.<br>
-Includes references.</i></span><br><br>
-
-<a href="colorPicker.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Color Picker</b></span></a><br>
-<span id="textColorPickerCaption" style="color:Grey;font-size:12px;"><i>Color picker which allows<br>
+<a href="colorPicker.html" target="_blank"><span id="linkColorPicker" style="color:Navy;font-size:16px;"><b>Color Picker</b></span></a><br>
+<span id="textColorPickerCaption" style="color:Grey;font-size:14px;"><i>Color picker which allows<br>
 visual comparison of two colors.<br>
 Gives a visual check of the<br>
 contrast between the two.<br>
@@ -179,16 +838,61 @@ Zoom sample text up or down in<br>
 size to check its appearance.<br>
 Includes references.</i></span><br><br>
 
-<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
 
-<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
+<center> 
+<a href="nwsWeather2.html" target="_blank"><span id="linkNwsWeather" style="color:Navy;font-size:16px;"><b>Consuming REST APIs</b></span></a> <svg id="svgCloudSun1" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cloudSun1Title" aria-describedby="cloudSun1Desc"> <title> id="cloudSun1Title">sun with clouds icon</title> <desc id="cloudSun1Desc">this icon represents the sun with clouds</desc> <rect opacity="0.9" fill="dodgerblue" stroke="black" stroke-width="1"  width="16" height="16" /> <path fill="lightgray" stroke="gray" stroke-width="0.2" d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/> <path fill="yellow" stroke="gray" stroke-width="0.2" d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/></svg><br>
+<span id="textNwsWeatherCaption" style="color:Grey;font-size:14px;"><i>
+A demo of using a <b>REST API</b> to retrieve an extended weather forecast from the <b>National Weather Service</b> (<b>NWS</b>) using their public REST API. Includes references.
+</i></span><br><br>
 
-<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
 
-<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a><br><br>
 
-<a href="onTheWay.html" target="_blank"><span style="color:Navy;font-size:14px;"><b>Unfinished Page</b></span></a>
+<center>
+<a href="angularjs.html" target="_blank"><span id="linkAngularJS1" style="color:Navy;font-size:16px;"><b>AngularJS shopping cart</b></span></a> <br>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg id="svgAngularJS1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="75px" height="82px" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" inkscape:version="0.48.4 r9939" viewBox="0 0 335.88126 355.80875" role="graphics-document" aria-labelledby="iconAngularJsTitle" aria-describedby="iconAngularJsDesc"> <title id="iconAngularJsTitle">AngularJS icon</title> <desc  id="iconAngularJsDesc">this icon represents AngularJS</desc> xml:space="preserve" sodipodi:docname="AngularJS-Shield.svg" inkscape:export-filename="/usr/local/google/home/stephenfluin/AngularJS-Shield.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs id="defs6" /><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1393" inkscape:window-height="697" id="namedview4" showgrid="false" inkscape:zoom="0.25757162" inkscape:cx="171.15375" inkscape:cy="177.21499" inkscape:window-x="2290" inkscape:window-y="312" inkscape:window-maximized="0" inkscape:current-layer="g10" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" /><g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.25,0,0,-1.25,-188.84625,636.71875)"><g id="g12" transform="scale(0.1,0.1)"><path d="M 2850,5093.75 1510.77,4622.45 1722.39,2867.82 2851.42,2247.28 3986.27,2876.23 4197.82,4630.79 2850,5093.75 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path14" inkscape:connector-curvature="0" /><path d="m 4064.25,4529.39 -1217.38,415.13 0,-2548.98 1020.22,564.62 197.16,1569.23 z" style="fill:#af2b2d;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path16" inkscape:connector-curvature="0" /><path d="m 1661.05,4521.89 181.34,-1569.22 1004.47,-557.13 0,2549.03 -1185.81,-422.68 z" style="fill:#df2e31;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path18" inkscape:connector-curvature="0" /><path d="m 3129.05,3676.7 -279.96,584.64 -246.46,-584.64 526.42,0 z m 106.74,-245.83 -742.11,0 -166.02,-415.26 -308.82,-5.71 828.04,1842.06 856.9,-1842.06 -286.23,0 -181.76,420.97 z" style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20" inkscape:connector-curvature="0" /><path d="m 2846.87,4851.96 2.21,-590.62 279.67,-585.09 -281.25,0 -0.63,-245 388.9,-0.38 181.77,-421.04 295.49,-5.48 -866.16,1847.61 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path22" inkscape:connector-curvature="0" /></g></g></svg>
+<br>
+<span id="textAngularJS1Caption" style="color:Grey;font-size:14px;"><i>Simplified shopping cart written using <span id="textAng1Emphasized1" style="color:Navy;"><b>AngularJS</b></span>. Includes references.
+</i></span><br><br>
+
+
+
+<a href="onTheWay.html" target="_blank"><span id="linkOnTheWay1" style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
+
+<a href="onTheWay.html" target="_blank"><span id="linkOnTheWay2" style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
+
+<a href="onTheWay.html" target="_blank"><span id="linkOnTheWay3" style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
+
+<a href="onTheWay.html" target="_blank"><span id="linkOnTheWay4" style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a><br><br>
+
+<a href="onTheWay.html" target="_blank"><span id="linkOnTheWay5" style="color:Navy;font-size:16px;"><b>Unfinished Page</b></span></a>
+</center><br><br>
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Misc  -->
+</div>
 </center><br>
+
+
+
+
 
 
 <!-- 
@@ -197,15 +901,17 @@ Includes references.</i></span><br><br>
 <br><br>
 
 <center> 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b></span>
+<span id="copyrightMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2023. All rights reserved.</b></span>
 </center> 
 <br>
 
 <center> 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
+<span id="bestResultsMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span>
+<br><br><br><br>
+
 
 <svg id="BootstrapIcon" 
-xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
+xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
 role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
     <title> id="iconTitle">Bootstrap icon</title>
     <desc  id="iconDesc">this icon represents Bootstrap</desc> 
@@ -213,15 +919,50 @@ role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"
     <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/> 
 </svg><br>
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the 
+<span id="iconsProvidedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Some icons provided via the 
 <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br> 
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+<span id="iconsCopyrightMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
 
-<span style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+<span id="iconsModifiedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
 </center> 
 
-<!-- 
+
+<br><br>
+
+
+<center> 
+<span id="angularJSmitLicenseMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+AngularJS is licensed under the <a href="https://material.angularjs.org/latest/license" target="_blank">MIT</a> license.</b></span>
+<br>
+<span id="angularJSlogoMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+The AngularJS logo is located at <a href="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" target="_blank">https://angular.io/assets/images/logos/<br>
+angularjs/AngularJS-Shield.svg</a>.</b></span>
+<br>
+<span id="angularJSmodifiedMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;The AngularJS logo has been modified.</b></span>
+</center><br>
+<center>
+<span id="angularJStermsMsg" style="color:Black;font-size:12px;">
+The AngularJS logo is reproduced or modified from work created and shared<br>
+by Google and used according to terms described in the<br>
+ <b><i>"Creative Commons Attribution-ShareAlike 3.0 Unported License"</b></i>.</center>
+</span><br>
+<span id="angularJScreativeCommonsMsg" style="color:Black;font-size:12px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+<center> <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><span id="angularJScreativeCommonsLinkMsg" style="font-size:12px;"><b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span></a>
+</center>
+</span>
+
+
+
+<br><br>
+
+
+
+
+<!--    *************************** 
 
 A copy of the Bootstrap license is included here -
 
@@ -242,7 +983,64 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 
 
-  -->
+ ***************************     -->
+
+
+
+<!--     *************************** 
+
+Start of reference for the SQLite logo.
+
+
+SQLite Logo, SVG version
+
+3 October 2010 (SVG upload)
+
+
+This logo was found at:
+
+https://commons.m.wikimedia.org/wiki/File:SQLite370.svg
+
+It is listed as follows: 
+
+Source 	SVG created from sqlite370.eps, distributed with version 3.7.2 documentation
+
+Author   	Part of the SQLite documentation, which has been released by author D. Richard Hipp to the public domain. SVG conversion by Mike Toews.
+
+Permission
+(Reusing this file) 	Public domain
+
+Licensing
+
+Public domain 	This work has been released into the public domain by its author, D. Richard Hipp. This applies worldwide.
+
+In some countries this may not be legally possible; if so:
+D. Richard Hipp grants anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law
+
+
+Also see this URL:
+
+“SQLite Copyright.” 
+
+https://www.sqlite.org/copyright.html
+
+Accessed: 03-Jan-2023
+
+
+"   SQLite Is Public Domain
+
+All of the code and documentation in SQLite has been dedicated to the public domain by the authors. All code authors, and representatives of the companies they work for, have signed affidavits dedicating their contributions to the public domain and originals of those signed affidavits are stored in a firesafe at the main offices of Hwaci. All contributors are citizens of countries that allow creative works to be dedicated into the public domain. Anyone is free to copy, modify, publish, use, compile, sell, or distribute the original SQLite code, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+
+The previous paragraph applies to the deliverable code and documentation in SQLite - those parts of the SQLite library that you actually bundle and ship with a larger application.    "
+
+
+
+
+End of reference for the SQLite logo.
+
+***************************     -->  
+
+
 
 
 <!-- 
@@ -262,7 +1060,7 @@ used by multiple pages.
 <script src="index.js">
 </script>
 
-<NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
+<NOSCRIPT><span style="color:Navy;font-size:16px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
 
 <center>
 <div id="sfcequy8ue4qbe8atuduhckg3ws1y67r3rq"></div><script type="text/javascript" src="https://counter2.stat.ovh/private/counter.js?c=equy8ue4qbe8atuduhckg3ws1y67r3rq&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter2.stat.ovh/private/freecounterstat.php?c=equy8ue4qbe8atuduhckg3ws1y67r3rq" border="0" title="website counter" alt="website counter"></a></noscript>
