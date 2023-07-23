@@ -16,6 +16,10 @@
 //   2nd temporary change to verify Git is working from new repository location
 
 
+//   23 july 2023
+//   temporary change to verify Git is working from new configuration
+
+
 if (isAndroidEdge) { 
 
 //  	   alert("Edge under Android");
