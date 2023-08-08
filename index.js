@@ -680,11 +680,42 @@ if (deviceScreenWidth == 1133) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+
+
+		//  "textWebApp1Link"
+		document.getElementById('textWebApp1Link').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption1"
+		document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
+
+		//  "textWebApp1Caption2"
+		document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized1" 
+		document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized2" 
+		document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized3" 
+		document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized4" 
+		document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized5" 
+		document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
+
+
+
+
+
+
 		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="28px"; 
+		document.getElementById('textFizzBuzzLink').style.fontSize="24px"; 
 
 		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="24px"; 
+		document.getElementById('textFizzBuzzCaption1').style.fontSize="20px"; 
 
 		//  "textFizzBuzzCaption2"
 		document.getElementById('textFizzBuzzCaption2').style.fontSize="24px"; 
@@ -864,7 +895,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 225vh 0.3vh";
 
 
 
@@ -872,7 +903,8 @@ if (deviceScreenWidth == 1133) {
 
 
 
-
+//  *** size adjustments for this are not working
+//  *** need to check for typo
 
 			//  id="textGraphApp1"
 			//  16px;">
@@ -1675,11 +1707,42 @@ if (deviceScreenWidth == 1143) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+
+
+		//  "textWebApp1Link"
+		document.getElementById('textWebApp1Link').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption1"
+		document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
+
+		//  "textWebApp1Caption2"
+		document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized1" 
+		document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized2" 
+		document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized3" 
+		document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized4" 
+		document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized5" 
+		document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
+
+
+
+
+
+
 		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="28px"; 
+		document.getElementById('textFizzBuzzLink').style.fontSize="24px"; 
 
 		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="24px"; 
+		document.getElementById('textFizzBuzzCaption1').style.fontSize="20px"; 
 
 		//  "textFizzBuzzCaption2"
 		document.getElementById('textFizzBuzzCaption2').style.fontSize="24px"; 
@@ -1698,6 +1761,8 @@ if (deviceScreenWidth == 1143) {
 
 		//  "textFizzBuzzCaption2Emphasized5" 
 		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="24px"; 
+
+
 
 
 
@@ -1796,7 +1861,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 225vh 0.3vh";
 
 
 
@@ -1821,12 +1886,12 @@ if (deviceScreenWidth == 1143) {
 
 			//  id="textGraphAppCaption"
 			//  14px
-			document.getElementById('textGraphAppCaption').style.fontSize="28px";
+			document.getElementById('textGraphAppCaption').style.fontSize="24px";
 
 
 			//  id="textIntroductionPre"
 			//  10px
-			document.getElementById('textIntroductionPre').style.fontSize="24px";
+			document.getElementById('textIntroductionPre').style.fontSize="20px";
 
 
 			//  id="textGraphAppCaption2"
