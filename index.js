@@ -854,10 +854,6 @@ if (deviceScreenWidth == 1133) {
 
 
 
-		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
-		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="24px"; 
-
 
 
 
@@ -895,7 +891,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 225vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
 
 
 
@@ -1861,7 +1857,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 225vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
 
 
 
@@ -2919,7 +2915,7 @@ if (isEdge) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 315vh 0.3vh";
 
 
 
@@ -2927,6 +2923,21 @@ if (isEdge) {
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
+
+
+
+document.getElementById('androidGraphicsTitle').style.fontSize="66px";
+
+document.getElementById('cadGraphicsTitle').style.fontSize="66px";
+
+document.getElementById('databaseGraphicsTitle').style.fontSize="66px";
+
+document.getElementById('graphicGraphicsTitle').style.fontSize="66px";
+
+document.getElementById('windowsGraphicsTitle').style.fontSize="66px";
+
+//  id  "miscGraphicsTitle" 66px      Miscellaneous
+document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 
 
@@ -3716,7 +3727,7 @@ if (isNewEdge) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 205vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
 
 
 
