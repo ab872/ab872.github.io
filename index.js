@@ -325,6 +325,12 @@ if (deviceScreenWidth == 1133) {
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
 
+	//  adjust the size of the
+	//  Bootstrap icon
+	//  id="BootstrapIcon"           
+	document.getElementById("BootstrapIcon").style.width="96px"; 
+	document.getElementById("BootstrapIcon").style.height="96px";
+
 
    //   end     screen width - others
 }
