@@ -237,10 +237,18 @@ if (isFirefox) {
 
 
 
+if (deviceScreenWidth == 1143) {
 
-if (deviceScreenWidth == 1133) {
+	  alert("Firefox Android     screen width EQUAL to 1143 "); 
 
-	//    //  alert("Firefox Android     screen width EQUAL to 1133 "); 
+
+
+
+
+   //   end     screen width EQUAL to 1143
+} else if (deviceScreenWidth == 1133) {
+
+	  alert("Firefox Android     screen width EQUAL to 1133 "); 
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -292,7 +300,7 @@ if (deviceScreenWidth == 1133) {
    //   end     screen width EQUAL to 100
 } else {
 
-	//  alert("Firefox Android     screen width EQUAL to all others "); 
+	  alert("Firefox Android     screen width EQUAL to all others "); 
 
 
 	//  id="grid-containerAndroid"
