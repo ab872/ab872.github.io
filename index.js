@@ -321,13 +321,13 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 180vh 0.3vh";
 
 
 
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
