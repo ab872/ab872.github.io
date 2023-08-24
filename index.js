@@ -1323,13 +1323,18 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerGraphics"
      	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 170vh 0.3vh";
 
 
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 420vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 380vh 0.3vh";
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 460vh 0.3vh";
 
 
 
@@ -1400,6 +1405,13 @@ if (deviceScreenWidth == 1143) {
 
    //   end     screen width - others
 }
+
+
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
 
 
            	//   end       Chrome under Android
