@@ -345,7 +345,13 @@ if (deviceScreenWidth == 1133) {
    //   end     screen width - others
 }
 
-					
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+		"<center>" + 
+		"Located at" +
+		"<center>";
+				
+	
 			// end     all other Firefox under Android
 		}
 
