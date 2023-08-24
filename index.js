@@ -1361,7 +1361,13 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 340vh 0.3vh";
+
 
 
 
