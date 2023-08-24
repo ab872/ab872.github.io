@@ -237,18 +237,9 @@ if (isFirefox) {
 
 
 
-if (deviceScreenWidth == 1143) {
+if (deviceScreenWidth == 1133) {
 
-	  alert("Firefox Android     screen width EQUAL to 1143 "); 
-
-
-
-
-
-   //   end     screen width EQUAL to 1143
-} else if (deviceScreenWidth == 1133) {
-
-	  alert("Firefox Android     screen width EQUAL to 1133 "); 
+	//  alert("Firefox Android     screen width EQUAL to 1133 "); 
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -258,13 +249,13 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerCAD"
      	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
 
 
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
 
 
 
@@ -276,7 +267,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
 
 
@@ -287,7 +278,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
 
 
 
@@ -300,7 +291,7 @@ if (deviceScreenWidth == 1143) {
    //   end     screen width EQUAL to 100
 } else {
 
-	  alert("Firefox Android     screen width EQUAL to all others "); 
+	//  alert("Firefox Android     screen width EQUAL to all others "); 
 
 
 	//  id="grid-containerAndroid"
