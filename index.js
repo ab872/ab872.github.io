@@ -272,6 +272,11 @@ if (deviceScreenWidth == 1133) {
 
 
 
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
@@ -316,8 +321,13 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
 
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
@@ -1881,12 +1891,12 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
 
 
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
