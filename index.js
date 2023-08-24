@@ -897,9 +897,15 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
 
+
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 
@@ -1868,9 +1874,13 @@ if (deviceScreenWidth == 1143) {
 
 
 	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
@@ -2925,9 +2935,22 @@ if (isEdge) {
 
 
 
+
+
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 315vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+
+
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+
 
 
 
@@ -3739,7 +3762,15 @@ if (isNewEdge) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 415vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+
+
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 

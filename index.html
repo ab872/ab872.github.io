@@ -70,7 +70,12 @@ style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSy
 'sha256-wx95vjL8yle2OHyjO6DJRAaodBvLAGli0h9fr++y89c=' 'sha256-yyq8GMthH0GUC+O0lsfCWtfJhs1ih734P00Ob0++w3k='
 'sha256-f5zh+RKrha6T7AtoYzdH3tgUU6BI+OopOXOnV3Phat0=' 'sha256-NAMujDhCeOwjxlOi5euG9BwI9YWh7ZlBxy+Ts1tkNs8='
 'sha256-CmtFsGvD1DiOIfcTjEp5pXapdInnaaVJ9miL0C6mUAU=' 'sha256-MUC/GyU4StWcsDjZILeyHnmDF62DUfrWIEIrtU8d5ag='
-'sha256-fNYbfn37hRR/wSdqUH0qNIns1YAC4eY+A8t1y1JC0iw=' 'sha256-zIkSpgCuMXjCtuqW8XpUgUK0ZDUnEWA1PrtstiZ9MK4=';
+'sha256-fNYbfn37hRR/wSdqUH0qNIns1YAC4eY+A8t1y1JC0iw=' 'sha256-zIkSpgCuMXjCtuqW8XpUgUK0ZDUnEWA1PrtstiZ9MK4='
+'sha256-9RDAqk/sArVNsNPSXGIFX/Yg4UOhQBW1ivSqR1dADVQ=' 'sha256-mnR9+iMAoed5KnF0jAZcwx/GHfiOS3oH/fD7EZwm1pM='
+'sha256-Eeno776ukKDfk4rzFCmQ/YOSOdfpqJDcjTI/ZGv3yis=' 'sha256-MUka81t6R3wCsQoGT0x4z9L7CgCchnf/PqGY3XILG+M='
+'sha256-z6fQs+lp0RIuXyOzsTZUAEQQOxp49TzmxmMs9ZTmIHk=';
+
+
 
 script-src-elem 'self' 
 'sha256-tmusP4mX2ktNSQGWi10Fmf3OZ/zG7mONXEVJTqZHTVk=' 
@@ -157,7 +162,18 @@ form-action 'self' ">
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
-     grid-template-rows: 0.3vh 300vh 0.3vh; 
+     grid-template-rows: 0.3vh 170vh 0.3vh; 
+}
+
+
+.grid-containerCloud {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 170vh 0.3vh; 
 }
 
 
@@ -792,13 +808,8 @@ window.
 
 
 
-
-
-
-
-
 <center>
-<div class="grid-containerMisc" id="grid-containerMisc">
+<div class="grid-containerCloud" id="grid-containerCloud">
 
      <div class="grid-itemMargin">
      </div>
@@ -815,46 +826,13 @@ window.
 
      <div class="grid-item"><br>
 <center> 
-<span id="miscGraphicsTitle" style="color:Black;font-size:66px;">Miscellaneous</span>&nbsp;<svg id="miscIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconMiscTitle" aria-describedby="iconMiscDesc"> <title> id="iconMiscTitle">Miscellaneous icon</title> <desc  id="iconMiscDesc">this icon represents a collection of miscellaneous items</desc> <rect opacity="0.0" fill="none" stroke="red" stroke-width="0.1"  width="16" height="16" /> <path fill-rule="evenodd" fill="cornflowerblue" stroke="black" stroke-width="0.3" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue" stroke="black" stroke-width="0.2" d="M3 3H2v1h1V3z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m5.7 11a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill-rule="evenodd" fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 7h1v1H2V7z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m2 10.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 11h1v1H2V11z"/> </svg>
+<span id="graphicsTitle" style="color:Black;font-size:66px;">Cloud</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-cloud-check" viewBox="0 0 16 16"> 
+role="graphics-document" aria-labelledby="iconCloudTitle" aria-describedby="iconCloudDesc"> <title> id="iconCloudTitle">Cloud Computing icon</title> <desc  id="iconCloudDesc">this icon represents cloud computing</desc> <rect opacity="0.9" fill="aliceblue" stroke="aliceblue" stroke-width="1"  width="16" height="16" /> <path fill="lightGreen" stroke="green" stroke-width="0.7" fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path fill="lightblue" stroke="blue" stroke-width="0.7" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/> </svg>
 </center> <br><br>
 
 
 
-
-<center> 
-<a href="photoGallery.html" target="_blank"><span id="linkPhotoGallery" style="color:Navy;font-size:16px;"><b>Photo Gallery</b></span></a> <svg id="cameraIcon" transform="translate(0,4)" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cameraIconTitle" aria-describedby="cameraIconDesc"> <title> id="cameraIconTitle">Camera icon</title> <desc  id="cameraIconDesc">this icon represents a camera</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="steelblue" stroke="lightgray" opacity="1.0" stroke-width="0.6" d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1z"/> <path fill="red" stroke="black" opacity="1.0" stroke-width="0.2" d="M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/> <path fill="rgb(187, 152, 255)" stroke="black" opacity="0.7" stroke-width="0.6" d="M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/> <path fill="lightgray" stroke="lightgray" opacity="0.4" stroke-width="1.0" d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/> </svg><br>
-<span id="textPhotoGalleryCaption" style="color:Grey;font-size:14px;"><i>A collection of photos arranged in a<br>
- grid pattern using CSS GRID.<br>
-Includes references.
-</i></span><br><br>
-
-
-
-
-<a href="colorPicker.html" target="_blank"><span id="linkColorPicker" style="color:Navy;font-size:16px;"><b>Color Picker</b></span></a><br>
-<span id="textColorPickerCaption" style="color:Grey;font-size:14px;"><i>Color picker which allows<br>
-visual comparison of two colors.<br>
-Gives a visual check of the<br>
-contrast between the two.<br>
-Zoom sample text up or down in<br>
-size to check its appearance.<br>
-Includes references.</i></span><br><br>
-
-
-<center> 
-<a href="nwsWeather2.html" target="_blank"><span id="linkNwsWeather" style="color:Navy;font-size:16px;"><b>Consuming REST APIs</b></span></a> <svg id="svgCloudSun1" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cloudSun1Title" aria-describedby="cloudSun1Desc"> <title> id="cloudSun1Title">sun with clouds icon</title> <desc id="cloudSun1Desc">this icon represents the sun with clouds</desc> <rect opacity="0.9" fill="dodgerblue" stroke="black" stroke-width="1"  width="16" height="16" /> <path fill="lightgray" stroke="gray" stroke-width="0.2" d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/> <path fill="yellow" stroke="gray" stroke-width="0.2" d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/></svg><br>
-<span id="textNwsWeatherCaption" style="color:Grey;font-size:14px;"><i>
-A demo of using a <b>REST API</b> to retrieve an extended weather forecast from the <b>National Weather Service</b> (<b>NWS</b>) using their public REST API. Includes references.
-</i></span><br><br>
-
-
-
-<center>
-<a href="angularjs.html" target="_blank"><span id="linkAngularJS1" style="color:Navy;font-size:16px;"><b>AngularJS shopping cart</b></span></a> <br>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg id="svgAngularJS1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="75px" height="82px" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" inkscape:version="0.48.4 r9939" viewBox="0 0 335.88126 355.80875" role="graphics-document" aria-labelledby="iconAngularJsTitle" aria-describedby="iconAngularJsDesc"> <title id="iconAngularJsTitle">AngularJS icon</title> <desc  id="iconAngularJsDesc">this icon represents AngularJS</desc> xml:space="preserve" sodipodi:docname="AngularJS-Shield.svg" inkscape:export-filename="/usr/local/google/home/stephenfluin/AngularJS-Shield.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs id="defs6" /><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1393" inkscape:window-height="697" id="namedview4" showgrid="false" inkscape:zoom="0.25757162" inkscape:cx="171.15375" inkscape:cy="177.21499" inkscape:window-x="2290" inkscape:window-y="312" inkscape:window-maximized="0" inkscape:current-layer="g10" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" /><g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.25,0,0,-1.25,-188.84625,636.71875)"><g id="g12" transform="scale(0.1,0.1)"><path d="M 2850,5093.75 1510.77,4622.45 1722.39,2867.82 2851.42,2247.28 3986.27,2876.23 4197.82,4630.79 2850,5093.75 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path14" inkscape:connector-curvature="0" /><path d="m 4064.25,4529.39 -1217.38,415.13 0,-2548.98 1020.22,564.62 197.16,1569.23 z" style="fill:#af2b2d;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path16" inkscape:connector-curvature="0" /><path d="m 1661.05,4521.89 181.34,-1569.22 1004.47,-557.13 0,2549.03 -1185.81,-422.68 z" style="fill:#df2e31;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path18" inkscape:connector-curvature="0" /><path d="m 3129.05,3676.7 -279.96,584.64 -246.46,-584.64 526.42,0 z m 106.74,-245.83 -742.11,0 -166.02,-415.26 -308.82,-5.71 828.04,1842.06 856.9,-1842.06 -286.23,0 -181.76,420.97 z" style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20" inkscape:connector-curvature="0" /><path d="m 2846.87,4851.96 2.21,-590.62 279.67,-585.09 -281.25,0 -0.63,-245 388.9,-0.38 181.77,-421.04 295.49,-5.48 -866.16,1847.61 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path22" inkscape:connector-curvature="0" /></g></g></svg>
-<br>
-<span id="textAngularJS1Caption" style="color:Grey;font-size:14px;"><i>Simplified shopping cart written using <span id="textAng1Emphasized1" style="color:Navy;"><b>AngularJS</b></span>. Includes references.
-</i></span><br><br>
 
 
 
@@ -1086,6 +1064,95 @@ This is a demo of the game <span id="textFizzBuzzCaption2Emphasized1" style="col
 <br><br>
 The web app is running in the <span id="textFizzBuzzCaption2Emphasized5" style="color:Navy;font-size:14px;"><b>Azure free tier</b></span>, so there might occasionally be a slight delay before the app displays on screen.
 </i></span><br><br>
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Cloud  -->
+</div>
+</center><br>
+
+
+
+
+
+
+
+<center>
+<div class="grid-containerMisc" id="grid-containerMisc">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="miscGraphicsTitle" style="color:Black;font-size:66px;">Miscellaneous</span>&nbsp;<svg id="miscIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconMiscTitle" aria-describedby="iconMiscDesc"> <title> id="iconMiscTitle">Miscellaneous icon</title> <desc  id="iconMiscDesc">this icon represents a collection of miscellaneous items</desc> <rect opacity="0.0" fill="none" stroke="red" stroke-width="0.1"  width="16" height="16" /> <path fill-rule="evenodd" fill="cornflowerblue" stroke="black" stroke-width="0.3" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue" stroke="black" stroke-width="0.2" d="M3 3H2v1h1V3z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m5.7 11a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill-rule="evenodd" fill="cornflowerblue"stroke="black" stroke-width="0.3" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 7h1v1H2V7z"/> <path fill="cornflowerblue"stroke="black" stroke-width="0.3" d="m2 10.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 11h1v1H2V11z"/> </svg>
+</center> <br><br>
+
+
+
+
+<center> 
+<a href="photoGallery.html" target="_blank"><span id="linkPhotoGallery" style="color:Navy;font-size:16px;"><b>Photo Gallery</b></span></a> <svg id="cameraIcon" transform="translate(0,4)" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cameraIconTitle" aria-describedby="cameraIconDesc"> <title> id="cameraIconTitle">Camera icon</title> <desc  id="cameraIconDesc">this icon represents a camera</desc> <rect opacity="1" fill="none" stroke="none" stroke-width="1"  width="16" height="16" /> <path fill="steelblue" stroke="lightgray" opacity="1.0" stroke-width="0.6" d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1z"/> <path fill="red" stroke="black" opacity="1.0" stroke-width="0.2" d="M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/> <path fill="rgb(187, 152, 255)" stroke="black" opacity="0.7" stroke-width="0.6" d="M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/> <path fill="lightgray" stroke="lightgray" opacity="0.4" stroke-width="1.0" d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/> </svg><br>
+<span id="textPhotoGalleryCaption" style="color:Grey;font-size:14px;"><i>A collection of photos arranged in a<br>
+ grid pattern using CSS GRID.<br>
+Includes references.
+</i></span><br><br>
+
+
+
+
+<a href="colorPicker.html" target="_blank"><span id="linkColorPicker" style="color:Navy;font-size:16px;"><b>Color Picker</b></span></a><br>
+<span id="textColorPickerCaption" style="color:Grey;font-size:14px;"><i>Color picker which allows<br>
+visual comparison of two colors.<br>
+Gives a visual check of the<br>
+contrast between the two.<br>
+Zoom sample text up or down in<br>
+size to check its appearance.<br>
+Includes references.</i></span><br><br>
+
+
+<center> 
+<a href="nwsWeather2.html" target="_blank"><span id="linkNwsWeather" style="color:Navy;font-size:16px;"><b>Consuming REST APIs</b></span></a> <svg id="svgCloudSun1" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"> role="graphics-document" aria-labelledby="cloudSun1Title" aria-describedby="cloudSun1Desc"> <title> id="cloudSun1Title">sun with clouds icon</title> <desc id="cloudSun1Desc">this icon represents the sun with clouds</desc> <rect opacity="0.9" fill="dodgerblue" stroke="black" stroke-width="1"  width="16" height="16" /> <path fill="lightgray" stroke="gray" stroke-width="0.2" d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/> <path fill="yellow" stroke="gray" stroke-width="0.2" d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/></svg><br>
+<span id="textNwsWeatherCaption" style="color:Grey;font-size:14px;"><i>
+A demo of using a <b>REST API</b> to retrieve an extended weather forecast from the <b>National Weather Service</b> (<b>NWS</b>) using their public REST API. Includes references.
+</i></span><br><br>
+
+
+
+<center>
+<a href="angularjs.html" target="_blank"><span id="linkAngularJS1" style="color:Navy;font-size:16px;"><b>AngularJS shopping cart</b></span></a> <br>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg id="svgAngularJS1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="75px" height="82px" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" inkscape:version="0.48.4 r9939" viewBox="0 0 335.88126 355.80875" role="graphics-document" aria-labelledby="iconAngularJsTitle" aria-describedby="iconAngularJsDesc"> <title id="iconAngularJsTitle">AngularJS icon</title> <desc  id="iconAngularJsDesc">this icon represents AngularJS</desc> xml:space="preserve" sodipodi:docname="AngularJS-Shield.svg" inkscape:export-filename="/usr/local/google/home/stephenfluin/AngularJS-Shield.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs id="defs6" /><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1393" inkscape:window-height="697" id="namedview4" showgrid="false" inkscape:zoom="0.25757162" inkscape:cx="171.15375" inkscape:cy="177.21499" inkscape:window-x="2290" inkscape:window-y="312" inkscape:window-maximized="0" inkscape:current-layer="g10" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" /><g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.25,0,0,-1.25,-188.84625,636.71875)"><g id="g12" transform="scale(0.1,0.1)"><path d="M 2850,5093.75 1510.77,4622.45 1722.39,2867.82 2851.42,2247.28 3986.27,2876.23 4197.82,4630.79 2850,5093.75 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path14" inkscape:connector-curvature="0" /><path d="m 4064.25,4529.39 -1217.38,415.13 0,-2548.98 1020.22,564.62 197.16,1569.23 z" style="fill:#af2b2d;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path16" inkscape:connector-curvature="0" /><path d="m 1661.05,4521.89 181.34,-1569.22 1004.47,-557.13 0,2549.03 -1185.81,-422.68 z" style="fill:#df2e31;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path18" inkscape:connector-curvature="0" /><path d="m 3129.05,3676.7 -279.96,584.64 -246.46,-584.64 526.42,0 z m 106.74,-245.83 -742.11,0 -166.02,-415.26 -308.82,-5.71 828.04,1842.06 856.9,-1842.06 -286.23,0 -181.76,420.97 z" style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path20" inkscape:connector-curvature="0" /><path d="m 2846.87,4851.96 2.21,-590.62 279.67,-585.09 -281.25,0 -0.63,-245 388.9,-0.38 181.77,-421.04 295.49,-5.48 -866.16,1847.61 z" style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path22" inkscape:connector-curvature="0" /></g></g></svg>
+<br>
+<span id="textAngularJS1Caption" style="color:Grey;font-size:14px;"><i>Simplified shopping cart written using <span id="textAng1Emphasized1" style="color:Navy;"><b>AngularJS</b></span>. Includes references.
+</i></span><br><br>
+
+
 
 
 
