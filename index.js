@@ -1334,7 +1334,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 460vh 0.3vh";
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 380vh 0.3vh";
 
 
 
