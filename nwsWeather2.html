@@ -1,4 +1,4 @@
-<!-- nwsWeather2  -->
+﻿<!-- nwsWeather2  -->
 
 <!DOCTYPE html>
 <html>
@@ -671,18 +671,13 @@ request.onreadystatechange = function() {
 
 
 
-
-
-
-
-
-
 if(request.readyState == 4 && request.status != 200) {
 
 
 location.value = 'Query Error:  ' + 
 request.status;
 
+      //  alert("Query Error:   " + request.status);
 
 
 
@@ -719,13 +714,27 @@ if(request.readyState == 4 && request.status == 200) {
 
 location.value = 'Query Request OK';
 
+document.getElementById("textPeriodUnused1").innerHTML = 
+'<b>' + 
+'*** STATUS ***' + 
+'<br>' + 
+'Query Request OK' +  
+'<br>' + 
+'Xxxx' + 
+'<br>' + 
+'Xxxx' +  
+'</b>' + 
+'<br>';
+
+      //  alert("Query request OK");
 
 
-
+      //  alert("parse the JSON");
  
 
 var dataToProcess = JSON.parse(request.response);
 
+      //  alert("get the URL from the data");
 
 
 var urlForForecast =
@@ -763,6 +772,31 @@ dataToProcess.properties.relativeLocation.geometry.coordinates[0];
 
 location.value = 'Query - get forecast';
 
+document.getElementById("textPeriodUnused1").innerHTML = 
+'<b>' + 
+'*** STATUS ***' + 
+'<br>' + 
+'Query - get forecast' +  
+'<br>' + 
+'Xxxx' + 
+'<br>' + 
+'Xxxx' +  
+'</b>' + 
+'<br>';
+
+//      alert("Query - get forecast\n" + 
+//         "City - " + dataToProcess.properties.relativeLocation.properties.city +
+//         "\n" +
+//         "State - " + dataToProcess.properties.relativeLocation.properties.state +
+//         "\n" +
+//         "Coords 1 >" + dataToProcess.properties.relativeLocation.geometry.coordinates[1] +
+//         "<\n" +
+//         "Coords 0 >" + dataToProcess.properties.relativeLocation.geometry.coordinates[0] +
+//         "<\n" +
+//         "URL - " + urlForForecast +
+//         "\n"
+//      );
+
 
 getForecast( 
 dataToProcess.properties.relativeLocation.properties.city, 
@@ -795,6 +829,12 @@ request.open("GET", url, true);
 //   true = asynchronous request
 //   false = synchronous request
 
+            
+if(request.readyState == XMLHttpRequest.OPENED) {
+     request.setRequestHeader('User-Agent', 'ab872App/1.0.1');
+     request.setRequestHeader('Accept', 'application/json');
+     //  end   if ...
+}
 
 
 request.send();
@@ -854,7 +894,40 @@ forecastRequest.status != 200) {
 location.value = 
 'FCAST Error:  ' + forecastRequest.status;
 
+      //  alert("FCAST Error:   " + forecastRequest.status);
 
+//  this is a temporary message
+if(forecastRequest.status == 0) {
+      // stringify doesnt seem to work on the HTML in the response
+      var forecastErrorMessage = JSON.stringify(forecastRequest.response);
+
+      alert("An unexpected error message was received.\n" +
+      "Error Message:\n\n" + 
+      "An error occurred.\n" +
+      "The information you are requesting is unavailable until\n" +
+      " 01/01/2024 due to a known technical issue."
+      );
+
+// the API is returning an error message in HTML stating that
+// a known issue is preventing forecast retrieval until 01/01/2024
+// copying the HTML into a new window isnt working - check this for typos
+
+//      var newWindow = 
+//      window.open( "", 
+//             "ab872 - NWS Error Message", 
+//             "toolbar=no, 
+//             status=no, 
+//             scrollbars=yes 
+//             width=100, 
+//             height=100, 
+//             left=100 
+//             top=100");
+
+//      newWindow.document.write(forecastRequest.response);
+//      newWindow.document.write(forecastErrorMessage);
+
+      //  end   if ...
+}
 
 
 //    id="iconPeriodUnused1"
@@ -894,8 +967,20 @@ forecastRequest.status == 200) {
 
 location.value = 'FCAST Request OK';
 
+document.getElementById("textPeriodUnused1").innerHTML = 
+'<b>' + 
+'*** STATUS ***' + 
+'<br>' + 
+'FCAST Request OK' +  
+'<br>' + 
+'Xxxx' + 
+'<br>' + 
+'Xxxx' +  
+'</b>' + 
+'<br>';
 
 
+     //   alert("FCAST Request OK");
 
 
 var forecastToProcess = '';
@@ -950,8 +1035,20 @@ tmpTimeStr;
 location.value = 'FCAST - updating forecast ...';
 
 
+document.getElementById("textPeriodUnused1").innerHTML = 
+'<b>' + 
+'*** STATUS ***' + 
+'<br>' + 
+'FCAST - updating forecast ...' +  
+'<br>' + 
+'Xxxx' + 
+'<br>' + 
+'Xxxx' +  
+'</b>' + 
+'<br>';
 
 
+      //  alert("FCAST - updating forecast ...");
 
 
 
@@ -1255,7 +1352,19 @@ forecastToProcess.properties.periods[13].temperatureUnit + ')' +
 location.value = 'FCAST - update complete';
 
 
+document.getElementById("textPeriodUnused1").innerHTML = 
+'<b>' + 
+'*** STATUS ***' + 
+'<br>' + 
+'FCAST - update complete' +  
+'<br>' + 
+'Xxxx' + 
+'<br>' + 
+'Xxxx' +  
+'</b>' + 
+'<br>';
 
+      //  alert("FCAST - update complete");
 
 
 
@@ -1274,9 +1383,13 @@ forecastRequest.open("GET", forecastUrl, true);
 //   true = asynchronous request
 //   false = synchronous request
 
+        
+if(forecastRequest.readyState == XMLHttpRequest.OPENED) {
+     forecastRequest.setRequestHeader('User-Agent', 'ab872App/1.0.1');
+     forecastRequest.setRequestHeader('Accept', 'application/json');
 
-
-
+     //  end   if ...
+}
 
 forecastRequest.send();
 

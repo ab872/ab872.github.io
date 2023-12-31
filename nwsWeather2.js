@@ -328,31 +328,79 @@ if (isAndroid5) {
 
 
 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
+if (deviceScreenWidth == 1280) {
 
-	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1770vh 03vh`;
+	  //  alert("Firefox Win10     screen width EQUAL to 1280 "); 
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = '03vh 200vh 03vh';
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = '03vh 2000vh 03vh';
 
 
 
 	//  id="grid-containerForecastTitle"
 	//  grid-template-rows: 01vh 25vh 01vh
-	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = '01vh 28vh 01vh';
 
 	//  id="grid-containerWeather1"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
 
 	//  id="grid-containerWeather1b"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
 
 	//  id="grid-containerWeather1c"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
 
 	//  id="grid-containerWeather1d"
 	//  grid-template-rows: 0.5vh 19vh 0.5vh
-	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
+
+
+   //   end     screen width EQUAL to 1280
+} else if (deviceScreenWidth == 100) {
+
+	  //  alert("Firefox Win10     screen width EQUAL to 100 "); 
+
+
+   //   end     screen width EQUAL to 100
+} else {
+
+	//  alert("Firefox Win10     screen width EQUAL to all others "); 
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = '03vh 170vh 03vh';
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = '03vh 1770vh 03vh';
+
+
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = '01vh 28vh 01vh';
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = '0.5vh 20vh 0.5vh';
+
+
+   //   end     screen width - others
+}
+
 
 
 
@@ -538,6 +586,54 @@ if (isAndroid5) {
 
 
 
+
+
+if (deviceScreenWidth == 1280) {
+
+	  //  alert("Chrome Win10     screen width EQUAL to 1280 "); 
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 230vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2170vh 03vh`;
+
+
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 28vh 01vh`;
+
+	//  id="grid-containerWeather1"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1b"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1b').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1c"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1c').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+	//  id="grid-containerWeather1d"
+	//  grid-template-rows: 0.5vh 19vh 0.5vh
+	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
+
+
+
+
+   //   end     screen width EQUAL to 1280
+} else if (deviceScreenWidth == 100) {
+
+	  //  alert("Chrome Win10     screen width EQUAL to 100 "); 
+
+
+   //   end     screen width EQUAL to 100
+} else {
+
+	//  alert("Chrome Win10     screen width EQUAL to all others "); 
+
+
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 160vh 03vh`;
 
 	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1735vh 03vh`;
@@ -565,7 +661,8 @@ if (isAndroid5) {
 	document.getElementById('grid-containerWeather1d').style.gridTemplateRows = `0.5vh 20vh 0.5vh`;
 
 
-
+   //   end     screen width - others
+}
 
 
              	//   end     Chrome others
@@ -1511,7 +1608,7 @@ if (deviceScreenWidth == 375) {
 
 if (deviceScreenWidth == 1707) {
 
-	//  alert("old Edge browser  -  screen width = 1707");
+	  //  alert("old Edge browser  -  screen width = 1707");
 
 
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 250vh 03vh`;
@@ -1544,7 +1641,7 @@ if (deviceScreenWidth == 1707) {
    //   end     screen width EQUAL to 1707
 }  else if (deviceScreenWidth == 1536) {
 
-	//  alert("old Edge browser  -  screen width = 1536");
+	  //  alert("old Edge browser  -  screen width = 1536");
 
 
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 190vh 03vh`;
@@ -1553,14 +1650,30 @@ if (deviceScreenWidth == 1707) {
 
 
    //   end     screen width EQUAL to 1536
+}   else if (deviceScreenWidth == 1280) {
+
+	  //  alert("old Edge browser  -  screen width = 1280");
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 390vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1970vh 03vh`;
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 44vh 01vh`;
+
+
+
+   //   end     screen width EQUAL to 1280
 } else if (deviceScreenWidth == 100) {
 
-	//  alert("old EDGE     screen width EQUAL to 100 "); 
+	  //  alert("old EDGE     screen width EQUAL to 100 "); 
 
    //   end     screen width EQUAL to 100
 } else {
 
-	//  alert("old Edge browser  -  screen width = all others");
+	  //  alert("old Edge browser  -  screen width = all others");
 
 
 	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 142vh 03vh`;
@@ -1895,9 +2008,23 @@ if (deviceScreenWidth == 1707) {
 
 
    //   end     screen width EQUAL to 1536
+}   else if (deviceScreenWidth == 1280) {
+
+	  //  alert("new Edge browser  -  screen width = 1280");
+
+
+	document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 390vh 03vh`;
+
+	document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1970vh 03vh`;
+
+	//  id="grid-containerForecastTitle"
+	//  grid-template-rows: 01vh 25vh 01vh
+	document.getElementById('grid-containerForecastTitle').style.gridTemplateRows = `01vh 44vh 01vh`;
+
+   //   end     screen width EQUAL to 1280
 } else if (deviceScreenWidth == 100) {
 
-	//  alert("new EDGE     screen width EQUAL to 100 "); 
+	//  alert("new EDGE browser    screen width EQUAL to 100 "); 
 
    //   end     screen width EQUAL to 100
 } else {
