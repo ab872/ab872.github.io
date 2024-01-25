@@ -840,32 +840,32 @@ if (deviceScreenWidth == 1133) {
 
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="112px"; 
-				document.getElementById("svgAngularJS1").style.height="123px";
-
+				document.getElementById("svgAngularJS1").style.width="47px"; 
+				document.getElementById("svgAngularJS1").style.height="47px";
+//  112    123
 
 		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
 
 		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
 
 
 
 
 		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
 
 		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
 
 	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
 	document.getElementById('angularJSlocatedAtMsg').innerHTML=
@@ -1896,24 +1896,24 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
 
 
 	//  id="grid-containerGraphics"
      	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
 
 
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
 
 
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
@@ -2254,36 +2254,38 @@ if (deviceScreenWidth == 1143) {
 
 
 
+
+
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="112px"; 
-				document.getElementById("svgAngularJS1").style.height="123px";
-
+				document.getElementById("svgAngularJS1").style.width="47px"; 
+				document.getElementById("svgAngularJS1").style.height="47px";
+//  112    123
 
 
 		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
 
 		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
 
 
 
 		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
 
 		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
 
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
+	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
 	document.getElementById('angularJSlocatedAtMsg').innerHTML=
 		"<center>" + 
 		"Located at" +
@@ -3361,32 +3363,32 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="112px"; 
-				document.getElementById("svgAngularJS1").style.height="123px";
-
+				document.getElementById("svgAngularJS1").style.width="47px"; 
+				document.getElementById("svgAngularJS1").style.height="47px";
+//  112   123
 
 		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
 
 		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
 
 
 
 
 		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
 
 		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="24px"; 
+		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
 
 	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
 	document.getElementById('angularJSlocatedAtMsg').innerHTML=
@@ -3398,7 +3400,7 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
 		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="24px"; 
+		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="18px"; 
 
 
 
@@ -4131,19 +4133,19 @@ if (isNewEdge) {
 
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="112px"; 
-				document.getElementById("svgAngularJS1").style.height="123px";
+				document.getElementById("svgAngularJS1").style.width="47px"; 
+				document.getElementById("svgAngularJS1").style.height="47px";
 
 
 		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
 
 
 		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
 
 		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="38px"; 
+		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
 
 
 
