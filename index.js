@@ -1602,6 +1602,16 @@ if (deviceScreenWidth == 1143) {
 
 
 
+			//  id="textSqliteLogoPublicDomain0"
+			//  14px
+			document.getElementById('textSqliteLogoPublicDomain0').style.fontSize="24px";
+
+			//  id="textSqliteLogoPublicDomain1"
+			//  14px
+			document.getElementById('textSqliteLogoPublicDomain1').style.fontSize="24px";
+
+
+
 			//  id="textSqliteLogoPublicDomain"
 			//  14px
 			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
@@ -2296,7 +2306,7 @@ if (deviceScreenWidth == 1143) {
 		//  "angularjsCreativeCommonsLinkMsg"
 		//  12px
 		//  
-		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="96px"; 
+//  temp comment		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="96px"; 
 
 //  id="angularJScreativeCommonsLinkMsg"
 //  the font size is not changing
