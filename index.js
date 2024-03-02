@@ -1166,6 +1166,11 @@ if (deviceScreenWidth == 1133) {
 
 
 
+		   //  id="linkPrivacyPolicy" 
+		   //  14px
+		   document.getElementById('linkPrivacyPolicy').style.fontSize="18px"; 
+
+
 
 
 
@@ -2310,6 +2315,14 @@ if (deviceScreenWidth == 1143) {
 
 //  id="angularJScreativeCommonsLinkMsg"
 //  the font size is not changing
+
+
+
+		   //  id="linkPrivacyPolicy" 
+		   //  14px
+		   document.getElementById('linkPrivacyPolicy').style.fontSize="18px"; 
+
+
 
 
 
