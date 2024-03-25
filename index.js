@@ -1525,9 +1525,9 @@ if (deviceScreenWidth == 1143) {
 			document.getElementById('linkGerberViewer').style.fontSize="28px";
 
 			//  id="pdfIcon" 
-			//  width="80" height="80" 
-			document.getElementById("pdfIcon").style.width="96px"; 
-			document.getElementById("pdfIcon").style.height="96px";
+			//  width="80" height="80"    
+			//  document.getElementById("pdfIcon").style.width="96px"; 
+			//  document.getElementById("pdfIcon").style.height="96px";
 
 			//  id="textGerberViewerCaption" 
 			//  14px
@@ -2216,7 +2216,7 @@ if (deviceScreenWidth == 1143) {
 
 
 				//  id="pdfIcon" 
-				//  width="16" height="16" 
+				//  width="16" height="16"   //  128
 				//  document.getElementById("pdfIcon").style.width="128px"; 
 				//  document.getElementById("pdfIcon").style.height="128px";
 
