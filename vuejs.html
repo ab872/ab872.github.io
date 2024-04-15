@@ -1,0 +1,2710 @@
+﻿<!--   vueJS_shopping_cart  -->
+
+<!-- 
+
+w3schools.com/vue/vue_intro.php
+
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+      <meta charset="utf-8" />
+
+      <title>ab872 - VueJS shopping cart demo</title> 
+
+
+
+<style>
+
+.grid-container {
+     border: 3px solid rgb(211, 211, 211, 0.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+     grid-template-rows: 03vh 40vh 03vh; 
+}
+
+
+.grid-item {
+<!--     border: 3px solid red;    -->
+
+}
+
+.grid-itemTopBottom {
+<!--     border: 3px solid purple;    -->
+
+}
+
+.grid-itemMargin {
+<!--     border: 3px solid green;    -->
+
+}
+
+
+
+.grid-containerIntro {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 270vh 03vh; 
+}
+
+
+
+.grid-containerForecastTitle {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 01vh 25vh 01vh; 
+}
+
+
+
+.grid-containerReference {
+     border: 3px solid rgb(211, 211, 211, 1.0);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 03vh 2060vh 03vh; 
+}
+
+
+.grid-itemReference {
+
+}
+
+.grid-itemTopBottomReference {
+      
+}
+
+.grid-itemMarginReference {
+
+}
+
+
+
+
+
+
+.grid-containerPhoto {
+     border: 3px solid rgb(211, 211, 211, 0.9);      
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.1fr;
+     grid-template-rows: 0.5vh 5vh 0.5vh; 
+}
+
+
+
+
+
+
+
+
+
+
+.grid-itemPhoto {
+
+}
+
+.grid-itemTopBottomPhoto {
+<!--    border: 3px solid orange;     -->
+}
+
+.grid-itemMarginPhoto {
+<!--    border: 3px solid green;   -->
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-itemSample {
+<!--     border: 3px solid orange;    -->
+}
+
+
+
+
+<!-- 
+   //   div {
+    //     border: 1px solid;
+    //    }
+
+ -->
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+   <body>
+
+
+
+<center> 
+<span id="pageTitle" style="color:Navy;font-size:56px;"><b>Vue.js shopping cart demo</b></span>
+</center><br>
+
+
+
+
+
+<center>
+<div class="grid-containerIntro" id="grid-containerIntro">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<span id="textIntroduction1" style="color:Black;font-size:23px;">
+<span id="textIntroductionP1Emphasized1" style="color:Navy;font-size:25px;"><b>Vue.js</b></span> was created in <span id="textIntroductionP1Emphasized2" style="color:Navy;font-size:25px;"><b>2014</b></span> by <span id="textIntroductionP1Emphasized3" style="color:Navy;font-size:25px;"><b>Evan You</b></span>. It has over 1.5 million users worldwide, and is downloaded close to 10 million times a month on npm. Some of the companies which use Vue.js are <span id="textIntroductionP1Emphasized4" style="color:Navy;font-size:25px;"><b>Wikimedia Foundation</b></span>, <span id="textIntroductionP1Emphasized5" style="color:Navy;font-size:25px;"><b>NASA</b></span>, <span id="textIntroductionP1Emphasized6" style="color:Navy;font-size:25px;"><b>Apple</b></span>, <span id="textIntroductionP1Emphasized7" style="color:Navy;font-size:25px;"><b>Google</b></span>, <span id="textIntroductionP1Emphasized8" style="color:Navy;font-size:25px;"><b>Microsoft</b></span>, <span id="textIntroductionP1Emphasized9" style="color:Navy;font-size:25px;"><b>GitLab</b></span>, <span id="textIntroductionP1Emphasized10" style="color:Navy;font-size:25px;"><b>Zoom</b></span>, <span id="textIntroductionP1Emphasized11" style="color:Navy;font-size:25px;"><b>Tencent</b></span>, <span id="textIntroductionP1Emphasized12" style="color:Navy;font-size:25px;"><b>Weibo</b></span>, <span id="textIntroductionP1Emphasized13" style="color:Navy;font-size:25px;"><b>Bilibili</b></span>, and <span id="textIntroductionP1Emphasized14" style="color:Navy;font-size:25px;"><b>Kuaishou</b></span>.  The latest version of Vue.js is called <span id="textIntroductionP1Emphasized15" style="color:Navy;font-size:25px;"><b>Vue 3</b></span>. It contains new features which make it incompatible with the previous version, <span id="textIntroductionP1Emphasized16" style="color:Navy;font-size:25px;"><b>Vue 2.7</b></span>. <span id="textIntroductionP1Emphasized17" style="color:Navy;font-size:25px;"><b>Vue 2 reached its End of Life on 31 December 2023</b></span>. [31]
+<br><br>
+Vue.js has adopted 2 API styles, the <span id="textIntroductionP1Emphasized18" style="color:Navy;font-size:25px;"><b>Options API</b></span> and the <span id="textIntroductionP1Emphasized19" style="color:Navy;font-size:25px;"><b>Composition API</b></span>. The Options API more closely follows the class model seen in languages which
+implement <span id="textIntroductionP1Emphasized20" style="color:Navy;font-size:25px;"><b>Object Oriented Programming</b></span> ( OOP ).  The Composition API has a more flexible layout based on <span id="textIntroductionP1Emphasized21" style="color:Navy;font-size:25px;"><b>reactive state</b></span>. [30]
+<br><br>
+<span id="textIntroductionP1Emphasized22" style="color:Navy;font-size:25px;"><b>Vue.js is licensed under the <a href="https://github.com/vuejs/vue/blob/main/LICENSE" target="_blank">MIT</a> license.</b></span>
+</span>
+<br><br>
+<center> 
+<span id="aboutTitle" style="color:Navy;font-size:38px;"><b>About this demo</b></span>
+</center><br>
+<span id="textIntroduction2" style="color:Black;font-size:23px;">
+This is a <span id="textIntroductionP2Emphasized1" style="color:Navy;font-size:25px;"><b>simplified</b></span> version of a <span id="textIntroductionP2Emphasized2" style="color:Navy;font-size:25px;"><b>shopping cart</b></span>. It illustrates <span id="textIntroductionP2Emphasized3" style="color:Navy;font-size:25px;"><b>basic data manipulation</b></span> in Vue.js. The application is written using the <span id="textIntroductionP2Emphasized4" style="color:Navy;font-size:25px;"><b>Options API</b></span> in Vue.js.
+<br><br>
+The application generates an <span id="textIntroductionP2Emphasized5" style="color:Navy;font-size:25px;"><b>invoice</b></span> containing the customer information and the order items. It calculates and displays the <span id="textIntroductionP2Emphasized6" style="color:Navy;font-size:25px;"><b>sub-total</b></span>, the <span id="textIntroductionP2Emphasized7" style="color:Navy;font-size:25px;"><b>tax</b></span> and the <span id="textIntroductionP2Emphasized8" style="color:Navy;font-size:25px;"><b>total price</b></span> for the order.
+<br><br>
+The customer database is built in <span id="textIntroductionP2Emphasized9" style="color:Navy;font-size:25px;"><b>JSON</b></span> and contains three entries. If you click the <span id="aboutTitle" style="color:Navy;font-size:25px;"><b>?</b></span> button you can see the customer <span id="textIntroductionP2Emphasized10" style="color:Navy;font-size:25px;"><b>membership</b></span> numbers.  If you enter one of the <span id="textIntroductionP2Emphasized11" style="color:Navy;font-size:25px;"><b>existing</b></span> membership numbers, the app will <span id="textIntroductionP2Emphasized12" style="color:Navy;font-size:25px;"><b>automatically populate</b></span> the invoice with the customer and the tax information.
+<br><br>
+You can order <span id="textIntroductionP2Emphasized13" style="color:Navy;font-size:25px;"><b>pants</b></span> and <span id="textIntroductionP2Emphasized14" style="color:Navy;font-size:25px;"><b>shirts</b></span> of various <span id="textIntroductionP2Emphasized15" style="color:Navy;font-size:25px;"><b>sizes</b></span> and <span id="textIntroductionP2Emphasized16" style="color:Navy;font-size:25px;"><b>colors</b></span>. When you select the <span id="textIntroductionP2Emphasized17" style="color:Navy;font-size:25px;"><b>type</b></span> of clothing, the price is <span id="textIntroductionP2Emphasized18" style="color:Navy;font-size:25px;"><b>automatically populated</b></span> from the <span id="textIntroductionP2Emphasized19" style="color:Navy;font-size:25px;"><b>JSON</b></span> product database.  After you select the quantity, type of clothing, the color and the size you can click the <span id="textIntroductionP2Emphasized20" style="color:Navy;font-size:25px;"><b>Add to Order</b></span> button to add the item to the order. When you do so, the <span id="textIntroductionP2Emphasized21" style="color:Navy;font-size:25px;"><b>sub-total</b></span>, the <span id="textIntroductionP2Emphasized22" style="color:Navy;font-size:25px;"><b>tax</b></span> and the <span id="textIntroductionP2Emphasized23" style="color:Navy;font-size:25px;"><b>total price</b></span> for the order will be updated and displayed.
+</span>
+<br><br>
+
+
+
+
+<br><br>
+     </div>
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Intro  -->
+</div>
+</center><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="app">
+
+<br><br>
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Date:</b></span>
+</label>
+<br>
+
+<input type="date" v-model="dateValue" @change="setDate" style="color:black;background-color:lavender;height:72px;width:490px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" required />
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Order number:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourOrder" @change="" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Order # here">
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Member number:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourMemberNumber" @change=""
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Member # here">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button style="color:black;background-color:lightSalmon;height:79px;width:79px;border-radius:8px;margin-top:3px;margin-bottom:3px" @click="findNumber">
+<span style="color:Black;font-size:68px;"><b>?</b></span>
+</button><br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Expiration Date:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="theExpirationDate" @change="setExpiration" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Ex: 01 January 2040">
+<br>
+
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Name:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourName" @change="setName"
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter name here">
+<br>
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Address:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourAddress" @change="setAddress"
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter address here">
+<br>
+
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>City:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourCity" @change="setCity"
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter city here">
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>State:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourState" @change="setState" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter state here">
+<br>
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>ZIP code:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" v-model="yourZipCode" @change="setZipCode"
+style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="Enter ZIP code here">
+<br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>State tax:</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20"
+name="stateTax2" id="stateTax2" @change="" style="color:black;background-color:lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="filled in from state">
+<br>
+
+
+<br><br>
+<hr>
+<br><br>
+
+
+<span style="color:Black;font-size:64px;"><b>Quantity:     {{ productCount }}</b></span>
+<br>  
+
+
+
+
+
+<button style="height:80px;width:150px;border-radius:8px;margin-top:3px;margin-bottom:3px" @click="decrementQuantity">
+<span style="color:Black;font-size:46px;"><b>-</b></span>     
+</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="height:80px;width:150px;border-radius:8px;margin-top:3px;margin-bottom:3px" @click="incrementQuantity">
+<span style="color:Black;font-size:46px;"><b>+</b></span>     
+</button>
+<br>
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Clothing type:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:745px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"
+v-model="clothingType" @change="setClothingType">
+<option><b>Not Selected</b></option>
+<option><b>Pant</b></option>
+<option><b>Shirt</b></option>
+    </select>
+<br>
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Color:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:745px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"
+v-model="clothingColor" @change="setClothingColor">
+        <option><b>Not Selected</b></option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Light Blue</option>
+        <option>Light Green</option>
+        <option>Maroon</option>    
+        <option>Navy</option>
+        <option>White</option>
+    </select>
+<br>
+
+
+<label>
+<span id="textPantWaist" style="color:Black;font-size:56px;"><b>Pant waist:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:745px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" :disabled="pantWaistIsDisabled" v-model="pantWaist" @change="setPantWaist">
+<option><b>Not Selected</b></option>
+<option><b>20</b></option>
+<option><b>21</b></option>
+<option><b>22</b></option>
+<option><b>23</b></option>
+<option><b>24</b></option>
+<option><b>25</b></option>
+<option><b>26</b></option>
+<option><b>27</b></option>
+<option><b>28</b></option>
+<option><b>29</b></option>
+<option><b>30</b></option>
+<option><b>31</b></option>
+<option><b>32</b></option>
+<option><b>33</b></option>
+<option><b>34</b></option>
+<option><b>35</b></option>
+<option><b>36</b></option>
+<option><b>37</b></option>
+<option><b>38</b></option>
+<option><b>39</b></option>
+<option><b>40</b></option>
+<option><b>41</b></option>
+<option><b>42</b></option>
+<option><b>43</b></option>
+<option><b>44</b></option>
+    </select>
+<br>
+
+
+
+<label>
+<span id="textPantLength" style="color:Black;font-size:56px;"><b>Pant length:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:745px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" :disabled="pantLengthtIsDisabled" v-model="pantLength" @change="setPantLength">
+<option><b>Not Selected</b></option>
+<option><b>24</b></option>
+<option><b>25</b></option>
+<option><b>26</b></option>
+<option><b>27</b></option>
+<option><b>28</b></option>
+<option><b>29</b></option>
+<option><b>30</b></option>
+<option><b>31</b></option>
+<option><b>32</b></option>
+<option><b>33</b></option>
+<option><b>34</b></option>
+<option><b>35</b></option>
+<option><b>36</b></option>
+    </select>
+<br>
+
+
+
+<label>
+<span id="textShirtSize" style="color:Black;font-size:56px;"><b>Shirt size:</b></span>
+</label>
+<br>
+    <select style="color:black;background-color:lavender;height:72px;width:745px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px"  v-model="shirtSize" 
+:disabled="shirtSizeIsDisabled"
+@change="setShirtSize">
+<option><b>Not Selected</b></option>
+<option><b>Small</b></option>
+<option><b>Medium</b></option>
+<option><b>Large</b></option>
+<option><b>XL</b></option>
+<option><b>2XL</b></option>
+<option><b>3XL</b></option>
+    </select>
+<br>
+
+
+
+
+<label>
+<span style="color:Black;font-size:56px;"><b>Price each ($):</b></span>
+</label>
+<br>
+<input type="text" size="15" maxlength="20" name="priceEach2" id="priceEach2" :value="" onChange="setPriceEach()"
+style="color:black;background-color: lavender;height:72px;font-size:68px;border-radius:8px;margin-top:3px;margin-bottom:3px" placeholder="filled in from type">
+<br>
+
+
+
+<br><br>
+
+<br><br>
+
+<br><br>
+
+
+
+<div style="color:black; background-color:beige;border:2px solid plum;border-radius:8px;margin-top:3px;margin-bottom:3px" id="orderItem" name="orderItem" title="order item appears here" aria-label="order item appears here">
+<center>
+<span style="color:Black;font-size:52px;"><b>Item To Add</b></span>
+</center>
+<br><br>
+
+
+<span id="txtOrderItem1" style="color:Black;font-size:48px;">
+<b>Qty: {{ productCount }}<br>
+Type: {{ clothingType }}<br>
+Pant Size: ({{ pantWaist }} X {{ pantLength }})<br>
+Shirt Size: {{ shirtSize }}<br>
+Color: {{ clothingColor }}<br>
+Price each:   {{ priceEach }}
+</b></span>
+<br><br>
+
+
+<center>
+<button style="height:80px;width:300px;border-radius:8px;margin-top:3px;margin-bottom:3px" @click="addToOrder">
+<span id="addToOrderButtonCaption" style="color:Black;font-size:48px;"><b>Add to Order</b></span>     
+</button>
+</center>
+
+
+
+<!--     //   end    div    orderItem -->
+</div> 
+<br><br>
+<br><br>
+
+
+
+
+<div style="color:black; background-color:aliceblue;border:2px solid plum;border-radius:8px;margin-top:3px;margin-bottom:3px" id="orderDisplay1" name="Display2" title="your order appears here" aria-label="your order appears here">
+
+ <br><br>
+
+<center>
+<span style="color:Black;font-size:52px;"><b>Your Order</b></span>
+</center>
+<br><br>
+
+
+<span style="color:Black;font-size:32px;"><b>Date:   {{ dateValue }}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Order number: {{yourOrder}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Name: {{yourName}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>Address: {{yourAddress}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>City: {{yourCity}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>State: {{yourState}}</b></span><br>
+
+<span style="color:Black;font-size:32px;"><b>ZIP code: {{yourZipCode}}</b></span><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Member Number:   {{ yourMemberNumber }}</b></span><br>
+
+
+<span style="color:Black;font-size:32px;"><b>Expiration Date:   {{ theExpirationDate }}</b></span><br><br>
+
+<br><br>
+
+<center>
+<span style="color:Black;font-size:52px;"><b>Order Items</b></span>
+</center>
+<br>
+
+
+<span id="txtOrderItemsList1" style="color:Black;font-size:48px;">
+</span>
+<br><br>
+
+<br><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Subtotal:&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+$ {{ subTotalForOrder }}</b></span>
+<br><br>
+
+<span style="color:Black;font-size:32px;"><b>The tax rate for {{yourState}} is {{ stateTax }}  %.</b></span>
+<br><br>
+
+<span style="color:Black;font-size:32px;"><b>Tax:&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+$ {{ totalTaxForOrder }}</b></span>
+<br><br>
+
+
+
+<span style="color:Black;font-size:32px;"><b>Total:&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+$ {{ totalForOrder }}</b></span>
+
+
+
+<br><br>
+<br><br>
+
+
+
+
+<!--     //   end    div    orderDisplay1  -->
+</div> 
+<br><br>
+<br><br>
+
+
+<!-- start of correction--> 
+<span id="verticalSpacer2" style="font-size:19px;"></span> 
+<!-- end of correction--> 
+
+
+
+
+
+
+<div class="grid-containerReference" id="grid-containerReference">
+
+     <div class="grid-itemMarginReference">
+     </div>
+     <div class="grid-itemTopBottomReference">
+     </div>
+     <div class="grid-itemMarginReference">
+     </div>
+
+
+
+
+     <div class="grid-itemMarginReference">
+     </div>
+
+     <div class="grid-itemReference"><br>
+
+
+<span style="color:Navy;font-size:56px;"><b>References</b></span><br><br>
+
+<span style="color:Black;font-size:18px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/html52/" target="_blank"><span style="font-size:18px;"><b><i>HTML 5.2.</i></b></span></a><br><br>
+
+<span style="color:Black;font-size:18px;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
+
+<span style="color:Black;font-size:18px;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/CSS/" target="_blank"><span style="font-size:18px;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
+
+<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11th edition, June 2020<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Navy;font-size:12px;"><b>This is the specification for JavaScript.</b></span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-262,</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://402.ecma-international.org/1.0/" target="_blank"><span style="font-size:18px;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG2/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/SVG11/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "SVG: Scalable Vector Graphics | MDN." <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><span style="font-size:18px;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[10]&nbsp;&nbsp;&nbsp;&nbsp;"Web Content Accessibility Guidelines (WCAG) 2.1." <i>W3C</i>, 05-Jun-2018. [Online]. Available: 
+https://www.w3.org/TR/WCAG21/.
+[Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/TR/WCAG21/" target="_blank"><span style="font-size:18px;"><b><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[11]&nbsp;&nbsp;&nbsp;&nbsp;"Techniques for WCAG 2.2." <i>W3C</i>, 09-Mar-2021. [Online]. Available: https://www.w3.org/WAI/WCAG21/<br>
+Techniques/. [Accessed: 20-Apr-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/" target="_blank"><span style="font-size:18px;"><b><i>Techniques for WCAG 2.2.</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[12]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "CSS Grid Layout - CSS: Cascading Style Sheets | MDN." <i>MDN Web Docs</i>. [Online]. Available:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS&#x5f;Grid\&#x5f;Layout. [Accessed: 03-Jun-2022]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout - CSS: Cascading Style Sheets | MDN.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[13]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid Layout." <i>W3Schools</i>. [Online]. Available: 
+https://www.w3schools.com/css/<br>
+css&#x5f;grid.asp. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[14]&nbsp;&nbsp;&nbsp;&nbsp;C. House, "A Complete Guide to Grid," <i>CSS-Tricks</i>, 12-May-2021. [Online]. Available: https://css-tricks.com/<br>
+snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><span style="font-size:18px;"><b><i>A Complete Guide to Grid,</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[15]&nbsp;&nbsp;&nbsp;&nbsp;J. Suh, "Learn CSS Grid - A Guide to Learning CSS Grid." <i>learncssgrid.com</i>. [Online]. Available: http://learncssgrid.com/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="http://learncssgrid.com/" target="_blank"><span style="font-size:18px;"><b><i>Learn CSS Grid - A Guide to Learning CSS Grid.</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[16]&nbsp;&nbsp;&nbsp;&nbsp;M. O. contributors, J. Thornton and Bootstrap, "CSS Grid." <i>getbootstrap.com</i>. [Online]. Available: https://getbootstrap.com/docs/<br>
+5.1/layout/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[17]&nbsp;&nbsp;&nbsp;&nbsp;"Grid by Example - Usage examples of CSS Grid Layout." <i>gridbyexample.com</i>. [Online]. Available: https://gridbyexample.com/<br>
+examples/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://gridbyexample.com/examples/" target="_blank"><span style="font-size:18px;"><b><i>Grid by Example - Usage examples of CSS Grid Layout.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[18]&nbsp;&nbsp;&nbsp;&nbsp;"Grid," <i>web.dev</i>. [Online]. Available: https://web.dev/learn/css/grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://web.dev/learn/css/grid/" target="_blank"><span style="font-size:18px;"><b><i>Grid,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[19]&nbsp;&nbsp;&nbsp;&nbsp;O. Nzube, "How to Use CSS Grid Layout 
+&#8211; Grid Properties Explained with Examples," 
+<i>freeCodeCamp.org</i>, 25-May-2022. [Online]. Available: https://www.freecodecamp.org/<br>
+news/how-to-use-css-grid-layout/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.freecodecamp.org/news/how-to-use-css-grid-layout/" target="_blank"><span style="font-size:18px;"><b><i>How to Use CSS Grid Layout &#8211; Grid Properties Explained with Examples,</i></b></span></a><br><br>
+
+
+
+<span style="color:Black;font-size:18px;">[20]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Grid &#8211; Table layout is back. Be there and be square," <i>Chrome Developers</i>, 27-Jan-2017. [Online]. Available: https://developer.chrome.com/<br>
+blog/css-grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.chrome.com/blog/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid 
+&#8211; Table layout is back. Be there and be square,</i></b></span></a><br><br>
+
+
+
+
+
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[21]&nbsp;&nbsp;&nbsp;&nbsp;"Introducing JSON." <i>json.org</i>. [Online]. Available: https://www.json.org/json-en.html. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.json.org/json-en.html" target="_blank"><span style="font-size:18px;"><b><i>Introducing JSON.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[22]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, "Working with JSON - Learn web development | MDN." <i>MDN Web Docs</i>, 08-Oct-2021. [Online]. Available: https://developer.mozilla.org/en-US/<br>
+docs/Learn/JavaScript/Objects/JSON. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank"><span style="font-size:18px;"><b><i>Working with JSON - Learn web development | MDN.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[23]&nbsp;&nbsp;&nbsp;&nbsp;J. Freeman, "What is JSON? A better format for data exchange," <i>InfoWorld</i>, 25-Oct-2019. [Online]. Available: https://www.infoworld.com/article/<br>
+3222851/what-is-json-a-better-<br>
+format-for-data-exchange.html. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html" target="_blank"><span style="font-size:18px;"><b><i>What is JSON? A better format for data exchange,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[24]&nbsp;&nbsp;&nbsp;&nbsp;"JSON:API &#8211; A specification for building APIs in JSON." <i>JSON:API</i>, 29-May-2015. [Online]. Available: https://jsonapi.org/. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://jsonapi.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON:API &#8211; A specification for building APIs in JSON.</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[25]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-404" <i>Ecma International</i>, Dec-2017. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-404/. [Accessed: 29-Oct-2021].</span><br>
+
+<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The JSON data interchange syntax<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2nd edition, December 2017<br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-404</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[26]&nbsp;&nbsp;&nbsp;&nbsp;L. Tagliaferri, "An Introduction to JSON," <i>DigitalOcean</i>, 08-Dec-2016. [Online]. Available: https://www.digitalocean.com/<br>
+community/tutorials/an-<br>
+introduction-to-json. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-json" target="_blank"><span style="font-size:18px;"><b><i>An Introduction to JSON,</i></b></span></a><br><br>
+
+
+
+
+
+<span style="color:Black;font-size:18px;">[27]&nbsp;&nbsp;&nbsp;&nbsp;"JSON-LD - JSON for Linking Data." <i>JSON-LD</i>. [Online]. Available: https://json-ld.org/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://json-ld.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON-LD - JSON for Linking Data.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[28]&nbsp;&nbsp;&nbsp;&nbsp;"HTTP Messages." <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+tags/ref_httpmessages.asp. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/tags/ref_httpmessages.asp" target="_blank"><span style="font-size:18px;"><b><i>HTTP Messages.</i></b></span></a><br><br>
+
+
+
+
+<span style="color:Black;font-size:18px;">[29]&nbsp;&nbsp;&nbsp;&nbsp;“The Progressive JavaScript Framework.” <i>vuejs.org</i>. [Online]. Available: https://vuejs.org/. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/" target="_blank"><span style="font-size:18px;"><b><i>The Progressive JavaScript Framework.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[30]&nbsp;&nbsp;&nbsp;&nbsp;“Introduction.” <i>vuejs.org</i>. [Online]. Available: https://vuejs.org/<br>
+introduction.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/guide/introduction.html" target="_blank"><span style="font-size:18px;"><b><i>Introduction .</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[31]&nbsp;&nbsp;&nbsp;&nbsp;“Frequently Asked Questions.” <I>vuejs.org</I>. [Online]. Available: https://vuejs.org/about/faq.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/about/faq.html" target="_blank"><span style="font-size:18px;"><b><i>Frequently Asked Questions.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[32]&nbsp;&nbsp;&nbsp;&nbsp;“Quick Start.” <I>vuejs.org</I>. [Online]. Available: https://vuejs.org/guide/quick-start.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/guide/quick-start.html" target="_blank"><span style="font-size:18px;"><b><i>Quick Start.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[33]&nbsp;&nbsp;&nbsp;&nbsp;“Hello World!” <I>vuejs.org</I>. [Online]. Available: https://vuejs.org/examples/#hello-world. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/examples/#hello-world" target="_blank"><span style="font-size:18px;"><b><i>Hello World!</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[34]&nbsp;&nbsp;&nbsp;&nbsp;“Vue Introduction.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/vue/<br>
+vue_intro.php. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/vue/vue_intro.php" target="_blank"><span style="font-size:18px;"><b><i>Vue Introduction.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[35]&nbsp;&nbsp;&nbsp;&nbsp;“Handling User Input.” <I>vuejs.org</I>.  [Online]. Available: https://vuejs.org/examples/#handling-input. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/examples/#handling-input" target="_blank"><span style="font-size:18px;"><b><i>Handling User Input.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[36]&nbsp;&nbsp;&nbsp;&nbsp;“Lifecycle Hooks.” <i>vuejs.org</i>. [Online]. Available: https://vuejs.org/guide/essentials/<br>
+lifecycle. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/guide/essentials/lifecycle" target="_blank"><span style="font-size:18px;"><b><i>Lifecycle Hooks.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[37]&nbsp;&nbsp;&nbsp;&nbsp;“Options: Lifecycle.” <I>vuejs.org</i>. [Online]. Available: https://vuejs.org/api/options-lifecycle.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/api/options-lifecycle.html" target="_blank"><span style="font-size:18px;"><b><i>Options: Lifecycle.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[38]&nbsp;&nbsp;&nbsp;&nbsp;“Composition API: Lifecycle Hooks.” <I>vuejs.org</I>. [Online]. Available: https://vuejs.org/api/composition-api-lifecycle. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/api/composition-api-lifecycle" target="_blank"><span style="font-size:18px;"><b><i>Composition API: Lifecycle Hooks.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[39]&nbsp;&nbsp;&nbsp;&nbsp;“Vue Lifecycle Hooks.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/vue/vue_<br>
+lifecycle-hooks.php. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3schools.com/vue/vue_lifecycle-hooks.php" target="_blank"><span style="font-size:18px;"><b><i>Vue Lifecycle Hooks.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[40]&nbsp;&nbsp;&nbsp;&nbsp;J. Bemenderfer, “Understanding Vue.js Lifecycle Hooks | DigitalOcean.” <I>DigitalOcean</I>, 02-Dec-2021. [Online]. Available: https://www.digitalocean.com/<br>
+community/
+tutorials/vuejs-component-lifecycle. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.digitalocean.com/community/<br>
+tutorials/vuejs-component-lifecycle" target="_blank"><span style="font-size:18px;"><b><i>Understanding Vue.js Lifecycle Hooks | DigitalOcean.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[41]&nbsp;&nbsp;&nbsp;&nbsp;A. Paul, “The Lifecycles of Vue.js,” <i>DEV Community</i>, 25-Aug-2021. [Online]. Available: https://dev.to/amolikvivian/the-lifecycles-of-vue-js-lhh. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://dev.to/amolikvivian/the-lifecycles-of-vue-js-lhh" target="_blank"><span style="font-size:18px;"><b><i>The Lifecycles of Vue.js,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[42]&nbsp;&nbsp;&nbsp;&nbsp;“API — Vue.js.” <I>vuejs.org</I>. [Online]. Available: https://v2.vuejs.org/v2/api/#Options-Lifecycle-Hooks. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://v2.vuejs.org/v2/api/#Options-Lifecycle-Hooks" target="_blank"><span style="font-size:18px;"><b><i>API — Vue.js.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[43]&nbsp;&nbsp;&nbsp;&nbsp;M. Thiessen, “How to Call a Method on Page Load in Vue 3 (with Reset).” <I>michaelnthiessen.com</I>, Aug-2023. [Online]. Available: https://michaelnthiessen.com/call-method-on-page-load. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://michaelnthiessen.com/call-method-on-page-load" target="_blank"><span style="font-size:18px;"><b><i>How to Call a Method on Page Load in Vue 3 (with Reset).</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[44]&nbsp;&nbsp;&nbsp;&nbsp;“How to implement DateTime localization in vue.js ?” <I>GeeksforGeeks</I>, 03-Feb-2023. [Online]. Available: https://www.geeksforgeeks.org/how-to-implement-datetime-localization-in-vue-js/. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/how-to-implement-datetime-localization-in-vue-js/" target="_blank"><span style="font-size:18px;"><b><i>How to implement DateTime localization in vue.js ?</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[45]&nbsp;&nbsp;&nbsp;&nbsp;A. Raza, “Dates in vue-js formatting, ranging and libraries,” <I>Medium</I>, 14-Sep-2023. [Online]. Available: https://medium.com/@raoasifraza/<br>
+dates-in-vue-js-formatting-ranging-and-libraries-629e2c275a07. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://medium.com/@raoasifraza/dates-in-vue-js-formatting-ranging-and-libraries-629e2c275a07" target="_blank"><span style="font-size:18px;"><b><i>Dates in vue-js formatting, ranging and libraries,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[46]&nbsp;&nbsp;&nbsp;&nbsp;“Format Dates and Time - A Vue.js Lesson From our Vue.js Course:...,” <I>Vue School</I>. [Online]. Available: https://vueschool.io/lessons/format-dates-and-time. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vueschool.io/lessons/format-dates-and-time" target="_blank"><span style="font-size:18px;"><b><i>Format Dates and Time - A Vue.js Lesson From our Vue.js Course:...,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[47]&nbsp;&nbsp;&nbsp;&nbsp;“How to format dates in Vue,” <I>DEV Community</I>, 19-Jul-2019. [Online]. Available: https://dev.to/firstclown/how-to-format-dates-in-vue-42em. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://dev.to/firstclown/how-to-format-dates-in-vue-42em" target="_blank"><span style="font-size:18px;"><b><i>How to format dates in Vue,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[48]&nbsp;&nbsp;&nbsp;&nbsp;Techsolutionstuff, “Vue JS Get Current Date And Time,” <I>Medium</I>, 17-Oct-2022. [Online]. Available: https://blog.devops.dev/vue-js-get-current-date-and-time-e748c5191025. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://blog.devops.dev/vue-js-get-current-date-and-time-e748c5191025" target="_blank"><span style="font-size:18px;"><b><i>Vue JS Get Current Date And Time,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[49]&nbsp;&nbsp;&nbsp;&nbsp;“Watchers.” <I>vuejs.org</I>. [Online]. Available: https://vuejs.org/guide/essentials/<br>
+watchers.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/guide/essentials/watchers.html" target="_blank"><span style="font-size:18px;"><b><i>Watchers.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[50]&nbsp;&nbsp;&nbsp;&nbsp;“How to use Watchers in Vue,” <I>Fjolt</I>. [Online]. Available: https://fjolt.com/article/vue-how-to-watch-for-changes. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://fjolt.com/article/vue-how-to-watch-for-changes" target="_blank"><span style="font-size:18px;"><b><i>How to use Watchers in Vue,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[51]&nbsp;&nbsp;&nbsp;&nbsp;“Computed Properties and Watchers — Vue.js.” <I>vuejs.org</i>. [Online]. Available: https://v2.vuejs.org/v2/guide/<br>
+computed.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://v2.vuejs.org/v2/guide/computed.html" target="_blank"><span style="font-size:18px;"><b><i>Computed Properties and Watchers — Vue.js.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[52]&nbsp;&nbsp;&nbsp;&nbsp;“VueJs Watchers: Responding to data changes in Vue,” <I>Vue Noob</I>. [Online]. Available: https://vuenoob.com/posts/vuejs-watchers-responding-to-data-changes-in-vue/. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuenoob.com/posts/vuejs-watchers-responding-to-data-changes-in-vue/" target="_blank"><span style="font-size:18px;"><b><i>VueJs Watchers: Responding to data changes in Vue,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[53]&nbsp;&nbsp;&nbsp;&nbsp;“Reactivity in Depth.” <I>vuejs.org</I>.  [Online]. Available: https://vuejs.org/guide/extras/reactivity-in-depth.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://vuejs.org/guide/extras/reactivity-in-depth.html" target="_blank"><span style="font-size:18px;"><b><i>Reactivity in Depth.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[54]&nbsp;&nbsp;&nbsp;&nbsp;“Watchers in Vue.js,” <I>Dead Simple Chat Blog</I>, 09-Mar-2023. [Online]. Available: https://deadsimplechat.com/blog/<br>
+watchers-
+in-vue-js-the-complete-guide/. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://deadsimplechat.com/blog/watchers-in-vue-js-the-complete-guide/" target="_blank"><span style="font-size:18px;"><b><i>Watchers in Vue.js,</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[55]&nbsp;&nbsp;&nbsp;&nbsp;“How to conditionally disable the input taking in VueJS?” <I>tutorialspoint.com</I>.  [Online]. Available: https://www.tutorialspoint.com/how-to-conditionally-disable-the-input-taking-in-vuejs. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.tutorialspoint.com/how-to-conditionally-disable-the-input-taking-in-vuejs" target="_blank"><span style="font-size:18px;"><b><i>How to conditionally disable the input taking in VueJS?</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[56]&nbsp;&nbsp;&nbsp;&nbsp;“Set the disabled state in Vue Button component | Syncfusion.” <I>Syncfusion</I>. [Online]. Available: https://ej2.syncfusion.com/vue/<br>
+documentation/button/how-to/set-the-disabled-state. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://ej2.syncfusion.com/vue/documentation/button/how-to/set-the-disabled-state" target="_blank"><span style="font-size:18px;"><b><i>Set the disabled state in Vue Button component | Syncfusion.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[57]&nbsp;&nbsp;&nbsp;&nbsp;“How to Conditionally Disable the Input in VueJS ?” <I>GeeksforGeeks</I>, 21-Dec-2023. [Online]. Available: https://www.geeksforgeeks.org/how-to-conditionally-disable-the-input-in-vuejs/. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.geeksforgeeks.org/how-to-conditionally-disable-the-input-in-vuejs/" target="_blank"><span style="font-size:18px;"><b><i>How to Conditionally Disable the Input in VueJS ?</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[58]&nbsp;&nbsp;&nbsp;&nbsp;“How to disable input conditionally in Vue.js.” <I>w3docs.com</I>. [Online]. Available: https://www.w3docs.com/snippets/vue-js/how-to-disable-input-conditionally-in-vue-js.html. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://www.w3docs.com/snippets/vue-js/how-to-disable-input-conditionally-in-vue-js.html" target="_blank"><span style="font-size:18px;"><b><i>How to disable input conditionally in Vue.js.</i></b></span></a><br><br>
+
+
+<span style="color:Black;font-size:18px;">[59]&nbsp;&nbsp;&nbsp;&nbsp;“GitHub - vuejs/art at 9f8ee218d32b52<br>
+c2d150212f22798a7a61689361,” <I>GitHub</I>. [Online]. Available: https://github.com/vuejs/art. [Accessed: 07-Apr-2024].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>
+    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+</span>
+<a href="https://github.com/vuejs/art" target="_blank"><span style="font-size:18px;"><b><i>GitHub - vuejs/art at 9f8ee218d32b52<br>
+c2d150212f22798a7a61689361,</i></b></span></a><br><br>
+
+
+
+
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+   </div>
+
+     <div class="grid-itemMarginReference">
+     </div>
+
+
+
+     <div class="grid-itemMarginReference">
+     </div>
+     <div class="grid-itemTopBottomReference">
+     </div>
+     <div class="grid-itemMarginReference">
+     </div>
+
+     <!--  end of grid container Reference -->
+</div>
+
+<br><br>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+<span style="font-size:18px;">
+<center> 
+<span id="copyRightMsg" style="color:Navy;font-size:16px;">
+<b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2024.<br>
+All rights reserved.
+</b></span>
+<br><br>
+
+
+<center> 
+<span id="chromeBestMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
+
+<svg id="BootstrapIcon" 
+xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
+role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">Bootstrap icon</title>
+    <desc  id="iconDesc">this icon represents Bootstrap</desc> 
+    <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/> 
+    <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/> 
+</svg><br>
+
+
+<span id="iconsProvidedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Some icons provided via the 
+<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br>
+
+
+<span id="mitLicenseMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+
+<span id="iconsModifiedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+</center> 
+<br><br>
+
+
+
+<br><br>
+
+
+<!-- Vue.js original logo --> 
+<!-- original Vue.js logo / icon located at -->
+
+ <!--
+https://github.com/vuejs/art/blob/master/logo.svg
+ --> 
+
+<!-- 
+modified by A. Bright to allow for resizing the image and to support accessibility
+--> 
+
+<center>
+<svg id="svgVueJS1" xmlns="http://www.w3.org/2000/svg"
+width="240px" height="264px" 
+viewBox="0 0 196.32 170.02"
+role="graphics-document" aria-labelledby="iconVueJsTitle" aria-describedby="iconVueJsDesc"> <title id="iconVueJsTitle">Vue.js icon</title> <desc  id="iconVueJsDesc">this icon represents Vue.js</desc> >
+  <path fill="#42b883" d="M120.83 0L98.16 39.26 75.49 0H0l98.16 170.02L196.32 0h-75.49z"/>
+  <path fill="#35495e" d="M120.83 0L98.16 39.26 75.49 0H39.26l58.9 102.01L157.06 0h-36.23z"/>
+</svg>
+
+</center>
+
+
+<br>
+
+<center>
+<span id="vueJsHeadingMsg" style="color:Black;font-size:24px;">
+<b>Vue.js</b>
+</span>
+</center>
+<br><br>
+
+<span id="vueJsLogoMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+The Vue.js logo is located at <a href="https://github.com/vuejs/art/blob/master/logo.svg" target="_blank">https://github.com/vuejs/art/blob/<br>
+master/logo.svg</a>.</b></span>
+<br>
+<span id="vueJsModifiedMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;The Vue.js logo has been modified.</b></span>
+</center><br>
+<center>
+<span id="vueJsTermsMsg" style="color:Black;font-size:12px;">
+The Vue.js logo is reproduced or modified and<br>
+used according to terms described in the<br>
+<i><b>
+"Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
+</b></i>.
+</span></center><br>
+<center>
+<span id="vueJsLocatedMsg" style="color:Black;font-size:12px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Located at<br>
+<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><span style="font-size:32px;"><b><i>http://creativecommons.org/licenses/by-nc-sa/4.0/</i></b></span></a>
+</center>
+</span>
+
+
+<br><br>
+
+
+
+<center>
+<span id="vueJsMitLicenseMsg" style="color:Navy;font-size:18px;"><b>&nbsp;&nbsp;&nbsp;
+Vue.js is licensed under<br>
+the <a href="https://github.com/vuejs/vue/blob/main/LICENSE" target="_blank">MIT</a> license.</b></span>
+</center>
+<br><br>
+
+
+
+<hr>
+<br><br>
+
+
+<span style="color:Black;font-size:18px;">
+The MIT License (MIT)<br>
+<br>
+Copyright (c) 2013-present, Yuxi (Evan) You<br>
+<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:<br>
+<br>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+<br>
+</span>
+<br><br><br><br>
+
+
+
+
+
+</div>
+
+
+<br>
+
+
+
+<script src="browserId.js">
+</script>
+
+<script src="debug.js">
+</script>
+
+<script src="vuejs.js">
+</script>
+
+<NOSCRIPT><span style="color:Navy;font-size:16px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br><br>
+
+
+
+
+<center>
+<BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width=300px;height:50px;-webkit-appearance:none" TYPE="button" id="debugButton" name="debugButton" title="show DEBUG info button" aria-label="show DEBUG info button" ONCLICK="showDebug()" ACCESSKEY=S><span style="font-size:28px;">     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="navy" stroke="white" class="bi bi-gear-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">show debug info</title>
+    <desc  id="iconDesc">this icon indicates that you can open a debugging panel</desc> <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/> </svg> </svg> <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="Navy" class="bi bi-keyboard-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
+    <title> id="iconTitle">access key S</title>
+    <desc  id="iconDesc">this icon indicates keyboard navigation using the S access key</desc> <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 5 8.75v-.5A.25.25 0 0 0 4.75 8h-.5a.25.25 0 0 0-.25.25zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 9 8.75v-.5A.25.25 0 0 0 8.75 8h-.5a.25.25 0 0 0-.25.25zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5A.25.25 0 0 0 9.75 6h-.5a.25.25 0 0 0-.25.25zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 6 6.75v-.5A.25.25 0 0 0 5.75 6h-.5a.25.25 0 0 0-.25.25zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z"/> <g font-size="10" text-anchor="middle"> <text x="8.0" y="12.1" opacity="1.0" fill="orange" stroke="orange" stroke-width="1.0">S</text> </g> </svg>    </span></BUTTON> 
+</center><br> 
+<div style="color:black; background-color:ivory;border:2px solid lightgrey;border-radius:8px;margin-top:3px;margin-bottom:3px" id="debugOut" name="debugOut" title="debug output appears here" aria-label="debug output appears here">
+</div> <br><br>
+
+
+
+
+
+<br><br>
+<br><br>
+<br><br>
+
+
+
+
+
+
+
+
+
+          <!--     //   end of div       app   -->
+      </div>
+
+
+
+
+
+  <script src="vue3_3_4.global.min.js">
+  </script>
+
+   <script>
+
+      const app = Vue.createApp({
+          data() {
+             return {
+                 jsonData: {
+theMembersJSON: [ 
+{"memberNumber" : "124643", "name" : "Albert Smith", "start" : "01 August 2019", 
+"expiration" : "01 August 2039", 
+"address" : "123 Good Road", "city" : "Phoenix", "state" : "AZ", "zipCode" : "12345", "phoneNumber" : "602-123-4567", "comments" : "1st member comments"}, 
+{"memberNumber" : "127643", "name" : "John Smith", "start" : "01 October 2019", 
+"expiration" : "01 October 2039", 
+"address" : "123 Bad Road", "city" : "Santa Fe", "state" : "NM", "zipCode" : "41234", "phoneNumber" : "772-123-4567", "comments" : "2nd member comments"}, 
+{"memberNumber" : "127843", "name" : "Sam Smith", "start" : "01 October 2020", 
+"expiration" : "01 October 2040", 
+"address" : "123 New Road", "city" : "Chicago", "state" : "IL", "zipCode" : "61234", "phoneNumber" : "592-123-4567", "comments" : "3rd member comments"}
+],
+theStatesJSON: [
+{"name" : "Alabama", "abbreviation": "AL", "taxRate" : "4.50"}, 
+{"name" : "Alaska", "abbreviation": "AK", "taxRate" : "4.50"}, 
+{"name" : "Arizona", "abbreviation": "AZ", "taxRate" : "4.50"},
+{"name" : "Arkansas", "abbreviation": "AR", "taxRate" : "4.50"},
+{"name" : "California", "abbreviation": "CA", "taxRate" : "6.00"},
+{"name" : "Colorado", "abbreviation": "CO", "taxRate" : "4.50"},
+{"name" : "Connecticut", "abbreviation": "CT", "taxRate" : "4.50"},
+{"name" : "Delaware", "abbreviation": "DE", "taxRate" : "4.50"},
+{"name" : "Florida", "abbreviation": "FL", "taxRate" : "5.50"},
+{"name" : "Georgia", "abbreviation": "GA", "taxRate" : "4.50"},
+{"name" : "Hawaii", "abbreviation": "HI", "taxRate" : "4.50"},
+{"name" : "Idaho", "abbreviation": "ID", "taxRate" : "4.50"},
+{"name" : "Illinois", "abbreviation": "IL", "taxRate" : "4.50"},
+{"name" : "Indiana", "abbreviation": "IN", "taxRate" : "4.50"},
+{"name" : "Iowa", "abbreviation": "IA", "taxRate" : "4.50"},
+{"name" : "Kansas", "abbreviation": "KS", "taxRate" : "4.50"},
+{"name" : "Kentucky", "abbreviation": "KY", "taxRate" : "4.50"},
+{"name" : "Louisiana", "abbreviation": "LA", "taxRate" : "4.50"},
+{"name" : "Maine", "abbreviation": "ME", "taxRate" : "4.50"},
+{"name" : "Maryland", "abbreviation": "MD", "taxRate" : "4.50"},
+{"name" : "Massachusetts", "abbreviation": "MA", "taxRate" : "4.50"},
+{"name" : "Michigan", "abbreviation": "MI", "taxRate" : "6.20"},
+{"name" : "Minnesota", "abbreviation": "MN", "taxRate" : "4.50"},
+{"name" : "Mississippi", "abbreviation": "MS", "taxRate" : "4.50"},
+{"name" : "Missouri", "abbreviation": "MO", "taxRate" : "4.50"},
+{"name" : "Montana", "abbreviation": "MT", "taxRate" : "4.50"},
+{"name" : "Nebraska", "abbreviation": "NE", "taxRate" : "4.50"},
+{"name" : "Nevada", "abbreviation": "NV", "taxRate" : "4.50"},
+{"name" : "New Jersey", "abbreviation": "NJ", "taxRate" : "4.50"},
+{"name" : "New Hampshire", "abbreviation": "NH", "taxRate" : "4.50"},
+{"name" : "New Mexico", "abbreviation": "NM", "taxRate" : "4.50"},
+{"name" : "New York", "abbreviation": "NY", "taxRate" : "7.00"},
+{"name" : "North Carolina", "abbreviation": "NC", "taxRate" : "4.50"},
+{"name" : "North Dakota", "abbreviation": "ND", "taxRate" : "4.50"},
+{"name" : "Ohio", "abbreviation": "OH", "taxRate" : "4.50"},
+{"name" : "Oklahoma", "abbreviation": "OK", "taxRate" : "4.50"},
+{"name" : "Oregon", "abbreviation": "OR", "taxRate" : "4.50"},
+{"name" : "Pennsylvania", "abbreviation": "PA", "taxRate" : "4.50"},
+{"name" : "Rhode Island", "abbreviation": "RI", "taxRate" : "4.50"},
+{"name" : "South Carolina", "abbreviation": "SC", "taxRate" : "4.50"},
+{"name" : "South Dakota", "abbreviation": "SD", "taxRate" : "4.50"},
+{"name" : "Tennessee", "abbreviation": "TN", "taxRate" : "4.50"},
+{"name" : "Texas", "abbreviation": "TX", "taxRate" : "5.00"},
+{"name" : "Utah", "abbreviation": "UT", "taxRate" : "4.50"},
+{"name" : "Vermont", "abbreviation": "VT", "taxRate" : "4.50"},
+{"name" : "Virginia", "abbreviation": "VA", "taxRate" : "4.50"},
+{"name" : "Washington", "abbreviation": "WA", "taxRate" : "4.50"},
+{"name" : "West Virginia", "abbreviation": "WV", "taxRate" : "4.50"},
+{"name" : "Wisconsin", "abbreviation": "WI", "taxRate" : "4.50"},
+{"name" : "Wyoming", "abbreviation": "WY", "taxRate" : "4.50"}
+],
+theMerchandiseJSON: [
+{"name" : "Pant", "price" : "10.99"}, 
+{"name" : "Shirt", "price" : "12.99"}
+]
+
+
+//   end     jsonData   
+                 },
+                 count: 0,
+                 loopIndex: 0,
+                 counter: 0,
+                 productCount: 0,
+                 pantWaist: 0,
+                 pantLength: 0,
+                 stateTax: 0.00,
+                 subTotalForOrder: 0.00,
+                 totalTaxForOrder: 0.00,
+                 totalForOrder: 0.00,
+                 pantWaistIsDisabled: false,
+                 pantLengthtIsDisabled: false,
+                 shirtSizeIsDisabled: false,
+                 clothingType: "???",
+                 clothingColor: "???",
+                 shirtSize: "???",
+                 priceEach: "0.00",
+                 text: "_txt_",
+                 text2: "_2_",
+                 yourMemberNumber: "",
+                 yourName: "??",
+                 yourAddress: "??",
+                 yourCity: "??",
+                 yourState: "??",
+                 yourZipCode: "??",
+                 theExpirationDate: "",
+                 message: "This is message 1",
+                 message2: "This is message 2",
+                 tmpDateStr: "xxx",
+                 tmpTimeStr: "yyy"
+
+
+
+  //   end     return
+             }
+
+//   end     data
+          },
+          watch: {
+//  
+     yourMemberNumber(newNum, oldNum) {
+//  *****************
+//  alert("number changed, new = " + 
+//  newNum + 
+//  " old = " + 
+//  oldNum + 
+//  "    loop IDX = " + 
+//  this.loopIndex
+//  );
+//  
+//  
+if (this.yourMemberNumber == this.jsonData.theMembersJSON[this.loopIndex].memberNumber) { 
+//  
+  //  alert("numbers matched ***");
+//  
+            this.yourName = this.jsonData.theMembersJSON[this.loopIndex].name;
+            this.theExpirationDate = 
+this.jsonData.theMembersJSON[this.loopIndex].expiration;
+            this.yourAddress = 
+this.jsonData.theMembersJSON[this.loopIndex].address;
+            this.yourCity = 
+this.jsonData.theMembersJSON[this.loopIndex].city;
+            this.yourState = 
+this.jsonData.theMembersJSON[this.loopIndex].state;
+            this.yourZipCode = 
+this.jsonData.theMembersJSON[this.loopIndex].zipCode;
+//  
+  //  alert("finished filling in fields");
+//  
+//
+   //  end     if member numbers match
+}
+//  
+       //  end     yourMemberNumber(newNum,
+       //                     oldNum)
+    },
+     myCount(newNum, oldNum) {
+        //  ****************
+        //  
+        alert("my count changed, new = " + 
+             newNum + 
+             " old = " + 
+             oldNum + 
+             "    loop IDX = " + 
+             this.loopIndex
+         );
+         //  
+        //  
+             //  updateItem();
+        //  
+       //  end     myCount(newNum,
+       //                     oldNum)
+    },    
+    yourState(newNum, oldNum) {
+//  ****************
+        //  
+     //   alert("state changed, new = " + 
+  //           newNum + 
+    //         " old = " + 
+     //        oldNum + 
+  //           "    loop IDX = " + 
+//             this.loopIndex
+ //        );
+         //  
+        //  
+                 //   updateItem();
+        //  
+//  
+for (loopIndex=0;loopIndex<this.jsonData.theStatesJSON.length; loopIndex++) { 
+//  start     for loop
+//  
+//  alert("look for state  loop IDX = " + 
+     //        this.loopIndex
+      //   );
+//  
+if (this.yourState == this.jsonData.theStatesJSON[loopIndex]. abbreviation) { 
+//  
+ //  alert("*** states matched ***");
+//  
+        //    
+//  alert(
+  //  "state = " + 
+  //  this.jsonData.theStatesJSON[loopIndex].
+  //   + 
+ //   "     (" + 
+//  this.jsonData.theStatesJSON[loopIndex].
+  //  //   + 
+ //   ")     " + 
+//  this.jsonData.theStatesJSON[loopIndex].
+ //  taxRate + 
+  //  "%"
+//  );
+//
+//  
+stateTax2.value = 
+this.jsonData.theStatesJSON[loopIndex].
+  name + 
+  "  (" + 
+  this.jsonData.theStatesJSON[loopIndex].
+  abbreviation + 
+  ")  " + 
+  this.jsonData.theStatesJSON[loopIndex].
+  taxRate + 
+  "%";
+//  
+this.stateTax = 
+this.jsonData.theStatesJSON[loopIndex].taxRate;
+//
+   //  end     if
+   }
+//  
+//  end       for loop
+}
+//  
+//  
+//  
+//  
+ //   alert("finished writing tax info");
+//  
+        //  
+        //  
+       //  end     yourState(newNum, oldNum)
+    },
+   clothingType(newNum, oldNum) {
+//  ****************
+        //  
+   //     alert("type changed, new = " + 
+ //            newNum + 
+  //           " old = " + 
+ //            oldNum + 
+ //            "    loop IDX = " + 
+//             this.loopIndex
+//         );
+         //  
+        //  
+               //  updateItem();
+//  
+for (loopIndex=0;loopIndex<this.jsonData.theMerchandiseJSON.length; loopIndex++) { 
+//  start     for loop
+//  
+//  alert("look for type  loop IDX = " + 
+     //        this.loopIndex
+      //   );
+//  
+if (this.clothingType == this.jsonData.theMerchandiseJSON[loopIndex].name) { 
+//  
+ //  alert("*** clothing Type matched ***");
+//  
+//  alert("price = " + 
+//  this.jsonData.theMerchandiseJSON[
+//  loopIndex].price);
+//
+priceEach2.value = 
+this.jsonData.theMerchandiseJSON[loopIndex].price;
+//  
+//  
+//  alert("set price each");
+//  
+this.priceEach = priceEach2.value;
+//  
+//  alert("finished - set price each");
+//
+   //  end     if
+   }
+//  
+//  end       for loop
+}
+//  
+//  
+//  alert("update the Item");
+//  
+        //   updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+     this.shirtSizeIsDisabled = true;
+document.getElementById("textShirtSize").style.color="Grey";
+//  
+     this.pantWaistIsDisabled = false;
+document.getElementById("textPantWaist").style.color="Black";
+//  
+     this.pantLengthtIsDisabled = 
+false;
+document.getElementById("textPantLength").style.color="Black";
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" +
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else if (this.clothingType == "Shirt") {
+//  
+     this.shirtSizeIsDisabled = false;
+document.getElementById("textShirtSize").style.color="Black";
+//
+     this.pantWaistIsDisabled = true;
+document.getElementById("textPantWaist").style.color="Grey";
+//  
+     this.pantLengthtIsDisabled = 
+true;
+document.getElementById("textPantLength").style.color="Grey";
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+} else {
+//  
+     this.shirtSizeIsDisabled = false;
+document.getElementById("textShirtSize").style.color="Black";
+//  
+     this.pantWaistIsDisabled = false;
+document.getElementById("textPantWaist").style.color="Black";
+//  
+     this.pantLengthtIsDisabled = 
+false;
+document.getElementById("textPantLength").style.color="Black";
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" +
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  
+   //  end     not pant or shirt
+}
+//  
+//  
+//  alert("finished - update the Item");
+//  
+        //  
+       //  end     clothingType(newNum,
+       //                     oldNum)
+    },
+     clothingColor(newNum, oldNum) {
+//  ****************
+        //  
+ //       alert("color changed, new = " + 
+  //           newNum + 
+ //            " old = " + 
+ //            oldNum + 
+//             "    loop IDX = " + 
+//             this.loopIndex
+//         );
+         //  
+        //  
+             //  updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+        //  
+       //  end     clothingColor(newNum,
+       //                     oldNum)
+    },    
+     pantWaist(newNum, oldNum) {
+//  ****************
+        //  
+  //      alert("waist changed, new = " + 
+ //            newNum + 
+ //            " old = " + 
+  //           oldNum + 
+ //            "    loop IDX = " + 
+//             this.loopIndex
+ //        );
+         //  
+        //  
+             //  updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+        //  
+       //  end     pantWaist(newNum,
+       //                     oldNum)
+    },    
+     pantLength(newNum, oldNum) {
+//  ****************
+        //  
+  //      alert("length changed, new = " + 
+ //            newNum + 
+  //           " old = " + 
+  //           oldNum + 
+//             "    loop IDX = " + 
+  //           this.loopIndex
+//         );
+         //  
+        //  
+             //  updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+        //  
+       //  end     pantLength(newNum,
+       //                     oldNum)
+    },
+     shirtSize(newNum, oldNum) {
+//  ****************
+        //  
+  //      alert("size changed, new = " + 
+  //           newNum + 
+    //         " old = " + 
+    //         oldNum + 
+    //         "    loop IDX = " + 
+   //          this.loopIndex
+    //     );
+         //  
+        //  
+             //  updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+        //  
+       //  end     shirtSize(newNum,
+       //                     oldNum)
+    },
+     productCount(newNum, oldNum) {
+//  ****************
+        //  
+    //    alert("count changed, new = " + 
+     //        newNum + 
+      //       " old = " + 
+      //       oldNum + 
+      //       "    loop IDX = " + 
+      //       this.loopIndex
+    //     );
+         //  
+        //  
+             //  updateItem();
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+        //  
+       //  end     productCount(newNum,
+       //                     oldNum)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+             //   end     watch
+          },
+          mounted() {
+             //  
+             alert("Vue.js is running." + 
+                  "\n\n" + 
+                  "The demo is ready.");
+             // 
+             //   end     mounted
+          },
+          methods: {
+             incrementQuantity() {
+                 this.productCount  += 1;
+//  
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+//  
+                 //   end     incrementQuantity
+              },
+             decrementQuantity() {
+                  if( this.productCount > 0 ) {
+                        this.productCount -= 1;
+                  }
+//  
+//  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  end     if Pant
+}
+else
+{ 
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+this.shirtSize + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//
+//  end     if Shirt
+}
+//  
+//  
+                 //   end     decrementQuantity
+              },
+              say(message) {
+                   alert("say function");
+                   alert(message)
+              },
+              findNumber() {
+                   this.message2 = "The database " + 
+                   "contains three members:" + 
+                   "\n\n" + 
+                   "124643     Albert Smith" + 
+                   "\n" + 
+                   "127643     John Smith" + 
+                   "\n" + 
+                   "127843     Sam Smith" + 
+                   "\n\n" + 
+                   "Enter an existing" + 
+                   " member number " + 
+                   "and the customer info " + 
+                   "will automatically be " + 
+                   "populated."
+                   alert(this.message2)
+
+                 //   end     function findNumber
+              },
+     updateItem() {  
+           //  
+           alert("updating item ... ");
+           //    
+           //  
+           alert("exit update Item");
+           //  
+           //  end     function update Item
+        },
+        setClothingColor() {
+           //  *****************
+           //   alert("set clothing color");
+           //  
+        },
+        setPantWaist() {
+           //  ****************
+           //   alert("set pant waist");
+           //  
+        },
+        setPantLength() {
+           //  ****************
+           //    alert("set pant length");
+           //  
+        },
+        setShirtSize() {
+           //  ****************
+           //    alert("set shirt size");
+           //  
+        },
+        setClothingType() {
+           //  ****************
+           //    alert("set clothing type");
+           //  
+        },
+        setPriceEach() {
+             //  ****************
+             alert("set price each");
+             //  
+             this.priceEach = priceEach2.value;
+             updateItem ();
+             // 
+        },
+        setState() {
+             //  ****************
+             alert("set state");
+             //    
+        },
+        setStateTax() {
+           //  ****************
+           alert("set state tax");
+           //  
+           this.yourState = 
+stateTax.substr(stateTax.indexOf('('),stateTax.indexOf(')'));
+alert("set state tax = " + yourState);
+        },
+        addToOrder() {
+            //  ****************
+            //  txtOrderItemsList1
+            //  
+if (this.clothingType == "Pant") {
+//  
+document.getElementById('txtOrderItemsList1').innerHTML += "<b>" + 
+"Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+ ")" + 
+"<br>" +  
+"Color:   " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:    " + 
+this.priceEach + 
+"</b>" + 
+"<br><br>";
+//  
+//  end     Pant
+} else
+{ 
+//  
+document.getElementById('txtOrderItemsList1').innerHTML += "<b>" + 
+"Qty: " + 
+this.productCount + 
+"<br> " + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"        (" + 
+this.shirtSize + 
+")        " + 
+"<br>" +     
+"Color:   " + 
+this.clothingColor + 
+"<br>"+ 
+"Price each:    " + 
+this.priceEach + 
+"</b>" + 
+"<br><br>";
+//
+//  end     Shirt
+}
+
+
+
+
+//  
+//  
+//  
+//  
+//       this.subTotalForOrder = 0.00;
+//       this.totalTaxForOrder = 0.00;
+//       this.totalForOrder = 0.00;
+//  
+//  
+this.subTotalForOrder += 
+parseFloat(this.productCount) * parseFloat(this.priceEach);
+//  
+this.subTotalForOrder = 
+parseFloat((this.subTotalForOrder).toFixed(2));
+// 
+//   
+//  
+this.taxForThisItem = 
+parseFloat(this.productCount) *
+(parseFloat(this.stateTax / 100) * parseFloat(this.priceEach));
+//  
+this.taxForThisItem =   parseFloat((this.taxForThisItem).toFixed(2));
+//  
+//  
+//
+this.totalTaxForOrder += 
+parseFloat(this.taxForThisItem);
+//  
+this.totalTaxForOrder = 
+parseFloat((this.totalTaxForOrder).toFixed(2));
+//  
+//  
+//  
+this.totalForOrder = 
+this.subTotalForOrder + 
+parseFloat(this.totalTaxForOrder);
+//  
+this.totalForOrder = 
+parseFloat((this.totalForOrder).toFixed(2));
+//  
+//  
+//  
+//  
+//  
+          this.productCount = 0; 
+          this.clothingType  = "???"; 
+          this.pantWaist = "0"; 
+          this.pantLength  = "0"; 
+          this.clothingColor  = "???"; 
+          this.priceEach  = "0.00"; 
+          this.shirtSize = "???"; 
+          priceEach2.value = "";
+//  
+//  
+document.getElementById('txtOrderItem1').innerHTML= 
+"<b>Qty: " + 
+this.productCount + 
+"<br>" + 
+"Type: " + 
+this.clothingType + 
+"<br>" + 
+"Size: " + 
+"   (" + 
+this.pantWaist + 
+" X " + 
+this.pantLength + 
+")" + 
+"<br>" + 
+"Color: " + 
+this.clothingColor + 
+"<br>" + 
+"Price each:   " + 
+this.priceEach + 
+"       " + 
+"</b>" + 
+"<br>";
+//  
+//  
+//  alert("enable waist, length and size");
+//  
+     this.pantWaistIsDisabled = false;
+document.getElementById("textPantWaist").style.color="Black";
+//  
+     this.pantLengthtIsDisabled = 
+false;
+document.getElementById("textPantLength").style.color="Black";
+//  
+     this.shirtSizeIsDisabled = false;
+document.getElementById("textShirtSize").style.color="Black";
+//  
+//  alert("finished - set waist, length and size");
+//  
+//  
+//         end     function   addToOrder
+        }
+
+
+
+
+
+ 
+
+//   end     methods
+          }
+//   end     create app
+      })
+
+     app.mount('#app')
+
+   </script>
+
+    
+  
+  
+
+
+    
+
+
+
+
+
+</body>
+
+
+</html>

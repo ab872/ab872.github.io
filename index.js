@@ -701,6 +701,11 @@ if (deviceScreenWidth == 1133) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+		//  "linkVueJS1"
+		document.getElementById('linkVueJS1').style.fontSize="28px"; 
+
+		//  "textVueJS1Caption"
+		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
 
 
 		//  "textWebApp1Link"
@@ -835,6 +840,10 @@ if (deviceScreenWidth == 1133) {
 
 
 
+				//  id="svgVueJS1"
+				//  width="84" height="92"
+				document.getElementById("svgVueJS1").style.width="47px"; 
+				document.getElementById("svgVueJS1").style.height="47px";
 
 
 
@@ -894,7 +903,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
 
 
@@ -912,7 +921,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 
@@ -1769,6 +1778,11 @@ if (deviceScreenWidth == 1143) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+		//  "linkVueJS1"
+		document.getElementById('linkVueJS1').style.fontSize="28px"; 
+
+		//  "textVueJS1Caption"
+		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
 
 
 		//  "textWebApp1Link"
@@ -1894,46 +1908,6 @@ if (deviceScreenWidth == 1143) {
 			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
 			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
 
-
-
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
 
 
@@ -2266,6 +2240,22 @@ if (deviceScreenWidth == 1143) {
 
 
 
+                               //  id="vueJSlogoMsg"
+		               document.getElementById('vueJSlogoMsg').style.fontSize="18px"; 
+
+                               //  id="vueIconModifiedMsg"
+		               document.getElementById('vueIconModifiedMsg').style.fontSize="18px"; 
+
+                               //  id="vueTermsMsg"
+		               document.getElementById('vueTermsMsg').style.fontSize="18px"; 
+
+                               //  id="vueLocatedMsg"
+		               document.getElementById('vueLocatedMsg').style.fontSize="18px"; 
+
+				//  id="svgVueJS1"
+				//  width="84" height="92"
+				document.getElementById("svgVueJS1").style.width="47px"; 
+				document.getElementById("svgVueJS1").style.height="47px";
 
 
 
@@ -2321,6 +2311,49 @@ if (deviceScreenWidth == 1143) {
 		   //  id="linkPrivacyPolicy" 
 		   //  14px
 		   document.getElementById('linkPrivacyPolicy').style.fontSize="18px"; 
+
+
+
+
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+
+
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
+
+
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
 
 
 
@@ -3384,6 +3417,14 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 
 
+				//  id="svgVueJS1"
+				//  width="84" height="92"
+				document.getElementById("svgVueJS1").style.width="47px"; 
+				document.getElementById("svgVueJS1").style.height="47px";
+
+
+
+
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
 				document.getElementById("svgAngularJS1").style.width="47px"; 
@@ -3698,6 +3739,15 @@ if (isNewEdge) {
 
 		//  "textAngularJS1Caption"
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
+
+
+
+		//  "linkVueJS1"
+		document.getElementById('link VueJS1').style.fontSize="28px"; 
+
+		//  "textAngularJS1Caption"
+		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
+
 
 
 
@@ -4151,6 +4201,12 @@ if (isNewEdge) {
 				//  document.getElementById
 				//  ("mp4Icon").style.height="128px";
 
+
+
+				//  id="svgVueJS1"
+				//  width="84" height="92"
+				document.getElementById("svgVueJS1").style.width="47px"; 
+				document.getElementById("svgVueJS1").style.height="47px";
 
 
 
