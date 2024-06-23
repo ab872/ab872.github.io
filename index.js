@@ -460,6 +460,25 @@ if (deviceScreenWidth == 1133) {
 
 
 
+			//  alert("new code here.");
+
+			//  "linkAndrCoreP1" 
+			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
+
+			//  "textAndrCore1Caption"
+			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized1" 
+			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized2" 
+			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized3" 
+			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
+
+
+
 
 
 
@@ -694,6 +713,9 @@ if (deviceScreenWidth == 1133) {
 				'Includes references.</i>';
 
 
+
+
+
 		//  "linkAngularJS1"
 		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
 
@@ -701,11 +723,45 @@ if (deviceScreenWidth == 1133) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+
+
+
 		//  "linkVueJS1"
 		document.getElementById('linkVueJS1').style.fontSize="28px"; 
 
 		//  "textVueJS1Caption"
 		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
+
+
+
+
+		//  alert("new code here.");
+
+		//  "linkTCA1"
+		document.getElementById('linkTCA1').style.fontSize="24px"; 
+
+		//  "textTCA1Caption"
+		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized1"
+		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized2"
+		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized3"
+		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized4"
+		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized5"
+		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
+
+
+
 
 
 		//  "textWebApp1Link"
@@ -766,14 +822,6 @@ if (deviceScreenWidth == 1133) {
 
 
 
-
-			//  id="linkOnTheWay1"
-			//  16px
-			document.getElementById('linkOnTheWay1').style.fontSize="28px";
-
-			//  id="linkOnTheWay2"
-			//  16px
-			document.getElementById('linkOnTheWay2').style.fontSize="28px";
 
 			//  id="linkOnTheWay3"
 			//  16px
@@ -1526,6 +1574,23 @@ if (deviceScreenWidth == 1143) {
 
 
 
+			//  alert("new code here.");
+
+			//  "linkAndrCoreP1" 
+			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
+
+			//  "textAndrCore1Caption"
+			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized1" 
+			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized2" 
+			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized3" 
+			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
+
 
 
 
@@ -1771,6 +1836,10 @@ if (deviceScreenWidth == 1143) {
 				'<br>' + 
 				'Includes references.</i>';
 
+
+
+
+
 		//  "linkAngularJS1"
 		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
 
@@ -1778,11 +1847,43 @@ if (deviceScreenWidth == 1143) {
 		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
 
 
+
+
 		//  "linkVueJS1"
 		document.getElementById('linkVueJS1').style.fontSize="28px"; 
 
 		//  "textVueJS1Caption"
 		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
+
+
+
+
+		//  alert("new code here.");
+
+		//  "linkTCA1"
+		document.getElementById('linkTCA1').style.fontSize="24px"; 
+
+		//  "textTCA1Caption"
+		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized1"
+		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized2"
+		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized3"
+		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized4"
+		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized5"
+		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
+
+
 
 
 		//  "textWebApp1Link"
@@ -1842,13 +1943,6 @@ if (deviceScreenWidth == 1143) {
 
 
 
-			//  id="linkOnTheWay1"
-			//  16px
-			document.getElementById('linkOnTheWay1').style.fontSize="28px";
-
-			//  id="linkOnTheWay2"
-			//  16px
-			document.getElementById('linkOnTheWay2').style.fontSize="28px";
 
 			//  id="linkOnTheWay3"
 			//  16px
@@ -2352,7 +2446,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
 
 
@@ -2968,6 +3062,32 @@ if (isEdge) {
 
 
 
+
+
+			//  alert("new code here.");
+
+			//  "linkAndrCoreP1" 
+			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
+
+			//  "textAndrCore1Caption"
+			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized1" 
+			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized2" 
+			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized3" 
+			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
+
+
+
+
+
+
+
+
 			//  id="copyrightMsg"
 			//  12px
 			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
@@ -3390,6 +3510,11 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 			document.getElementById("cameraIcon").style.height="128px";
 
 
+
+
+
+
+
 		//  "textFizzBuzzLink"
 		document.getElementById('textFizzBuzzLink').style.fontSize="18px"; 
 
@@ -3413,6 +3538,35 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 		//  "textFizzBuzzCaption2Emphasized5" 
 		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="18px"; 
+
+
+
+
+
+		//  alert("new code here.");
+
+		//  "linkTCA1"
+		document.getElementById('linkTCA1').style.fontSize="24px"; 
+
+		//  "textTCA1Caption"
+		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized1"
+		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized2"
+		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized3"
+		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized4"
+		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized5"
+		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
 
 
 
@@ -3514,6 +3668,31 @@ if (isNewEdge) {
 			//  id="BootstrapIcon"           
 			document.getElementById("BootstrapIcon").style.width="128px"; 
 			document.getElementById("BootstrapIcon").style.height="128px";
+
+
+
+
+			//  alert("new code here.");
+
+			//  "linkAndrCoreP1" 
+			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
+
+			//  "textAndrCore1Caption"
+			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized1" 
+			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized2" 
+			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
+
+			//  "textAndrCore1CaptionEmphasized3" 
+			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
+
+
+
+
+
 
 
 
@@ -3742,11 +3921,44 @@ if (isNewEdge) {
 
 
 
+
+
+
+
 		//  "linkVueJS1"
 		document.getElementById('link VueJS1').style.fontSize="28px"; 
 
-		//  "textAngularJS1Caption"
+		//  "textVueJS1Caption"
 		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
+
+
+
+
+
+		//  alert("new code here.");
+
+		//  "linkTCA1"
+		document.getElementById('linkTCA1').style.fontSize="24px"; 
+
+		//  "textTCA1Caption"
+		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized1"
+		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized2"
+		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized3"
+		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized4"
+		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
+
+		//  "textTCA1Emphasized5"
+		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
 
 
 
@@ -3778,14 +3990,6 @@ if (isNewEdge) {
 
 
 
-
-			//  id="linkOnTheWay1"
-			//  16px
-			document.getElementById('linkOnTheWay1').style.fontSize="28px";
-
-			//  id="linkOnTheWay2"
-			//  16px
-			document.getElementById('linkOnTheWay2').style.fontSize="28px";
 
 			//  id="linkOnTheWay3"
 			//  16px
