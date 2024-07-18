@@ -890,15 +890,15 @@ if (deviceScreenWidth == 1133) {
 
 				//  id="svgVueJS1"
 				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="47px"; 
-				document.getElementById("svgVueJS1").style.height="47px";
+				//  document.getElementById("svgVueJS1").style.width="47px"; 
+				//  document.getElementById("svgVueJS1").style.height="47px";
 
 
 
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="47px"; 
-				document.getElementById("svgAngularJS1").style.height="47px";
+				//  document.getElementById("svgAngularJS1").style.width="47px"; 
+				//  document.getElementById("svgAngularJS1").style.height="47px";
 //  112    123
 
 		//  "angularJSmitLicenseMsg" 
@@ -978,6 +978,16 @@ if (deviceScreenWidth == 1133) {
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
 	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+	//    id="svgAngularJS1"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+        document.getElementById("svgAngularJS1").style.height="64px";
+
+
+	//    id="svgVue1"
+	document.getElementById("svgVue1").style.width="64px"; 
+        document.getElementById("svgVue1").style.height="64px";
 
 
 
@@ -1603,7 +1613,6 @@ if (deviceScreenWidth == 1143) {
 
 
 
-
 			//  id="linkGerberViewer" 
 			//  size:16px
 			document.getElementById('linkGerberViewer').style.fontSize="28px";
@@ -1681,6 +1690,7 @@ if (deviceScreenWidth == 1143) {
 			//  id="textCrudP5Caption"
 			//  14px
 			document.getElementById('textCrudP5Caption').style.fontSize="24px";
+
 
 
 
@@ -2358,8 +2368,8 @@ if (deviceScreenWidth == 1143) {
 
 				//  id="svgVueJS1"
 				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="47px"; 
-				document.getElementById("svgVueJS1").style.height="47px";
+			//	document.getElementById("svgVueJS1").style.width="47px"; 
+			//	document.getElementById("svgVueJS1").style.height="47px";
 
 
 
@@ -2456,9 +2466,19 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+//  old  250
 
 
+
+	//    id="svgAngularJS1"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+        document.getElementById("svgAngularJS1").style.height="64px";
+
+
+	//    id="svgVue1"
+	document.getElementById("svgVue1").style.width="64px"; 
+        document.getElementById("svgVue1").style.height="64px";
 
 
 
