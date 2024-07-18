@@ -1391,7 +1391,7 @@ if (deviceScreenWidth == 1143) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
 
 
 	//  id="grid-containerCloud"
@@ -1404,6 +1404,16 @@ if (deviceScreenWidth == 1143) {
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
 
+
+
+	//    id="svgAngularJS1"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+        document.getElementById("svgAngularJS1").style.height="64px";
+
+
+	//    id="svgVue1"
+	document.getElementById("svgVue1").style.width="64px"; 
+        document.getElementById("svgVue1").style.height="64px";
 
 
 
