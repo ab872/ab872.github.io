@@ -19,9 +19,34 @@
 
 if (isAndroidEdge) { 
 
-//  	   alert("Edge under Android");
+   //  	   alert("Edge under Android");
 
-  // end Edge under Android
+   if (deviceScreenWidth == 412) {
+
+	     //  alert("Edge Android     screen width EQUAL to 412 "); 
+
+	     //  id="svgAngularJS1"
+	     //  width="75" height="82"
+	     document.getElementById("svgAngularJS1").style.width="64px"; 
+	     document.getElementById("svgAngularJS1").style.height="64px";
+
+
+             //  id="svgVue1"
+	     //  width="84" height="92"
+	     //	document.getElementById("svgVue1").style.width="64px"; 
+	     //	document.getElementById("svgVue1").style.height="64px";
+
+
+	     //      id="grid-containerMisc"
+             //      grid-template-rows: 0.3vh 190vh 0.3vh
+             //	     document.getElementById('grid-containerMisc').
+             //      style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+
+      //   end     screen width EQUAL to 412
+   } 
+
+   // end Edge under Android
 } 
 
 
@@ -283,6 +308,28 @@ if (deviceScreenWidth == 1133) {
 
 
    //   end     screen width EQUAL to 1133
+} else if (deviceScreenWidth == 408) {
+
+	//  alert("Firefox Android     screen width EQUAL to 408 "); 
+
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="64px"; 
+				document.getElementById("svgAngularJS1").style.height="64px";
+
+
+				//  id="svgVue1"
+				//  width="84" height="92"
+			//	document.getElementById("svgVue1").style.width="64px"; 
+			//	document.getElementById("svgVue1").style.height="64px";
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+
+   //   end     screen width EQUAL to 408
 } else if (deviceScreenWidth == 100) {
 
 	//  alert("Firefox Android     screen width EQUAL to 100 "); 
@@ -1428,6 +1475,27 @@ if (deviceScreenWidth == 1143) {
 
 
    //   end     screen width EQUAL to 1143
+}  else if (deviceScreenWidth == 412) {
+
+	//  alert("Chrome Android     screen width EQUAL to 412 "); 
+
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="64px"; 
+				document.getElementById("svgAngularJS1").style.height="64px";
+
+
+				//  id="svgVue1"
+				//  width="84" height="92"
+			//	document.getElementById("svgVue1").style.width="64px"; 
+			//	document.getElementById("svgVue1").style.height="64px";
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+   //   end     screen width EQUAL to 412
 } else if (deviceScreenWidth == 100) {
 
 	//  alert("Chrome Android     screen width EQUAL to 100 "); 
