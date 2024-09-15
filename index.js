@@ -1,9 +1,11 @@
+<!--  index_js  -->
+
 
 // start      index.js
 
 //  var theBrowserIsUnknown = true;
 
-// temporary change       for testing 12345678
+// temporary change       for testing 12345
 // temporary change 2     for testing 87654321
 
 //  alert("index.js has loaded");
@@ -19,34 +21,146 @@
 
 if (isAndroidEdge) { 
 
-   //  	   alert("Edge under Android");
+//  	   alert("Edge under Android");
 
-   if (deviceScreenWidth == 412) {
+if (deviceScreenWidth == 1143) {
 
-	     //  alert("Edge Android     screen width EQUAL to 412 "); 
+	//  alert("Edge Android     screen width EQUAL to 1143 "); 
 
-	     //  id="svgAngularJS1"
-	     //  width="75" height="82"
-	     document.getElementById("svgAngularJS1").style.width="64px"; 
-	     document.getElementById("svgAngularJS1").style.height="64px";
-
-
-             //  id="svgVue1"
-	     //  width="84" height="92"
-	     //	document.getElementById("svgVue1").style.width="64px"; 
-	     //	document.getElementById("svgVue1").style.height="64px";
+	//    id="svgAngularJS1"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+        document.getElementById("svgAngularJS1").style.height="64px";
 
 
-	     //      id="grid-containerMisc"
-             //      grid-template-rows: 0.3vh 190vh 0.3vh
-             //	     document.getElementById('grid-containerMisc').
-             //      style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+	//    id="svgVue1"
+	document.getElementById("svgVue1").style.width="64px"; 
+        document.getElementById("svgVue1").style.height="64px";
 
 
-      //   end     screen width EQUAL to 412
-   } 
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
 
-   // end Edge under Android
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+
+
+   //   end     screen width EQUAL to 1143
+} else if (deviceScreenWidth == 412) {
+
+	//  alert("Edge Android     screen width EQUAL to 412 "); 
+
+				//  id="svgAngularJS1"
+				//  width="75" height="82"
+				document.getElementById("svgAngularJS1").style.width="64px"; 
+				document.getElementById("svgAngularJS1").style.height="64px";
+
+				//  id="svgVue1"
+				//  width="84" height="92"
+			//	document.getElementById("svgVue1").style.width="64px"; 
+			//	document.getElementById("svgVue1").style.height="64px";
+
+	  //  document.getElementById('textIntroduction').style.fontSize="38px";
+	  //  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
+	  //  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+ 	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	//  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+
+   //   end     screen width EQUAL to 412
+} else if (deviceScreenWidth == 360) {
+
+	//  alert("Edge Android     screen width EQUAL to 360 "); 
+
+	//  document.getElementById('textIntroduction').style.fontSize="28px";
+	//  document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
+	//  document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	//  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+
+   //   end     screen width EQUAL to 360
+} 
+
+
+
+  // end Edge under Android
 } 
 
 
@@ -266,16 +380,31 @@ if (deviceScreenWidth == 1133) {
 
 	//  alert("Firefox Android     screen width EQUAL to 1133 "); 
 
+	//  id="svgAngularJS1"
+	//  width="75" height="82"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+	document.getElementById("svgAngularJS1").style.height="64px";
+
+	//  id="svgVue1"
+	//  width="84" height="92"
+	//	document.getElementById("svgVue1").style.width="64px"; 
+	//	document.getElementById("svgVue1").style.height="64px";
+
+
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
 
 
 
 	//  id="grid-containerCAD"
      	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
 
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 290vh 0.3vh";
 
 
 	//  id="grid-containerDatabase"
@@ -286,24 +415,19 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerGraphics"
      	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
 
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+
+
 
 
 
@@ -312,24 +436,90 @@ if (deviceScreenWidth == 1133) {
 
 	//  alert("Firefox Android     screen width EQUAL to 408 "); 
 
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="64px"; 
-				document.getElementById("svgAngularJS1").style.height="64px";
+	//  id="svgAngularJS1"
+	//  width="75" height="82"
+	document.getElementById("svgAngularJS1").style.width="64px"; 
+	document.getElementById("svgAngularJS1").style.height="64px";
+
+	//  id="svgVue1"
+	//  width="84" height="92"
+	//	document.getElementById("svgVue1").style.width="64px"; 
+	//	document.getElementById("svgVue1").style.height="64px";
+
+	  //  document.getElementById('textIntroduction').style.fontSize="38px";
+	  //  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
+	  //  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
 
 
-				//  id="svgVue1"
-				//  width="84" height="92"
-			//	document.getElementById("svgVue1").style.width="64px"; 
-			//	document.getElementById("svgVue1").style.height="64px";
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 120vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
 
 
    //   end     screen width EQUAL to 408
+} else if (deviceScreenWidth == 360) {
+
+	//  alert("Firefox Android     screen width EQUAL to 360 "); 
+
+	//  document.getElementById('textIntroduction').style.fontSize="28px";
+	//  document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
+	//  document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	//  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+   //   end     screen width EQUAL to 360
 } else if (deviceScreenWidth == 100) {
 
 	//  alert("Firefox Android     screen width EQUAL to 100 "); 
@@ -408,7 +598,7 @@ if (deviceScreenWidth == 1133) {
 
 
         if (isWin10) {
-           //   begin      Firefox under Win10
+           //   begin      Firefox Win10
 
 			//  alert("using the Firefox browser under Win10");
 			//  theBrowserIsUnknown = false;
@@ -620,6 +810,14 @@ if (deviceScreenWidth == 1133) {
 			//  id="textSqliteLogoPublicDomain"
 			//  14px
 			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
+			
+
+			//  "textSqliteLogoPublicDomain0"
+			document.getElementById('textSqliteLogoPublicDomain0').style.fontSize="24px";
+			
+			// "textSqliteLogoPublicDomain1"
+			document.getElementById('textSqliteLogoPublicDomain1').style.fontSize="24px";
+
 
 
 			//  id="textSqliteLogoDownloadHere"
@@ -782,7 +980,7 @@ if (deviceScreenWidth == 1133) {
 
 
 
-		//  alert("new code here.");
+		//  alert("new code TCA1 here.");
 
 		//  "linkTCA1"
 		document.getElementById('linkTCA1').style.fontSize="24px"; 
@@ -804,6 +1002,30 @@ if (deviceScreenWidth == 1133) {
 
 		//  "textTCA1Emphasized5"
 		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
+
+		//  "linkTCA2"
+		document.getElementById('linkTCA2').style.fontSize="24px"; 
+
+		//  "linkXunit1"
+		document.getElementById('linkXunit1').style.fontSize="24px"; 
+
+		//  "textTCA2Caption"
+		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized1"
+		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized2"
+		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized3"
+		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized4"
+		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
+
 
 
 
@@ -998,7 +1220,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 
@@ -1016,7 +1238,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
 
 
 
@@ -1024,7 +1246,7 @@ if (deviceScreenWidth == 1133) {
 
 	//  id="grid-containerCloud"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
 
 
 	//    id="svgAngularJS1"
@@ -1475,15 +1697,14 @@ if (deviceScreenWidth == 1143) {
 
 
    //   end     screen width EQUAL to 1143
-}  else if (deviceScreenWidth == 412) {
+} else if (deviceScreenWidth == 412) {
 
-	//  alert("Chrome Android     screen width EQUAL to 412 "); 
+	//  alert("Chrome Android  -  screen width EQUAL to 412 "); 
 
 				//  id="svgAngularJS1"
 				//  width="75" height="82"
 				document.getElementById("svgAngularJS1").style.width="64px"; 
 				document.getElementById("svgAngularJS1").style.height="64px";
-
 
 				//  id="svgVue1"
 				//  width="84" height="92"
@@ -1491,11 +1712,84 @@ if (deviceScreenWidth == 1143) {
 			//	document.getElementById("svgVue1").style.height="64px";
 
 
+
+	  document.getElementById('textIntroduction').style.fontSize="38px";
+	  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
+	  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+	//  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+
 
    //   end     screen width EQUAL to 412
+} else if (deviceScreenWidth == 360) {
+
+	//  alert("Chrome Android     screen width EQUAL to 360 "); 
+
+	document.getElementById('textIntroduction').style.fontSize="28px";
+	document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
+	document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
+
+
+	//  id="grid-containerAndroid"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+	//  id="grid-containerCAD"
+     	//  grid-template-rows: 0.3vh 135vh 0.3vh
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
+
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
+	//  id="grid-containerDatabase"
+     	//  grid-template-rows: 0.3vh 215vh 0.3vh
+	//  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+	//  id="grid-containerGraphics"
+     	//  grid-template-rows: 0.3vh 225vh 0.3vh
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
+
+	//  id="grid-containerWindows"
+     	//  grid-template-rows: 0.3vh 95vh 0.3vh
+	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+	//  id="grid-containerMisc"
+     	//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+
+   //   end     screen width EQUAL to 360
 } else if (deviceScreenWidth == 100) {
 
 	//  alert("Chrome Android     screen width EQUAL to 100 "); 
@@ -1970,6 +2264,28 @@ if (deviceScreenWidth == 1143) {
 		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
 
 
+
+		//  "linkTCA2"
+		document.getElementById('linkTCA2').style.fontSize="24px"; 
+
+		//  "linkXunit1"
+		//  16px
+		document.getElementById('linkXunit1').style.fontSize="24px"; 
+
+		//  "textTCA2Caption"
+		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized1"
+		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized2"
+		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized3"
+		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized4"
+		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
 
 
 
@@ -2532,10 +2848,11 @@ if (deviceScreenWidth == 1143) {
 
 
 
+
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-//  old  250
+	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
 
 
 
@@ -3612,7 +3929,6 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 
 
-
 		//  "textFizzBuzzLink"
 		document.getElementById('textFizzBuzzLink').style.fontSize="18px"; 
 
@@ -3663,6 +3979,33 @@ document.getElementById('miscGraphicsTitle').style.fontSize="66px";
 
 		//  "textTCA1Emphasized5"
 		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
+
+		//  "linkTCA2"
+		document.getElementById('linkTCA2').style.fontSize="24px"; 
+
+		//  "linkXunit1"
+		//  16px
+		document.getElementById('linkXunit1').style.fontSize="24px"; 
+
+		//  "textTCA2Caption"
+		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized1"
+		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized2"
+		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized3"
+		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized4"
+		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
+
+
+
 
 
 
@@ -3736,13 +4079,10 @@ if (isNewEdge) {
 	//  alert("using the new Edge browser");
 	//  theBrowserIsUnknown = false;
 
-
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
 			document.getElementById('mainPageSiteTitle').style.fontSize="72px";
-
-
 
 			//	document.getElementById('textIntroduction').innerHTML=
 			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
@@ -3750,11 +4090,13 @@ if (isNewEdge) {
 			//		'and <span id="textIntroductionEmphasized2" ' + 
 			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
 
-			document.getElementById('textIntroduction').style.fontSize="68px";
+			document.getElementById('textIntroduction').innerHTML += "<br><br><br><br><br>";
 
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
+			document.getElementById('textIntroduction').style.fontSize="48px";
 
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="48px";
+
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="48px";
 
 
 
@@ -4023,8 +4365,10 @@ if (isNewEdge) {
 
 
 
+
+
 		//  "linkVueJS1"
-		document.getElementById('link VueJS1').style.fontSize="28px"; 
+		document.getElementById('linkVueJS1').style.fontSize="28px"; 
 
 		//  "textVueJS1Caption"
 		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
@@ -4055,6 +4399,61 @@ if (isNewEdge) {
 
 		//  "textTCA1Emphasized5"
 		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
+
+
+
+		//  "linkTCA2"
+		document.getElementById('linkTCA2').style.fontSize="24px"; 
+
+		//  "linkXunit1"
+		//  16px
+		document.getElementById('linkXunit1').style.fontSize="24px"; 
+
+		//  "textTCA2Caption"
+		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized1"
+		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized2"
+		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized3"
+		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
+
+		//  "textTCA2Emphasized4"
+		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
+
+
+
+
+
+
+		//  "textWebApp1Link"
+		  document.getElementById('textWebApp1Link').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption1"
+		   document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
+
+		//  "textWebApp1Pre"
+		  document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized1" 
+		  document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized2" 
+		  document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized3" 
+		  document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized4" 
+		  document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
+
+		//  "textWebApp1Caption2Emphasized5" 
+		  document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
+
+
 
 
 
@@ -4143,50 +4542,31 @@ if (isNewEdge) {
 
 	//  id="grid-containerAndroid"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
 	//  id="grid-containerCAD"
      	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
 
-
+	//  id="grid-containerCloud"
+     	//  grid-template-rows: 0.3vh 170vh 0.3vh
+	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
 
 	//  id="grid-containerDatabase"
      	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-
+	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
 
 	//  id="grid-containerGraphics"
      	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
-
-
+	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 205vh 0.3vh";
 
 	//  id="grid-containerWindows"
      	//  grid-template-rows: 0.3vh 95vh 0.3vh
 	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
-
-
-
 	//  id="grid-containerMisc"
      	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
-
-
-
-
-
+	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 360vh 0.3vh";
 
 
 
@@ -4563,6 +4943,10 @@ if (isNewEdge) {
 
 
 
+
+
+
+
 	//   end        new Edge
 }
 
@@ -4583,6 +4967,5 @@ if (isNewEdge) {
 
 
 // end     index.js
-
 
 
