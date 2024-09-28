@@ -5,10 +5,10 @@
 
 //  var theBrowserIsUnknown = true;
 
-// temporary change       for testing 12345
+// temporary change       for testing 12345678
 // temporary change 2     for testing 87654321
 
-//  alert("index.js has loaded");
+  //  alert("index.js has loaded");
 
 
 
@@ -19,4949 +19,2040 @@
 
 
 
-if (isAndroidEdge) { 
 
-//  	   alert("Edge under Android");
+switch(deviceScreenWidth) {
+      case 360:      //  Android 
+      	 //   alert("using screen width = 360" + "<br>");
 
-if (deviceScreenWidth == 1143) {
+         if(isChrome) {
+		//  alert("Chrome Android     screen width EQUAL to 360 "); 
 
-	//  alert("Edge Android     screen width EQUAL to 1143 "); 
+		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
 
-	//    id="svgAngularJS1"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-        document.getElementById("svgAngularJS1").style.height="64px";
+		document.getElementById('textIntroduction').style.fontSize="2.5em";
+		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
 
 
-	//    id="svgVue1"
-	document.getElementById("svgVue1").style.width="64px"; 
-        document.getElementById("svgVue1").style.height="64px";
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
 
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
 
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
 
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
 
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
 
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
 
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
 
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
-
-
-   //   end     screen width EQUAL to 1143
-} else if (deviceScreenWidth == 412) {
-
-	//  alert("Edge Android     screen width EQUAL to 412 "); 
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="64px"; 
-				document.getElementById("svgAngularJS1").style.height="64px";
-
-				//  id="svgVue1"
-				//  width="84" height="92"
-			//	document.getElementById("svgVue1").style.width="64px"; 
-			//	document.getElementById("svgVue1").style.height="64px";
-
-	  //  document.getElementById('textIntroduction').style.fontSize="38px";
-	  //  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
-	  //  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
- 	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	//  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-
-   //   end     screen width EQUAL to 412
-} else if (deviceScreenWidth == 360) {
-
-	//  alert("Edge Android     screen width EQUAL to 360 "); 
-
-	//  document.getElementById('textIntroduction').style.fontSize="28px";
-	//  document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
-	//  document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	//  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
-
-   //   end     screen width EQUAL to 360
-} 
-
-
-
-  // end Edge under Android
-} 
-
-
-
-
-if (isFirefox) { 
-        //   begin      Firefox 
-
-	if (isAndroid) {
-           //   begin      Firefox under Android
-
-		//  alert("using the Firefox browser under Android");
-		//  theBrowserIsUnknown = false;
-
-		if (isAndroid5) { 
-
-			// begin     Firefox under Android5
-
-			//  alert("using the Firefox browser under Android 5");
-			//  theBrowserIsUnknown = false;
-
-			 	// id="textIntroduction" 
-				// Original 14px 
-				//  document.getElementById('textIntroduction').style.fontSize="18px"; 
-
-				// id="textIntroductionEmphasized1" 
-				//  document.getElementById('textIntroductionEmphasized1').style.fontSize=
-				//  "19px"; 
-
-				// id="textIntroductionEmphasized2" 
-				//  document.getElementById('textIntroductionEmphasized2').style.fontSize=
-				//  "19px";
-
-
-				// the references section overlaps the 
-				// introduction.
-
- 				// id="verticalSpacer1"
- 				// font-size 19px; 
-
-				document.getElementById('verticalSpacer1').innerHTML="<br><br>";
-
- 			// end Firefox under Android5 
-
-		} else {
-
-			// all other Firefox under Android
-
-				//  alert("using the Firefox browser under Android - all others");
-				//  theBrowserIsUnknown = false;
-
-
-
-				//   id="imageIntro" 
-				//  height="162" 
-				//  width="375" 
-			//	document.getElementById("imageIntro").style.height="202px";
-			//	document.getElementById("imageIntro").style.width="468px"; 
-
-
-
-			
-				//  id="textIntroduction" 
-				//      Original     14px    
-				//  document.getElementById(
-				//  'textIntroduction').style.
-				//  fontSize="96px";
-
-
-
-				//  id="textIntroductionEmphasized1"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized1').style.
-				//  fontSize="97px";
-
-
-
-				//  id="textIntroductionEmphasized2"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized2').style.
-				//  fontSize="97px";
-
-
-
-				//  adjust the size of the
-				//  Bootstrap icon
-				//  id="BootstrapIcon"           
-				document.getElementById("BootstrapIcon").style.width="64px"; 
-				document.getElementById("BootstrapIcon").style.height="64px";
-
-
-
-				document.getElementById('textIntroCaption').innerHTML=
-					"<i>Preview rendering of printed circuit<br>" + 
-					"board produced by parsing the data files. Rendered " + 
-					"using SVG graphics. Early version of the software.</i>";
-
-
-
-				//  id="textIntroCaption"
-				//  Original    12px
-				document.getElementById('textIntroCaption').style.fontSize="18px";
-
-
-
-				//  id="pdfIcon" 
-				//  width="16" height="16" 
-				document.getElementById("pdfIcon").style.width="64px"; 
-           			document.getElementById("pdfIcon").style.height="64px";
-
-
-
-				//    id="mp4Icon"
-				//    width="16" height="16" 
-				document.getElementById("mp4Icon").style.width="64px"; 
-           			document.getElementById("mp4Icon").style.height="64px";
-
-
-				//    id="mp4Icon2"
-				//    width="16" height="16" 
-				document.getElementById("mp4Icon2").style.width="64px"; 
-           			document.getElementById("mp4Icon2").style.height="64px";
-
-
-
-
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
-
-
-
-
-				//  id="textPhotoGalleryCaption" style="color:Grey;font-
-				//  size   12px
-
-				//    <i>A collection of photos arranged in a<br>
-				//   grid pattern using CSS GRID.<br>
-				//  Includes references.
-				//  </i>
-
-
-
-				document.getElementById('textSVGanimationCaption').innerHTML=
-					'<i>It is possible to animate an SVG. One way<br>' + 
-					'to do so is by using <span id="textAnimationEmphasized1" ' + 
-					'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-					'manipulate the <span id="textAnimationEmphasized2" ' + 
-					'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-					'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-					'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-					'using SVG</i></b></span>. They run inside a ' + 
-					'<span id="textAnimationEmphasized4" ' + 
-					'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-					'browser</i></b></span>, and were written in ' + 
-					'<span id="textAnimationEmphasized5" ' + 
-					'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-					'short discussion of SVG animation<br>' + 
-					'with references and examples.<br>' + 
-					'Includes a walkthrough of the<br>' + 
-					'code for a simple animation.' + 
-					'</i>';
-
-
-
-					//    id= textSVGanimationCaption
-					//    color Grey     font-size 12px
-
-					//  document.getElementById
-					//  ('textSVGanimationCaption').
-					//  style.fontSize="78px";
-
-
-
-					//    id="textAnimationEmphasized1" 
-					//    color Navy     font-size 11px
-
-
-					//    id="textAnimationEmphasized2" 
-					//    color Navy        font-size 11px
-
-
-					//    id="textAnimationEmphasized3" 
-					//    color Navy       font-size 11px
-
-
-					//    id="textAnimationEmphasized4" 
-					//    color Navy     font-size 11px
-
-
-					//    id="textAnimationEmphasized5" 
-					//    color Navy     font-size 11px
-
-
-
-					//  document.getElementById
-					//  ("mp4Icon").style.width="128px"; 
-
-					//  document.getElementById
-					//  ("mp4Icon").style.height="128px";
-
-
-	
-
-
-	//  id="textRobotEmphasized2" 
-	//  12px
-	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
-	document.getElementById('textRobotEmphasized2').innerHTML=
-	'<i>http://developer.android.com/distribute/<br>' + 
-	'googleplay/promote/brand.html</i>';
-
-
-
-if (deviceScreenWidth == 1133) {
-
-	//  alert("Firefox Android     screen width EQUAL to 1133 "); 
-
-	//  id="svgAngularJS1"
-	//  width="75" height="82"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-	document.getElementById("svgAngularJS1").style.height="64px";
-
-	//  id="svgVue1"
-	//  width="84" height="92"
-	//	document.getElementById("svgVue1").style.width="64px"; 
-	//	document.getElementById("svgVue1").style.height="64px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
-
-
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 290vh 0.3vh";
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
-
-
-
-
-
-   //   end     screen width EQUAL to 1133
-} else if (deviceScreenWidth == 408) {
-
-	//  alert("Firefox Android     screen width EQUAL to 408 "); 
-
-	//  id="svgAngularJS1"
-	//  width="75" height="82"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-	document.getElementById("svgAngularJS1").style.height="64px";
-
-	//  id="svgVue1"
-	//  width="84" height="92"
-	//	document.getElementById("svgVue1").style.width="64px"; 
-	//	document.getElementById("svgVue1").style.height="64px";
-
-	  //  document.getElementById('textIntroduction').style.fontSize="38px";
-	  //  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
-	  //  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 120vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-
-   //   end     screen width EQUAL to 408
-} else if (deviceScreenWidth == 360) {
-
-	//  alert("Firefox Android     screen width EQUAL to 360 "); 
-
-	//  document.getElementById('textIntroduction').style.fontSize="28px";
-	//  document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
-	//  document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	//  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
-
-   //   end     screen width EQUAL to 360
-} else if (deviceScreenWidth == 100) {
-
-	//  alert("Firefox Android     screen width EQUAL to 100 "); 
-
-
-   //   end     screen width EQUAL to 100
-} else {
-
-	//  alert("Firefox Android     screen width EQUAL to all others "); 
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 70vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 180vh 0.3vh";
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-	//  adjust the size of the
-	//  Bootstrap icon
-	//  id="BootstrapIcon"           
-	document.getElementById("BootstrapIcon").style.width="96px"; 
-	document.getElementById("BootstrapIcon").style.height="96px";
-
-
-   //   end     screen width - others
-}
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-				
-	
-			// end     all other Firefox under Android
-		}
-
-           //   end        Firefox under Android
-        } 
-
-
-
-
-        if (isWin10) {
-           //   begin      Firefox Win10
-
-			//  alert("using the Firefox browser under Win10");
-			//  theBrowserIsUnknown = false;
-
-
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="68px";
-
-
-			//   id="imagePcbIntro" 
-			//  height="162"   //  202
-			//  width="375"    //  468
-			document.getElementById("imagePcbIntro").style.height="303px";
-			document.getElementById("imagePcbIntro").style.width="702px"; 
-
-
-			//  id="textIntroCaption"
-			//  Original    12px
-			document.getElementById('textIntroCaption').style.fontSize="18px";
-
-
-
-
-
-
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
-
-
-			document.getElementById('textIntroduction').style.fontSize="68px";
-
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
-
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
-
-
-
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="128px"; 
-			document.getElementById("BootstrapIcon").style.height="128px";
-
-
-
-
-
-
-
-			//  id="textRobotCaption1" 
-			//  12px
-			document.getElementById('textRobotCaption1').style.fontSize="18px";
-
-			//  id="textRobotEmphasized1" 
-			//  12px
-			document.getElementById('textRobotEmphasized1').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption2" 
-			//  12px
-			document.getElementById('textRobotCaption2').style.fontSize="18px";
-
-			//  id="textRobotEmphasized2" 
-			//  12px
-			document.getElementById('textRobotEmphasized2').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption3" 
-			//  12px
-			document.getElementById('textRobotCaption3').style.fontSize="18px";
-
-			//  id="textRobotEmphasized3" 
-			//  12px
-			document.getElementById('textRobotEmphasized3').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption4" 
-			//  12px
-			document.getElementById('textRobotCaption4').style.fontSize="18px";
-
-			//  id="textRobotEmphasized4" 
-			//  12px
-			document.getElementById('textRobotEmphasized4').style.fontSize="18px";
-
-
-
-
-
-			//  alert("new code here.");
-
-			//  "linkAndrCoreP1" 
-			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
-
-			//  "textAndrCore1Caption"
-			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized1" 
-			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized2" 
-			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized3" 
-			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
-
-
-
-
-
-
-
-			//  id="linkGerberViewer" 
-			//  size:16px
-			document.getElementById('linkGerberViewer').style.fontSize="28px";
-
-			//  id="pdfIcon" 
-			//  width="80" height="80" 
-			document.getElementById("pdfIcon").style.width="96px"; 
-			document.getElementById("pdfIcon").style.height="96px";
-
-			//  id="textGerberViewerCaption" 
-			//  14px
-			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
-
-
-
-
-
-
-			//  id="linkCrudP1video"
-			//  16px
-			document.getElementById('linkCrudP1video').style.fontSize="28px";
-
-			//  id="textCrudP1Caption"
-			//  14px
-			document.getElementById('textCrudP1Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP1"
-			//  16px
-			document.getElementById('linkCrudP1').style.fontSize="28px";
-
-
-			//  id="textCrudP1bCaption"
-			//  14px
-			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP2"
-			//  16px
-			document.getElementById('linkCrudP2').style.fontSize="28px";
-
-			//  id="textCrudP2Caption"
-			//  14px
-			document.getElementById('textCrudP2Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP3"
-			//  16px
-			document.getElementById('linkCrudP3').style.fontSize="28px";
-
-			//  id="textCrudP3Caption"
-			//  14px
-			document.getElementById('textCrudP3Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP4"
-			//  16px
-			document.getElementById('linkCrudP4').style.fontSize="28px";
-
-
-			//  id="textCrudP4Caption"
-			//  14px
-			document.getElementById('textCrudP4Caption').style.fontSize="24px";
-
-
-
-
-
-			//  id="linkCrudP5"
-			//  16px
-			document.getElementById('linkCrudP5').style.fontSize="28px";
-
-
-			//  id="textCrudP5Caption"
-			//  14px
-			document.getElementById('textCrudP5Caption').style.fontSize="24px";
-
-
-
-
-
-
-
-			//  id="textSqliteLogoPublicDomain"
-			//  14px
-			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
 			
 
-			//  "textSqliteLogoPublicDomain0"
-			document.getElementById('textSqliteLogoPublicDomain0').style.fontSize="24px";
+
+
+
+
+
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		//  id="grid-containerCloud"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 330vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+
+	 }
+
+         if(isFirefox) {
+		//  alert("Firefox Android     screen width EQUAL to 360 "); 
+
+
+		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+		//  id="textIntroCaption"
+		//  0.75em
+		document.getElementById('textIntroCaption').style.fontSize="0.3em";
+
+
+		document.getElementById('textIntroduction').style.fontSize="3.5em";
+		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
 			
-			// "textSqliteLogoPublicDomain1"
-			document.getElementById('textSqliteLogoPublicDomain1').style.fontSize="24px";
 
 
 
-			//  id="textSqliteLogoDownloadHere"
-			//  14px
-			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
 
 
-			//  id="textSqliteDownloadHere"
-			//  14px
-			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
 
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
 
+		//  id="grid-containerCloud"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-			//  id="linkSVGgraphics"
-			//  16px
-			document.getElementById('linkSVGgraphics').style.fontSize="28px";
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 180vh 0.3vh";
 
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
 
-			//  id="textSVGgraphicsCaption"
-			//  14px
-			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
 
 
-			//  id="linkSVGanimation"
-			//  16px
-			document.getElementById('linkSVGanimation').style.fontSize="28px";
 
-			//  id="textSVGanimationCaption"
-			//  14px
-			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
+	 }
 
-			//  id="textAnimationEmphasized1"
-			//  15px
-			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
+         if(isAndroidEdge) {
+		  alert("Edge Android     screen width EQUAL to 360 "); 
 
-			//  id="textAnimationEmphasized2"
-			//  15px
-			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
+		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
 
-			//  id="textAnimationEmphasized3"
-			//  15px
-			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
+		//  id="textIntroCaption"
+		//  0.75em
+		document.getElementById('textIntroCaption').style.fontSize="0.7em";
 
-			//  id="textAnimationEmphasized4"
-			//  15px
-			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
 
-			//  id="textAnimationEmphasized5"
-			//  15px
-			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
+		document.getElementById('textIntroduction').style.fontSize="2.5em";
+		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
 
 
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
 
-			//  id="linkRayTraceGraphics"
-			//  16px
-			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
 
-			//  id="textRayTraceGraphicsCaption"
-			//  14px
-			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
 
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
 
 
 
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="128px"; 
-			document.getElementById("cameraIcon").style.height="128px";
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
 
-			//  id="linkPhotoGallery"
-			//  16px
-			document.getElementById('linkPhotoGallery').style.fontSize="28px";
 
 
-			//  id="textPhotoGalleryCaption"
-			//  14px
-			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
 
-			document.getElementById('textPhotoGalleryCaption').innerHTML=
-				'<i>A collection of photos arranged in a grid pattern using CSS GRID.' + 
-				'<br>' + 
-				'Includes references.</i>';
 
 
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
 
+		//  id="grid-containerCloud"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 330vh 0.3vh";
 
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
 
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-			//  id="linkColorPicker"
-			//  16px
-			document.getElementById('linkColorPicker').style.fontSize="28px";
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
-			//  id="textColorPickerCaption"
-			//  14px;
-			document.getElementById('textColorPickerCaption').style.fontSize="24px";
 
 
-			document.getElementById('textColorPickerCaption').innerHTML=
-				'<i>Color picker which allows visual comparison of two colors. ' + 
-				'<br>' + 
-				'Gives a visual check of the contrast between the two. ' +  
-				'Zoom sample text ' + 
-				'<br>' + 
-				'up or down in size to check its appearance. ' + 
-				'Includes references.</i>';
 
+         }
 
+         break;
+      case 375:      //  iPad, iPhone
+      	 //   alert("using screen width = 375" + "<br>");
 
+	 if (isSafari && isiPhone) {
+		//  alert("Safari iPhone     screen width EQUAL to 375 "); 
 
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows='0.3vh 65vh 0.3vh';
 
-			//  id="svgCloudSun1" 
-     			//  width   80      height   80
-			document.getElementById("svgCloudSun1").style.width="96px"; 
-			document.getElementById("svgCloudSun1").style.height="96px";
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 15vh 0.3vh";
 
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
 
-			//  id="linkNwsWeather"
-			//  16px
-			document.getElementById('linkNwsWeather').style.fontSize="28px";
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
 
-			//  id="textNwsWeatherCaption"
-			//  14px;
-			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
 
-			document.getElementById('textNwsWeatherCaption').innerHTML=
-				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
-				'<br>' + 
-				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
-				'using their public REST API.' + 
-				'<br>' + 
-				'Includes references.</i>';
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
 
+	 }
 
 
 
+         break;
+      case 390:      //  iPad, iPhone
+      	 //   alert("using screen width = 390" + "<br>");
 
-		//  "linkAngularJS1"
-		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
+	if (isSafari && isiPhone) {
+		//  alert("Safari iPhone     screen width EQUAL to 390 "); 
 
-		//  "textAngularJS1Caption"
-		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
 
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
 
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
 
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
 
-		//  "linkVueJS1"
-		document.getElementById('linkVueJS1').style.fontSize="28px"; 
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
 
-		//  "textVueJS1Caption"
-		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
-
-
-
-
-		//  alert("new code TCA1 here.");
-
-		//  "linkTCA1"
-		document.getElementById('linkTCA1').style.fontSize="24px"; 
-
-		//  "textTCA1Caption"
-		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized1"
-		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized2"
-		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized3"
-		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized4"
-		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized5"
-		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
-
-
-
-		//  "linkTCA2"
-		document.getElementById('linkTCA2').style.fontSize="24px"; 
-
-		//  "linkXunit1"
-		document.getElementById('linkXunit1').style.fontSize="24px"; 
-
-		//  "textTCA2Caption"
-		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized1"
-		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized2"
-		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized3"
-		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized4"
-		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
-
-
-
-
-
-
-
-
-		//  "textWebApp1Link"
-		document.getElementById('textWebApp1Link').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption1"
-		document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
-
-		//  "textWebApp1Caption2"
-		document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized1" 
-		document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized2" 
-		document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized3" 
-		document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized4" 
-		document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized5" 
-		document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-
-		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="20px"; 
-
-		//  "textFizzBuzzCaption2"
-		document.getElementById('textFizzBuzzCaption2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized1" 
-		document.getElementById('textFizzBuzzCaption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized2" 
-		document.getElementById('textFizzBuzzCaption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized3" 
-		document.getElementById('textFizzBuzzCaption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized4" 
-		document.getElementById('textFizzBuzzCaption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized5" 
-		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-
-
-			//  id="linkOnTheWay3"
-			//  16px
-			document.getElementById('linkOnTheWay3').style.fontSize="28px";
-
-			//  id="linkOnTheWay4"
-			//  16px
-			document.getElementById('linkOnTheWay4').style.fontSize="28px";
-
-			//  id="linkOnTheWay5"
-			//  16px
-			document.getElementById('linkOnTheWay5').style.fontSize="28px";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			//  id="copyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="38px";
-
- 
-			//  id="bestResultsMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="38px";
-
-
-			//  id="iconsProvidedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
-
- 
-
-			//  id="iconsCopyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
-			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
-
-
-
-			//  id="iconsModifiedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				//  document.getElementById("svgVueJS1").style.width="47px"; 
-				//  document.getElementById("svgVueJS1").style.height="47px";
-
-
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				//  document.getElementById("svgAngularJS1").style.width="47px"; 
-				//  document.getElementById("svgAngularJS1").style.height="47px";
-//  112    123
-
-		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
-
-		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
-
-
-
-
-		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
-
-		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-
-
-
-
-
-
-
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
-
-
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-
-	//    id="svgAngularJS1"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-        document.getElementById("svgAngularJS1").style.height="64px";
-
-
-	//    id="svgVue1"
-	document.getElementById("svgVue1").style.width="64px"; 
-        document.getElementById("svgVue1").style.height="64px";
-
-
-
-
-
-//  *** size adjustments for this are not working
-//  *** need to check for typo
-
-			//  id="textGraphApp1"
-			//  16px;">
-			//  <b>Using the Canvas in C#</b>
-			document.getElementById('textGraphApp1').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption"
-			//  14px
-			document.getElementById('textGraphAppCaption').style.fontSize="28px";
-
-
-			//  id="textIntroductionPre"
-			//  10px
-			document.getElementById('textIntroductionPre').style.fontSize="24px";
-
-
-			//  id="textGraphAppCaption2"
-			//  10px
-			//  <b>Operating System:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption3"
-			//  10px
-			//  <b>Windows 7 - 10</b>
-			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption4"
-			//  10px
-			//  <b>Development IDE:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption4').innerHTML=
-				'<b>Development IDE:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption5"
-			//  10px
-			//  <b>Visual Studio</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption5').innerHTML=
-				'<b>Visual Studio</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption6"
-			//  10px
-			//  <b>Language:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption6').innerHTML=
-				'<b>Language:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption7"
-			//  10px
-			//  <b>C#</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption7').innerHTML=
-				'<b>C#</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption8"
-			//  10px
-			//  <b>Demo features:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption8').innerHTML=
-				'<b>Demo features:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;';
-
-
-
-
-
-
-
-
-
-			//  id="textGraphAppCaption9"
-			//  10px
-			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
-			//  &nbsp;&nbsp;&nbsp;<br>
-			//  &#x2022; 2. Data inspection via zoom in or zoom out.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 3. Dynamic repositioning of the viewing
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  window.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 4. Selectable data cursors.
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 5. Step through the data using the cursor.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  </b>
-
-
-
-			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
-
-
-			document.getElementById('textGraphAppCaption9').innerHTML= 
-				'<b>' + 
-				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
-				'&nbsp;&nbsp;<br>' + 
-				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 3. Dynamic repositioning of the viewing' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'window.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 4. Selectable data cursors.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 5. Step through the data using the cursor.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;' + 
-				'</b>';
-
-
-
-
-
-
-
-
-
-		   
-			//	document.getElementById('textSVGanimationCaption').innerHTML=
-			//	'<i>It is possible to animate an SVG. One way<br>' + 
-			//	'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			//	'manipulate the <span id="textAnimationEmphasized2" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			//	'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			//	'using SVG</i></b></span>. They run inside a ' + 
-			//	'<span id="textAnimationEmphasized4" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			//	'browser</i></b></span>, and were written in ' + 
-			//	'<span id="textAnimationEmphasized5" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			//	'short discussion of SVG animation<br>' + 
-			//	'with references and examples.<br>' + 
-			//	'Includes a walkthrough of the<br>' + 
-			//	'code for a simple animation.' + 
-			//	'</i>';
-
-
-
-
-
-
-
-
-		   //  id="linkPrivacyPolicy" 
-		   //  14px
-		   document.getElementById('linkPrivacyPolicy').style.fontSize="18px"; 
-
-
-
-
-
-
-           //   end        Firefox under Win10
-        }
-
-	//   end        Firefox 
-} 
-
-
-
-
-
-
-if (isChrome) { 
-
-	if (isAndroid) {
-		//   begin    Chrome under Android
-
-			//  alert("using the Chrome browser under Android");
-			//  theBrowserIsUnknown = false;
-
-
-			document.getElementById('textIntroCaption').innerHTML=
-				"<i>Preview rendering of printed circuit<br>" + 
-				"board produced by parsing the data files. Rendered<br>" + 
-				"using SVG graphics. Early version of the software.</i>";
-
-
-			//  id="textIntroCaption"
-			//  Original    12px
-			document.getElementById('textIntroCaption').style.fontSize="18px";
-
-
-
-
-			// Necessary for Chrome Android
-			//   id="verticalSpacer0" 
-			//   19px
-			document.getElementById('verticalSpacer0').innerHTML="<br><br>";
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-           		document.getElementById("BootstrapIcon").style.height="64px";
-
-
-
-
-			//  id="pdfIcon" 
-			//  width="16" height="16" 
-			document.getElementById("pdfIcon").style.width="64px"; 
-           		document.getElementById("pdfIcon").style.height="64px";
-
-
-
-			//    id="mp4Icon"
-			//    width="16" height="16" 
-			document.getElementById("mp4Icon").style.width="64px"; 
-           		document.getElementById("mp4Icon").style.height="64px";
-
-
-			//    id="mp4Icon2"
-			//    width="16" height="16" 
-			document.getElementById("mp4Icon2").style.width="64px"; 
-           		document.getElementById("mp4Icon2").style.height="64px";
-
-
-
-
-			//    id="cameraIcon"
-			//    width="36" height="36" 
-			document.getElementById("cameraIcon").style.width="64px"; 
-           		document.getElementById("cameraIcon").style.height="64px";
-
-
-
-
-			//  id="textPhotoGalleryCaption" style="color:Grey;font-
-			//  size   12px
-
-			//    ><i>A collection of photos arranged in a<br>
-			//   grid pattern using CSS GRID.<br>
-			//  Includes references.
-			//  </i>
-
-
-
-
-
- 			document.getElementById('textIntroduction').style.fontSize = "12px"; 
-
-			document.getElementById('textIntroductionEmphasized1').style.fontSize = 
-				"13px"; 
-
-			document.getElementById('textIntroductionEmphasized2').style.fontSize = 
-				"13px";
-
-
-			document.getElementById('textSVGanimationCaption').innerHTML=
-			'<i>It is possible to animate an SVG. One way<br>' + 
-			'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			'manipulate the <span id="textAnimationEmphasized2" ' + 
-			'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			'using SVG</i></b></span>. They run inside a ' + 
-			'<span id="textAnimationEmphasized4" ' + 
-			'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			'browser</i></b></span>, and were written in ' + 
-			'<span id="textAnimationEmphasized5" ' + 
-			'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			'short discussion of SVG animation<br>' + 
-			'with references and examples.<br>' + 
-			'Includes a walkthrough of the<br>' + 
-			'code for a simple animation.' + 
-			'</i>';
- 
-
-
-
-	//  id="textRobotEmphasized2" 
-	//  12px
-	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
-	document.getElementById('textRobotEmphasized2').innerHTML=
-	'<i>http://developer.android.com/distribute/<br>' + 
-	'googleplay/promote/brand.html</i>';
-
-
-
-
-if (deviceScreenWidth == 1143) {
-
-	//  //  alert("Chrome Android     screen width EQUAL to 1143 "); 
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 170vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-
-
-	//    id="svgAngularJS1"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-        document.getElementById("svgAngularJS1").style.height="64px";
-
-
-	//    id="svgVue1"
-	document.getElementById("svgVue1").style.width="64px"; 
-        document.getElementById("svgVue1").style.height="64px";
-
-
-
-   //   end     screen width EQUAL to 1143
-} else if (deviceScreenWidth == 412) {
-
-	//  alert("Chrome Android  -  screen width EQUAL to 412 "); 
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="64px"; 
-				document.getElementById("svgAngularJS1").style.height="64px";
-
-				//  id="svgVue1"
-				//  width="84" height="92"
-			//	document.getElementById("svgVue1").style.width="64px"; 
-			//	document.getElementById("svgVue1").style.height="64px";
-
-
-
-	  document.getElementById('textIntroduction').style.fontSize="38px";
-	  document.getElementById('textIntroductionEmphasized1').style.fontSize="38px";
-	  document.getElementById('textIntroductionEmphasized2').style.fontSize="38px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	  document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	  document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	//  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-
-
-   //   end     screen width EQUAL to 412
-} else if (deviceScreenWidth == 360) {
-
-	//  alert("Chrome Android     screen width EQUAL to 360 "); 
-
-	document.getElementById('textIntroduction').style.fontSize="28px";
-	document.getElementById('textIntroductionEmphasized1').style.fontSize="28px";
-	document.getElementById('textIntroductionEmphasized2').style.fontSize="28px";
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	//  document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	//  document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
-
-
-   //   end     screen width EQUAL to 360
-} else if (deviceScreenWidth == 100) {
-
-	//  alert("Chrome Android     screen width EQUAL to 100 "); 
-
-
-   //   end     screen width EQUAL to 100
-} else {
-
-	//  //  alert("Chrome Android     screen width EQUAL to all others "); 
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 75vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 330vh 0.3vh";
-
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-
-	//  adjust the size of the
-	//  Bootstrap icon
-	//  id="BootstrapIcon"           
-	document.getElementById("BootstrapIcon").style.width="96px"; 
-	document.getElementById("BootstrapIcon").style.height="96px";
-
-
-   //   end     screen width - others
-}
-
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-
-
-           	//   end       Chrome under Android
-         } else {
-			//   begin    Chrome others
-
-			//  alert("using the Chrome browser on others");
-			//  theBrowserIsUnknown = false;
-
-
-
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="72px";
-
-
-
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
-
-			document.getElementById('textIntroduction').style.fontSize="68px";
-
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="69px";
-
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="69px";
-
-
-
-
-			//   id="imagePcbIntro" 
-			//  height="162"   //  202
-			//  width="375"    //  468
-			document.getElementById("imagePcbIntro").style.height="303px";
-			document.getElementById("imagePcbIntro").style.width="702px"; 
-
-
-			//  id="textIntroCaption"
-			//  Original    12px
-			document.getElementById('textIntroCaption').style.fontSize="18px";
-
-
-
-
-
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="128px"; 
-			document.getElementById("BootstrapIcon").style.height="128px";
-
-
-
-
-			//  id="textRobotCaption1" 
-			//  12px
-			document.getElementById('textRobotCaption1').style.fontSize="18px";
-
-			//  id="textRobotEmphasized1" 
-			//  12px
-			document.getElementById('textRobotEmphasized1').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption2" 
-			//  12px
-			document.getElementById('textRobotCaption2').style.fontSize="18px";
-
-			//  id="textRobotEmphasized2" 
-			//  12px
-			document.getElementById('textRobotEmphasized2').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption3" 
-			//  12px
-			document.getElementById('textRobotCaption3').style.fontSize="18px";
-
-			//  id="textRobotEmphasized3" 
-			//  12px
-			document.getElementById('textRobotEmphasized3').style.fontSize="18px";
-
-
-
-			//  id="textRobotCaption4" 
-			//  12px
-			document.getElementById('textRobotCaption4').style.fontSize="18px";
-
-			//  id="textRobotEmphasized4" 
-			//  12px
-			document.getElementById('textRobotEmphasized4').style.fontSize="18px";
-
-
-
-
-			//  alert("new code here.");
-
-			//  "linkAndrCoreP1" 
-			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
-
-			//  "textAndrCore1Caption"
-			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized1" 
-			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized2" 
-			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized3" 
-			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
-
-
-
-			//  id="linkGerberViewer" 
-			//  size:16px
-			document.getElementById('linkGerberViewer').style.fontSize="28px";
-
-			//  id="pdfIcon" 
-			//  width="80" height="80"    
-			//  document.getElementById("pdfIcon").style.width="96px"; 
-			//  document.getElementById("pdfIcon").style.height="96px";
-
-			//  id="textGerberViewerCaption" 
-			//  14px
-			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
-
-
-
-
-
-
-			//  id="linkCrudP1video"
-			//  16px
-			document.getElementById('linkCrudP1video').style.fontSize="28px";
-
-			//  id="textCrudP1Caption"
-			//  14px
-			document.getElementById('textCrudP1Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP1"
-			//  16px
-			document.getElementById('linkCrudP1').style.fontSize="28px";
-
-
-			//  id="textCrudP1bCaption"
-			//  14px
-			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP2"
-			//  16px
-			document.getElementById('linkCrudP2').style.fontSize="28px";
-
-			//  id="textCrudP2Caption"
-			//  14px
-			document.getElementById('textCrudP2Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP3"
-			//  16px
-			document.getElementById('linkCrudP3').style.fontSize="28px";
-
-			//  id="textCrudP3Caption"
-			//  14px
-			document.getElementById('textCrudP3Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP4"
-			//  16px
-			document.getElementById('linkCrudP4').style.fontSize="28px";
-
-
-			//  id="textCrudP4Caption"
-			//  14px
-			document.getElementById('textCrudP4Caption').style.fontSize="24px";
-
-
-			//  id="linkCrudP5"
-			//  16px
-			document.getElementById('linkCrudP5').style.fontSize="28px";
-
-
-			//  id="textCrudP5Caption"
-			//  14px
-			document.getElementById('textCrudP5Caption').style.fontSize="24px";
-
-
-
-
-
-
-
-
-
-
-
-			//  id="textSqliteLogoPublicDomain0"
-			//  14px
-			document.getElementById('textSqliteLogoPublicDomain0').style.fontSize="24px";
-
-			//  id="textSqliteLogoPublicDomain1"
-			//  14px
-			document.getElementById('textSqliteLogoPublicDomain1').style.fontSize="24px";
-
-
-
-			//  id="textSqliteLogoPublicDomain"
-			//  14px
-			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
-
-
-			//  id="textSqliteLogoDownloadHere"
-			//  14px
-			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
-
-
-			//  id="textSqliteDownloadHere"
-			//  14px
-			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
-
-
-
-
-			//  id="linkSVGgraphics"
-			//  16px
-			document.getElementById('linkSVGgraphics').style.fontSize="28px";
-
-
-			//  id="textSVGgraphicsCaption"
-			//  14px
-			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
-
-
-
-			//  id="linkSVGanimation"
-			//  16px
-			document.getElementById('linkSVGanimation').style.fontSize="28px";
-
-			//  id="textSVGanimationCaption"
-			//  14px
-			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
-
-
-
-
-			//  id="textAnimationEmphasized1"
-			//  15px
-			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized2"
-			//  15px
-			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized3"
-			//  15px
-			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized4"
-			//  15px
-			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized5"
-			//  15px
-			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
-
-
-
-
-			//  id="linkRayTraceGraphics"
-			//  16px
-			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
-
-			//  id="textRayTraceGraphicsCaption"
-			//  14px
-			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
-
-
-
-
-
-
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="96px"; 
-			document.getElementById("cameraIcon").style.height="96px";
-
-			//  id="linkPhotoGallery"
-			//  16px
-			document.getElementById('linkPhotoGallery').style.fontSize="28px";
-
-			//  id="textPhotoGalleryCaption"
-			//  14px
-			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
-
-			document.getElementById('textPhotoGalleryCaption').innerHTML=
-				'<i>A collection of photos arranged in a grid pattern using CSS GRID.' + 
-				'<br>' + 
-				'Includes references.</i>';
-
-
-
-
-
-
-
-
-
-
-
-
-			//  id="linkColorPicker"
-			//  16px
-			document.getElementById('linkColorPicker').style.fontSize="28px";
-
-			//  id="textColorPickerCaption"
-			//  14px;
-			document.getElementById('textColorPickerCaption').style.fontSize="24px";
-
-			document.getElementById('textColorPickerCaption').innerHTML=
-				'<i>Color picker which allows visual comparison of two colors. ' + 
-				'<br>' + 
-				'Gives a visual check of the contrast between the two. ' +  
-				'Zoom sample text ' + 
-				'<br>' + 
-				'up or down in size to check its appearance. ' + 
-				'Includes references.</i>';
-
- 
-
-
-			//  id="svgCloudSun1" 
-     			//  width   80      height   80
-			document.getElementById("svgCloudSun1").style.width="96px"; 
-			document.getElementById("svgCloudSun1").style.height="96px";
-
-			//  id="linkNwsWeather"
-			//  16px
-			document.getElementById('linkNwsWeather').style.fontSize="28px";
-
-			//  id="textNwsWeatherCaption"
-			//  14px;
-			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
-
-			document.getElementById('textNwsWeatherCaption').innerHTML=
-				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
-				'<br>' + 
-				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
-				'using their public REST API.' + 
-				'<br>' + 
-				'Includes references.</i>';
-
-
-
-
-
-		//  "linkAngularJS1"
-		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
-
-		//  "textAngularJS1Caption"
-		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
-
-
-
-
-		//  "linkVueJS1"
-		document.getElementById('linkVueJS1').style.fontSize="28px"; 
-
-		//  "textVueJS1Caption"
-		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
-
-
-
-
-		//  alert("new code here.");
-
-		//  "linkTCA1"
-		document.getElementById('linkTCA1').style.fontSize="24px"; 
-
-		//  "textTCA1Caption"
-		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized1"
-		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized2"
-		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized3"
-		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized4"
-		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized5"
-		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
-
-
-
-		//  "linkTCA2"
-		document.getElementById('linkTCA2').style.fontSize="24px"; 
-
-		//  "linkXunit1"
-		//  16px
-		document.getElementById('linkXunit1').style.fontSize="24px"; 
-
-		//  "textTCA2Caption"
-		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized1"
-		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized2"
-		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized3"
-		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized4"
-		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
-
-
-
-
-		//  "textWebApp1Link"
-		document.getElementById('textWebApp1Link').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption1"
-		document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
-
-		//  "textWebApp1Caption2"
-		document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized1" 
-		document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized2" 
-		document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized3" 
-		document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized4" 
-		document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized5" 
-		document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-
-		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="20px"; 
-
-		//  "textFizzBuzzCaption2"
-		document.getElementById('textFizzBuzzCaption2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized1" 
-		document.getElementById('textFizzBuzzCaption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized2" 
-		document.getElementById('textFizzBuzzCaption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized3" 
-		document.getElementById('textFizzBuzzCaption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized4" 
-		document.getElementById('textFizzBuzzCaption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized5" 
-		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-
-			//  id="linkOnTheWay3"
-			//  16px
-			document.getElementById('linkOnTheWay3').style.fontSize="28px";
-
-			//  id="linkOnTheWay4"
-			//  16px
-			document.getElementById('linkOnTheWay4').style.fontSize="28px";
-
-			//  id="linkOnTheWay5"
-			//  16px
-			document.getElementById('linkOnTheWay5').style.fontSize="28px";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			//  id="copyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="38px";
-
- 
-			//  id="bestResultsMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="38px";
-
-
-			//  id="iconsProvidedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
-
- 
-
-			//  id="iconsCopyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
-			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
-
-
-
-			//  id="iconsModifiedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
-
-
-
-
-
-
-
-
-
-
-			//  id="textGraphApp1"
-			//  16px;">
-			//  <b>Using the Canvas in C#</b>
-			document.getElementById('textGraphApp1').style.fontSize="28px";
-
-
-
-			//  id="textGraphAppCaption"
-			//  14px
-			document.getElementById('textGraphAppCaption').style.fontSize="24px";
-
-
-			//  id="textIntroductionPre"
-			//  10px
-			document.getElementById('textIntroductionPre').style.fontSize="20px";
-
-
-			//  id="textGraphAppCaption2"
-			//  10px
-			//  <b>Operating System:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption3"
-			//  10px
-			//  <b>Windows 7 - 10</b>
-			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption4"
-			//  10px
-			//  <b>Development IDE:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption4').innerHTML=
-				'<b>Development IDE:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption5"
-			//  10px
-			//  <b>Visual Studio</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption5').innerHTML=
-				'<b>Visual Studio</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption6"
-			//  10px
-			//  <b>Language:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption6').innerHTML=
-				'<b>Language:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption7"
-			//  10px
-			//  <b>C#</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption7').innerHTML=
-				'<b>C#</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption8"
-			//  10px
-			//  <b>Demo features:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption8').innerHTML=
-				'<b>Demo features:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;';
-
-
-
-
-
-
-
-
-
-			//  id="textGraphAppCaption9"
-			//  10px
-			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
-			//  &nbsp;&nbsp;&nbsp;<br>
-			//  &#x2022; 2. Data inspection via zoom in or zoom out.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 3. Dynamic repositioning of the viewing
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  window.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 4. Selectable data cursors.
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 5. Step through the data using the cursor.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  </b>
-
-
-
-			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
-
-
-			document.getElementById('textGraphAppCaption9').innerHTML= 
-				'<b>' + 
-				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
-				'&nbsp;&nbsp;<br>' + 
-				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 3. Dynamic repositioning of the viewing' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'window.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 4. Selectable data cursors.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 5. Step through the data using the cursor.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;' + 
-				'</b>';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		   
-			//	document.getElementById('textSVGanimationCaption').innerHTML=
-			//	'<i>It is possible to animate an SVG. One way<br>' + 
-			//	'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			//	'manipulate the <span id="textAnimationEmphasized2" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			//	'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			//	'using SVG</i></b></span>. They run inside a ' + 
-			//	'<span id="textAnimationEmphasized4" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			//	'browser</i></b></span>, and were written in ' + 
-			//	'<span id="textAnimationEmphasized5" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			//	'short discussion of SVG animation<br>' + 
-			//	'with references and examples.<br>' + 
-			//	'Includes a walkthrough of the<br>' + 
-			//	'code for a simple animation.' + 
-			//	'</i>';
-
-
-
-
-
-
-
-				//  id="textIntroduction" 
-				//      Original     14px    
-				//  document.getElementById('textIntroduction').style.fontSize="96px";
-
-
-				//  id="textIntroductionEmphasized1"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized1').style.
-				//  fontSize="97px";
-
-
-				//  id="textIntroductionEmphasized2"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized2').style.
-				//  fontSize="97px";
-
-
-				//  document.getElementById('textIntroCaption').innerHTML="
-				//  <i>Preview rendering of printed circuit<br>
-				//  board produced by parsing the data files. Rendered using SVG graphics. 
-				//  Early version of the software.</i>";
-
-
-
-
-
-
-				//  id="pdfIcon" 
-				//  width="16" height="16"   //  128
-				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//  document.getElementById("pdfIcon").style.height="128px";
-
-
-						   
-
-
-
-				//    id= textSVGanimationCaption
-				//    color Grey     font-size 12px
-
-				//  document.getElementById
-				//  ('textSVGanimationCaption').
-				//  style.fontSize="78px"
-
-
-
-				//    id="textAnimationEmphasized1" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized2" 
-				//    color Navy        font-size 11px
-
-
-				//    id="textAnimationEmphasized3" 
-				//    color Navy       font-size 11px
-
-
-				//    id="textAnimationEmphasized4" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized5" 
-				//    color Navy     font-size 11px
-
-
-				//    svg id="mp4Icon"
-				//    width="16" height="16" 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.width="128px"; 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.height="128px";
-
-
-
-
-                               //  id="vueJSlogoMsg"
-		               document.getElementById('vueJSlogoMsg').style.fontSize="18px"; 
-
-                               //  id="vueIconModifiedMsg"
-		               document.getElementById('vueIconModifiedMsg').style.fontSize="18px"; 
-
-                               //  id="vueTermsMsg"
-		               document.getElementById('vueTermsMsg').style.fontSize="18px"; 
-
-                               //  id="vueLocatedMsg"
-		               document.getElementById('vueLocatedMsg').style.fontSize="18px"; 
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-			//	document.getElementById("svgVueJS1").style.width="47px"; 
-			//	document.getElementById("svgVueJS1").style.height="47px";
-
-
-
-
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="47px"; 
-				document.getElementById("svgAngularJS1").style.height="47px";
-//  112    123
-
-
-		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
-
-		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
-
-
-
-		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
-
-		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-
-
-
-		//  "angularjsCreativeCommonsLinkMsg"
-		//  12px
-		//  
-//  temp comment		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="96px"; 
-
-//  id="angularJScreativeCommonsLinkMsg"
-//  the font size is not changing
-
-
-
-		   //  id="linkPrivacyPolicy" 
-		   //  14px
-		   document.getElementById('linkPrivacyPolicy').style.fontSize="18px"; 
-
-
-
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 280vh 0.3vh";
-
-
-
-
-	//    id="svgAngularJS1"
-	document.getElementById("svgAngularJS1").style.width="64px"; 
-        document.getElementById("svgAngularJS1").style.height="64px";
-
-
-	//    id="svgVue1"
-	document.getElementById("svgVue1").style.width="64px"; 
-        document.getElementById("svgVue1").style.height="64px";
-
-
-
-
-    		//   end     Chrome others
-		}
-
-	//   end        Chrome
-} 
-
-
-
-
-if (isSafari) { 
-
-	if (isiPad) { 
-
-		//  alert("using the Safari browser on an iPad");
-		//  theBrowserIsUnknown = false;
-
-
-
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="48px";
-
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-			document.getElementById("BootstrapIcon").style.height="64px";
-
-
-
-
-
-
-
-
-
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
-
-
-
-			//  id="copyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="24px";
-
- 
-			//  id="bestResultsMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="24px";
-
-
-			//  id="iconsProvidedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="24px";
-
- 
-
-			//  id="iconsCopyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
-			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="24px";
-
-
-
-			//  id="iconsModifiedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="24px";
-
-
-
-		   
-			//	document.getElementById('textSVGanimationCaption').innerHTML=
-			//	'<i>It is possible to animate an SVG. One way<br>' + 
-			//	'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			//	'manipulate the <span id="textAnimationEmphasized2" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			//	'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			//	'using SVG</i></b></span>. They run inside a ' + 
-			//	'<span id="textAnimationEmphasized4" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			//	'browser</i></b></span>, and were written in ' + 
-			//	'<span id="textAnimationEmphasized5" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			//	'short discussion of SVG animation<br>' + 
-			//	'with references and examples.<br>' + 
-			//	'Includes a walkthrough of the<br>' + 
-			//	'code for a simple animation.' + 
-			//	'</i>';
-
-
-
-
-
-
-
-				//  id="textIntroduction" 
-				//      Original     14px    
-				//  document.getElementById('textIntroduction').style.fontSize="96px";
-
-
-				//  id="textIntroductionEmphasized1"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized1').style.
-				//  fontSize="97px";
-
-
-				//  id="textIntroductionEmphasized2"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized2').style.
-				//  fontSize="97px";
-
-
-				//  document.getElementById('textIntroCaption').innerHTML="
-				//  <i>Preview rendering of printed circuit<br>
-				//  board produced by parsing the data files. Rendered using SVG graphics. 
-				//  Early version of the software.</i>";
-
-
-
-				//  id="textIntroCaption"
-				//  Original    12px
-				//  document.getElementById('textIntroCaption').style.fontSize="78px";
-
-
-				//  id="pdfIcon" 
-				//  width="16" height="16" 
-				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//  document.getElementById("pdfIcon").style.height="128px";
-
-
-						   
-
-
-
-				//    id= textSVGanimationCaption
-				//    color Grey     font-size 12px
-
-				//  document.getElementById
-				//  ('textSVGanimationCaption').
-				//  style.fontSize="78px";
-
-
-
-				//    id="textAnimationEmphasized1" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized2" 
-				//    color Navy        font-size 11px
-
-
-				//    id="textAnimationEmphasized3" 
-				//    color Navy       font-size 11px
-
-
-				//    id="textAnimationEmphasized4" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized5" 
-				//    color Navy     font-size 11px
-
-
-				//    svg id="mp4Icon"
-				//    width="16" height="16" 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.width="128px"; 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.height="128px";
-
-
-				//    id="cameraIcon"
-				//    width="36" height="36" 
-				document.getElementById("cameraIcon").style.width="64px"; 
-           			document.getElementById("cameraIcon").style.height="64px";
-
-
-
-if (deviceScreenWidth == 375) {
-
-	//  alert("Safari iPad     screen width EQUAL to 375 "); 
-
-
-
-   //   end     screen width EQUAL to 375
-} else if (deviceScreenWidth == 414) {
-
-	//  alert("Safari iPhone     screen width EQUAL to 414 "); 
-
-
-   //   end     screen width EQUAL to 414
-} else if (deviceScreenWidth == 390) {
-
-	//  alert("Safari iPad     screen width EQUAL to 390 "); 
-
-
-   //   end     screen width EQUAL to 390
-} else if (deviceScreenWidth == 414) {
-
-	//  alert("Safari iPad     screen width EQUAL to 414 "); 
-
-
-   //   end     screen width EQUAL to 414
-} else if (deviceScreenWidth == 768) {
-
-	 // alert("Safari iPad     screen width EQUAL to 768 "); 
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-   //   end     screen width EQUAL to 768
-} else if (deviceScreenWidth == 820) {
-
-	  //  alert("Safari iPad     screen width EQUAL to 820 "); 
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-
-   //   end     screen width EQUAL to 820
-} else if (deviceScreenWidth == 100) {
-
-	//  alert("Safari iPad     screen width EQUAL to 100 "); 
-
-
-   //   end     screen width EQUAL to 100
-} else {
-
-	 // alert("Safari iPad     screen width EQUAL to all others "); 
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-   //   end     screen width - others
-}
-
-
-
-
-
-	  //   end        isiPad
-	} else if (isiPhone) { 
-
-		//  alert("using the Safari browser on an iPhone");
-		//  theBrowserIsUnknown = false;
-
-
-
-if (deviceScreenWidth == 375) {
-  
-	//  alert("Safari iPhone     screen width EQUAL to 375 "); 
-
-
-
-	//  id="textRobotEmphasized2" 
-	//  12px
-	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
-	document.getElementById('textRobotEmphasized2').innerHTML=
-	'<i>http://developer.android.com/distribute/<br>' + 
-	'googleplay/promote/brand.html</i>';
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows='0.3vh 65vh 0.3vh';
-
-
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 15vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-   //   end     screen width EQUAL to 375
-} else if (deviceScreenWidth == 390) {
-
-	//  alert("Safari iPhone     screen width EQUAL to 390 "); 
-
-	//  id="textRobotEmphasized2" 
-	//  12px
-	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
-	document.getElementById('textRobotEmphasized2').innerHTML=
-	'<i>http://developer.android.com/distribute/<br>' + 
-	'googleplay/promote/brand.html</i>';
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-   //   end     screen width EQUAL to 390
-} else if (deviceScreenWidth == 414) {
-
-	//  alert("Safari iPhone     screen width EQUAL to 414 "); 
-
-	//  id="textRobotEmphasized2" 
-	//  12px
-	//  <i>http://developer.android.com/distribute/googleplay/promote/brand.html</i>
-	document.getElementById('textRobotEmphasized2').innerHTML=
-	'<i>http://developer.android.com/distribute/<br>' + 
-	'googleplay/promote/brand.html</i>';
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-
-   //   end     screen width EQUAL to 414
-} else if (deviceScreenWidth == 100) {
-
-	//  alert("Safari iPhone     screen width EQUAL to 100 "); 
-
-
-   //   end     screen width EQUAL to 100
-} else {
-
-	//  alert("Safari iPhone     screen width EQUAL to all others "); 
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
-
-
-
-   //   end     screen width - others
-}
-
-
-
-
-
-	  //   end        isiPhone
-	} else if (isMac) { 
-
-		//  alert("using the Safari browser on a Mac");
-		//  theBrowserIsUnknown = false;
-
-	  //   end        isMac
 	}
 
-	//   end        Safari
-} 
+
+         break;
+     case 408:      //  Android
+     	 //	alert("using screen width = 408" + "<br>");
+
+
+			switch(deviceScreenHeight) {
+				case 929:      
+         				//  alert("using screen width = 408    screen height = 929" + "<br>");
+
+				         if(isFirefox) {
+                     
+	    	  			//	alert("Firefox Android  -  screen width = 408, screen height = 929 "); 
+						document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+						document.getElementById('textIntroduction').style.fontSize="3.5em";
+						document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+						document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+						//  id="androidGraphicsTitle"
+						//  4.125em
+						document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+						//  id="cadGraphicsTitle"
+						//  4.125em
+						document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+						id="graphicsTitle"
+						//  4.125em
+						document.getElementById('graphicsTitle').style.fontSize="4.125em";
+	
+						//  id="databaseGraphicsTitle"
+						//  4.125em
+						document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+						//  id="graphicGraphicsTitle"
+						//  4.125em
+						document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+						//  id="windowsGraphicsTitle"
+						//  4.125em
+						document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+						//  id="miscGraphicsTitle"
+						//  4.125em
+						document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+	
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+						document.getElementById('angularJSlocatedAtMsg').innerHTML=
+							"<center>" + 
+							"Located at" +
+							"<center>";
+			
+			//  id="grid-containerAndroid"
+   			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 120vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 80vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+                
+             
+	 	}
+
+
+
+	         		break;
+      				default:
+   
+				//  end switch
+			}
+                           
+       	 break;
+     case 412:      //  Android
+     		//	alert("using screen width = 412" + "<br>");
+
+         if(isChrome) {
+                     
+	    //	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
+		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+		document.getElementById('textIntroduction').style.fontSize="2.5em";
+		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
 
 
 
 
 
-if (isEdge) { 
 
-	//  alert("using the old Edge browser");
-	//  theBrowserIsUnknown = false;
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+		//  id="grid-containerCloud"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 170vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+                
+             
+	 }
 
 
+
+
+         if(isAndroidEdge) {
+		//  alert("Edge Android     screen width EQUAL to 412 "); 
+
+	 }
+
+                        
+	    	switch(deviceScreenHeight) {
+	    		case 922:      
+         		//	alert("using screen height = 922" + "<br>");
+                    
+	         	break;
+      	    		case 938:      
+         			//  alert("EDGE Android using screen width = 412   screen height = 938" + "<br>"); 
+
+		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+		//  id="textIntroCaption"
+		//  0.75em
+		document.getElementById('textIntroCaption').style.fontSize="0.7em";
+
+
+		document.getElementById('textIntroduction').style.fontSize="2.5em";
+		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+
+
+
+
+
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+		//  id="grid-containerCloud"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 170vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+                
+
+
+	         	break;
+      	     		default:
+                          
+	       		//  end switch
+	 	}
+                    
+         break;
+      case 414:      //  iPad, iPhone
+	//   alert("using screen width = 414" + "<br>");
+
+	if (isSafari && isiPhone) {
+
+		//  alert("Safari iPhone     screen width EQUAL to 414 "); 
+
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+	}
+
+
+        break;
+      case 768:      //  iPad
+      	//   alert("using screen width = 768" + "<br>"); 
+
+	if (isSafari && isiPad) { 
+
+	 	// alert("Safari iPad     screen width EQUAL to 768 "); 
+
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+	}
+
+
+         break;
+      case 820:      //  iPad
+      	//   alert("using screen width = 820" + "<br>"); 
+
+	if (isSafari && isiPad) { 
+		//  alert("Safari iPad     screen width EQUAL to 820 "); 
+
+		//  id="grid-containerAndroid"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
+
+		//  id="grid-containerCAD"
+     		//  grid-template-rows: 0.3vh 135vh 0.3vh
+		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+		//  id="grid-containerDatabase"
+     		//  grid-template-rows: 0.3vh 215vh 0.3vh
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 130vh 0.3vh";
+
+		//  id="grid-containerGraphics"
+     		//  grid-template-rows: 0.3vh 225vh 0.3vh
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
+		//  id="grid-containerMisc"
+     		//  grid-template-rows: 0.3vh 190vh 0.3vh
+		document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 110vh 0.3vh";
+
+	}
+
+         break;
+      case 1133:     //  Android
+      //   alert("using screen width = 1133" + "<br>");
+
+         if(isChrome) {
+            //  alert("Chrome using screen width = 1133" + "<br>");
+         } 
+
+         if(isFirefox) {
+            //	  alert("Firefox using screen width = 1133" + "<br>"); 
+
+
+			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 175vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+
+
+         } 
+
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 1133" + "<br>");
+         } 
+
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 1133" + "<br>"); 
+         } 
+
+
+         break;
+      case 1143:     //  Android
+      //   alert("using screen width = 1143" + "<br>"); 
+
+         if(isChrome) {
+            	//  alert("Chrome using screen width = 1143" + "<br>"); 
+		//  alert("Chrome Android     screen width EQUAL to 1143 "); 
+
+			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+
+
+         } 
+
+         if(isFirefox) {
+            //  alert("Firefox using screen width = 1143"); 
+         } 
+
+         if(isAndroidEdge) {
+            	 // alert("Microsoft Edge (Android) using screen width = 1143"); 
+
+
+			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+
+
+
+         } 
+
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 1143" + "<br>");
+         } 
+
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 1143" + "<br>"); 
+         } 
+
+         break;
+       	 case 1280:     //  Win10
+         	//	alert("using screen width = 1280" + "<br>"); 
+                            
+         		if(isChrome) {
+            			//  alert("Chrome using screen width = 1280" + "<br>");
+
+				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+				document.getElementById('textIntroduction').style.fontSize="2.5em";
+				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+				//  id="androidGraphicsTitle"
+				//  4.125em
+				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="cadGraphicsTitle"
+				//  4.125em
+				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+				id="graphicsTitle"
+				//  4.125em
+				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+				//  id="databaseGraphicsTitle"
+				//  4.125em
+				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="graphicGraphicsTitle"
+				//  4.125em
+				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="windowsGraphicsTitle"
+				//  4.125em
+				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="miscGraphicsTitle"
+				//  4.125em
+				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+				document.getElementById('copyrightMsg').style.fontSize="2.5em";
+				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+				//  id="linkPrivacyPolicy"
+				//  1.875em
+				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+				//  id="grid-containerAndroid"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerCAD"
+     				//  grid-template-rows: 0.3vh 135vh 0.3vh
+				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+				//  id="grid-containerCloud"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+				//  id="grid-containerDatabase"
+     				//  grid-template-rows: 0.3vh 215vh 0.3vh
+				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+
+				//  id="grid-containerGraphics"
+     				//  grid-template-rows: 0.3vh 225vh 0.3vh
+				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+				//  id="grid-containerWindows"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerMisc"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+         		} 
+                        
+         		if(isFirefox) {
+            			//  alert("Firefox using screen width = 1280" + "<br>"); 
+
+
+				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+				document.getElementById('textIntroduction').style.fontSize="2.5em";
+				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+				//  id="androidGraphicsTitle"
+				//  4.125em
+				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="cadGraphicsTitle"
+				//  4.125em
+				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+				id="graphicsTitle"
+				//  4.125em
+				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+				//  id="databaseGraphicsTitle"
+				//  4.125em
+				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="graphicGraphicsTitle"
+				//  4.125em
+				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="windowsGraphicsTitle"
+				//  4.125em
+				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="miscGraphicsTitle"
+				//  4.125em
+				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+				document.getElementById('copyrightMsg').style.fontSize="2.5em";
+				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+				//  id="linkPrivacyPolicy"
+				//  1.875em
+				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+				//  id="grid-containerAndroid"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerCAD"
+     				//  grid-template-rows: 0.3vh 135vh 0.3vh
+				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+				//  id="grid-containerCloud"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+				//  id="grid-containerDatabase"
+     				//  grid-template-rows: 0.3vh 215vh 0.3vh
+				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+
+				//  id="grid-containerGraphics"
+     				//  grid-template-rows: 0.3vh 225vh 0.3vh
+				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+				//  id="grid-containerWindows"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerMisc"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+         		} 
+                           
+         		if(isNewEdge) {
+            		//	  alert("Microsoft Edge (new) using screen width = 1280" + "<br>"); 
+
+
+				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+				document.getElementById('textIntroduction').style.fontSize="2.5em";
+				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+				//  id="androidGraphicsTitle"
+				//  4.125em
+				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="cadGraphicsTitle"
+				//  4.125em
+				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+				id="graphicsTitle"
+				//  4.125em
+				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+				//  id="databaseGraphicsTitle"
+				//  4.125em
+				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="graphicGraphicsTitle"
+				//  4.125em
+				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="windowsGraphicsTitle"
+				//  4.125em
+				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="miscGraphicsTitle"
+				//  4.125em
+				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+				document.getElementById('copyrightMsg').style.fontSize="2.5em";
+				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+				//  id="linkPrivacyPolicy"
+				//  1.875em
+				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+				//  id="grid-containerAndroid"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerCAD"
+     				//  grid-template-rows: 0.3vh 135vh 0.3vh
+				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+				//  id="grid-containerCloud"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+				//  id="grid-containerDatabase"
+     				//  grid-template-rows: 0.3vh 215vh 0.3vh
+				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+
+				//  id="grid-containerGraphics"
+     				//  grid-template-rows: 0.3vh 225vh 0.3vh
+				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+				//  id="grid-containerWindows"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerMisc"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+         		} 
+                     
+         		if(isEdge) {
+            			//  alert("Microsoft Edge (old) using screen width = 1280" + "<br>"); 
+
+
+				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+				document.getElementById('textIntroduction').style.fontSize="2.5em";
+				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+				//  id="androidGraphicsTitle"
+				//  4.125em
+				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="cadGraphicsTitle"
+				//  4.125em
+				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+				id="graphicsTitle"
+				//  4.125em
+				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+				//  id="databaseGraphicsTitle"
+				//  4.125em
+				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="graphicGraphicsTitle"
+				//  4.125em
+				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="windowsGraphicsTitle"
+				//  4.125em
+				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+				//  id="miscGraphicsTitle"
+				//  4.125em
+				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+				document.getElementById('copyrightMsg').style.fontSize="2.5em";
+				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+				//  id="linkPrivacyPolicy"
+				//  1.875em
+				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+				//  id="grid-containerAndroid"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerCAD"
+     				//  grid-template-rows: 0.3vh 135vh 0.3vh
+				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+				//  id="grid-containerCloud"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+				//  id="grid-containerDatabase"
+     				//  grid-template-rows: 0.3vh 215vh 0.3vh
+				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+
+				//  id="grid-containerGraphics"
+     				//  grid-template-rows: 0.3vh 225vh 0.3vh
+				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+				//  id="grid-containerWindows"
+     				//  grid-template-rows: 0.3vh 95vh 0.3vh
+				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+				//  id="grid-containerMisc"
+     				//  grid-template-rows: 0.3vh 170vh 0.3vh
+				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+
+
+         		} 
+                   
+         break;
+      	 case 1366:     //  Win10
+       	 	//   alert("using screen width = 1366" + "<br>"); 
+                  
+	 	if(isChrome) {
+            		//  alert("Chrome using screen width = 1366" + "<br>"); 
+         	} 
+                        
+         	if(isFirefox) {
+            		//  alert("Firefox using screen width = 1366" + "<br>"); 
+         	} 
+                      
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1366" + "<br>"); 
+         	} 
+                         
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1366" + "<br>"); 
+         	} 
+                      
+                    
+         break;
+      	 case 1536:     //  Win10
+      			//   alert("using screen width = 1536" + "<br>");
+                           
+         	if(isChrome) {
+            		//  window.alert("Chrome using screen width = 1536" + "<br>");
+
+			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+			
+
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+
+
+         	} 
+                          
+         	if(isFirefox) {
+            		//  window.alert("Firefox using screen width = 1536" + "<br>");
+			//  alert("using the Firefox browser under Win10");
+
+
+		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 210vh 0.3vh";
+
+         	} 
+                        
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1536" + "<br>");
+
+
+		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
+
+
+
+         	} 
+                      
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1536" + "<br>");
+
+
+		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+			document.getElementById('textIntroduction').style.fontSize="2.5em";
+			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+			//  id="androidGraphicsTitle"
+			//  4.125em
+			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="cadGraphicsTitle"
+			//  4.125em
+			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+			id="graphicsTitle"
+			//  4.125em
+			document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+			//  id="databaseGraphicsTitle"
+			//  4.125em
+			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="graphicGraphicsTitle"
+			//  4.125em
+			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="windowsGraphicsTitle"
+			//  4.125em
+			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+			//  id="miscGraphicsTitle"
+			//  4.125em
+			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+				document.getElementById('angularJSlocatedAtMsg').innerHTML=
+					"<center>" + 
+					"Located at" +
+					"<center>";
+
+
+			document.getElementById('copyrightMsg').style.fontSize="2.5em";
+			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
+           	//	document.getElementById("BootstrapIcon").style.height="6em";
+
+			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+
+			//  id="linkPrivacyPolicy"
+			//  1.875em
+			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 125vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
+         	} 
+                   
+                    
+         break;
+      	 case 1707:     //  Win10
+      	 	//   alert("using screen width = 1707" + "<br>");
+                        
+         	if(isChrome) {
+            		//  alert("Chrome using screen width = 1707" + "<br>");
+
+			//   <span id="mainPageSiteTitle" style="color:Navy;font-size:68px;"><b>ab872</b></span>
 
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="48px";
+			//  document.getElementById('mainPageSiteTitle').style.fontSize="68px";
 
+			//   id="imagePcbIntro" 
+			//  height="162"   //  202
+			//  width="375"    //  468
+			//  document.getElementById("imagePcbIntro").style.height="303px";
+			//  document.getElementById("imagePcbIntro").style.width="702px"; 
 
 
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="64px"; 
-			document.getElementById("BootstrapIcon").style.height="64px";
 
+			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+			//	document.getElementById('angularJSlocatedAtMsg').innerHTML=
+			//		"<center>" + 
+			//		"Located at" +
+			//		"<center>";
+			//
 
 
 
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
 
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 145vh 0.3vh";
 
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
 
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 185vh 0.3vh";
 
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 270vh 0.3vh";
 
 
 
-			//  alert("new code here.");
 
-			//  "linkAndrCoreP1" 
-			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
+         	} 
+                          
+         	if(isFirefox) {
+            		//  alert("Firefox using screen width = 1707" + "<br>");
+			//  alert("using the Firefox browser under Win10");
 
-			//  "textAndrCore1Caption"
-			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
-			//  "textAndrCore1CaptionEmphasized1" 
-			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
-			//  "textAndrCore1CaptionEmphasized2" 
-			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
-			//  "textAndrCore1CaptionEmphasized3" 
-			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 165vh 0.3vh";
 
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh"
 
-
-
-
-
-			//  id="copyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="24px";
-
- 
-			//  id="bestResultsMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="24px";
-
-
-			//  id="iconsProvidedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="24px";
-
- 
-
-			//  id="iconsCopyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
-			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="24px";
-
-
-
-			//  id="iconsModifiedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="24px";
-
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
-
-
-
-
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-
-
-
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
-
-
-
-
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-
-
-
-document.getElementById('androidGraphicsTitle').style.fontSize="66px";
-
-document.getElementById('cadGraphicsTitle').style.fontSize="66px";
-
-document.getElementById('databaseGraphicsTitle').style.fontSize="66px";
-
-document.getElementById('graphicGraphicsTitle').style.fontSize="66px";
-
-document.getElementById('windowsGraphicsTitle').style.fontSize="66px";
-
-//  id  "miscGraphicsTitle" 66px      Miscellaneous
-document.getElementById('miscGraphicsTitle').style.fontSize="66px";
-
-
-
-
-
-
-
-			//  id="textGraphApp1"
-			//  16px;">
-			//  <b>Using the Canvas in C#</b>
-			document.getElementById('textGraphApp1').style.fontSize="28px";
-
-
-
-			//  id="textGraphAppCaption"
-			//  14px
-			document.getElementById('textGraphAppCaption').style.fontSize="28px";
-
-
-			//  id="textIntroductionPre"
-			//  10px
-			document.getElementById('textIntroductionPre').style.fontSize="24px";
-
-
-			//  id="textGraphAppCaption2"
-			//  10px
-			//  <b>Operating System:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption3"
-			//  10px
-			//  <b>Windows 7 - 10</b>
-			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption4"
-			//  10px
-			//  <b>Development IDE:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption4').innerHTML=
-				'<b>Development IDE:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption5"
-			//  10px
-			//  <b>Visual Studio</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption5').innerHTML=
-				'<b>Visual Studio</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption6"
-			//  10px
-			//  <b>Language:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption6').innerHTML=
-				'<b>Language:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption7"
-			//  10px
-			//  <b>C#</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption7').innerHTML=
-				'<b>C#</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption8"
-			//  10px
-			//  <b>Demo features:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption8').innerHTML=
-				'<b>Demo features:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;';
-
-
-
-
-
-
-
-
-
-			//  id="textGraphAppCaption9"
-			//  10px
-			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
-			//  &nbsp;&nbsp;&nbsp;<br>
-			//  &#x2022; 2. Data inspection via zoom in or zoom out.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 3. Dynamic repositioning of the viewing
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  window.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 4. Selectable data cursors.
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 5. Step through the data using the cursor.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  </b>
-
-
-
-			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
-
-
-			document.getElementById('textGraphAppCaption9').innerHTML= 
-				'<b>' + 
-				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
-				'&nbsp;&nbsp;<br>' + 
-				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 3. Dynamic repositioning of the viewing' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'window.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 4. Selectable data cursors.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 5. Step through the data using the cursor.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;' + 
-				'</b>';
-
-
-
-
-
-
-
-		   
-			//	document.getElementById('textSVGanimationCaption').innerHTML=
-			//	'<i>It is possible to animate an SVG. One way<br>' + 
-			//	'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			//	'manipulate the <span id="textAnimationEmphasized2" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			//	'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			//	'using SVG</i></b></span>. They run inside a ' + 
-			//	'<span id="textAnimationEmphasized4" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			//	'browser</i></b></span>, and were written in ' + 
-			//	'<span id="textAnimationEmphasized5" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			//	'short discussion of SVG animation<br>' + 
-			//	'with references and examples.<br>' + 
-			//	'Includes a walkthrough of the<br>' + 
-			//	'code for a simple animation.' + 
-			//	'</i>';
-
-
-
-
-
-
-
-				//  id="textIntroduction" 
-				//      Original     14px    
-				//  document.getElementById('textIntroduction').style.fontSize="96px";
-
-
-				//  id="textIntroductionEmphasized1"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized1').style.
-				//  fontSize="97px";
-
-
-				//  id="textIntroductionEmphasized2"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized2').style.
-				//  fontSize="97px";
-
-
-				//  document.getElementById('textIntroCaption').innerHTML="
-				//  <i>Preview rendering of printed circuit<br>
-				//  board produced by parsing the data files. Rendered using SVG graphics. 
-				//  Early version of the software.</i>";
-
-
-
-				//  id="textIntroCaption"
-				//  Original    12px
-				//  document.getElementById('textIntroCaption').style.fontSize="78px";
-
-
-				//  id="pdfIcon" 
-				//  width="16" height="16" 
-				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//           document.getElementById("pdfIcon").style.height="128px";
-
-
-						   
-
-
-
-				//    id= textSVGanimationCaption
-				//    color Grey     font-size 12px
-
-				//  document.getElementById
-				//  ('textSVGanimationCaption').
-				//  style.fontSize="78px";
-
-
-
-				//    id="textAnimationEmphasized1" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized2" 
-				//    color Navy        font-size 11px
-
-
-				//    id="textAnimationEmphasized3" 
-				//    color Navy       font-size 11px
-
-
-				//    id="textAnimationEmphasized4" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized5" 
-				//    color Navy     font-size 11px
-
-
-				//    svg id="mp4Icon"
-				//    width="16" height="16" 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.width="128px"; 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.height="128px";
-
-
-
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="128px"; 
-			document.getElementById("cameraIcon").style.height="128px";
-
-
-
-
-
-
-		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2"
-		document.getElementById('textFizzBuzzCaption2').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2Emphasized1" 
-		document.getElementById('textFizzBuzzCaption2Emphasized1').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2Emphasized2" 
-		document.getElementById('textFizzBuzzCaption2Emphasized2').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2Emphasized3" 
-		document.getElementById('textFizzBuzzCaption2Emphasized3').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2Emphasized4" 
-		document.getElementById('textFizzBuzzCaption2Emphasized4').style.fontSize="18px"; 
-
-		//  "textFizzBuzzCaption2Emphasized5" 
-		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="18px"; 
-
-
-
-
-
-		//  alert("new code here.");
-
-		//  "linkTCA1"
-		document.getElementById('linkTCA1').style.fontSize="24px"; 
-
-		//  "textTCA1Caption"
-		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized1"
-		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized2"
-		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized3"
-		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized4"
-		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized5"
-		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
-
-
-
-		//  "linkTCA2"
-		document.getElementById('linkTCA2').style.fontSize="24px"; 
-
-		//  "linkXunit1"
-		//  16px
-		document.getElementById('linkXunit1').style.fontSize="24px"; 
-
-		//  "textTCA2Caption"
-		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized1"
-		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized2"
-		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized3"
-		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized4"
-		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
-
-
-
-
-
-
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="47px"; 
-				document.getElementById("svgVueJS1").style.height="47px";
-
-
-
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="47px"; 
-				document.getElementById("svgAngularJS1").style.height="47px";
-//  112   123
-
-		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
-
-		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
-
-
-
-
-		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
-
-		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-
-
-
-		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
-		//  <b><i>https://creativecommons.org/licenses/by-sa/3.0/</i></b></span>
-		document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="18px"; 
-
-
-
-
-
-
-	//   end        old Edge
-} 
-
-
-
-
-
-if (isNewEdge) { 
-	//   begin        new Edge
-
-	//  alert("using the new Edge browser");
-	//  theBrowserIsUnknown = false;
+         	} 
+                               
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1707" + "<br>");
 
 			//  id="mainPageSiteTitle"
 			//  28px
 			//  ><b>ab872</b><
-			document.getElementById('mainPageSiteTitle').style.fontSize="72px";
-
-			//	document.getElementById('textIntroduction').innerHTML=
-			//		'A collection of various <span id="textIntroductionEmphasized1" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>projects</b></span> ' +  
-			//		'and <span id="textIntroductionEmphasized2" ' + 
-			//		'style="color:Navy;font-size:45px;"><b>experiments</b><br><br>';
+			//  document.getElementById('mainPageSiteTitle').style.fontSize="72px";
 
 			document.getElementById('textIntroduction').innerHTML += "<br><br><br><br><br>";
 
-			document.getElementById('textIntroduction').style.fontSize="48px";
-
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="48px";
-
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="48px";
-
-
-
-
-
-
-			//  adjust the size of the
-			//  Bootstrap icon
-			//  id="BootstrapIcon"           
-			document.getElementById("BootstrapIcon").style.width="128px"; 
-			document.getElementById("BootstrapIcon").style.height="128px";
-
-
-
-
-			//  alert("new code here.");
-
-			//  "linkAndrCoreP1" 
-			document.getElementById('linkAndrCoreP1').style.fontSize="24px";
-
-			//  "textAndrCore1Caption"
-			document.getElementById('textAndrCore1Caption').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized1" 
-			document.getElementById('textAndrCore1CaptionEmphasized1').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized2" 
-			document.getElementById('textAndrCore1CaptionEmphasized2').style.fontSize="24px";
-
-			//  "textAndrCore1CaptionEmphasized3" 
-			document.getElementById('textAndrCore1CaptionEmphasized3').style.fontSize="24px";
-
-
-
-
-
-
-
-
-			//  id="linkGerberViewer" 
-			//  size:16px
-			document.getElementById('linkGerberViewer').style.fontSize="28px";
-
-			//  id="pdfIcon" 
-			//  width="80" height="80" 
-			document.getElementById("pdfIcon").style.width="96px"; 
-			document.getElementById("pdfIcon").style.height="96px";
-
-			//  id="textGerberViewerCaption" 
-			//  14px
-			document.getElementById('textGerberViewerCaption').style.fontSize="24px";
-
-
-
-
-
-
-			//  id="linkCrudP1video"
-			//  16px
-			document.getElementById('linkCrudP1video').style.fontSize="28px";
-
-			//  id="textCrudP1Caption"
-			//  14px
-			document.getElementById('textCrudP1Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP1"
-			//  16px
-			document.getElementById('linkCrudP1').style.fontSize="28px";
-
-
-			//  id="textCrudP1bCaption"
-			//  14px
-			document.getElementById('textCrudP1bCaption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP2"
-			//  16px
-			document.getElementById('linkCrudP2').style.fontSize="28px";
-
-			//  id="textCrudP2Caption"
-			//  14px
-			document.getElementById('textCrudP2Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP3"
-			//  16px
-			document.getElementById('linkCrudP3').style.fontSize="28px";
-
-			//  id="textCrudP3Caption"
-			//  14px
-			document.getElementById('textCrudP3Caption').style.fontSize="24px";
-
-
-
-			//  id="linkCrudP4"
-			//  16px
-			document.getElementById('linkCrudP4').style.fontSize="28px";
-
-
-			//  id="textCrudP4Caption"
-			//  14px
-			document.getElementById('textCrudP4Caption').style.fontSize="24px";
-
-
-			//  id="linkCrudP5"
-			//  16px
-			document.getElementById('linkCrudP5').style.fontSize="28px";
-
-
-			//  id="textCrudP5Caption"
-			//  14px
-			document.getElementById('textCrudP5Caption').style.fontSize="24px";
-
-
-
-
-
-
-
-
-
-
-			//  id="textSqliteLogoPublicDomain"
-			//  14px
-			document.getElementById('textSqliteLogoPublicDomain').style.fontSize="24px";
-
-
-			//  id="textSqliteLogoDownloadHere"
-			//  14px
-			document.getElementById('textSqliteLogoDownloadHere').style.fontSize="24px";
-
-
-			//  id="textSqliteDownloadHere"
-			//  14px
-			document.getElementById('textSqliteDownloadHere').style.fontSize="24px";
-
-
-
-
-			//  id="linkSVGgraphics"
-			//  16px
-			document.getElementById('linkSVGgraphics').style.fontSize="28px";
-
-
-			//  id="textSVGgraphicsCaption"
-			//  14px
-			document.getElementById('textSVGgraphicsCaption').style.fontSize="24px";
-
-
-
-			//  id="linkSVGanimation"
-			//  16px
-			document.getElementById('linkSVGanimation').style.fontSize="28px";
-
-			//  id="textSVGanimationCaption"
-			//  14px
-			document.getElementById('textSVGanimationCaption').style.fontSize="24px";
-
-			//  id="textAnimationEmphasized1"
-			//  15px
-			document.getElementById('textAnimationEmphasized1').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized2"
-			//  15px
-			document.getElementById('textAnimationEmphasized2').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized3"
-			//  15px
-			document.getElementById('textAnimationEmphasized3').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized4"
-			//  15px
-			document.getElementById('textAnimationEmphasized4').style.fontSize="25px";
-
-			//  id="textAnimationEmphasized5"
-			//  15px
-			document.getElementById('textAnimationEmphasized5').style.fontSize="25px";
-
-
-
-
-			//  id="linkRayTraceGraphics"
-			//  16px
-			document.getElementById('linkRayTraceGraphics').style.fontSize="28px";
-
-			//  id="textRayTraceGraphicsCaption"
-			//  14px
-			document.getElementById('textRayTraceGraphicsCaption').style.fontSize="24px";
-
-
-
-
-
-
-
-			//  id="cameraIcon"
-			//  width   80    height   80 
-			document.getElementById("cameraIcon").style.width="128px"; 
-			document.getElementById("cameraIcon").style.height="128px";
-
-			//  id="linkPhotoGallery"
-			//  16px
-			document.getElementById('linkPhotoGallery').style.fontSize="28px";
-
-			//  id="textPhotoGalleryCaption"
-			//  14px
-			document.getElementById('textPhotoGalleryCaption').style.fontSize="24px";
-
-
-
-
-
-
-
-
-
-			//  id="linkColorPicker"
-			//  16px
-			document.getElementById('linkColorPicker').style.fontSize="28px";
-
-			//  id="textColorPickerCaption"
-			//  14px;
-			document.getElementById('textColorPickerCaption').style.fontSize="24px";
-
-
-
-
-
-
-			//  id="svgCloudSun1" 
-     			//  width   80      height   80
-			document.getElementById("svgCloudSun1").style.width="96px"; 
-			document.getElementById("svgCloudSun1").style.height="96px";
-
-			//  id="linkNwsWeather"
-			//  16px
-			document.getElementById('linkNwsWeather').style.fontSize="28px";
-
-			//  id="textNwsWeatherCaption"
-			//  14px;
-			document.getElementById('textNwsWeatherCaption').style.fontSize="24px";
-
-			document.getElementById('textNwsWeatherCaption').innerHTML=
-				'<i>A demo of using a <b>REST API</b> to retrieve an extended weather forecast ' + 
-				'<br>' + 
-				'from the <b>National Weather Service</b> (<b>NWS</b>) ' +  
-				'using their public REST API.' + 
-				'<br>' + 
-				'Includes references.</i>';
-
-
-
-		//  "linkAngularJS1"
-		document.getElementById('linkAngularJS1').style.fontSize="28px"; 
-
-		//  "textAngularJS1Caption"
-		document.getElementById('textAngularJS1Caption').style.fontSize="24px"; 
-
-
-
-
-
-
-
-
-
-		//  "linkVueJS1"
-		document.getElementById('linkVueJS1').style.fontSize="28px"; 
-
-		//  "textVueJS1Caption"
-		document.getElementById('textVueJS1Caption').style.fontSize="24px"; 
-
-
-
-
-
-		//  alert("new code here.");
-
-		//  "linkTCA1"
-		document.getElementById('linkTCA1').style.fontSize="24px"; 
-
-		//  "textTCA1Caption"
-		document.getElementById('textTCA1Caption').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized1"
-		document.getElementById('textTCA1Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized2"
-		document.getElementById('textTCA1Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized3"
-		document.getElementById('textTCA1Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized4"
-		document.getElementById('textTCA1Emphasized4').style.fontSize="24px"; 
-
-		//  "textTCA1Emphasized5"
-		document.getElementById('textTCA1Emphasized5').style.fontSize="24px"; 
-
-
-
-		//  "linkTCA2"
-		document.getElementById('linkTCA2').style.fontSize="24px"; 
-
-		//  "linkXunit1"
-		//  16px
-		document.getElementById('linkXunit1').style.fontSize="24px"; 
-
-		//  "textTCA2Caption"
-		document.getElementById('textTCA2Caption').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized1"
-		document.getElementById('textTCA2Emphasized1').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized2"
-		document.getElementById('textTCA2Emphasized2').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized3"
-		document.getElementById('textTCA2Emphasized3').style.fontSize="24px"; 
-
-		//  "textTCA2Emphasized4"
-		document.getElementById('textTCA2Emphasized4').style.fontSize="24px"; 
-
-
-
-
-
-
-		//  "textWebApp1Link"
-		  document.getElementById('textWebApp1Link').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption1"
-		   document.getElementById('textWebApp1Caption1').style.fontSize="20px"; 
-
-		//  "textWebApp1Pre"
-		  document.getElementById('textWebApp1Caption2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized1" 
-		  document.getElementById('textWebApp1Caption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized2" 
-		  document.getElementById('textWebApp1Caption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized3" 
-		  document.getElementById('textWebApp1Caption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized4" 
-		  document.getElementById('textWebApp1Caption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textWebApp1Caption2Emphasized5" 
-		  document.getElementById('textWebApp1Caption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-
-
-
-		//  "textFizzBuzzLink"
-		document.getElementById('textFizzBuzzLink').style.fontSize="28px"; 
-
-		//  "textFizzBuzzCaption1"
-		document.getElementById('textFizzBuzzCaption1').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2"
-		document.getElementById('textFizzBuzzCaption2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized1" 
-		document.getElementById('textFizzBuzzCaption2Emphasized1').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized2" 
-		document.getElementById('textFizzBuzzCaption2Emphasized2').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized3" 
-		document.getElementById('textFizzBuzzCaption2Emphasized3').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized4" 
-		document.getElementById('textFizzBuzzCaption2Emphasized4').style.fontSize="24px"; 
-
-		//  "textFizzBuzzCaption2Emphasized5" 
-		document.getElementById('textFizzBuzzCaption2Emphasized5').style.fontSize="24px"; 
-
-
-
-
-
-			//  id="linkOnTheWay3"
-			//  16px
-			document.getElementById('linkOnTheWay3').style.fontSize="28px";
-
-			//  id="linkOnTheWay4"
-			//  16px
-			document.getElementById('linkOnTheWay4').style.fontSize="28px";
-
-			//  id="linkOnTheWay5"
-			//  16px
-			document.getElementById('linkOnTheWay5').style.fontSize="28px";
-
-
-
-
-
-			//  id="copyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2021 - 2022. All rights reserved.</b>
-			document.getElementById('copyrightMsg').style.fontSize="38px";
-
- 
-			//  id="bestResultsMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b>
-			document.getElementById('bestResultsMsg').style.fontSize="38px";
-
-
-			//  id="iconsProvidedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Icons provided via the 
-			//  <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b>
-			document.getElementById('iconsProvidedMsg').style.fontSize="38px";
-
- 
-
-			//  id="iconsCopyrightMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the 
-			//  <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b>
-			document.getElementById('iconsCopyrightMsg').style.fontSize="38px";
-
-
-
-			//  id="iconsModifiedMsg"
-			//  12px
-			//  <b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b>
-			document.getElementById('iconsModifiedMsg').style.fontSize="38px";
-
-
-
-
-	//  id="grid-containerAndroid"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-	//  id="grid-containerCAD"
-     	//  grid-template-rows: 0.3vh 135vh 0.3vh
-	document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
-
-	//  id="grid-containerCloud"
-     	//  grid-template-rows: 0.3vh 170vh 0.3vh
-	document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
-
-	//  id="grid-containerDatabase"
-     	//  grid-template-rows: 0.3vh 215vh 0.3vh
-	document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
-
-	//  id="grid-containerGraphics"
-     	//  grid-template-rows: 0.3vh 225vh 0.3vh
-	document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 205vh 0.3vh";
-
-	//  id="grid-containerWindows"
-     	//  grid-template-rows: 0.3vh 95vh 0.3vh
-	document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-	//  id="grid-containerMisc"
-     	//  grid-template-rows: 0.3vh 190vh 0.3vh
-	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 360vh 0.3vh";
-
-
-
-
-
-			//  id="textGraphApp1"
-			//  16px;">
-			//  <b>Using the Canvas in C#</b>
-			document.getElementById('textGraphApp1').style.fontSize="28px";
-
-
-
-			//  id="textGraphAppCaption"
-			//  14px
-			document.getElementById('textGraphAppCaption').style.fontSize="28px";
-
-
-			//  id="textIntroductionPre"
-			//  10px
-			document.getElementById('textIntroductionPre').style.fontSize="24px";
-
-
-			//  id="textGraphAppCaption2"
-			//  10px
-			//  <b>Operating System:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption2').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption3"
-			//  10px
-			//  <b>Windows 7 - 10</b>
-			document.getElementById('textGraphAppCaption3').style.fontSize="24px";
-
-
-
-			//  id="textGraphAppCaption4"
-			//  10px
-			//  <b>Development IDE:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption4').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption4').innerHTML=
-				'<b>Development IDE:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption5"
-			//  10px
-			//  <b>Visual Studio</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption5').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption5').innerHTML=
-				'<b>Visual Studio</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption6"
-			//  10px
-			//  <b>Language:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption6').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption6').innerHTML=
-				'<b>Language:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-
-			//  id="textGraphAppCaption7"
-			//  10px
-			//  <b>C#</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption7').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption7').innerHTML=
-				'<b>C#</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-
-
-
-			//  id="textGraphAppCaption8"
-			//  10px
-			//  <b>Demo features:</b>
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			document.getElementById('textGraphAppCaption8').style.fontSize="24px";
-
-			document.getElementById('textGraphAppCaption8').innerHTML=
-				'<b>Demo features:</b>' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;';
-
-
-
-
-
-
-
-
-
-			//  id="textGraphAppCaption9"
-			//  10px
-			//  &#x2022; 1. Drawing on the Windows graphic Canvas.
-			//  &nbsp;&nbsp;&nbsp;<br>
-			//  &#x2022; 2. Data inspection via zoom in or zoom out.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 3. Dynamic repositioning of the viewing
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  window.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 4. Selectable data cursors.
-			//   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  &nbsp;&nbsp;
-			//  <br>
-			//  &#x2022; 5. Step through the data using the cursor.
-			//  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			//  </b>
-
-
-
-			document.getElementById('textGraphAppCaption9').style.fontSize="24px";
-
-
-			document.getElementById('textGraphAppCaption9').innerHTML= 
-				'<b>' + 
-				'&#x2022; 1. Drawing on the Windows graphic Canvas.' + 
-				'&nbsp;&nbsp;<br>' + 
-				'&#x2022; 2. Data inspection via zoom in or zoom out.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 3. Dynamic repositioning of the viewing' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'window.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 4. Selectable data cursors.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;&nbsp;' + 
-				'<br>' + 
-				'&#x2022; 5. Step through the data using the cursor.' + 
-				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-				'&nbsp;' + 
-				'</b>';
-
-
-
-
-
-
-
-		   
-			//	document.getElementById('textSVGanimationCaption').innerHTML=
-			//	'<i>It is possible to animate an SVG. One way<br>' + 
-			//	'to do so is by using <span id="textAnimationEmphasized1" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>JavaScript</b></span> to<br>' + 
-			//	'manipulate the <span id="textAnimationEmphasized2" ' + 
-			//	'style="color:Navy;font-size:11px;"><b>DOM</b></span>.<br>' + 
-			//	'These are early attempts at <span id="textAnimationEmphasized3" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>animation<br>' + 
-			//	'using SVG</i></b></span>. They run inside a ' + 
-			//	'<span id="textAnimationEmphasized4" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>web<br>' + 
-			//	'browser</i></b></span>, and were written in ' + 
-			//	'<span id="textAnimationEmphasized5" ' + 
-			//	'style="color:Navy;font-size:11px;"><b><i>2013</i></b></span>. A<br>' + 
-			//	'short discussion of SVG animation<br>' + 
-			//	'with references and examples.<br>' + 
-			//	'Includes a walkthrough of the<br>' + 
-			//	'code for a simple animation.' + 
-			//	'</i>';
-
-
-
-
-
-
-
-				//  id="textIntroduction" 
-				//      Original     14px    
-				//  document.getElementById('textIntroduction').style.fontSize="96px";
-
-
-				//  id="textIntroductionEmphasized1"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized1').style.
-				//  fontSize="97px";
-
-
-				//  id="textIntroductionEmphasized2"
-				//  document.getElementById(
-				//  'textIntroductionEmphasized2').style.
-				//  fontSize="97px";
-
-
-				//  document.getElementById('textIntroCaption').innerHTML="
-				//  <i>Preview rendering of printed circuit<br>
-				//  board produced by parsing the data files. Rendered using SVG graphics. 
-				//  Early version of the software.</i>";
-
-
-
-				//  id="textIntroCaption"
-				//  Original    12px
-				//  document.getElementById('textIntroCaption').style.fontSize="78px";
-
-
-				//  id="pdfIcon" 
-				//  width="16" height="16" 
-				//  document.getElementById("pdfIcon").style.width="128px"; 
-				//           document.getElementById("pdfIcon").style.height="128px";
-
-
-						   
-
-
-
-				//    id= textSVGanimationCaption
-				//    color Grey     font-size 12px
-
-				//  document.getElementById
-				//  ('textSVGanimationCaption').
-				//  style.fontSize="78px";
-
-
-
-				//    id="textAnimationEmphasized1" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized2" 
-				//    color Navy        font-size 11px
-
-
-				//    id="textAnimationEmphasized3" 
-				//    color Navy       font-size 11px
-
-
-				//    id="textAnimationEmphasized4" 
-				//    color Navy     font-size 11px
-
-
-				//    id="textAnimationEmphasized5" 
-				//    color Navy     font-size 11px
-
-
-				//    svg id="mp4Icon"
-				//    width="16" height="16" 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.width="128px"; 
-
-				//  document.getElementById
-				//  ("mp4Icon").style.height="128px";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="47px"; 
-				document.getElementById("svgVueJS1").style.height="47px";
-
-
-
-				//  id="svgAngularJS1"
-				//  width="75" height="82"
-				document.getElementById("svgAngularJS1").style.width="47px"; 
-				document.getElementById("svgAngularJS1").style.height="47px";
-
-
-		//  "angularJSmitLicenseMsg" 
-		document.getElementById('angularJSmitLicenseMsg').style.fontSize="18px"; 
-
-
-		//  "angularJSlogoMsg"
-		document.getElementById('angularJSlogoMsg').style.fontSize="18px"; 
-
-		//   "angularJSmodifiedMsg"
-		document.getElementById('angularJSmodifiedMsg').style.fontSize="18px"; 
-
-
-
-
-
-
-
-
-
-
-		//  "angularJStermsMsg"
-		document.getElementById('angularJStermsMsg').style.fontSize="18px"; 
-
-		//  "angularJScreativeCommonsMsg"
-		document.getElementById('angularJScreativeCommonsMsg').style.fontSize="18px";
-
-
-		//  "angularJSlocatedAtMsg"
-		document.getElementById('angularJSlocatedAtMsg').style.fontSize="18px"; 
-
-	//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:12px;">Located at</span><br>
-	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-		"<center>" + 
-		"Located at" +
-		"<center>";
-
-
-
-		//  <span id="angularjsCreativeCommonsLinkMsg" style="font-size:12px;">
-	//	document.getElementById('angularjsCreativeCommonsLinkMsg').style.fontSize="38px"; 
-	//	document.getElementById('angularJSCreativeCommonsLinkMsg').style.fontSize="48px"; 
-
-
-
-
-
-
-
-
-
-	//   end        new Edge
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 205vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 360vh 0.3vh"
+
+         	} 
+                           
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1707" + "<br>");
+
+			//  id="mainPageSiteTitle"
+			//  28px
+			//  ><b>ab872</b><
+			//  document.getElementById('mainPageSiteTitle').style.fontSize="48px";
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+
+		        //  66px works but 4.125em doesnt work
+			//  trying to override it here also does not work
+			//  document.getElementById('androidGraphicsTitle').style.fontSize="8em";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 190vh 0.3vh
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+
+
+         	} 
+                      
+                      
+         break;
+      	 default:
+		//  if (theBrowserIsUnknown) { 
+		//	//  unknown browser
+		//
+		//	alert("You are using using an unrecognized browser.");
+		//
+		//	//  end      unknown browser
+		//  } 
+
+   //  end switch
 }
-
-
-
-
-
-
-//  if (theBrowserIsUnknown) { 
-//	//  unknown browser
-//
-//	alert("You are using using an unrecognized browser.");
-//
-//	//  end      unknown browser
-//  } 
 
 
 
