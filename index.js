@@ -18,7 +18,77 @@
 //  the goal is to provide a more consistent cross-browser experience
 
 
+//  ******************************************************************
+//  ***    set the sizes of some of the elements when using em     ***
+//  It's not clear why this is necessary, since the sizes were already
+//  declared in the HTML file. But there is an obvious difference in 
+//  the quality of the text if you don't override the assignment here.
+//  ******************************************************************
 
+document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+
+document.getElementById('textIntroduction').style.fontSize="2.5em";
+document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
+document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+
+//  id="androidGraphicsTitle"
+//  4.125em
+document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+
+//  id="cadGraphicsTitle"
+//  4.125em
+document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+
+id="graphicsTitle"
+//  4.125em
+document.getElementById('graphicsTitle').style.fontSize="4.125em";
+
+//  id="databaseGraphicsTitle"
+//  4.125em
+document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
+
+//  id="graphicGraphicsTitle"
+//  4.125em
+document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
+
+//  id="windowsGraphicsTitle"
+//  4.125em
+document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
+
+//  id="miscGraphicsTitle"
+//  4.125em
+document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
+
+
+//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
+document.getElementById('angularJSlocatedAtMsg').innerHTML=
+	"<center>" + 
+	"Located at" +
+	"<center>";
+			
+document.getElementById('copyrightMsg').style.fontSize="2.5em";
+document.getElementById('bestResultsMsg').style.fontSize="2.5em";
+
+//	document.getElementById("BootstrapIcon").style.width="6em"; 
+//	document.getElementById("BootstrapIcon").style.height="6em";
+
+document.getElementById('iconsProvidedMsg').style.fontSize="2em";
+document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
+document.getElementById('iconsModifiedMsg').style.fontSize="2em";
+
+//  id="linkPrivacyPolicy"
+//  1.875em
+document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
+
+
+
+//  ******************************************************************
+//  The case statement below is necessary to account for discrepancies
+//  in page rendering between the various browsers. It requires that we
+//  fully identify the browser. Not just the OS, OS version and browser
+//  version, but also the screen size.
+//  ******************************************************************
+//  
 
 switch(deviceScreenWidth) {
       case 360:      //  Android 
@@ -26,55 +96,6 @@ switch(deviceScreenWidth) {
 
          if(isChrome) {
 		//  alert("Chrome Android     screen width EQUAL to 360 "); 
-
-		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-		document.getElementById('textIntroduction').style.fontSize="2.5em";
-		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-
-
 
 		//  id="grid-containerAndroid"
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -109,59 +130,15 @@ switch(deviceScreenWidth) {
          if(isFirefox) {
 		//  alert("Firefox Android     screen width EQUAL to 360 "); 
 
-
-		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
+		//  *** required by some browsers ***
 		//  id="textIntroCaption"
 		//  0.75em
 		document.getElementById('textIntroCaption').style.fontSize="0.3em";
 
-
+		//  *** required by some browsers ***
 		document.getElementById('textIntroduction').style.fontSize="3.5em";
 		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
 		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-
 
 
 		//  id="grid-containerAndroid"
@@ -197,59 +174,12 @@ switch(deviceScreenWidth) {
 	 }
 
          if(isAndroidEdge) {
-		  alert("Edge Android     screen width EQUAL to 360 "); 
+		//  alert("Edge Android     screen width EQUAL to 360 "); 
 
-		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
+		//  *** required by some browsers ***
 		//  id="textIntroCaption"
 		//  0.75em
 		document.getElementById('textIntroCaption').style.fontSize="0.7em";
-
-
-		document.getElementById('textIntroduction').style.fontSize="2.5em";
-		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
 
 
 
@@ -367,48 +297,12 @@ switch(deviceScreenWidth) {
 				         if(isFirefox) {
                      
 	    	  			//	alert("Firefox Android  -  screen width = 408, screen height = 929 "); 
-						document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
 
+						//  *** required by some browsers ***
 						document.getElementById('textIntroduction').style.fontSize="3.5em";
 						document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
 						document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
 
-
-						//  id="androidGraphicsTitle"
-						//  4.125em
-						document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-						//  id="cadGraphicsTitle"
-						//  4.125em
-						document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-						id="graphicsTitle"
-						//  4.125em
-						document.getElementById('graphicsTitle').style.fontSize="4.125em";
-	
-						//  id="databaseGraphicsTitle"
-						//  4.125em
-						document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-						//  id="graphicGraphicsTitle"
-						//  4.125em
-						document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-						//  id="windowsGraphicsTitle"
-						//  4.125em
-						document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-						//  id="miscGraphicsTitle"
-						//  4.125em
-						document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-	
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-						document.getElementById('angularJSlocatedAtMsg').innerHTML=
-							"<center>" + 
-							"Located at" +
-							"<center>";
 			
 			//  id="grid-containerAndroid"
    			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -455,55 +349,7 @@ switch(deviceScreenWidth) {
 
          if(isChrome) {
                      
-	    //	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
-		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-		document.getElementById('textIntroduction').style.fontSize="2.5em";
-		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-
-
+	    	//	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
 
 		//  id="grid-containerAndroid"
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -553,57 +399,11 @@ switch(deviceScreenWidth) {
       	    		case 938:      
          			//  alert("EDGE Android using screen width = 412   screen height = 938" + "<br>"); 
 
-		document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
 
+		//  *** required by some browsers ***
 		//  id="textIntroCaption"
 		//  0.75em
 		document.getElementById('textIntroCaption').style.fontSize="0.7em";
-
-
-		document.getElementById('textIntroduction').style.fontSize="2.5em";
-		document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-		document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
 
 
 
@@ -757,69 +557,6 @@ switch(deviceScreenWidth) {
          if(isFirefox) {
             //	  alert("Firefox using screen width = 1133" + "<br>"); 
 
-
-			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
 			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 155vh 0.3vh";
@@ -868,68 +605,6 @@ switch(deviceScreenWidth) {
             	//  alert("Chrome using screen width = 1143" + "<br>"); 
 		//  alert("Chrome Android     screen width EQUAL to 1143 "); 
 
-			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
 			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
@@ -967,69 +642,6 @@ switch(deviceScreenWidth) {
 
          if(isAndroidEdge) {
             	 // alert("Microsoft Edge (Android) using screen width = 1143"); 
-
-
-			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -1078,374 +690,106 @@ switch(deviceScreenWidth) {
          		if(isChrome) {
             			//  alert("Chrome using screen width = 1280" + "<br>");
 
-				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 115vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				document.getElementById('textIntroduction').style.fontSize="2.5em";
-				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-				//  id="androidGraphicsTitle"
-				//  4.125em
-				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-				//  id="cadGraphicsTitle"
-				//  4.125em
-				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
-				id="graphicsTitle"
-				//  4.125em
-				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				//  id="databaseGraphicsTitle"
-				//  4.125em
-				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="graphicGraphicsTitle"
-				//  4.125em
-				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="windowsGraphicsTitle"
-				//  4.125em
-				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="miscGraphicsTitle"
-				//  4.125em
-				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-				document.getElementById('copyrightMsg').style.fontSize="2.5em";
-				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-				//  id="linkPrivacyPolicy"
-				//  1.875em
-				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
-				//  id="grid-containerAndroid"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerCAD"
-     				//  grid-template-rows: 0.3vh 135vh 0.3vh
-				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-				//  id="grid-containerCloud"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-				//  id="grid-containerDatabase"
-     				//  grid-template-rows: 0.3vh 215vh 0.3vh
-				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
-
-				//  id="grid-containerGraphics"
-     				//  grid-template-rows: 0.3vh 225vh 0.3vh
-				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-				//  id="grid-containerWindows"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerMisc"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
          		} 
                         
          		if(isFirefox) {
             			//  alert("Firefox using screen width = 1280" + "<br>"); 
 
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 115vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
-				document.getElementById('textIntroduction').style.fontSize="2.5em";
-				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-				//  id="androidGraphicsTitle"
-				//  4.125em
-				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
-				//  id="cadGraphicsTitle"
-				//  4.125em
-				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				id="graphicsTitle"
-				//  4.125em
-				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
-				//  id="databaseGraphicsTitle"
-				//  4.125em
-				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="graphicGraphicsTitle"
-				//  4.125em
-				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="windowsGraphicsTitle"
-				//  4.125em
-				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="miscGraphicsTitle"
-				//  4.125em
-				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-				document.getElementById('copyrightMsg').style.fontSize="2.5em";
-				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-				//  id="linkPrivacyPolicy"
-				//  1.875em
-				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
-				//  id="grid-containerAndroid"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerCAD"
-     				//  grid-template-rows: 0.3vh 135vh 0.3vh
-				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-				//  id="grid-containerCloud"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-				//  id="grid-containerDatabase"
-     				//  grid-template-rows: 0.3vh 215vh 0.3vh
-				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
-
-				//  id="grid-containerGraphics"
-     				//  grid-template-rows: 0.3vh 225vh 0.3vh
-				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-				//  id="grid-containerWindows"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerMisc"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
          		} 
                            
          		if(isNewEdge) {
-            		//	  alert("Microsoft Edge (new) using screen width = 1280" + "<br>"); 
-
-
-				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-				document.getElementById('textIntroduction').style.fontSize="2.5em";
-				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-				//  id="androidGraphicsTitle"
-				//  4.125em
-				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="cadGraphicsTitle"
-				//  4.125em
-				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-				id="graphicsTitle"
-				//  4.125em
-				document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-				//  id="databaseGraphicsTitle"
-				//  4.125em
-				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="graphicGraphicsTitle"
-				//  4.125em
-				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="windowsGraphicsTitle"
-				//  4.125em
-				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="miscGraphicsTitle"
-				//  4.125em
-				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-				document.getElementById('copyrightMsg').style.fontSize="2.5em";
-				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-				//  id="linkPrivacyPolicy"
-				//  1.875em
-				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
-				//  id="grid-containerAndroid"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerCAD"
-     				//  grid-template-rows: 0.3vh 135vh 0.3vh
-				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-				//  id="grid-containerCloud"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-				//  id="grid-containerDatabase"
-     				//  grid-template-rows: 0.3vh 215vh 0.3vh
-				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
-
-				//  id="grid-containerGraphics"
-     				//  grid-template-rows: 0.3vh 225vh 0.3vh
-				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-				//  id="grid-containerWindows"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerMisc"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
-
-
+            			//  alert("Microsoft Edge (new) using screen width = 1280" + "<br>"); 
          		} 
                      
          		if(isEdge) {
             			//  alert("Microsoft Edge (old) using screen width = 1280" + "<br>"); 
 
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 115vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
 
-				document.getElementById('textIntroduction').style.fontSize="2.5em";
-				document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-				document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 
-				//  id="androidGraphicsTitle"
-				//  4.125em
-				document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
 
-				//  id="cadGraphicsTitle"
-				//  4.125em
-				document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
 
-				id="graphicsTitle"
-				//  4.125em
-				document.getElementById('graphicsTitle').style.fontSize="4.125em";
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
-				//  id="databaseGraphicsTitle"
-				//  4.125em
-				document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="graphicGraphicsTitle"
-				//  4.125em
-				document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="windowsGraphicsTitle"
-				//  4.125em
-				document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-				//  id="miscGraphicsTitle"
-				//  4.125em
-				document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-				document.getElementById('copyrightMsg').style.fontSize="2.5em";
-				document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-	           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-        	   	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-				document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-				document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-				document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-				//  id="linkPrivacyPolicy"
-				//  1.875em
-				document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
-				//  id="grid-containerAndroid"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerCAD"
-     				//  grid-template-rows: 0.3vh 135vh 0.3vh
-				document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
-
-				//  id="grid-containerCloud"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
-
-				//  id="grid-containerDatabase"
-     				//  grid-template-rows: 0.3vh 215vh 0.3vh
-				document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
-
-				//  id="grid-containerGraphics"
-     				//  grid-template-rows: 0.3vh 225vh 0.3vh
-				document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
-
-				//  id="grid-containerWindows"
-     				//  grid-template-rows: 0.3vh 95vh 0.3vh
-				document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 105vh 0.3vh";
-
-				//  id="grid-containerMisc"
-     				//  grid-template-rows: 0.3vh 170vh 0.3vh
-				document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
          		} 
@@ -1478,66 +822,6 @@ switch(deviceScreenWidth) {
          	if(isChrome) {
             		//  window.alert("Chrome using screen width = 1536" + "<br>");
 
-			document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-			
-
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
 
 
 			//  id="grid-containerAndroid"
@@ -1577,66 +861,6 @@ switch(deviceScreenWidth) {
 			//  alert("using the Firefox browser under Win10");
 
 
-		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
-
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
 			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
@@ -1669,67 +893,6 @@ switch(deviceScreenWidth) {
                         
          	if(isNewEdge) {
             		//  alert("Microsoft Edge (new) using screen width = 1536" + "<br>");
-
-
-		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -1766,67 +929,6 @@ switch(deviceScreenWidth) {
                       
          	if(isEdge) {
             		//  alert("Microsoft Edge (old) using screen width = 1536" + "<br>");
-
-
-		 	document.getElementById('mainPageSiteTitle').style.fontSize="4.5em";
-
-			document.getElementById('textIntroduction').style.fontSize="2.5em";
-			document.getElementById('textIntroductionEmphasized1').style.fontSize="1.0em";
-			document.getElementById('textIntroductionEmphasized2').style.fontSize="1.0em";
-
-			//  id="androidGraphicsTitle"
-			//  4.125em
-			document.getElementById('androidGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="cadGraphicsTitle"
-			//  4.125em
-			document.getElementById('cadGraphicsTitle').style.fontSize="4.125em";
-
-			id="graphicsTitle"
-			//  4.125em
-			document.getElementById('graphicsTitle').style.fontSize="4.125em";
-
-			//  id="databaseGraphicsTitle"
-			//  4.125em
-			document.getElementById('databaseGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="graphicGraphicsTitle"
-			//  4.125em
-			document.getElementById('graphicGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="windowsGraphicsTitle"
-			//  4.125em
-			document.getElementById('windowsGraphicsTitle').style.fontSize="4.125em";
-
-			//  id="miscGraphicsTitle"
-			//  4.125em
-			document.getElementById('miscGraphicsTitle').style.fontSize="4.125em";
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-				document.getElementById('angularJSlocatedAtMsg').innerHTML=
-					"<center>" + 
-					"Located at" +
-					"<center>";
-
-
-			document.getElementById('copyrightMsg').style.fontSize="2.5em";
-			document.getElementById('bestResultsMsg').style.fontSize="2.5em";
-
-           	//	document.getElementById("BootstrapIcon").style.width="6em"; 
-           	//	document.getElementById("BootstrapIcon").style.height="6em";
-
-			document.getElementById('iconsProvidedMsg').style.fontSize="2em";
-			document.getElementById('iconsCopyrightMsg').style.fontSize="2em";
-			document.getElementById('iconsModifiedMsg').style.fontSize="2em";
-
-
-			//  id="linkPrivacyPolicy"
-			//  1.875em
-			document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
-
-
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -1865,29 +967,6 @@ switch(deviceScreenWidth) {
                         
          	if(isChrome) {
             		//  alert("Chrome using screen width = 1707" + "<br>");
-
-			//   <span id="mainPageSiteTitle" style="color:Navy;font-size:68px;"><b>ab872</b></span>
-
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			//  document.getElementById('mainPageSiteTitle').style.fontSize="68px";
-
-			//   id="imagePcbIntro" 
-			//  height="162"   //  202
-			//  width="375"    //  468
-			//  document.getElementById("imagePcbIntro").style.height="303px";
-			//  document.getElementById("imagePcbIntro").style.width="702px"; 
-
-
-
-			//      <span id="angularJSlocatedAtMsg" style="color:Black;font-size:18px;">Located at</span><br>
-			//	document.getElementById('angularJSlocatedAtMsg').innerHTML=
-			//		"<center>" + 
-			//		"Located at" +
-			//		"<center>";
-			//
-
 
 
 			//  id="grid-containerAndroid"
@@ -1960,10 +1039,6 @@ switch(deviceScreenWidth) {
          	if(isNewEdge) {
             		//  alert("Microsoft Edge (new) using screen width = 1707" + "<br>");
 
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			//  document.getElementById('mainPageSiteTitle').style.fontSize="72px";
 
 			document.getElementById('textIntroduction').innerHTML += "<br><br><br><br><br>";
 
@@ -1999,11 +1074,6 @@ switch(deviceScreenWidth) {
                            
          	if(isEdge) {
             		//  alert("Microsoft Edge (old) using screen width = 1707" + "<br>");
-
-			//  id="mainPageSiteTitle"
-			//  28px
-			//  ><b>ab872</b><
-			//  document.getElementById('mainPageSiteTitle').style.fontSize="48px";
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
