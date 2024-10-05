@@ -1,4 +1,4 @@
-<!-- viewTCA  -->
+<!-- viewTCA2  -->
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
 
 
 
-      <title>ab872 - Software Unit Testing</title> 
+      <title>ab872 - Software Unit Testing, part 2</title> 
 
 
 
@@ -91,12 +91,11 @@
 <body>
 
 <center> 
-<span id="textPageTitle" style="color:Navy;font-size:28px;"><b>PDF Viewer</b></span>
+<span id="textPageTitle" style="color:Navy;font-size:2.75em;"><b>PDF Viewer</b></span>
 </center><br>
 
 
 <center> 
-<br>
 <div style="color:black; background-color:white;border:2px solid lightgray;border-radius:8px;margin-top:3px;margin-bottom:3px" id="pdViewerContainer"> 
 
 
@@ -121,7 +120,7 @@ is used to go to the next page</desc> <rect opacity="1" fill="none" stroke="none
 &nbsp;&nbsp;&nbsp;
 
 
-<span id="totalPages" style="color:Navy;font-size:48px;"><b>??? Pages</b></span>
+<span id="totalPages" style="color:Navy;font-size:3em;"><b>??? Pages</b></span>
 <br>
 
 
@@ -157,13 +156,13 @@ const tmpcanvas = document.getElementById('the-canvas');
 
 const tmpctx = tmpcanvas.getContext('2d'); 
 
-tmpctx.font = "48px Arial";
+tmpctx.font = "3em Arial";
 tmpctx.textAlign = 'center'; 
 tmpctx. textBaseline = 'middle'; 
 tmpctx.fillStyle = 'Navy'; 
 tmpctx.fillText('Loading ...', 160, 70);
 
-tmpctx.font = "14px Arial";
+tmpctx.font = "0.875em Arial";
 tmpctx.fillStyle = 'Maroon'; 
 
 tmpctx.fillText('If the file does not load,', 145, 115);
@@ -176,6 +175,8 @@ tmpctx.fillText('your browser is not supported at this time.', 150, 130);
 //  tmpcanvas.height = "300px";
 //  tmpcanvas.style.width = "500px";
 //  tmpcanvas.style.height = "300px";
+
+
 
 
 
@@ -225,8 +226,7 @@ pdfjsLib.getDocument(url);
 
 
 
-//  alert("pdfViewer      get document
-//  complete");
+ // alert("pdfViewer      get document complete");
 
 
 
@@ -279,9 +279,8 @@ document.getElementById('totalPages').innerHTML='<b>' +
 document.getElementById('currentPageNumber').value = 1;
 
 
-
-
 </script>
+
 
 
 
@@ -442,6 +441,7 @@ pdfDoc.numPages +
 
 
 
+
  </script> 
 
 
@@ -466,35 +466,50 @@ pdfDoc.numPages +
 <br><br>
 
 <center> 
-<span id="copyrightMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2022. All rights reserved.</b></span>
+<span id="copyrightMsg" style="color:Navy;font-size:2.2em;">
+<b>&nbsp;&nbsp;&nbsp;
+Copyright &#169; 2022. All rights reserved.</b></span>
 </center> 
 <br>
 
+
 <center> 
-<span id="bestResultsChromeMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span>
+<span id="bestResultsChromeMsg" style="color:Navy;font-size:2.2em;">
+<b>&nbsp;&nbsp;&nbsp;
+Best results when using the Chrome browser.</b></span>
 </center><br><br>
 
 
 <center> 
-<span id="pdfProvidedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;PDF viewer derived from  
+<span id="pdfProvidedMsg" style="color:Navy;font-size:1.75em;">
+<b>&nbsp;&nbsp;&nbsp;
+PDF viewer derived from  
 <a href="https://github.com/mozilla/pdf.js" target="_blank"><b>PDF.js</b></a>.</b></span><br>
 
 
-<span id="pdfDownloadMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;PDF.js is <a href="https://mozilla.github.io/pdf.js/getting_started/#download" target="_blank"><b>available for download at this website</b></a>.</b></span><br>
+<span id="pdfDownloadMsg" style="color:Navy;font-size:1.75em;">
+<b>&nbsp;&nbsp;&nbsp;
+PDF.js is <a href="https://mozilla.github.io/pdf.js/getting_started/#download" target="_blank">
+<b>available for download at this website</b></a>.</b></span><br>
 
 
-<span id="pdfLicenseMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;PDF.js is under the <a href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">Apache License Version 2.0</a>.</b></span>
+<span id="pdfLicenseMsg" style="color:Navy;font-size:1.75em;">
+<b>&nbsp;&nbsp;&nbsp;
+PDF.js is under the <a href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">
+Apache License Version 2.0</a>.</b></span>
 </center><br><br>
 
 
 
 
 <center> 
-<span id="iconProvidedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Icons provided via the 
+<span id="iconProvidedMsg" style="color:Navy;font-size:2.2em;">
+<b>&nbsp;&nbsp;&nbsp;
+Icons provided via the 
 <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br><br>
 
  <svg id="BootstrapIcon" 
-xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
+xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
 role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
     <title> id="iconTitle">Bootstrap icon</title>
     <desc  id="iconDesc">this icon represents Bootstrap</desc> 
@@ -503,9 +518,13 @@ role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"
 </svg><br>
 
 
-<span id="iconLicenseMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+<span id="iconLicenseMsg" style="color:Navy;font-size:2.2em;">
+<b>&nbsp;&nbsp;&nbsp; 
+Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
 
-<span id="iconModifiedMsg" style="color:Navy;font-size:12px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+<span id="iconModifiedMsg" style="color:Navy;font-size:2.2em;">
+<b>&nbsp;&nbsp;&nbsp;
+Some icons in this collection have been modified.</b></span><br><br>
 </center> 
 
 
@@ -799,10 +818,10 @@ used by multiple pages.
 <script src="debug.js">
 </script>
 
-<script src="viewTCA.js">
-</script>
 
-<NOSCRIPT><span style="color:Navy;font-size:12px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
+
+<NOSCRIPT><span style="color:Navy;font-size:0.75em;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br>
+
 
 <center>
 <BUTTON style="background-color:lightblue;color:white;margin-left:1px;margin-right:2px;margin-top:1px;margin-bottom:1px;border:2px solid lightgrey;border-radius:8px;width=120px;height:40px;-webkit-appearance:none" TYPE="button" id="debugButton" name="debugButton" title="show DEBUG info button" aria-label="show DEBUG info button" ONCLICK="showDebug()" ACCESSKEY=S><span style="font-size:28px;">     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="navy" stroke="white" class="bi bi-gear-fill" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
@@ -814,8 +833,7 @@ used by multiple pages.
 <div style="color:black; background-color:ivory;border:2px solid lightgrey;border-radius:8px;margin-top:3px;margin-bottom:3px" id="debugOut" name="debugOut" title="debug output appears here" aria-label="debug output appears here">
 </div> <br><br>
 
-                    
-    
+
 </body>
 
 </html>
