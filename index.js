@@ -11,6 +11,7 @@
   //  alert("index.js has loaded");
 
 
+  //  alert("adjust layout using overrides" + "<br>");
 
 //  this JavaScript file attempts to override the slight differences
 //  in page rendering by different browsers
@@ -90,6 +91,9 @@ document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
 //  ******************************************************************
 //  
 
+  //  alert("adjust layout using screen width" + "<br>");
+
+
 switch(deviceScreenWidth) {
       case 360:      //  Android 
       	 //   alert("using screen width = 360" + "<br>");
@@ -123,7 +127,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 290vh 0.3vh";
 
 	 }
 
@@ -167,7 +171,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
 
 	 }
 
@@ -224,7 +228,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
 
 
 
@@ -390,9 +394,12 @@ switch(deviceScreenWidth) {
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
 		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
 
+// for some reason is not changing
+//  alert("Chrome Android  -  screen width 412 - set Misc");
+
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 330vh 0.3vh";
                 
              
 	 }
@@ -402,7 +409,6 @@ switch(deviceScreenWidth) {
 
          if(isAndroidEdge) {
 		//  alert("Edge Android     screen width EQUAL to 412 "); 
-
 	 }
 
                         
@@ -448,7 +454,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
                 
 
 
@@ -598,7 +604,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 350vh 0.3vh";
 
 
          } 
@@ -646,7 +652,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 340vh 0.3vh";
 
 
          } 
@@ -684,7 +690,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 340vh 0.3vh";
 
 
 
@@ -741,12 +747,10 @@ switch(deviceScreenWidth) {
                     
          break;
       	 case 1536:     //  Win10
-      			//   alert("using screen width = 1536" + "<br>");
+      		//	   alert("using screen width = 1536" + "<br>");
                            
          	if(isChrome) {
-            		//  window.alert("Chrome using screen width = 1536" + "<br>");
-
-
+            //		  window.alert("Chrome using screen width = 1536" + "<br>");
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -774,7 +778,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 240vh 0.3vh";
 
 
 
@@ -811,7 +815,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 190vh 0.3vh
-			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 290vh 0.3vh";
 
          	} 
                         
@@ -844,7 +848,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerMisc"
      			//  grid-template-rows: 0.3vh 190vh 0.3vh
-			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+			document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 310vh 0.3vh";
 
 
 
