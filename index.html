@@ -90,7 +90,10 @@ style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSy
 'sha256-A/1SwfivmhN1cApBkYaGBO8M+zuay2A95lcdEw78CXE=' 'sha256-+nSYeofLpzuBoin2BG0Ki8u/IliaXt4gGiaZvP6o1Kg='
 'sha256-lrFBtgtUOUJbOw7UGVCMIH9qlAjYU7GN2bV8cMKh+jA=' 'sha256-vTxUD0/ObLjg7qDpjJAMMKP7nXRq1xfDU0gL/6GXcaw='
 'sha256-ROogpTtyskQj1lILXq1MEsbtN/D4B1K8hpTD66vQJlY=' 'sha256-hgbtDPa9QfHtROuXx25qTszC3ce1nnnQMaHVB602vWk='
-'sha256-voaIL4gMrdZJIe7Fm4iCSXrLtzAbREmx22opWMzC/lQ=' 'sha256-LV4wME+RkTlMacFz5LoSG6AyY/iezOYYIqc5O2rigqI=';
+'sha256-voaIL4gMrdZJIe7Fm4iCSXrLtzAbREmx22opWMzC/lQ=' 'sha256-LV4wME+RkTlMacFz5LoSG6AyY/iezOYYIqc5O2rigqI='
+'sha256-ARZMpTjnSyJAv7luQxj2nFnXHfQeYoAvKsXGTeQBxA0=' 'sha256-v/ORsPZWBjm2LUUs4lPLwZJO+yOiEIuzyfrAJrGQ++A='
+'sha256-kkhSdXLEHegobKuYL4Ik6JJ03DrJRnPoDDRqRxCn/p0=' 'sha256-O3aG9UP1SBMRSgb0iVnDm4XJMP7cN9T3J/5SaO56WI0='
+'sha256-vZkY/Zvbat6Abim1qHpnoMZLH86bJPb+ClxaxGwk0hg=' 'sha256-2KuBcov8tJNy41iuhM7n9kUNSreu8B1J9hNkjbu0hJ0=';
 
 
 
@@ -180,6 +183,17 @@ form-action 'self' ">
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
      grid-template-rows: 0.3vh 170vh 0.3vh; 
+}
+
+
+.grid-containerTest {
+     background-color: rgb(240, 248, 255, 0.4);   
+     border: 6px solid rgb(0, 0, 255, 0.7);   
+     border-radius:16px;
+     display: grid;
+     grid-gap: 1em;
+     grid-template-columns: 0.5fr 4fr 0.5fr;
+     grid-template-rows: 0.3vh 140vh 0.3vh; 
 }
 
 
@@ -563,20 +577,20 @@ viewBox="0 0 512 512">
 
 <svg id="imagePCBlogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
 viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
 
 
@@ -1187,27 +1201,24 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imageDatabaseLogo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageDatabaseLogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
 
 
 
@@ -1509,27 +1520,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imageDatabase4Logo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageDatabase4Logo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -1869,27 +1878,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imageDatabase4Logo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageDatabase4Logo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -2187,27 +2194,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg transform="scale(1) translate(0,-30)" id="imageDatabase4Logo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg transform="scale(1) translate(0,-30)" id="imageDatabase4Logo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -2680,28 +2685,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-
-<svg id="imageSvgGraphics1Logo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageSvgGraphics1Logo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -2943,28 +2945,26 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-
-<svg id="imageSvgGraphics2Logo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageSvgGraphics2Logo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
+
 
 
 
@@ -3227,27 +3227,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imageRayTraceLogo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageRayTraceLogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -3362,6 +3360,129 @@ A short discussion of ray tracing graphics with references and examples.</i></sp
      <!--  end of grid container Graphics  -->
 </div>
 </center><br>
+
+
+
+
+
+
+
+<center>
+<div class="grid-containerTest" id="grid-containerTest">
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+
+     <div class="grid-item"><br>
+<center> 
+<span id="miscGraphicsTitle" style="color:Black;font-size:4.125em;">Software Testing</span>
+&nbsp;
+<svg id="tcaIcon" xmlns="http://www.w3.org/2000/svg" width="210" height="210" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTcaTitle" aria-describedby="iconTcaDesc"> <title> id="iconTcaTitle">Unit Testing icon</title> <desc  id="iconTcaDesc">this icon represents a Unit Testing Coverage Report</desc> <rect opacity="0.0" fill="none" stroke="red" stroke-width="0.1"  width="16" height="16" /> <path fill-rule="evenodd" fill="green" stroke="black" stroke-width="0.3" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue" stroke="black" stroke-width="0.2" d="M3 3H2v1h1V3z"/> <path fill="green"stroke="black" stroke-width="0.3" d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/> <path fill="red"stroke="black" stroke-width="0.3" d="M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill="green"stroke="black" stroke-width="0.3" d="m5.7 11a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/> <path fill-rule="evenodd" fill="red"stroke="black" stroke-width="0.3" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 7h1v1H2V7z"/> <path fill="green"stroke="black" stroke-width="0.3" d="m2 10.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2z"/> <path fill="aliceblue"stroke="black" stroke-width="0.2" d="M2 11h1v1H2V11z"/> </svg>
+</center> <br><br>
+
+
+<center> 
+
+
+<a href="viewTCA.html" target="_blank"><span id="linkTCA1" style="color:Navy;font-size:1em;">
+<b>
+Software Unit Testing, part 1</b></span></a>  
+<svg id="pdfIconTCA1" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA1Title" aria-describedby="pdfIconTCA1Desc"> <title> id="pdfIconTCA1Title">PDF icon</title> <desc id="pdfIconTCA1Desc">this icon represents a PDF file</desc> 
+<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
+
+<span id="textTCA1Caption" style="color:Grey;font-size:0.875em;"><i>
+Part 1 of a discussion on 
+<span id="textTCA1Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span> for 
+<span id="textTCA1Emphasized2" style="color:Navy;"><b>Desktop</b></span>, 
+<span id="textTCA1Emphasized3" style="color:Navy;"><b>Mobile</b></span> and 
+<span id="textTCA1Emphasized4" style="color:Navy;"><b>Web</b></span> applications. 
+The section on Web testing focuses on the use of 
+<span id="textTCA1Emphasized5" style="color:Navy;"><b>Cypress</b></span> (page 9), a modern test framework 
+for Web apps and Web pages. 
+Includes references.
+</i></span><br><br>
+
+
+<a href="viewTCA2.html" target="_blank"><span id="linkTCA2" style="color:Navy;font-size:1em;">
+<b>
+Software Unit Testing, part 2</b></span></a>  
+<svg id="pdfIconTCA2" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA2Title" aria-describedby="pdfIconTCA2Desc"> <title> id="pdfIconTCA2Title">PDF icon</title> <desc id="pdfIconTCA2Desc">this icon represents a PDF file</desc> 
+<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
+
+<span id="textTCA2Caption" style="color:Grey;font-size:0.875em;"><i>
+Part 2 of a discussion on
+<span id="textTCA2Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span>.
+This article discusses testing of software written in the 
+<span id="textTCA2Emphasized2" style="color:Navy;"><b>C#</b></span> 
+language using 
+<span id="textTCA2Emphasized3" style="color:Navy;"><b>.NET</b></span>.
+Includes a discussion of  
+<span id="textTCA2Emphasized4" style="color:Navy;"><b>xUnit</b></span> 
+( 
+<a href="https://xunit.net" target="_blank"><span id="linkXunit1" style="color:Navy;font-size:16px;">
+<b>https://xunit.net</b></span></a> 
+), a popular modern test framework which is used for 
+testing .NET software. Includes references.
+</i></span><br><br>
+
+
+
+
+<a href="viewTCA3.html" target="_blank"><span id="linkTCA3" style="color:Navy;font-size:1em;">
+<b>
+Software Unit Testing, part 3</b></span></a>  
+<svg id="pdfIconTCA3" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA2Title" aria-describedby="pdfIconTCA3Desc"> <title> id="pdfIconTCA3Title">PDF icon</title> <desc id="pdfIconTCA3Desc">this icon represents a PDF file</desc> 
+<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
+
+<span id="textTCA3Caption" style="color:Grey;font-size:0.875em;"><i>
+Part 3 of a discussion on
+<span id="textTCA3Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span>.
+This article discusses testing of software written in the 
+<span id="textTCA3Emphasized2" style="color:Navy;"><b>C++</b></span> 
+language. 
+Discusses Software Unit Testing using a generic testing framework as well as the modern 
+<span id="textTCA3Emphasized4" style="color:Navy;"><b>Google Test</b></span> 
+testing framework. Includes references.
+</i></span><br><br>
+
+
+</center><br><br>
+
+
+
+  
+   </div>
+
+     <div class="grid-itemMargin">
+     </div>
+
+
+
+
+
+     <div class="grid-itemMargin">
+     </div>
+     <div class="grid-itemTopBottom">
+     </div>
+     <div class="grid-itemMargin">
+     </div>
+
+     <!--  end of grid container Test  -->
+</div>
+</center><br>
+
+
+
 
 
 
@@ -3689,27 +3810,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imagePhotoGalleryLogo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imagePhotoGalleryLogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -3948,27 +4067,25 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-
-<svg id="imageColorPickerLogo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageColorPickerLogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
+
 
 
 
@@ -4212,26 +4329,24 @@ width="2.9375em" height="2.9375em" xmlns:dc="http://purl.org/dc/elements/1.1/"
 
 
 
-
-<svg id="imageNwsWeatherLogo3" alt="VanillaJS logo"  
-width="2.9375em" height="2.9375em"
-viewBox="0 0 35 35" 
-xmlns="http://www.w3.org/2000/svg"> 
-<rect x="0" y="0" width="35" height="35" fill="maroon" opacity="0.90" stroke="navy" stroke-width="0.3" />
+<svg id="imageNwsWeatherLogo3" alt="VanillaJS logo" width="2.9375em" height="2.9375em"
+viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"> 
+<rect x="0" y="0" width="35" height="35" fill="yellow" opacity="0.90" stroke="navy" stroke-width="0.3" />
 <path id="curvedPath1" fill="none" stroke="none" stroke-width=".1" d="M -5 14 Q 15.5 -5 42 12.0" pathLength="2" />
 <path id="curvedPath2" fill="none" stroke="none" stroke-width=".1" d="M 3 20 Q 16 34 33 20" pathLength="2" />
-  <text class="text1" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text1" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath1" startOffset="1">
       Vanilla
     </textPath>
   </text>
-  <text class="text2" opacity="0.90" fill="white" stroke="white" stroke-width="0.1" font-size="6" dominant-baseline="hanging" text-anchor="middle">
+  <text class="text2" opacity="1.00" fill="black" stroke="black" stroke-width="0.1" font-size="7" dominant-baseline="hanging" text-anchor="middle">
     <textPath href="#curvedPath2" startOffset="1">
       JavaScript 
     </textPath>
   </text>
-<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="white" opacity="0.90" stroke="white" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
+<g font-size="7" text-anchor="middle"> <text x="17.2" y="19.0" fill="black" opacity="1.00" stroke="black" stroke-width="0.2" transform="rotate (0,0,0)">VanillaJS</text> </g>
 </svg>
+
 
 
 
@@ -4834,74 +4949,6 @@ Simplified shopping cart written using
 
 
 
-<a href="viewTCA.html" target="_blank"><span id="linkTCA1" style="color:Navy;font-size:1em;">
-<b>
-Software Unit Testing, part 1</b></span></a>  
-<svg id="pdfIconTCA1" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA1Title" aria-describedby="pdfIconTCA1Desc"> <title> id="pdfIconTCA1Title">PDF icon</title> <desc id="pdfIconTCA1Desc">this icon represents a PDF file</desc> 
-<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
-
-<span id="textTCA1Caption" style="color:Grey;font-size:0.875em;"><i>
-Part 1 of a discussion on 
-<span id="textTCA1Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span> for 
-<span id="textTCA1Emphasized2" style="color:Navy;"><b>Desktop</b></span>, 
-<span id="textTCA1Emphasized3" style="color:Navy;"><b>Mobile</b></span> and 
-<span id="textTCA1Emphasized4" style="color:Navy;"><b>Web</b></span> applications. 
-The section on Web testing focuses on the use of 
-<span id="textTCA1Emphasized5" style="color:Navy;"><b>Cypress</b></span> (page 9), a modern test framework 
-for Web apps and Web pages. 
-Includes references.
-</i></span><br><br>
-
-
-<a href="viewTCA2.html" target="_blank"><span id="linkTCA2" style="color:Navy;font-size:1em;">
-<b>
-Software Unit Testing, part 2</b></span></a>  
-<svg id="pdfIconTCA2" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA2Title" aria-describedby="pdfIconTCA2Desc"> <title> id="pdfIconTCA2Title">PDF icon</title> <desc id="pdfIconTCA2Desc">this icon represents a PDF file</desc> 
-<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
-
-<span id="textTCA2Caption" style="color:Grey;font-size:0.875em;"><i>
-Part 2 of a discussion on
-<span id="textTCA2Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span>.
-This article discusses testing of software written in the 
-<span id="textTCA2Emphasized2" style="color:Navy;"><b>C#</b></span> 
-language using 
-<span id="textTCA2Emphasized3" style="color:Navy;"><b>.NET</b></span>.
-Includes a discussion of  
-<span id="textTCA2Emphasized4" style="color:Navy;"><b>xUnit</b></span> 
-( 
-<a href="https://xunit.net" target="_blank"><span id="linkXunit1" style="color:Navy;font-size:16px;">
-<b>https://xunit.net</b></span></a> 
-), a popular modern test framework which is used for 
-testing .NET software. Includes references.
-
-</i></span><br><br>
-
-
-
-
-<a href="viewTCA3.html" target="_blank"><span id="linkTCA3" style="color:Navy;font-size:1em;">
-<b>
-Software Unit Testing, part 3</b></span></a>  
-<svg id="pdfIconTCA3" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="pdfIconTCA2Title" aria-describedby="pdfIconTCA3Desc"> <title> id="pdfIconTCA3Title">PDF icon</title> <desc id="pdfIconTCA3Desc">this icon represents a PDF file</desc> 
-<rect opacity="0" fill="none" stroke="red" stroke-width="1"  width="16" height="16" /> <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/> </svg><br>
-
-<span id="textTCA3Caption" style="color:Grey;font-size:0.875em;"><i>
-Part 3 of a discussion on
-<span id="textTCA3Emphasized1" style="color:Navy;"><b>Software Unit Testing</b></span>.
-This article discusses testing of software written in the 
-<span id="textTCA3Emphasized2" style="color:Navy;"><b>C++</b></span> 
-language. 
-Discusses Software Unit Testing using a generic testing framework as well as the modern 
-<span id="textTCA3Emphasized4" style="color:Navy;"><b>Google Test</b></span> 
-testing framework. Includes references.
-
-</i></span><br><br>
-
-
-
-
-
-
 
 <a href="viewSrcFizz.html" target="_blank"><span id="linkSrcFizz1" style="color:Navy;font-size:1em;">
 <b>
@@ -4960,9 +5007,6 @@ Rust, 80x86 Assembly Language (Win32),
      <!--  end of grid container Misc  -->
 </div>
 </center><br>
-
-
-
 
 
 
@@ -5254,10 +5298,8 @@ used by multiple pages.
 </script>
 
 
-
 <script src="debug.js">
 </script>
-
 
 
 <script src="index.js">
