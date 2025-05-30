@@ -8,7 +8,7 @@
 // temporary change       for testing 12345678
 // temporary change 2     for testing 87654321
 
-   // alert("index.js has loaded");
+  //   alert("index.js has loaded");
 
 
   //  alert("adjust layout using overrides" + "<br>");
@@ -91,7 +91,17 @@ document.getElementById('linkPrivacyPolicy').style.fontSize="1.875em";
 //  ******************************************************************
 //  
 
-  //  alert("adjust layout using screen width" + "<br>");
+//    alert("adjust layout using screen width   " + deviceScreenWidth + "<br>");
+
+
+//
+//  ******************************************************************
+//  some devices arent working as expected.temporary test code.
+//  ******************************************************************
+//  
+//    if(deviceScreenWidth == 1143) {
+//     	  alert("screen override - Chrome using screen width =   " + deviceScreenWidth + "<br>"); 
+//    }
 
 
 switch(deviceScreenWidth) {
@@ -337,7 +347,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 180vh 0.3vh";
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -376,9 +386,18 @@ switch(deviceScreenWidth) {
                      
 	    	//	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
 
-		//  id="grid-containerAndroid"
+//   **************************************************
+//   ***   for some reason, overrides arent working on this device   ***
+//   **************************************************
+
+		//  id grid-containerAndroid
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
-		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 85vh 0.3vh";
+	//	document.getElementById("grid-containerAndroid").style.gridTemplateRows = "0.3vh 55vh 0.3vh";
+
+		//  id grid-containerAndroid
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+
 
 		//  id="grid-containerCAD"
      		//  grid-template-rows: 0.3vh 135vh 0.3vh
@@ -386,38 +405,33 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 120vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
 
-		//  id="grid-containerDatabase"
-     		//  grid-template-rows: 0.3vh 215vh 0.3vh
-		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+ 	       //  id="grid-containerDatabase"
+     	       //  grid-template-rows: 0.3vh 215vh 0.3vh
+	       document.getElementById("grid-containerDatabase").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+
 
 		//  id="grid-containerGraphics"
      		//  grid-template-rows: 0.3vh 225vh 0.3vh
-		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
 
 
-// for some reason is not changing
 		//  id="grid-containerWindows"
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
 		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 40vh 0.3vh";
 
+
 	        //  id="grid-containerTest"
      		//  grid-template-rows: 0.3vh 140vh 0.3vh
-		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 150vh 0.3vh";
 
-
-// for some reason is not changing
-//  alert("Chrome Android  -  screen width 412 - set Misc");
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
 	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-
-//  the command executes but the layout doesnt change
-//     alert("Chrome Android  -  screen width 412 - set Misc was successful");
-             
-             
+            
 	 }
 
 
@@ -458,7 +472,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerDatabase"
      		//  grid-template-rows: 0.3vh 215vh 0.3vh
-		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
 
 		//  id="grid-containerGraphics"
      		//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -596,7 +610,7 @@ switch(deviceScreenWidth) {
          } 
 
          if(isFirefox) {
-            //	  alert("Firefox using screen width = 1133" + "<br>"); 
+            	//  alert("Firefox using screen width = 1133" + "<br>"); 
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -612,7 +626,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -644,7 +658,7 @@ switch(deviceScreenWidth) {
 
          break;
       case 1143:     //  Android
-      //   alert("using screen width = 1143" + "<br>"); 
+     //    alert("using screen width = >1143<" + "\n"); 
 
          if(isChrome) {
             	//  alert("Chrome using screen width = 1143" + "<br>"); 
@@ -664,7 +678,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 340vh 0.3vh";
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -690,7 +704,7 @@ switch(deviceScreenWidth) {
          } 
 
          if(isAndroidEdge) {
-            	 // alert("Microsoft Edge (Android) using screen width = 1143"); 
+            	//  alert("Microsoft Edge (Android) using screen width = 1143"); 
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -706,7 +720,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 310vh 0.3vh";
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 340vh 0.3vh";
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
