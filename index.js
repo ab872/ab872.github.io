@@ -8,11 +8,7 @@
 // temporary change       for testing 12345678
 // temporary change 2     for testing 87654321
 
-<<<<<<< HEAD
-   // alert("index.js has loaded");
-=======
   //   alert("index.js has loaded");
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 
   //  alert("adjust layout using overrides" + "<br>");
@@ -404,11 +400,8 @@ switch(deviceScreenWidth) {
 //  does not seem to be working
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
+
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 180vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -466,23 +459,14 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-<<<<<<< HEAD
 		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 210vh 0.3vh";
 
-
 // for some reason is not changing
-		//  id="grid-containerDatabase"
-     		//  grid-template-rows: 0.3vh 215vh 0.3vh
-		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-=======
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
 
  	       //  id="grid-containerDatabase"
      	       //  grid-template-rows: 0.3vh 215vh 0.3vh
 	       document.getElementById("grid-containerDatabase").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
 
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 		//  id="grid-containerGraphics"
      		//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -492,33 +476,17 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerWindows"
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
-<<<<<<< HEAD
-		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 90vh 0.3vh";
-
-	        //  id="grid-containerTest"
-     		//  grid-template-rows: 0.3vh 140vh 0.3vh
-		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-=======
 		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 40vh 0.3vh";
 
 
 	        //  id="grid-containerTest"
      		//  grid-template-rows: 0.3vh 140vh 0.3vh
 		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 150vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-<<<<<<< HEAD
 	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
-
-             
-             
-=======
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
-            
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 	 }
 
 
@@ -601,11 +569,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerDatabase"
      		//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
-=======
-		document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 		//  id="grid-containerGraphics"
      		//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -759,11 +723,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 370vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -815,11 +775,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 340vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -861,11 +817,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 340vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -941,11 +893,7 @@ switch(deviceScreenWidth) {
       		//	   alert("using screen width = 1536" + "<br>");
                            
          	if(isChrome) {
-<<<<<<< HEAD
             		//  window.alert("Chrome using screen width = 1536" + "<br>");
-=======
-            	//	  window.alert("Chrome using screen width = 1536" + "<br>");
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerAndroid"
      			//  grid-template-rows: 0.3vh 95vh 0.3vh
@@ -1002,11 +950,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 360vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
@@ -1043,11 +987,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
-<<<<<<< HEAD
 			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 360vh 0.3vh";
-=======
-			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
->>>>>>> d7014a565720f452813e8972adf45c451a0ae0e1
 
 			//  id="grid-containerGraphics"
      			//  grid-template-rows: 0.3vh 225vh 0.3vh
