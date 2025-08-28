@@ -121,7 +121,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 760vh 0.3vh";
 
 		//  id="grid-containerDatabase"
      		//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -165,7 +165,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
 
 		//  id="grid-containerDatabase"
      		//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -222,7 +222,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 550vh 0.3vh";
 
 		//  id="grid-containerDatabase"
      		//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -343,7 +343,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 190vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
 
 //  does not seem to be working
 			//  id="grid-containerDatabase"
@@ -387,15 +387,15 @@ switch(deviceScreenWidth) {
 			
 			//  id="grid-containerAndroid"
    			//  grid-template-rows: 0.3vh 85vh 0.3vh
-			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 45vh 0.3vh";
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
 			//  id="grid-containerCAD"
      			//  grid-template-rows: 0.3vh 135vh 0.3vh
-			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 35vh 0.3vh";
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 55vh 0.3vh";
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 190vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 230vh 0.3vh";
 
 //  does not seem to be working
 			//  id="grid-containerDatabase"
@@ -457,12 +457,19 @@ switch(deviceScreenWidth) {
      		//  grid-template-rows: 0.3vh 135vh 0.3vh
 		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
+//  this device isnt responding correctly
+	    	//	  alert("Chrome Android  -  screen w412 h938 set cloud"); 
+
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 210vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
+
+	    	//	  alert("Chrome Android  -  screen w412 h938 success"); 
+//  the alert showing success appeared so it did execute the command
+//  why doesnt it change the value?
+
 
 // for some reason is not changing
-
  	       //  id="grid-containerDatabase"
      	       //  grid-template-rows: 0.3vh 215vh 0.3vh
 	       document.getElementById("grid-containerDatabase").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
@@ -518,7 +525,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 400vh 0.3vh";
 
 
 		//  id="grid-containerDatabase"
@@ -564,7 +571,7 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 190vh 0.3vh";
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
 
 
 		//  id="grid-containerDatabase"
@@ -719,7 +726,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 360vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -771,7 +778,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 380vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -813,7 +820,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 270vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -905,7 +912,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 250vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -946,7 +953,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 240vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 310vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
@@ -983,7 +990,7 @@ switch(deviceScreenWidth) {
 
 			//  id="grid-containerCloud"
      			//  grid-template-rows: 0.3vh 170vh 0.3vh
-			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 260vh 0.3vh";
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
 
 			//  id="grid-containerDatabase"
      			//  grid-template-rows: 0.3vh 215vh 0.3vh
