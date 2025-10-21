@@ -13,452 +13,377 @@
 
 
 
+//  ******************************************************************
+//  The case statement below is necessary to account for discrepancies
+//  in page rendering between the various browsers. It requires that we
+//  fully identify the browser. Not just the OS, OS version and browser
+//  version, but also the screen size.
+//  ******************************************************************
+//  
 
-if (isAndroidEdge) { 
+//    alert("adjust layout using screen width   " + deviceScreenWidth + "<br>");
 
-//  	   alert("Edge under Android");
 
 
+switch(deviceScreenWidth) {
+      case 360:      //  Android 
+      	 //   alert("using screen width = 360" + "<br>");
 
+         if(isChrome) {
+		//  alert("Chrome Android     screen width EQUAL to 360 "); 
 
+                document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 250vh 03vh`;
+                document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2150vh 03vh`;
 
-  // end Edge under Android
-} 
+	 }
 
+         if(isFirefox) {
+		//  alert("Firefox Android     screen width EQUAL to 360 "); 
 
+                document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 130vh 03vh`;
+                document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1450vh 03vh`;
 
+	 }
 
 
 
-   if (isFirefox) { 
-           //   begin      Firefox 
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 360" + "<br>");
 
-if (isAndroid) {
-           //   begin      Firefox under Android
 
-//  alert("Firefox under Android");
+         } 
 
 
 
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 360" + "<br>"); 
 
-if (isAndroid5) { 
 
-// begin     Firefox under Android5
+         } 
 
 
+         if(isAndroidEdge) {
+		//  alert("Edge Android     screen width EQUAL to 360 "); 
 
- // end Firefox under Android5 
+                document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 250vh 03vh`;
+                document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2170vh 03vh`;
 
-} else {
+         }
 
-// all other Firefox under Android
+         break;
+      case 375:      //  iPad, iPhone
+      	 //   alert("using screen width = 375" + "<br>");
 
+	 if (isSafari && isiPhone) {
+		//  alert("Safari iPhone     screen width EQUAL to 375 "); 
 
 
+	 }
 
-document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 170vh 03vh`;
 
 
+         break;
+      case 390:      //  iPad, iPhone
+      	 //   alert("using screen width = 390" + "<br>");
 
-document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1400vh 03vh`;
+	if (isSafari && isiPhone) {
+		//  alert("Safari iPhone     screen width EQUAL to 390 "); 
 
+	}
 
 
+         break;
+     case 408:      //  Android
+     	 //	alert("using screen width = 408" + "<br>");
 
-// end     all other Firefox under Android
-}
 
+			switch(deviceScreenHeight) {
+				case 913:      
+         				//  alert("using screen width = 408    screen height = 913" + "<br>");
 
-
-
-
-           //   end        Firefox under Android
-        } 
-
-
-
-
-
-        if (isWin10) {
-           //   begin      Firefox under Win10
-
-           //  grid-containerIntro 
-           //  03vh 270vh 03vh; 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = "03vh 140vh 03vh";
-
-
-        //  03vh 2060vh 03vh
-	document.getElementById('grid-containerReference').style.gridTemplateRows = "03vh 1750vh 03vh";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="120px"; 
-				document.getElementById("svgVueJS1").style.height="120px";
-
-
-                               //  id="addToOrderButtonCaption" 
-                               //  48px
-		               document.getElementById('addToOrderButtonCaption').style.fontSize="38px"; 
-
-
-
-
-
-		//  "copyRightMsg" 
-		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="32px";
-
-		//  "chromeBestMsg" 
-		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="32px";
-
-
-
-		//  adjust the size of the
-		//  Bootstrap icon
-		//  id="BootstrapIcon"           
-		document.getElementById("BootstrapIcon").style.width="96px"; 
-		document.getElementById("BootstrapIcon").style.height="96px";
-
-
-
-		//  "iconsProvidedMsg" 
-		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="32px";
-
-		//  "mitLicenseMsg" 
-		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="32px"; 
-
-		//  "iconsModifiedMsg" 
-		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="32px"; 
-
-
-
-
-		document.getElementById('vueJsHeadingMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLogoMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsModifiedMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsTermsMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLocatedMsg').style.fontSize="32px"; 
-
-
-
-		//  document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-
-
-           //   end        Firefox under Win10
-        }
-
-
-
-
-
-
-           //   end        Firefox 
-   } else if (isChrome) { 
-
-
-        if (isAndroid) {
-           //   begin    Chrome under Android
-
-       //      alert("Chrome under Android");
-
-
-
-
-
-
-           //   end       Chrome under Android
-         } else {
-           //   begin    Chrome others
-
-           //  grid-containerIntro 
-           //  03vh 270vh 03vh; 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = "03vh 170vh 03vh";
-
-
-        //  03vh 2060vh 03vh
-	document.getElementById('grid-containerReference').style.gridTemplateRows = "03vh 1910vh 03vh";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="120px"; 
-				document.getElementById("svgVueJS1").style.height="120px";
-
-
-                               //  id="addToOrderButtonCaption" 
-                               //  48px
-		               document.getElementById('addToOrderButtonCaption').style.fontSize="38px"; 
-
-
-
-
-
-		//  "copyRightMsg" 
-		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="32px";
-
-		//  "chromeBestMsg" 
-		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="32px";
-
-
-
-		//  adjust the size of the
-		//  Bootstrap icon
-		//  id="BootstrapIcon"           
-		document.getElementById("BootstrapIcon").style.width="96px"; 
-		document.getElementById("BootstrapIcon").style.height="96px";
-
-
-
-		//  "iconsProvidedMsg" 
-		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="32px";
-
-		//  "mitLicenseMsg" 
-		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="32px"; 
-
-		//  "iconsModifiedMsg" 
-		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="32px"; 
-
-
-
-
-		document.getElementById('vueJsHeadingMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLogoMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsModifiedMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsTermsMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLocatedMsg').style.fontSize="32px"; 
-
-
-
-		//  document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-
-
-             //   end     Chrome others
-          }
-
-
-
-
-
-
-
-           //   end        Chrome
-   } else if (isSafari) { 
-
-
-if (isiPad) { 
-
-
-           //   end        Safari iPad
-} else if (isiPhone) { 
-
-
-
-           //   end        Safari iPhone
-} else if (isMac) { 
-
-
-
-           //   end        Safari Mac
-}
-
-
-
-           //   end        Safari
-   } else if (isEdge) { 
-
-	//  alert("using the old Edge browser");
-
-           //  grid-containerIntro 
-           //  03vh 270vh 03vh; 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = "03vh 140vh 03vh";
-
-
-        //  03vh 2060vh 03vh
-	document.getElementById('grid-containerReference').style.gridTemplateRows = "03vh 1750vh 03vh";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="120px"; 
-				document.getElementById("svgVueJS1").style.height="120px";
-
-
-                               //  id="addToOrderButtonCaption" 
-                               //  48px
-		               document.getElementById('addToOrderButtonCaption').style.fontSize="38px"; 
-
-
-
-
-
-		//  "copyRightMsg" 
-		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="32px";
-
-		//  "chromeBestMsg" 
-		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="32px";
-
-
-
-		//  adjust the size of the
-		//  Bootstrap icon
-		//  id="BootstrapIcon"           
-		document.getElementById("BootstrapIcon").style.width="96px"; 
-		document.getElementById("BootstrapIcon").style.height="96px";
-
-
-
-		//  "iconsProvidedMsg" 
-		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="32px";
-
-		//  "mitLicenseMsg" 
-		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="32px"; 
-
-		//  "iconsModifiedMsg" 
-		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="32px"; 
-
-
-
-
-		document.getElementById('vueJsHeadingMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLogoMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsModifiedMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsTermsMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLocatedMsg').style.fontSize="32px"; 
-
-
-
-		//  document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-
-
-           //   end        Edge
-   } else if (isNewEdge) { 
-
-	//  alert("using the new Edge browser");
-
-           //  grid-containerIntro 
-           //  03vh 270vh 03vh; 
-	document.getElementById('grid-containerIntro').style.gridTemplateRows = "03vh 140vh 03vh";
-
-
-        //  03vh 2060vh 03vh
-	document.getElementById('grid-containerReference').style.gridTemplateRows = "03vh 1750vh 03vh";
-
-
-
-				//  id="svgVueJS1"
-				//  width="84" height="92"
-				document.getElementById("svgVueJS1").style.width="120px"; 
-				document.getElementById("svgVueJS1").style.height="120px";
-
-
-                               //  id="addToOrderButtonCaption" 
-                               //  48px
-		               document.getElementById('addToOrderButtonCaption').style.fontSize="38px"; 
-
-
-
-
-
-		//  "copyRightMsg" 
-		//  12px
-		document.getElementById('copyRightMsg').style.fontSize="32px";
-
-		//  "chromeBestMsg" 
-		//  12px
-		document.getElementById('chromeBestMsg').style.fontSize="32px";
-
-
-
-		//  adjust the size of the
-		//  Bootstrap icon
-		//  id="BootstrapIcon"           
-		document.getElementById("BootstrapIcon").style.width="96px"; 
-		document.getElementById("BootstrapIcon").style.height="96px";
-
-
-
-		//  "iconsProvidedMsg" 
-		//  12px
-		document.getElementById('iconsProvidedMsg').style.fontSize="32px";
-
-		//  "mitLicenseMsg" 
-		//  12px
-		document.getElementById('mitLicenseMsg').style.fontSize="32px"; 
-
-		//  "iconsModifiedMsg" 
-		//  12px 
-		document.getElementById('iconsModifiedMsg').style.fontSize="32px"; 
-
-
-
-
-		document.getElementById('vueJsHeadingMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLogoMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsModifiedMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsTermsMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-		document.getElementById('vueJsLocatedMsg').style.fontSize="32px"; 
-
-
-
-		//  document.getElementById('vueJsMitLicenseMsg').style.fontSize="32px"; 
-
-
-
-	//   end        new Edge
-} else { 
-         //  unknown browser
-
-
-         //  end      unknown browser
-   } 
+				         if(isFirefox) {
+                     
              
-      
-    
+                         	 	}
+
+	         		break;
+				case 929:      
+         				//  alert("using screen width = 408    screen height = 929" + "<br>");
+
+				         if(isFirefox) {
+                     
+	    	  			//	alert("Firefox Android  -  screen width = 408, screen height = 929 "); 
+             
+                      document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 100vh 03vh`;
+                      document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1100vh 03vh`;
+
+                        	 	}
+
+
+
+	         		break;
+      				default:
+   
+				//  end switch
+			}
+                           
+       	 break;
+     case 412:      //  Android
+     		//	alert("using screen width = 412" + "<br>");
+
+         if(isChrome) {
+                     
+	    	//	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
+
+                document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 180vh 03vh`;
+                document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1650vh 03vh`;
+
+	 }
+
+
+
+
+         if(isAndroidEdge) {
+		//  alert("Edge Android     screen width EQUAL to 412 "); 
+	 }
+
+                        
+	    	switch(deviceScreenHeight) {
+	    		case 922:      
+         		//	alert("Edge Android   screen width 412  screen height 922" + "<br>");
+
+                
+
+	         	break;
+      	    		case 938:      
+         			//  alert("EDGE Android using screen width = 412   screen height = 938" + "<br>"); 
+
+                      document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 180vh 03vh`;
+                      document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 1650vh 03vh`;
+
+
+	         	break;
+      	     		default:
+                          
+	       		//  end switch
+	 	}
+                    
+         break;
+      case 414:      //  iPad, iPhone
+	//   alert("using screen width = 414" + "<br>");
+
+	if (isSafari && isiPhone) {
+
+		//  alert("Safari iPhone     screen width EQUAL to 414 "); 
+
+
+	}
+
+
+        break;
+      case 768:      //  iPad
+      	//   alert("using screen width = 768" + "<br>"); 
+
+	if (isSafari && isiPad) { 
+
+	 	// alert("Safari iPad     screen width EQUAL to 768 "); 
+
+
+	}
+
+
+         break;
+      case 820:      //  iPad
+      	//   alert("using screen width = 820" + "<br>"); 
+
+	if (isSafari && isiPad) { 
+		//  alert("Safari iPad     screen width EQUAL to 820 "); 
+
+
+	}
+
+         break;
+      case 1133:     //  Android
+      //   alert("using screen width = 1133" + "<br>");
+
+         if(isChrome) {
+            //  alert("Chrome using screen width = 1133" + "<br>");
+         } 
+
+         if(isFirefox) {
+            	//  alert("Firefox using screen width = 1133" + "<br>"); 
+
+               document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 150vh 03vh`;
+               document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2350vh 03vh`;
+         } 
+
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 1133" + "<br>");
+         } 
+
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 1133" + "<br>"); 
+         } 
+
+
+         break;
+      case 1143:     //  Android
+     //    alert("using screen width = >1143<" + "\n"); 
+
+         if(isChrome) {
+            	//  alert("Chrome using screen width = 1143" + "<br>"); 
+		//  alert("Chrome Android     screen width EQUAL to 1143 "); 
+
+               document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 150vh 03vh`;
+               document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2230vh 03vh`;
+
+         } 
+
+         if(isFirefox) {
+            //  alert("Firefox using screen width = 1143"); 
+         } 
+
+         if(isAndroidEdge) {
+            	//  alert("Microsoft Edge (Android) using screen width = 1143"); 
+
+                      document.getElementById('grid-containerIntro').style.gridTemplateRows = `03vh 160vh 03vh`;
+                      document.getElementById('grid-containerReference').style.gridTemplateRows = `03vh 2330vh 03vh`;
+
+         } 
+
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 1143" + "<br>");
+         } 
+
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 1143" + "<br>"); 
+         } 
+
+         break;
+       	 case 1280:     //  Win10
+         	//	alert("using screen width = 1280" + "<br>"); 
+                            
+         		if(isChrome) {
+            			//  alert("Chrome using screen width = 1280" + "<br>");
+         		} 
+                        
+         		if(isFirefox) {
+            			//  alert("Firefox using screen width = 1280" + "<br>"); 
+         		} 
+                           
+         		if(isNewEdge) {
+            			//  alert("Microsoft Edge (new) using screen width = 1280" + "<br>"); 
+         		} 
+                     
+         		if(isEdge) {
+            			//  alert("Microsoft Edge (old) using screen width = 1280" + "<br>"); 
+         		} 
+                   
+         break;
+      	 case 1366:     //  Win10
+       	 	//   alert("using screen width = 1366" + "<br>"); 
+                  
+	 	if(isChrome) {
+            		//  alert("Chrome using screen width = 1366" + "<br>"); 
+         	} 
+                        
+         	if(isFirefox) {
+            		//  alert("Firefox using screen width = 1366" + "<br>"); 
+         	} 
+                      
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1366" + "<br>"); 
+         	} 
+                         
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1366" + "<br>"); 
+         	} 
+                      
+                    
+         break;
+      	 case 1536:     //  Win10
+      		//	   alert("using screen width = 1536" + "<br>");
+                           
+         	if(isChrome) {
+            		//  window.alert("Chrome using screen width = 1536" + "<br>");
+
+
+
+         	} 
+                          
+         	if(isFirefox) {
+            		//  alert("Firefox using screen width = 1536" + "<br>");
+			//  alert("using the Firefox browser under Win10");
+
+
+
+         	} 
+                        
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1536" + "<br>");
+
+
+         	} 
+                      
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1536" + "<br>");
+
+
+         	} 
+                   
+                    
+         break;
+      	 case 1707:     //  Win10
+      	 	//   alert("using screen width = 1707" + "<br>");
+                        
+         	if(isChrome) {
+            		//  alert("Chrome using screen width = 1707" + "<br>");
+
+
+
+
+
+         	} 
+                          
+         	if(isFirefox) {
+            		//  alert("Firefox using screen width = 1707" + "<br>");
+			//  alert("using the Firefox browser under Win10");
+
+
+         	} 
+                               
+         	if(isNewEdge) {
+            		//  alert("Microsoft Edge (new) using screen width = 1707" + "<br>");
+
+
+
+         	} 
+                           
+         	if(isEdge) {
+            		//  alert("Microsoft Edge (old) using screen width = 1707" + "<br>");
+
+
+
+         	} 
+                      
+                      
+         break;
+      	 default:
+		//  if (theBrowserIsUnknown) { 
+		//	//  unknown browser
+		//
+		//	alert("You are using using an unrecognized browser.");
+		//
+		//	//  end      unknown browser
+		//  } 
+
+   //  end switch
+}
+
+
+
+
+
 
 
 // end     vuejs.js
