@@ -438,38 +438,24 @@ switch(deviceScreenWidth) {
 
          if(isChrome) {
                      
-	    	//	  alert("Chrome Android  -  screen width EQUAL to 412 "); 
+//	    		  alert("Chrome Android  -  screen width EQUAL to 412 "); 
 
-//   **************************************************
-//   ***   for some reason, overrides arent working on this device   ***
-//   **************************************************
 
 		//  id grid-containerAndroid
      		//  grid-template-rows: 0.3vh 95vh 0.3vh
-	//	document.getElementById("grid-containerAndroid").style.gridTemplateRows = "0.3vh 55vh 0.3vh";
-
-		//  id grid-containerAndroid
-     		//  grid-template-rows: 0.3vh 95vh 0.3vh
-		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 25vh 0.3vh";
+		document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 95vh 0.3vh";
 
 
 		//  id="grid-containerCAD"
      		//  grid-template-rows: 0.3vh 135vh 0.3vh
 		document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 65vh 0.3vh";
 
-//  this device isnt responding correctly
-	    	//	  alert("Chrome Android  -  screen w412 h938 set cloud"); 
 
 		//  id="grid-containerCloud"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 320vh 0.3vh";
-
-	    	//	  alert("Chrome Android  -  screen w412 h938 success"); 
-//  the alert showing success appeared so it did execute the command
-//  why doesnt it change the value?
+		document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 390vh 0.3vh";
 
 
-// for some reason is not changing
  	       //  id="grid-containerDatabase"
      	       //  grid-template-rows: 0.3vh 215vh 0.3vh
 	       document.getElementById("grid-containerDatabase").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
@@ -477,23 +463,22 @@ switch(deviceScreenWidth) {
 
 		//  id="grid-containerGraphics"
      		//  grid-template-rows: 0.3vh 225vh 0.3vh
-		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 150vh 0.3vh";
-
-
-
-		//  id="grid-containerWindows"
-     		//  grid-template-rows: 0.3vh 95vh 0.3vh
-		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 40vh 0.3vh";
+		document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 100vh 0.3vh";
 
 
 	        //  id="grid-containerTest"
      		//  grid-template-rows: 0.3vh 140vh 0.3vh
-		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 150vh 0.3vh";
+		document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 100vh 0.3vh";
+
+
+		//  id="grid-containerWindows"
+     		//  grid-template-rows: 0.3vh 95vh 0.3vh
+		document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 80vh 0.3vh";
 
 
 		//  id="grid-containerMisc"
      		//  grid-template-rows: 0.3vh 190vh 0.3vh
-	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 280vh 0.3vh";
+	  	document.getElementById('grid-containerMisc').style.gridTemplateRows = "0.3vh 220vh 0.3vh";
 	 }
 
 
