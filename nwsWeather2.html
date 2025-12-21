@@ -39,17 +39,23 @@
 
 
 .grid-containerIntro {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid navy;  
+     border-radius:8px;    
+<!--     border: 3px solid rgb(211, 211, 211, 1.0);    -->
+<!--  rgb gives an unexpected result   -->  
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
-     grid-template-rows: 03vh 260vh 03vh; 
+     grid-template-rows: 03vh 200vh 03vh; 
 }
 
 
 
 .grid-containerForecastTitle {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid navy;  
+     border-radius:8px;    
+<!--     border: 3px solid rgb(211, 211, 211, 1.0);    -->
+<!--  rgb gives an unexpected result   -->  
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
@@ -59,7 +65,10 @@
 
 
 .grid-containerReference {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid navy;  
+     border-radius:8px;    
+<!--     border: 3px solid rgb(211, 211, 211, 1.0);    -->
+<!--  rgb gives an unexpected result   -->  
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.5fr 4fr 0.5fr;
@@ -98,7 +107,7 @@
 
 
 .grid-containerWeather1 {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid rgb(211, 211, 211, 1.0);  
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
@@ -106,7 +115,7 @@
 }
 
 .grid-containerWeather1b {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid rgb(211, 211, 211, 1.0);  
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
@@ -114,7 +123,7 @@
 }
 
 .grid-containerWeather1c {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid rgb(211, 211, 211, 1.0);   
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
@@ -122,7 +131,7 @@
 }
 
 .grid-containerWeather1d {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid rgb(211, 211, 211, 1.0);   
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
@@ -131,7 +140,7 @@
 
 
 .grid-containerWeather2 {
-     border: 3px solid rgb(211, 211, 211, 1.0);      
+     border: 3px solid rgb(211, 211, 211, 1.0);   
      display: grid;
      grid-gap: 1em;
      grid-template-columns: 0.1fr 0.95fr 0.95fr 0.95fr 0.95fr 0.1fr;
@@ -2114,9 +2123,9 @@ return iconName;
 
 
 <center> 
-<span id="pageTitle" style="color:Navy;font-size:58px;"><b>NWS Weather</b></span>
+<span id="pageTitle" style="color:Navy;font-size:2.625em;"><b>NWS Weather</b></span>
 &nbsp;
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"> <rect opacity="0.9" fill="aliceblue" stroke="black" stroke-width="1"  width="16" height="16" /> <path fill="lightgray" stroke="gray" stroke-width="0.2" d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16"> <rect opacity="0.9" fill="aliceblue" stroke="black" stroke-width="1"  width="16" height="16" /> <path fill="lightgray" stroke="gray" stroke-width="0.2" d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
   <path fill="yellow" stroke="gray" stroke-width="0.2" d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
 </svg>
 </center><br>
@@ -2141,33 +2150,145 @@ return iconName;
      <div class="grid-itemMargin">
      </div>
 
-     <div class="grid-item"><br>
-<span id="textIntroduction" style="color:Black;font-size:24px;">
-<span id="textIntroductionEmphasized1" style="color:Navy;font-size:25px;"><b>Representational State Transfer</b></span> (<span id="textIntroductionEmphasized2" style="color:Navy;font-size:25px;"><b>REST</b></span>) allows two computers to transfer data using only <span id="textIntroductionEmphasized3" style="color:Navy;font-size:25px;"><b>HTTP</b></span> protocols. [27] [55] [57] It first appeared in 2000. [56] <span id="textIntroductionEmphasized4" style="color:Navy;font-size:25px;"><b>REST API</b></span>s support highly performant and reliable secure communication at scale. They are flexible and cross-platform portable. They are easy to implement and to modify. [52] <span id="textIntroductionEmphasized5" style="color:Navy;font-size:25px;"><b>Simple Object Access Protocol</b></span> (<span id="textIntroductionEmphasized6" style="color:Navy;font-size:25px;"><b>SOAP</b></span>) was previously used to transfer data, but has mostly been replaced by REST. REST <span id="textIntroductionEmphasized7" style="color:Navy;font-size:25px;"><b>uses less bandwidth and is simpler</b></span>. <span id="textIntroductionEmphasized8" style="color:Navy;font-size:25px;"><b>JSON</b></span> is the most popular data format used with REST. [55] [57]<br><br>
+     <div class="grid-item">
+<span id="textIntroduction" style="color:Black;font-size:1.1em;">
+<span id="textIntroductionEmphasized1" style="color:Navy;font-size:1.1em;">
+<b>
+Representational State Transfer</b></span> (
+<span id="textIntroductionEmphasized2" style="color:Navy;font-size:1.1em;"><b>REST</b></span>) 
+allows two computers to transfer data using only 
+<span id="textIntroductionEmphasized3" style="color:Navy;font-size:1.1em;"><b>HTTP</b></span> 
+protocols. [27] [55] [57] It first appeared in 2000. [56] 
+<span id="textIntroductionEmphasized4" style="color:Navy;font-size:1.1em;"><b>REST API</b></span>s 
+support highly performant and reliable secure communication at scale. They are flexible and cross-platform 
+portable. They are easy to implement and to modify. [52] 
+<span id="textIntroductionEmphasized5" style="color:Navy;font-size:1.1em;">
+<b>
+Simple Object Access Protocol
+</b>
+</span> (
+<span id="textIntroductionEmphasized6" style="color:Navy;font-size:1.1em;">
+<b>
+SOAP
+</b>
+</span>) 
+was previously used to transfer data, but has mostly been replaced by REST. REST 
+<span id="textIntroductionEmphasized7" style="color:Navy;font-size:1.1em;"><b>uses less bandwidth and 
+is simpler</b></span>. 
+<span id="textIntroductionEmphasized8" style="color:Navy;font-size:1.1em;"><b>JSON</b></span> 
+is the most popular data format used with REST. [55] [57]<br><br>
 
-This application provides a demo of using REST to retrieve an extended weather forecast from the <span id="textIntroductionEmphasized9" style="color:Navy;font-size:25px;"><b>National Weather Service</b></span> (<span id="textIntroductionEmphasized10" style="color:Navy;font-size:25px;"><b>NWS</b></span>) using their <span id="textIntroductionEmphasized11" style="color:Navy;font-size:25px;"><b>public REST API</b></span>. [43] [44] Select a location from the drop-down list and click the NWS button. This will initiate a two step process. <span id="textIntroductionEmphasized12" style="color:Navy;font-size:25px;"><b>Step One</b></span> will <span id="textIntroductionEmphasized13" style="color:Navy;font-size:25px;"><b>query the API</b></span> to determine if a forecast exists for the desired location. If a forecast exists, <span id="textIntroductionEmphasized14" style="color:Navy;font-size:25px;"><b>Step Two</b></span> will <span id="textIntroductionEmphasized15" style="color:Navy;font-size:25px;"><b>download the data</b></span> and display it on the computer screen. Forecasts are arranged <span id="textIntroductionEmphasized16" style="color:Navy;font-size:25px;"><b>based on the NWS office responsible</b></span> for that area, so the city in the forecast <span id="textIntroductionEmphasized17" style="color:Navy;font-size:25px;"><b>may not always match</b></span> the city selected in the drop-down list. If you know the coordinates, you can <span id="textIntroductionEmphasized18" style="color:Navy;font-size:25px;"><b>enter them directly</b></span> like this: <br><br>
+This application provides a demo of using REST to retrieve an extended weather forecast from the 
+<span id="textIntroductionEmphasized9" style="color:Navy;font-size:1.1em;">
+<b>
+National Weather Service
+</b>
+</span> (
+<span id="textIntroductionEmphasized10" style="color:Navy;font-size:1.1em;">
+<b>
+NWS
+</b>
+</span>) 
+using their 
+<span id="textIntroductionEmphasized11" style="color:Navy;font-size:1.1em;">
+<b>
+public REST API
+</b>
+</span>. [43] [44] Select a location from the drop-down list and click the NWS button. This will 
+initiate a two step process. 
+<span id="textIntroductionEmphasized12" style="color:Navy;font-size:1.1em;">
+<b>Step One</b></span> will 
+<span id="textIntroductionEmphasized13" style="color:Navy;font-size:1.1em;">
+<b>
+query the API
+</b>
+</span> to determine if a forecast exists for the desired location. If a forecast exists, 
+<span id="textIntroductionEmphasized14" style="color:Navy;font-size:1.1em;">
+<b>
+Step Two
+</b>
+</span> will 
+<span id="textIntroductionEmphasized15" style="color:Navy;font-size:1.1em;">
+<b>
+download the data
+</b>
+</span> and display it on the computer screen. Forecasts are arranged 
+<span id="textIntroductionEmphasized16" style="color:Navy;font-size:1.1em;">
+<b>
+based on the NWS office responsible
+</b>
+</span> 
+for that area, so the city in the forecast 
+<span id="textIntroductionEmphasized17" style="color:Navy;font-size:1.1em;">
+<b>
+may not always match
+</b>
+</span> the city selected in the drop-down list. If you know the coordinates, you can 
+<span id="textIntroductionEmphasized18" style="color:Navy;font-size:1.1em;">
+<b>
+enter them directly
+</b>
+</span> like this: <br>
 
 <center>
-<span id="textIntroductionEmphasized19" style="color:Navy;font-size:25px;"><b>39.67,-97.08</b></span>
-</center><br>
+<span id="textIntroductionEmphasized19" style="color:Navy;font-size:1.3em;"><b>39.67,-97.08</b></span>
+</center>
 
-<span id="textIntroductionEmphasized20" style="color:Navy;font-size:25px;"><b>Do not enter a space after the comma</b></span>, or the API will respond with an error. If you enter a location which is not in the database, the response will be <span id="textIntroductionEmphasized21" style="color:Navy;font-size:25px;"><b>error 404</b></span> (not found). You can see that by selecting either <span id="textIntroductionEmphasized22" style="color:Navy;font-size:25px;"><b>Paris, France</b></span> or <span id="textIntroductionEmphasized23" style="color:Navy;font-size:25px;"><b>Toronto, ON</b></span> from the drop-down list. If the response is <span id="textIntroductionEmphasized24" style="color:Navy;font-size:25px;"><b>error 500</b></span> (internal server error), please <span id="textIntroductionEmphasized25" style="color:Navy;font-size:25px;"><b>wait a moment</b></span> for the condition to clear before repeating the request.
+<span id="textIntroductionEmphasized20" style="color:Navy;font-size:1.1em;">
+<b>
+Do not enter a space after the comma
+</b>
+</span>, or the API will respond with an error. If you enter a location which is not in the database, 
+the response will be 
+<span id="textIntroductionEmphasized21" style="color:Navy;font-size:1.1em;">
+<b>
+error 404
+</b>
+</span> (not found). You can see that by selecting either 
+<span id="textIntroductionEmphasized22" style="color:Navy;font-size:1.1em;">
+<b>
+Paris, France
+</b>
+</span> or 
+<span id="textIntroductionEmphasized23" style="color:Navy;font-size:1.1em;">
+<b>
+Toronto, ON
+</b>
+</span> from the drop-down list. If the response is 
+<span id="textIntroductionEmphasized24" style="color:Navy;font-size:1.1em;">
+<b>
+error 500
+</b>
+</span> (internal server error), please 
+<span id="textIntroductionEmphasized25" style="color:Navy;font-size:1.1em;">
+<b>
+wait a moment
+</b>
+</span> for the condition to clear before repeating the request.
 </span>
-<br><br><br>
+<br><br>
 
 
 <center> 
-<span id="locationLabel" style="color:Black;font-size:60px;">Location Coordinates</span><br><input style="color:black;background-color:ivory;text-align:center;height:70px;font-size:60px;border-radius:8px;margin-top:3px;margin-bottom:3px" id="locationInput" name="locationInput" title="the location coordinates" aria-label="the location coordinates" type="text" size="22" maxlength="22" />
+<span id="locationLabel" style="color:Black;font-size:1.35em;">Location Coordinates</span><br>
+
+<input style="color:black;background-color:ivory;text-align:center;height:1.35em;font-size:1.25em;
+border-radius:8px;margin-top:3px;margin-bottom:3px" id="locationInput" name="locationInput" 
+title="the location coordinates" aria-label="the location coordinates" type="text" size="22" 
+maxlength="22" />
 <br>
 
 
-<span id="selectExplanation" style="color:Navy;font-size:50px;">
+<span id="selectExplanation" style="color:Navy;font-size:1.35em;">
 <b>Enter coordinates, or select a location.</b></span><br>
-<span id="selectExplanation2" style="color:Navy;font-size:50px;">
+<span id="selectExplanation2" style="color:Navy;font-size:1.35em;">
 <b>Example:   39.67,-97.08</b></span>
 </center><br>
+
+
 <center> 
-<select id="select" style="width:600px;height:75px;background-color:aliceblue;text-align:center;font-size:60px;" onChange="updateLocation()">
+<select id="select" style="width:14.0em;height:1.35em;background-color:aliceblue;text-align:center;
+font-size:1.25em;" onChange="updateLocation()">
 <option value=""><b>Not Selected</b></option>
 <option value="42.65,-73.76"><b>Albany, NY</b></option>
 <option value="35.09,-106.64"><b>Albuquerque, NM</b></option>
@@ -2257,17 +2378,13 @@ This application provides a demo of using REST to retrieve an extended weather f
 
 
 
-
-
-
-
-
-
-
 <center>
-<button style="background-color:indigo; color:white;margin-top:3px;margin-bottom:1px;border:5px solid thistle;border-radius:8px;width:172px;height:197px" id="button1" name="button1" title="Button 1" aria-label="Button 1" type="button" onClick="getWeather()"><span style="font-size:55px;">NWS</span></button> 
+<button style="background-color:indigo; color:white;margin-top:3px;margin-bottom:1px;
+border:5px solid thistle;border-radius:8px;width:11.2em;height:7em" 
+id="button1" name="button1" title="Button 1" aria-label="Button 1" 
+type="button" onClick="getWeather()"><span style="font-size:55px;">NWS</span></button> 
 </center>
-<br> <br>
+<br>
 
 
 
@@ -3236,156 +3353,174 @@ Xxxx
      <div class="grid-itemReference"><br>
 
 
-<span style="color:Navy;font-size:56px;"><b>References</b></span><br><br>
+<span style="color:Navy;font-size:3em;"><b>References</b></span><br><br>
 
-<span style="color:Black;font-size:18px;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[1]&nbsp;&nbsp;&nbsp;&nbsp;"HTML 5.2." <i>W3C</i>, 14-Dec-2017. [Online]. Available: https://www.w3.org/TR/html52/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
 <span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/html52/" target="_blank"><span style="font-size:18px;"><b><i>HTML 5.2.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/html52/" target="_blank"><span style="font-size:1em;"><b><i>HTML 5.2.</i></b></span></a><br><br>
 
-<span style="color:Black;font-size:18px;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[2]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification." <i>W3C</i>, 12-Apr-2016. [Online]. Available: https://www.w3.org/TR/CSS22/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/CSS22/" target="_blank"><span style="font-size:1em;"><b><i>Cascading Style Sheets Level 2 Revision 2 &#40;CSS 2.2&#41; Specification.</i></b></span></a><br><br>
 
-<span style="color:Black;font-size:18px;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[3]&nbsp;&nbsp;&nbsp;&nbsp;"Cascading Style Sheets, level 1." <i>W3C</i>, 11-Apr-2008. [Online]. Available: https://www.w3.org/TR/REC-CSS1/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span style="font-size:18px;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/REC-CSS1/" target="_blank"><span style="font-size:1em;"><b><i>Cascading Style Sheets, level 1.</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[4]&nbsp;&nbsp;&nbsp;&nbsp;"CSS Snapshot 2020." <i>W3C</i>, 22-Dec-2020. [Online]. Available: https://www.w3.org/TR/CSS/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/CSS/" target="_blank"><span style="font-size:18px;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/CSS/" target="_blank"><span style="font-size:1em;"><b><i>CSS Snapshot 2020.</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
+<span style="color:Black;font-size:1em;">[5]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-262," <i>Ecma International</i>, Jun-2020. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/. [Accessed: 13-Jun-2021].</span><br>
 
-<span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
+<span style="color:Navy;font-size:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECMAScript&#174; 2020 language specification<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11th edition, June 2020<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Navy;font-size:18px;"><b>This is the specification for JavaScript.</b></span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Navy;font-size:1em;"><b>This is the specification for JavaScript.</b></span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-262,</i></b></span></a><br><br>
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">
+<span style="font-size:1em;"><b><i>ECMA-262,</i></b></span></a><br><br>
 
 
 
 
-<span style="color:Black;font-size:18px;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[6]&nbsp;&nbsp;&nbsp;&nbsp;"ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0." <i>Ecma International</i>, Dec-2012. [Online]. Available: https://402.ecma-international.org/1.0/. [Accessed: 13-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://402.ecma-international.org/1.0/" target="_blank"><span style="font-size:18px;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
+<a href="https://402.ecma-international.org/1.0/" target="_blank">
+<span style="font-size:1em;"><b><i>ECMAScript Internationalization API Specification &#8211; ECMA-402 Edition 1.0.</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[7]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 2." <i>W3C</i>, 04-Oct-2018. [Online]. Available: https://www.w3.org/TR/SVG2/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/SVG2/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/SVG2/" target="_blank">
+<span style="font-size:1em;"><b><i>Scalable Vector Graphics (SVG) 2.</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[8]&nbsp;&nbsp;&nbsp;&nbsp;"Scalable Vector Graphics (SVG) 1.1 (Second Edition)." <i>W3C</i>, 16-Aug-2011. [Online]. Available: https://www.w3.org/TR/SVG11/. [Accessed: 01-Jun-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/SVG11/" target="_blank"><span style="font-size:18px;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/SVG11/" target="_blank">
+<span style="font-size:1em;"><b><i>Scalable Vector Graphics (SVG) 1.1 (Second Edition).</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “SVG: Scalable Vector Graphics | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[9]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “SVG: Scalable Vector Graphics | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/SVG. [Accessed: 06-Dec-2021].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><span style="font-size:18px;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">
+<span style="font-size:1em;"><b><i>SVG: Scalable Vector Graphics | MDN.</i></b></span></a><br><br>
 
 
 
 
-<span style="color:Black;font-size:18px;">[10]&nbsp;&nbsp;&nbsp;&nbsp;“Web Content Accessibility Guidelines (WCAG) 2.1.” <i>W3C</i>, 05-Jun-2018. [Online]. Available: 
+<span style="color:Black;font-size:1em;">[10]&nbsp;&nbsp;&nbsp;&nbsp;“Web Content Accessibility Guidelines (WCAG) 2.1.” <i>W3C</i>, 05-Jun-2018. [Online]. Available: 
 https://www.w3.org/TR/WCAG21/.
 [Accessed: 20-Apr-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" 
+fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" 
+aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
-    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+    <desc  id="iconDesc">this icon represents opening a new window</desc> 
+    <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" 
+    d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/TR/WCAG21/" target="_blank"><span style="font-size:18px;"><b><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></b></span></a><br><br>
+<a href="https://www.w3.org/TR/WCAG21/" target="_blank">
+<span style="font-size:1em;"><b><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[11]&nbsp;&nbsp;&nbsp;&nbsp;“Techniques for WCAG 2.2.” <i>W3C</i>, 09-Mar-2021. [Online]. Available: https://www.w3.org/WAI/WCAG21/<br>
+<span style="color:Black;font-size:1em;">[11]&nbsp;&nbsp;&nbsp;&nbsp;“Techniques for WCAG 2.2.” <i>W3C</i>, 09-Mar-2021. [Online]. Available: https://www.w3.org/WAI/WCAG21/<br>
 Techniques/. [Accessed: 20-Apr-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" 
+fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" 
+aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
-    <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+    <desc  id="iconDesc">this icon represents opening a new window</desc> 
+    <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" 
+    d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3.org/WAI/WCAG21/Techniques/" target="_blank"><span style="font-size:18px;"><b><i>Techniques for WCAG 2.2.</i></b></span></a><br><br>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/" target="_blank">
+<span style="font-size:1em;"><b><i>Techniques for WCAG 2.2.</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[12]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “CSS Grid Layout - CSS: Cascading Style Sheets | MDN.” <i>MDN Web Docs</i>. [Online]. Available:
+<span style="color:Black;font-size:1em;">[12]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “CSS Grid Layout - CSS: Cascading Style Sheets | MDN.” <i>MDN Web Docs</i>. [Online]. Available:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS&#x5f;Grid\&#x5f;Layout. [Accessed: 03-Jun-2022]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout - CSS: Cascading Style Sheets | MDN.</i></b></span></a><br><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">
+<span style="font-size:1em;"><b><i>CSS Grid Layout - CSS: Cascading Style Sheets | MDN.</i></b></span></a><br><br>
 
 
 
 
-<span style="color:Black;font-size:18px;">[13]&nbsp;&nbsp;&nbsp;&nbsp;“CSS Grid Layout.” <i>W3Schools</i>. [Online]. Available: 
+<span style="color:Black;font-size:1em;">[13]&nbsp;&nbsp;&nbsp;&nbsp;“CSS Grid Layout.” <i>W3Schools</i>. [Online]. Available: 
 https://www.w3schools.com/css/<br>
 css&#x5f;grid.asp. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid Layout.</i></b></span></a><br><br>
+<a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">
+<span style="font-size:1em;"><b><i>CSS Grid Layout.</i></b></span></a><br><br>
 
 
 
 
 
 
-<span style="color:Black;font-size:18px;">[14]&nbsp;&nbsp;&nbsp;&nbsp;C. House, “A Complete Guide to Grid,” <i>CSS-Tricks</i>, 12-May-2021. [Online]. Available: https://css-tricks.com/<br>
+<span style="color:Black;font-size:1em;">[14]&nbsp;&nbsp;&nbsp;&nbsp;C. House, “A Complete Guide to Grid,” <i>CSS-Tricks</i>, 12-May-2021. [Online]. Available: https://css-tricks.com/<br>
 snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><span style="font-size:18px;"><b><i>A Complete Guide to Grid,</i></b></span></a><br><br>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">
+<span style="font-size:1em;"><b><i>A Complete Guide to Grid,</i></b></span></a><br><br>
 
 
 
@@ -3397,13 +3532,14 @@ snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
 
 
 
-<span style="color:Black;font-size:18px;">[15]&nbsp;&nbsp;&nbsp;&nbsp;J. Suh, “Learn CSS Grid - A Guide to Learning CSS Grid.” <i>learncssgrid.com</i>. [Online]. Available: http://learncssgrid.com/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[15]&nbsp;&nbsp;&nbsp;&nbsp;J. Suh, “Learn CSS Grid - A Guide to Learning CSS Grid.” <i>learncssgrid.com</i>. [Online]. Available: http://learncssgrid.com/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="http://learncssgrid.com/" target="_blank"><span style="font-size:18px;"><b><i>Learn CSS Grid - A Guide to Learning CSS Grid.</i></b></span></a><br><br>
+<a href="http://learncssgrid.com/" target="_blank">
+<span style="font-size:1em;"><b><i>Learn CSS Grid - A Guide to Learning CSS Grid.</i></b></span></a><br><br>
 
 
 
@@ -3413,498 +3549,494 @@ snippets/css/complete-guide-grid/. [Accessed: 03-Jun-2022].</span><br>
 
 
 
-<span style="color:Black;font-size:18px;">[16]&nbsp;&nbsp;&nbsp;&nbsp;M. O. contributors, J. Thornton and Bootstrap, “CSS Grid.” <i>getbootstrap.com</i>. [Online]. Available: https://getbootstrap.com/docs/<br>
+<span style="color:Black;font-size:1em;">[16]&nbsp;&nbsp;&nbsp;&nbsp;M. O. contributors, J. Thornton and Bootstrap, “CSS Grid.” <i>getbootstrap.com</i>. [Online]. Available: https://getbootstrap.com/docs/<br>
 5.1/layout/css-grid/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid.</i></b></span></a><br><br>
+<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/" target="_blank">
+<span style="font-size:1em;"><b><i>CSS Grid.</i></b></span></a><br><br>
 
 
 
 
 
-<span style="color:Black;font-size:18px;">[17]&nbsp;&nbsp;&nbsp;&nbsp;“Grid by Example - Usage examples of CSS Grid Layout.” <i>gridbyexample.com</i>. [Online]. Available: https://gridbyexample.com/<br>
+<span style="color:Black;font-size:1em;">[17]&nbsp;&nbsp;&nbsp;&nbsp;“Grid by Example - Usage examples of CSS Grid Layout.” <i>gridbyexample.com</i>. [Online]. Available: https://gridbyexample.com/<br>
 examples/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://gridbyexample.com/examples/" target="_blank"><span style="font-size:18px;"><b><i>Grid by Example - Usage examples of CSS Grid Layout.</i></b></span></a><br><br>
+<a href="https://gridbyexample.com/examples/" target="_blank">
+<span style="font-size:1em;"><b><i>Grid by Example - Usage examples of CSS Grid Layout.</i></b></span></a><br><br>
 
 
 
 
 
-<span style="color:Black;font-size:18px;">[18]&nbsp;&nbsp;&nbsp;&nbsp;“Grid,” <i>web.dev</i>. [Online]. Available: https://web.dev/learn/css/grid/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[18]&nbsp;&nbsp;&nbsp;&nbsp;“Grid,” <i>web.dev</i>. [Online]. Available: https://web.dev/learn/css/grid/. [Accessed: 03-Jun-2022].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://web.dev/learn/css/grid/" target="_blank"><span style="font-size:18px;"><b><i>Grid,</i></b></span></a><br><br>
+<a href="https://web.dev/learn/css/grid/" target="_blank">
+<span style="font-size:1em;"><b><i>Grid,</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[19]&nbsp;&nbsp;&nbsp;&nbsp;O. Nzube, “How to Use CSS Grid Layout – Grid Properties Explained with Examples,” 
+<span style="color:Black;font-size:1em;">[19]&nbsp;&nbsp;&nbsp;&nbsp;O. Nzube, “How to Use CSS Grid Layout – Grid Properties Explained with Examples,” 
 <i>freeCodeCamp.org</i>, 25-May-2022. [Online]. Available: https://www.freecodecamp.org/<br>
 news/how-to-use-css-grid-layout/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.freecodecamp.org/news/how-to-use-css-grid-layout/" target="_blank"><span style="font-size:18px;"><b><i>How to Use CSS Grid Layout – Grid Properties Explained with Examples,</i></b></span></a><br><br>
+<a href="https://www.freecodecamp.org/news/how-to-use-css-grid-layout/" target="_blank">
+<span style="font-size:1em;"><b><i>How to Use CSS Grid Layout – Grid Properties Explained with Examples,</i></b></span></a><br><br>
 
 
 
-<span style="color:Black;font-size:18px;">[20]&nbsp;&nbsp;&nbsp;&nbsp;“CSS Grid – Table layout is back. Be there and be square,” <i>Chrome Developers</i>, 27-Jan-2017. [Online]. Available: https://developer.chrome.com/<br>
+<span style="color:Black;font-size:1em;">[20]&nbsp;&nbsp;&nbsp;&nbsp;“CSS Grid – Table layout is back. Be there and be square,” <i>Chrome Developers</i>, 27-Jan-2017. [Online]. Available: https://developer.chrome.com/<br>
 blog/css-grid/. [Accessed: 03-Jun-2022].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.chrome.com/blog/css-grid/" target="_blank"><span style="font-size:18px;"><b><i>CSS Grid – Table layout is back. Be there and be square,</i></b></span></a><br><br>
+<a href="https://developer.chrome.com/blog/css-grid/" target="_blank">
+<span style="font-size:1em;"><b><i>CSS Grid – Table layout is back. Be there and be square,</i></b></span></a><br><br>
 
 
 
 
-<span style="color:Black;font-size:18px;">[21]&nbsp;&nbsp;&nbsp;&nbsp;“Introducing JSON.” <i>json.org</i>. [Online]. Available: https://www.json.org/json-en.html. [Accessed: 29-Oct-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[21]&nbsp;&nbsp;&nbsp;&nbsp;“Introducing JSON.” <i>json.org</i>. [Online]. Available: https://www.json.org/json-en.html. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.json.org/json-en.html" target="_blank"><span style="font-size:18px;"><b><i>Introducing JSON.</i></b></span></a><br><br>
-
-<br><br>
-
+<a href="https://www.json.org/json-en.html" target="_blank">
+<span style="font-size:1em;"><b><i>Introducing JSON.</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[22]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “Working with JSON - Learn web development | MDN.” <i>MDN Web Docs</i>, 08-Oct-2021. [Online]. Available: https://developer.mozilla.org/en-US/<br>
+
+
+
+<span style="color:Black;font-size:1em;">[22]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “Working with JSON - Learn web development | MDN.” <i>MDN Web Docs</i>, 08-Oct-2021. [Online]. Available: https://developer.mozilla.org/en-US/<br>
 docs/Learn/JavaScript/Objects/JSON. [Accessed: 29-Oct-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank"><span style="font-size:18px;"><b><i>Working with JSON - Learn web development | MDN.</i></b></span></a><br><br>
-
-<br><br>
-
+<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">
+<span style="font-size:1em;"><b><i>Working with JSON - Learn web development | MDN.</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[23]&nbsp;&nbsp;&nbsp;&nbsp;J. Freeman, “What is JSON? A better format for data exchange,” <i>InfoWorld</i>, 25-Oct-2019. [Online]. Available: https://www.infoworld.com/article/<br>
+
+<span style="color:Black;font-size:1em;">[23]&nbsp;&nbsp;&nbsp;&nbsp;J. Freeman, “What is JSON? A better format for data exchange,” <i>InfoWorld</i>, 25-Oct-2019. [Online]. Available: https://www.infoworld.com/article/<br>
 3222851/what-is-json-a-better-<br>
 format-for-data-exchange.html. [Accessed: 29-Oct-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html" target="_blank"><span style="font-size:18px;"><b><i>What is JSON? A better format for data exchange,</i></b></span></a><br><br>
-
-<br><br>
-
+<a href="https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html" target="_blank">
+<span style="font-size:1em;"><b><i>What is JSON? A better format for data exchange,</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[24]&nbsp;&nbsp;&nbsp;&nbsp;“JSON:API — A specification for building APIs in JSON.” <i>JSON:API</i>, 29-May-2015. [Online]. Available: https://jsonapi.org/. [Accessed: 29-Oct-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+
+
+<span style="color:Black;font-size:1em;">[24]&nbsp;&nbsp;&nbsp;&nbsp;“JSON:API — A specification for building APIs in JSON.” <i>JSON:API</i>, 29-May-2015. [Online]. Available: https://jsonapi.org/. [Accessed: 29-Oct-2021]. </span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://jsonapi.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON:API — A specification for building APIs in JSON.</i></b></span></a><br><br>
-
-<br><br>
-
+<a href="https://jsonapi.org/" target="_blank">
+<span style="font-size:1em;"><b><i>JSON:API — A specification for building APIs in JSON.</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[25]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-404" <i>Ecma International</i>, Dec-2017. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-404/. [Accessed: 29-Oct-2021].</span><br>
+
+
+<span style="color:Black;font-size:1em;">[25]&nbsp;&nbsp;&nbsp;&nbsp;"ECMA-404" <i>Ecma International</i>, Dec-2017. [Online]. Available: https://www.ecma-international.org/publications-and-standards/standards/ecma-404/. [Accessed: 29-Oct-2021].</span><br>
 
 <span style="color:Navy;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The JSON data interchange syntax<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2nd edition, December 2017<br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/" target="_blank"><span style="font-size:18px;"><b><i>ECMA-404</i></b></span></a><br><br>
-
-<br><br>
-
+<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/" target="_blank">
+<span style="font-size:1em;"><b><i>ECMA-404</i></b></span></a><br><br>
 
 
-<span style="color:Black;font-size:18px;">[26]&nbsp;&nbsp;&nbsp;&nbsp;L. Tagliaferri, “An Introduction to JSON,” <i>DigitalOcean</i>, 08-Dec-2016. [Online]. Available: https://www.digitalocean.com/<br>
+
+
+<span style="color:Black;font-size:1em;">[26]&nbsp;&nbsp;&nbsp;&nbsp;L. Tagliaferri, “An Introduction to JSON,” <i>DigitalOcean</i>, 08-Dec-2016. [Online]. Available: https://www.digitalocean.com/<br>
 community/tutorials/an-<br>
 introduction-to-json. [Accessed: 29-Oct-2021]. </span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-json" target="_blank"><span style="font-size:18px;"><b><i>An Introduction to JSON,</i></b></span></a><br><br>
+<a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-json" target="_blank">
+<span style="font-size:1em;"><b><i>An Introduction to JSON,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[27]&nbsp;&nbsp;&nbsp;&nbsp;C. Buckler, “What Is a REST API? — SitePoint,” <i>SitePoint</i>, 24-Aug-2022. [Online]. Available: https://www.sitepoint.com/rest-api/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[27]&nbsp;&nbsp;&nbsp;&nbsp;C. Buckler, “What Is a REST API? — SitePoint,” <i>SitePoint</i>, 24-Aug-2022. [Online]. Available: https://www.sitepoint.com/rest-api/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.sitepoint.com/rest-api/" target="_blank"><span style="font-size:18px;"><b><i>What Is a REST API? — SitePoint,</i></b></span></a><br><br>
+<a href="https://www.sitepoint.com/rest-api/" target="_blank">
+<span style="font-size:1em;"><b><i>What Is a REST API? — SitePoint,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[28]&nbsp;&nbsp;&nbsp;&nbsp;“How to call web services in HTML5 ?,” <i>GeeksforGeeks</i>, 14-Oct-2022. [Online]. Available: https://www.geeksforgeeks.org/how-to-call-web-services-in-html5/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[28]&nbsp;&nbsp;&nbsp;&nbsp;“How to call web services in HTML5 ?,” <i>GeeksforGeeks</i>, 14-Oct-2022. [Online]. Available: https://www.geeksforgeeks.org/how-to-call-web-services-in-html5/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.geeksforgeeks.org/how-to-call-web-services-in-html5/" target="_blank"><span style="font-size:18px;"><b><i>How to call web services in HTML5 ?,</i></b></span></a><br><br>
+<a href="https://www.geeksforgeeks.org/how-to-call-web-services-in-html5/" target="_blank">
+<span style="font-size:1em;"><b><i>How to call web services in HTML5 ?,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[29]&nbsp;&nbsp;&nbsp;&nbsp;J. Salvatierra, “How to interact with REST APIs from JavaScript,” <i>The Teclado Blog</i>, 26-Sept-2019. [Online]. Available: https://blog.teclado.com/how-to-interact-with-rest-apis-from-javascript/. [Accessed: Feb. 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[29]&nbsp;&nbsp;&nbsp;&nbsp;J. Salvatierra, “How to interact with REST APIs from JavaScript,” <i>The Teclado Blog</i>, 26-Sept-2019. [Online]. Available: https://blog.teclado.com/how-to-interact-with-rest-apis-from-javascript/. [Accessed: Feb. 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://blog.teclado.com/how-to-interact-with-rest-apis-from-javascript/" target="_blank"><span style="font-size:18px;"><b><i>How to interact with REST APIs from JavaScript,</i></b></span></a><br><br>
+<a href="https://blog.teclado.com/how-to-interact-with-rest-apis-from-javascript/" target="_blank">
+<span style="font-size:1em;"><b><i>How to interact with REST APIs from JavaScript,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[30]&nbsp;&nbsp;&nbsp;&nbsp;D. Harrington, “Simple REST API JSON Example,” <i>Tech Tips Girl</i>, 02-Mar-2022. [Online]. Available: https://www.techtipsgirl.com/post/<br>
+<span style="color:Black;font-size:1em;">[30]&nbsp;&nbsp;&nbsp;&nbsp;D. Harrington, “Simple REST API JSON Example,” <i>Tech Tips Girl</i>, 02-Mar-2022. [Online]. Available: https://www.techtipsgirl.com/post/<br>
 simple-rest-api-json-example. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.techtipsgirl.com/post/simple-rest-api-json-example" target="_blank"><span style="font-size:18px;"><b><i>Simple REST API JSON Example,</i></b></span></a><br><br>
+<a href="https://www.techtipsgirl.com/post/simple-rest-api-json-example" target="_blank">
+<span style="font-size:1em;"><b><i>Simple REST API JSON Example,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[31]&nbsp;&nbsp;&nbsp;&nbsp;“Fetching JSON data from REST APIs” <i>GitHub</i>, 16-Jan-2022. [Online]. Available: https://cran.r-project.org/web/<br>
+<span style="color:Black;font-size:1em;">[31]&nbsp;&nbsp;&nbsp;&nbsp;“Fetching JSON data from REST APIs” <i>GitHub</i>, 16-Jan-2022. [Online]. Available: https://cran.r-project.org/web/<br>
 packages/jsonlite/vignettes/<br>
 json-apis.html. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://cran.r-project.org/web/packages/jsonlite/vignettes/json-apis.html" target="_blank"><span style="font-size:18px;"><b><i>Fetching JSON data from REST APIs</i></b></span></a><br><br>
+<a href="https://cran.r-project.org/web/packages/jsonlite/vignettes/json-apis.html" target="_blank">
+<span style="font-size:1em;"><b><i>Fetching JSON data from REST APIs</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[32]&nbsp;&nbsp;&nbsp;&nbsp;“JSON XMLHttpRequest.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/js/<br>
+<span style="color:Black;font-size:1em;">[32]&nbsp;&nbsp;&nbsp;&nbsp;“JSON XMLHttpRequest.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/js/<br>
 js_json_http.asp. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3schools.com/js/js_json_http.asp" target="_blank"><span style="font-size:18px;"><b><i>JSON XMLHttpRequest.</i></b></span></a><br><br>
+<a href="https://www.w3schools.com/js/js_json_http.asp" target="_blank">
+<span style="font-size:1em;"><b><i>JSON XMLHttpRequest.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[33]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.readyState - Web APIs | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/<br>
+<span style="color:Black;font-size:1em;">[33]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.readyState - Web APIs | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/<br>
 docs/Web/API/XMLHttpRequest/<br>
 readyState. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState" target="_blank"><span style="font-size:18px;"><b><i>XMLHttpRequest.readyState - Web APIs | MDN.</i></b></span></a><br><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState" target="_blank">
+<span style="font-size:1em;"><b><i>XMLHttpRequest.readyState - Web APIs | MDN.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[34]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.status - Web APIs | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/<br>
+<span style="color:Black;font-size:1em;">[34]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.status - Web APIs | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/<br>
 docs/Web/API/XMLHttpRequest/<br>
 status. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" target="_blank"><span style="font-size:18px;"><b><i>XMLHttpRequest.status - Web APIs | MDN.</i></b></span></a><br><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" target="_blank">
+<span style="font-size:1em;"><b><i>XMLHttpRequest.status - Web APIs | MDN.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[35]&nbsp;&nbsp;&nbsp;&nbsp;“AJAX XMLHttpRequest Server Response.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/xml/<br>
+<span style="color:Black;font-size:1em;">[35]&nbsp;&nbsp;&nbsp;&nbsp;“AJAX XMLHttpRequest Server Response.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/xml/<br>
 ajax_xmlhttprequest_response.asp. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp" target="_blank"><span style="font-size:18px;"><b><i>AJAX XMLHttpRequest Server Response.</i></b></span></a><br><br>
+<a href="https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp" target="_blank">
+<span style="font-size:1em;"><b><i>AJAX XMLHttpRequest Server Response.</i></b></span></a><br><br>
 
-<br><br>
 
 
-<span style="color:Black;font-size:18px;">[36]&nbsp;&nbsp;&nbsp;&nbsp;“Weather API - OpenWeatherMap.” <i>OpenWeatherMap</i>. [Online]. Available: https://openweathermap.org/api. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[36]&nbsp;&nbsp;&nbsp;&nbsp;“Weather API - OpenWeatherMap.” <i>OpenWeatherMap</i>. [Online]. Available: https://openweathermap.org/api. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://openweathermap.org/api" target="_blank"><span style="font-size:18px;"><b><i>Weather API - OpenWeatherMap.</i></b></span></a><br><br>
+<a href="https://openweathermap.org/api" target="_blank">
+<span style="font-size:1em;"><b><i>Weather API - OpenWeatherMap.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[37]&nbsp;&nbsp;&nbsp;&nbsp;“Free Open-Source Weather API | Open-Meteo.com.” <i>Open-Meteo.com</i>. [Online]. Available: https://open-meteo.com/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[37]&nbsp;&nbsp;&nbsp;&nbsp;“Free Open-Source Weather API | Open-Meteo.com.” <i>Open-Meteo.com</i>. [Online]. Available: https://open-meteo.com/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://open-meteo.com/" target="_blank"><span style="font-size:18px;"><b><i>Free Open-Source Weather API | Open-Meteo.com.</i></b></span></a><br><br>
+<a href="https://open-meteo.com/" target="_blank">
+<span style="font-size:1em;"><b><i>Free Open-Source Weather API | Open-Meteo.com.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[38]&nbsp;&nbsp;&nbsp;&nbsp;“Free Weather API - WeatherAPI.com.” <i>WeatherAPI.com</i>. [Online]. Available: https://www.weatherapi.com/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[38]&nbsp;&nbsp;&nbsp;&nbsp;“Free Weather API - WeatherAPI.com.” <i>WeatherAPI.com</i>. [Online]. Available: https://www.weatherapi.com/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.weatherapi.com/" target="_blank"><span style="font-size:18px;"><b><i>Free Weather API - WeatherAPI.com.</i></b></span></a><br><br>
+<a href="https://www.weatherapi.com/" target="_blank">
+<span style="font-size:1em;"><b><i>Free Weather API - WeatherAPI.com.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[39]&nbsp;&nbsp;&nbsp;&nbsp;“weatherstack - Real-Time World Weather REST API.” <i>weatherstack.com</i>. [Online]. Available: https://weatherstack.com/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[39]&nbsp;&nbsp;&nbsp;&nbsp;“weatherstack - Real-Time World Weather REST API.” <i>weatherstack.com</i>. [Online]. Available: https://weatherstack.com/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://weatherstack.com/" target="_blank"><span style="font-size:18px;"><b><i>weatherstack - Real-Time World Weather REST API.</i></b></span></a><br><br>
+<a href="https://weatherstack.com/" target="_blank">
+<span style="font-size:1em;"><b><i>weatherstack - Real-Time World Weather REST API.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[40]&nbsp;&nbsp;&nbsp;&nbsp;"World Clock API” <i>World Clock API</i>, 2023. [Online]. Available: http://worldclockapi.com/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[40]&nbsp;&nbsp;&nbsp;&nbsp;"World Clock API” <i>World Clock API</i>, 2023. [Online]. Available: http://worldclockapi.com/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="http://worldclockapi.com/" target="_blank"><span style="font-size:18px;"><b><i>World Clock API</i></b></span></a><br><br>
+<a href="http://worldclockapi.com/" target="_blank">
+<span style="font-size:1em;"><b><i>World Clock API</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[41]&nbsp;&nbsp;&nbsp;&nbsp;“JSONPlaceholder - Free Fake REST API.” <i>JSONPlaceholder</i>. [Online]. Available: https://jsonplaceholder.typicode.<br>
+<span style="color:Black;font-size:1em;">[41]&nbsp;&nbsp;&nbsp;&nbsp;“JSONPlaceholder - Free Fake REST API.” <i>JSONPlaceholder</i>. [Online]. Available: https://jsonplaceholder.typicode.<br>
 com/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://jsonplaceholder.typicode.com/" target="_blank"><span style="font-size:18px;"><b><i>JSONPlaceholder - Free Fake REST API.</i></b></span></a><br><br>
+<a href="https://jsonplaceholder.typicode.com/" target="_blank">
+<span style="font-size:1em;"><b><i>JSONPlaceholder - Free Fake REST API.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[42]&nbsp;&nbsp;&nbsp;&nbsp;Sebastian, “Create A REST API With JSON Server,” <i>CodingTheSmartWay</i>, 18-May-2018. [Online]. Available: https://medium.com/<br>
+<span style="color:Black;font-size:1em;">[42]&nbsp;&nbsp;&nbsp;&nbsp;Sebastian, “Create A REST API With JSON Server,” <i>CodingTheSmartWay</i>, 18-May-2018. [Online]. Available: https://medium.com/<br>
 codingthesmartway-com-blog/<br>
 create-a-rest-api-with-json-<br>
 server-36da8680136d. [Accessed: Feb. 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d" target="_blank"><span style="font-size:18px;"><b><i>Create A REST API With JSON Server,</i></b></span></a><br><br>
+<a href="https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d" target="_blank">
+<span style="font-size:1em;"><b><i>Create A REST API With JSON Server,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[43]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “National Weather Service.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[43]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “National Weather Service.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.weather.gov/" target="_blank"><span style="font-size:18px;"><b><i>National Weather Service.</i></b></span></a><br><br>
+<a href="https://www.weather.gov/" target="_blank">
+<span style="font-size:1em;"><b><i>National Weather Service.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[44]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “API Web Service.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/<br>
+<span style="color:Black;font-size:1em;">[44]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “API Web Service.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/<br>
 documentation/services-web-api. [Accessed: Feb. 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.weather.gov/documentation/services-web-api" target="_blank"><span style="font-size:18px;"><b><i>API Web Service.</i></b></span></a><br><br>
+<a href="https://www.weather.gov/documentation/services-web-api" target="_blank">
+<span style="font-size:1em;"><b><i>API Web Service.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[45]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “New Forecast-at-a-Glance icons.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/forecast-icons. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[45]&nbsp;&nbsp;&nbsp;&nbsp;US Department of Commerce, “New Forecast-at-a-Glance icons.” <i>weather.gov</i>. [Online]. Available: https://www.weather.gov/forecast-icons. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.weather.gov/forecast-icons" target="_blank"><span style="font-size:18px;"><b><i>New Forecast-at-a-Glance icons.</i></b></span></a><br><br>
+<a href="https://www.weather.gov/forecast-icons" target="_blank">
+<span style="font-size:1em;"><b><i>New Forecast-at-a-Glance icons.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[46]&nbsp;&nbsp;&nbsp;&nbsp;“JSON-LD - JSON for Linking Data.” <i>JSON-LD</i>. [Online]. Available: https://json-ld.org/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[46]&nbsp;&nbsp;&nbsp;&nbsp;“JSON-LD - JSON for Linking Data.” <i>JSON-LD</i>. [Online]. Available: https://json-ld.org/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://json-ld.org/" target="_blank"><span style="font-size:18px;"><b><i>JSON-LD - JSON for Linking Data.</i></b></span></a><br><br>
+<a href="https://json-ld.org/" target="_blank">
+<span style="font-size:1em;"><b><i>JSON-LD - JSON for Linking Data.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[47]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.<br>
+<span style="color:Black;font-size:1em;">[47]&nbsp;&nbsp;&nbsp;&nbsp;Mozilla and individual contributors, “XMLHttpRequest.<br>
 setRequestHeader() - Web APIs | MDN.” <i>MDN Web Docs</i>. [Online]. Available: https://developer.mozilla.org/en-US/<br>
 docs/Web/API/XMLHttpRequest/<br>
 setRequestHeader. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader" target="_blank"><span style="font-size:18px;"><b><i>XMLHttpRequest.<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader" target="_blank">
+<span style="font-size:1em;"><b><i>XMLHttpRequest.<br>
 setRequestHeader() - Web APIs | MDN.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[48]&nbsp;&nbsp;&nbsp;&nbsp;“HTTP Messages.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
+<span style="color:Black;font-size:1em;">[48]&nbsp;&nbsp;&nbsp;&nbsp;“HTTP Messages.” <i>W3Schools</i>. [Online]. Available: https://www.w3schools.com/<br>
 tags/ref_httpmessages.asp. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.w3schools.com/tags/ref_httpmessages.asp" target="_blank"><span style="font-size:18px;"><b><i>HTTP Messages.</i></b></span></a><br><br>
+<a href="https://www.w3schools.com/tags/ref_httpmessages.asp" target="_blank">
+<span style="font-size:1em;"><b><i>HTTP Messages.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[49]&nbsp;&nbsp;&nbsp;&nbsp;S. Bauer, “Multiple ways to insert HTML or SVG Elements into Document Object Model (DOM),” <i>n8d</i>, 27-Jun-2022.  [Online]. Available: https://n8d.at/multiple-ways-to-insert-html-or-svg-elements-into-document-object-model-dom. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[49]&nbsp;&nbsp;&nbsp;&nbsp;S. Bauer, “Multiple ways to insert HTML or SVG Elements into Document Object Model (DOM),” <i>n8d</i>, 27-Jun-2022.  [Online]. Available: https://n8d.at/multiple-ways-to-insert-html-or-svg-elements-into-document-object-model-dom. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://n8d.at/multiple-ways-to-insert-html-or-svg-elements-into-document-object-model-dom" target="_blank"><span style="font-size:18px;"><b><i>Multiple ways to insert HTML or SVG Elements into Document Object Model (DOM),</i></b></span></a><br><br>
+<a href="https://n8d.at/multiple-ways-to-insert-html-or-svg-elements-into-document-object-model-dom" target="_blank">
+<span style="font-size:1em;"><b><i>Multiple ways to insert HTML or SVG Elements into Document Object Model (DOM),</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[50]&nbsp;&nbsp;&nbsp;&nbsp;“innerText vs innerHTML | Top 9 Differences You Should Know,” <i>EDUCBA</i>, 23-Mar-2022. [Online]. Available: https://www.educba.com/innertext-vs-innerhtml/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[50]&nbsp;&nbsp;&nbsp;&nbsp;“innerText vs innerHTML | Top 9 Differences You Should Know,” <i>EDUCBA</i>, 23-Mar-2022. [Online]. Available: https://www.educba.com/innertext-vs-innerhtml/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.educba.com/innertext-vs-innerhtml/" target="_blank"><span style="font-size:18px;"><b><i>innerText vs innerHTML | Top 9 Differences You Should Know,</i></b></span></a><br><br>
+<a href="https://www.educba.com/innertext-vs-innerhtml/" target="_blank">
+<span style="font-size:1em;"><b><i>innerText vs innerHTML | Top 9 Differences You Should Know,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[51]&nbsp;&nbsp;&nbsp;&nbsp;bigFan, “Display SVG in html<br>
+<span style="color:Black;font-size:1em;">[51]&nbsp;&nbsp;&nbsp;&nbsp;bigFan, “Display SVG in html<br>
 table without using gridview - Microsoft Q&A.” <i>Microsoft Learn</i>, 12-May-2022. [Online]. Available: https://learn.microsoft.com/<br>
 en-us/answers/questions/<br>
 846092/display-svg-in-html-<br>
 table-without-using-gridview. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://learn.microsoft.com/en-us/answers/questions/846092/display-svg-in-html-table-without-using-gridview" target="_blank"><span style="font-size:18px;"><b><i>Display SVG in html table without using gridview - Microsoft Q&A.</i></b></span></a><br><br>
+<a href="https://learn.microsoft.com/en-us/answers/questions/846092/display-svg-in-html-table-without-using-gridview" target="_blank">
+<span style="font-size:1em;"><b><i>Display SVG in html table without using gridview - Microsoft Q&A.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[52]&nbsp;&nbsp;&nbsp;&nbsp;“What is RESTful API? - RESTful API Beginner’s Guide - AWS,” <i>Amazon Web Services, Inc</i>. [Online]. Available: https://aws.amazon.com/what-is/restful-api/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[52]&nbsp;&nbsp;&nbsp;&nbsp;“What is RESTful API? - RESTful API Beginner’s Guide - AWS,” <i>Amazon Web Services, Inc</i>. [Online]. Available: https://aws.amazon.com/what-is/restful-api/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://aws.amazon.com/what-is/restful-api/" target="_blank"><span style="font-size:18px;"><b><i>What is RESTful API? - RESTful API Beginner’s Guide - AWS,</i></b></span></a><br><br>
+<a href="https://aws.amazon.com/what-is/restful-api/" target="_blank">
+<span style="font-size:1em;"><b><i>What is RESTful API? - RESTful API Beginner’s Guide - AWS,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[53]&nbsp;&nbsp;&nbsp;&nbsp;“What is a REST API? | IBM.” <i>IBM</i>. [Online]. Available: https://www.ibm.com/topics/rest-apis. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[53]&nbsp;&nbsp;&nbsp;&nbsp;“What is a REST API? | IBM.” <i>IBM</i>. [Online]. Available: https://www.ibm.com/topics/rest-apis. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.ibm.com/topics/rest-apis" target="_blank"><span style="font-size:18px;"><b><i>What is a REST API? | IBM.</i></b></span></a><br><br>
+<a href="https://www.ibm.com/topics/rest-apis" target="_blank">
+<span style="font-size:1em;"><b><i>What is a REST API? | IBM.</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[54]&nbsp;&nbsp;&nbsp;&nbsp;D. Hardt, “The OAuth 2.0 Authorization Framework,” <i>Internet Engineering Task Force</i>, Oct-2012 [Online]. Available: https://datatracker.ietf.org/doc/<br>
+<span style="color:Black;font-size:1em;">[54]&nbsp;&nbsp;&nbsp;&nbsp;D. Hardt, “The OAuth 2.0 Authorization Framework,” <i>Internet Engineering Task Force</i>, Oct-2012 [Online]. Available: https://datatracker.ietf.org/doc/<br>
 rfc6749/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://datatracker.ietf.org/doc/rfc6749/" target="_blank"><span style="font-size:18px;"><b><i>The OAuth 2.0 Authorization Framework,</i></b></span></a><br><br>
+<a href="https://datatracker.ietf.org/doc/rfc6749/" target="_blank">
+<span style="font-size:1em;"><b><i>The OAuth 2.0 Authorization Framework,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[55]&nbsp;&nbsp;&nbsp;&nbsp;A. Gillis, “What is REST API (RESTful API)?,” <i>App Architecture</i>. [Online]. Available: https://www.techtarget.com/<br>
+<span style="color:Black;font-size:1em;">[55]&nbsp;&nbsp;&nbsp;&nbsp;A. Gillis, “What is REST API (RESTful API)?,” <i>App Architecture</i>. [Online]. Available: https://www.techtarget.com/<br>
 searchapparchitecture/definition/<br>
 RESTful-API. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.techtarget.com/searchapparchitecture/definition/RESTful-API" target="_blank"><span style="font-size:18px;"><b><i>What is REST API (RESTful API)?,</i></b></span></a><br><br>
+<a href="https://www.techtarget.com/searchapparchitecture/definition/RESTful-API" target="_blank">
+<span style="font-size:1em;"><b><i>What is REST API (RESTful API)?,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[56]&nbsp;&nbsp;&nbsp;&nbsp;L. Gupta, “What is REST,” <i>REST API Tutorial</i>. [Online]. Available: https://restfulapi.net/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[56]&nbsp;&nbsp;&nbsp;&nbsp;L. Gupta, “What is REST,” <i>REST API Tutorial</i>. [Online]. Available: https://restfulapi.net/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://restfulapi.net/" target="_blank"><span style="font-size:18px;"><b><i>What is REST,</i></b></span></a><br><br>
+<a href="https://restfulapi.net/" target="_blank">
+<span style="font-size:1em;"><b><i>What is REST,</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[57]&nbsp;&nbsp;&nbsp;&nbsp;“REST API (Introduction),” <i>GeeksforGeeks</i>, 08-Jun-2022. [Online]. Available: https://www.geeksforgeeks.org/rest-api-introduction/. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+<span style="color:Black;font-size:1em;">[57]&nbsp;&nbsp;&nbsp;&nbsp;“REST API (Introduction),” <i>GeeksforGeeks</i>, 08-Jun-2022. [Online]. Available: https://www.geeksforgeeks.org/rest-api-introduction/. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
     <title> id="iconTitle">Window Plus icon</title>
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://www.geeksforgeeks.org/rest-api-introduction/" target="_blank"><span style="font-size:18px;"><b><i>REST API (Introduction),</i></b></span></a><br><br>
+<a href="https://www.geeksforgeeks.org/rest-api-introduction/" target="_blank">
+<span style="font-size:1em;"><b><i>REST API (Introduction),</i></b></span></a><br><br>
 
-<br><br>
 
-<span style="color:Black;font-size:18px;">[58]&nbsp;&nbsp;&nbsp;&nbsp;D. Mishra, “Request Headers in REST API.” <i>metamug.com</i>. [Online]. Available: https://metamug.com/article/rest-api-request-headers.html. [Accessed: 03-Feb-2023].</span><br>
-<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
-    <title> id="iconTitle">Window Plus icon</title>
+<span style="color:Black;font-size:1em;">[58]&nbsp;&nbsp;&nbsp;&nbsp;D. Mishra, “Request Headers in REST API.” <i>metamug.com</i>. [Online]. Available: https://metamug.com/article/rest-api-request-headers.html. [Accessed: 03-Feb-2023].</span><br>
+<svg id="windowPlusIcon" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16" role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"> 
+    <title> id="iconTitle">Window Plus icon</title>  
     <desc  id="iconDesc">this icon represents opening a new window</desc> <path opacity="1" fill="lightgrey" stroke="lightgrey" stroke-width="0.08" fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Zm1.5-1Z"/> <path opacity="1" fill="lightsteelblue" stroke="navy" stroke-width="0.07" fill-rule="evenodd" d="M4 5Zm2-.5Zm10 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z"/> </svg>
-<span style="color:Black;font-size:18px;">&nbsp;View&nbsp;
+<span style="color:Black;font-size:1em;">&nbsp;View&nbsp;
 </span>
-<a href="https://metamug.com/article/rest-api-request-headers.html" target="_blank"><span style="font-size:18px;"><b><i>Request Headers in REST API.</i></b></span></a><br><br>
-
-<br><br>
-
-
-
-
-
-
-
-
+<a href="https://metamug.com/article/rest-api-request-headers.html" target="_blank">
+<span style="font-size:1em;"><b><i>Request Headers in REST API.</i></b></span></a><br><br>
 
 
 
@@ -3943,15 +4075,25 @@ RESTful-API. [Accessed: 03-Feb-2023].</span><br>
 <br><br>
 
 <center> 
-<span id="copyRightMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Copyright &#169; 2023. All rights reserved.</b></span>
+<span id="copyRightMsg" style="color:Navy;font-size:2em;">
+<b>
+&nbsp;&nbsp;&nbsp;
+Copyright &#169; 2023, 2025. All rights reserved.
+</b>
+</span>
 </center> 
 <br>
 
 <center> 
-<span id="chromeBestMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Best results when using the Chrome browser.</b></span><br><br>
+<span id="chromeBestMsg" style="color:Navy;font-size:2em;">
+<b>
+&nbsp;&nbsp;&nbsp;
+Best results when using the Chrome browser.
+</b>
+</span><br><br>
 
 <svg id="BootstrapIcon" 
-xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
+xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="Navy" class="bi bi-bootstrap" viewBox="0 0 16 16" 
 role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc">
     <title> id="iconTitle">Bootstrap icon</title>
     <desc  id="iconDesc">this icon represents Bootstrap</desc> 
@@ -3960,13 +4102,27 @@ role="graphics-document" aria-labelledby="iconTitle" aria-describedby="iconDesc"
 </svg><br>
 
 
-<span id="iconsProvidedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Some icons provided via the 
-<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> collection.</b></span><br>
+<span id="iconsProvidedMsg" style="color:Navy;font-size:2em;">
+<b>
+&nbsp;&nbsp;&nbsp; 
+Some icons provided via the 
+<a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a> 
+collection.</b></span><br>
 
 
-<span id="mitLicenseMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp; Bootstrap Icons are under the <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> license.</b></span><br>
+<span id="mitLicenseMsg" style="color:Navy;font-size:2em;">
+<b>
+&nbsp;&nbsp;&nbsp; 
+Bootstrap Icons are under the 
+<a href="https://github.com/twbs/icons/blob/main/LICENSE.md" target="_blank">MIT</a> 
+license.</b></span><br>
 
-<span id="iconsModifiedMsg" style="color:Navy;font-size:16px;"><b>&nbsp;&nbsp;&nbsp;Some icons in this collection have been modified.</b></span><br><br>
+<span id="iconsModifiedMsg" style="color:Navy;font-size:2em;">
+<b>
+&nbsp;&nbsp;&nbsp;
+Some icons in this collection have been modified.
+</b>
+</span><br><br>
 </center> 
 
 <!-- 
@@ -4007,8 +4163,19 @@ used by multiple pages.
 <script src="debug.js">
 </script>
 
-<script src="nwsWeather2.js">
+
+<script>
+ //  alert("loading nws_weather2.js");
 </script>
+
+
+<script src="nws_weather.js">
+</script>
+
+<script>
+ //  alert("continue after loading nws_weather2.js");
+</script>
+
 
 <NOSCRIPT><span style="color:Navy;font-size:16px;"><b>JavaScript is not available. JavaScript is required in order to provide the full functionality of this page.</b></span></NOSCRIPT><br><br>
 
