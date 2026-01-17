@@ -427,7 +427,7 @@ switch(deviceScreenWidth) {
 
 	               //  id="grid-containerTest"
      		       //  grid-template-rows: 0.3vh 140vh 0.3vh
-		       document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 80vh 0.3vh";
+		       document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 100vh 0.3vh";
 
 
 			//  id="grid-containerMisc"
