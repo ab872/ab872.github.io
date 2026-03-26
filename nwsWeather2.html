@@ -777,6 +777,8 @@ dataToProcess.properties.relativeLocation.geometry.coordinates[0];
 //  innerHTML = 
 //  dataToProcess.properties.updated;
 
+//  changed to
+//  dataToProcess.properties.updateTime;
 
 
 location.value = 'Query - get forecast';
@@ -1003,9 +1005,14 @@ var forecastToProcess = JSON.parse(forecastRequest.response);
 
 //  Parse the time and date
 
+//  used to be
+forecastToProcess.properties.updated;
+
+//  changed to
+//  forecastToProcess.properties.updateTime;
 
 var theTimeDateStr = 
-forecastToProcess.properties.updated;
+forecastToProcess.properties.updateTime;
 
 
 var tmpDateStr = 
