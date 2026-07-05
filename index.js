@@ -706,6 +706,60 @@ switch(deviceScreenWidth) {
 	}
 
          break;
+      case 1120:     //  Android
+      //   alert("using screen width = 1120" + "<br>");
+
+         if(isChrome) {
+            //  alert("Chrome using screen width = 1120" + "<br>");
+         } 
+
+         if(isFirefox) {
+            	// alert("Firefox using screen width = 1120" + "<br>"); 
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 350vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 370vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerTest"
+     			//  grid-template-rows: 0.3vh 140vh 0.3vh
+			document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 200vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 240vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 310vh 0.3vh";
+
+         } 
+
+         if(isNewEdge) {
+            //  alert("Microsoft Edge (new) using screen width = 1120" + "<br>");
+         } 
+
+         if(isEdge) {
+            //  alert("Microsoft Edge (old) using screen width = 1120" + "<br>"); 
+         } 
+
+
+         break;
       case 1133:     //  Android
       //   alert("using screen width = 1133" + "<br>");
 
@@ -855,17 +909,97 @@ switch(deviceScreenWidth) {
          } 
 
          break;
-       	 case 1280:     //  Win10
-         	//	alert("using screen width = 1280" + "<br>"); 
+       	 case 1280:     //  Win10 +  Android
+         	//   alert("using screen width = 1280" + "<br>"); 
                             
          		if(isChrome) {
-            			//  alert("Chrome using screen width = 1280" + "<br>");
+            			 //  alert("Chrome using screen width = 1280" + "<br>");
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 380vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 430vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerTest"
+     			//  grid-template-rows: 0.3vh 140vh 0.3vh
+			document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 230vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 240vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 340vh 0.3vh";
+
          		} 
-                        
+                  
+
+
+      
          		if(isFirefox) {
-            			//  alert("Firefox using screen width = 1280" + "<br>"); 
+            		//	 alert("Firefox using screen width = 1280" + "<br>"); 
+
          		} 
-                           
+                       
+
+
+
+             if(isAndroidEdge) {
+	                // alert("Edge Android using screen width = 1280" + "<br>"); 
+
+			//  id="grid-containerAndroid"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerAndroid').style.gridTemplateRows = "0.3vh 135vh 0.3vh";
+
+			//  id="grid-containerCAD"
+     			//  grid-template-rows: 0.3vh 135vh 0.3vh
+			document.getElementById('grid-containerCAD').style.gridTemplateRows = "0.3vh 140vh 0.3vh";
+
+			//  id="grid-containerCloud"
+     			//  grid-template-rows: 0.3vh 170vh 0.3vh
+			document.getElementById('grid-containerCloud').style.gridTemplateRows = "0.3vh 300vh 0.3vh";
+
+			//  id="grid-containerDatabase"
+     			//  grid-template-rows: 0.3vh 215vh 0.3vh
+			document.getElementById('grid-containerDatabase').style.gridTemplateRows = "0.3vh 350vh 0.3vh";
+
+			//  id="grid-containerGraphics"
+     			//  grid-template-rows: 0.3vh 225vh 0.3vh
+			document.getElementById('grid-containerGraphics').style.gridTemplateRows = "0.3vh 160vh 0.3vh";
+
+			//  id="grid-containerWindows"
+     			//  grid-template-rows: 0.3vh 95vh 0.3vh
+			document.getElementById('grid-containerWindows').style.gridTemplateRows = "0.3vh 115vh 0.3vh";
+
+			//  id="grid-containerTest"
+     			//  grid-template-rows: 0.3vh 140vh 0.3vh
+			document.getElementById("grid-containerTest").style.gridTemplateRows = "0.3vh 170vh 0.3vh";
+
+			//  id="grid-containerMisc"
+     			//  grid-template-rows: 0.3vh 240vh 0.3vh
+			document.getElementById("grid-containerMisc").style.gridTemplateRows = "0.3vh 290vh 0.3vh";
+
+
+             }
+
+
+    
          		if(isNewEdge) {
             			//  alert("Microsoft Edge (new) using screen width = 1280" + "<br>"); 
          		} 

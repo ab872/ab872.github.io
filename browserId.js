@@ -50,9 +50,20 @@
     //  new Edge on Win10
     var isNewEdge = whichAgent.includes("Edg/"); 
 
-    //  Edge on Android
-    var isAndroidEdge = whichAgent.includes("EdgA/"); 
 
+
+
+    //  Edge on Android
+     var isAndroidEdge = whichAgent.includes("Edg/"); 
+
+    // Edge Android seems to be failing the above
+
+    // For legacy environments
+    // check if the returned index does not equal -1.
+
+  //  var isAndroidEdge = whichAgent.indexOf("EdgA/") !== -1; 
+
+    
 
     var isWin10 = whichAgent.includes("Windows NT 10.0"); 
 
@@ -177,3 +188,7 @@
 
 
 // end     browserId.js
+
+
+
+
